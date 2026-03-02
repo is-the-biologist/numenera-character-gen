@@ -49,7 +49,7 @@ jobs:
         with:
           name: binaries-${{ matrix.platform }}-${{ strategy.job-index }}
           path: |
-            numenera-chargen/src-tauri/target/release/bundle/**/*.exe
-            numenera-chargen/src-tauri/target/release/bundle/**/*.msi
-            numenera-chargen/src-tauri/target/release/bundle/**/*.dmg
-            numenera-chargen/src-tauri/target/release/bundle/**/*.app
+            numenera-chargen/src-tauri/target/**/release/bundle/**/*.exe
+            numenera-chargen/src-tauri/target/**/release/bundle/**/*.msi
+            numenera-chargen/src-tauri/target/**/release/bundle/**/*.dmg
+            numenera-chargen/src-tauri/target/**/release/bundle/**/*.app
