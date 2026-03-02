@@ -5,12 +5,14 @@
     "source": "destiny",
     "description": "You flex and sway with changes both physical and mental. When something bad happens to you, you feel the pain and the loss, but soon, you’re back on your feet and in the action. When you have to learn a new skill, you don’t back away, but instead, you jump in and try your best. Being adaptable means that you’re often cooperative, because you know that, by working together, a group can overcome things that might be impossible for an individual. Some seek you out because of your adaptability, but others don’t see it as a positive trait and instead see you as someone who always changes their mind—someone without a foundation. You laugh at those accusations. That’s just the sort of thing someone would say if they had never changed their mind about anything in their life—a way for that person to feel good about their lack of growth.",
     "poolModifiers": {},
-    "trainedSkills": [],
+    "trainedSkills": [
+      "pleasant social interactions"
+    ],
     "inabilities": [],
     "specialAbilities": [
       {
-        "name": "You gain the following benefits",
-        "description": "Versatile: +2 to any one Pool, which you can reassign after each ten-hour recovery roll."
+        "name": "Versatile",
+        "description": "+2 to any one Pool, which you can reassign after each ten-hour recovery roll."
       },
       {
         "name": "Resilient",
@@ -33,14 +35,12 @@
     "poolModifiers": {
       "intellect": 2
     },
-    "trainedSkills": [],
-    "inabilities": [],
-    "specialAbilities": [
-      {
-        "name": "You gain the following benefits",
-        "description": "Lucid: +2 to your Intellect Pool."
-      }
+    "trainedSkills": [
+      "persuasion",
+      "all actions that involve making plans, explaining plans, and convincing others to accept your plans"
     ],
+    "inabilities": [],
+    "specialAbilities": [],
     "additionalEquipment": [],
     "initialLinks": [
       "One of the other PCs asked you to explain something to them. Impressed, they asked you to accompany them on a mission.",
@@ -57,13 +57,11 @@
     "poolModifiers": {
       "intellect": 2
     },
-    "trainedSkills": [],
+    "trainedSkills": [
+      "all tasks related to pleasant social interaction, putting other people at ease, and gaining others’ trust"
+    ],
     "inabilities": [],
     "specialAbilities": [
-      {
-        "name": "You gain the following benefits",
-        "description": "Helpful: +2 to your Intellect Pool."
-      },
       {
         "name": "Devoted",
         "description": "Allies who have spent the last day with you add +1 to their recovery rolls. You also gain this benefit if at least one other ally gains it."
@@ -92,12 +90,7 @@
     "inabilities": [
       "you have a hard time recognizing when others aren’t as bright and forthcoming as you. tasks to detect falsehoods and disguises are hindered."
     ],
-    "specialAbilities": [
-      {
-        "name": "You gain the following benefits",
-        "description": "Bright: +4 to your Intellect Pool."
-      }
-    ],
+    "specialAbilities": [],
     "additionalEquipment": [],
     "initialLinks": [
       "One of the other PCs asked you to come along because of your pleasant nature in the hopes that it would help bond the group.",
@@ -114,12 +107,15 @@
     "poolModifiers": {
       "intellect": 2
     },
-    "trainedSkills": [],
+    "trainedSkills": [
+      "tasks related to finding out about both current events and secrets within the community where you live",
+      "all tasks related to aiding a community, including repairing infrastructure, quelling riots, defending against incursions, and so on"
+    ],
     "inabilities": [],
     "specialAbilities": [
       {
-        "name": "You gain the following benefits",
-        "description": "Civic-Minded: You add +1 to the health of any community you are currently living in."
+        "name": "Civic-Minded",
+        "description": "You add +1 to the health of any community you are currently living in."
       }
     ],
     "additionalEquipment": [
@@ -140,15 +136,13 @@
     "poolModifiers": {
       "might": 4
     },
-    "trainedSkills": [],
+    "trainedSkills": [
+      "tasks related to enduring trials of mind and body"
+    ],
     "inabilities": [
       "sometimes you come across as so single-minded that you put people off. persuasion tasks are hindered."
     ],
     "specialAbilities": [
-      {
-        "name": "You gain the following benefits",
-        "description": "Steadfast: +4 to your Might Pool."
-      },
       {
         "name": "Dedication Brings Rewards",
         "description": "You tend to practice things over and over. Once between each ten-hour recovery roll, you gain an asset to similar actions involving the same task (such as making attacks against the same foe or operating the same device). The asset doesn’t apply to similar but different tasks (such as attacking a different foe, even if of the same kind, or operating a different but very similar device)."
@@ -168,12 +162,15 @@
     "source": "destiny",
     "description": "You’re self-assured, which helps in almost every situation—at least situations where violence is not involved. Fortunately, because you’re so self-confident and positive, you’re usually able to steer situations away from violent endings. It’s possible that your confidence makes you seem levelheaded and cool in a tough situation, or your confidence could make you eager to prove your skills when the going gets rough—it’s up to you. Either way, others eventually learn that you’re confident for a good reason.",
     "poolModifiers": {},
-    "trainedSkills": [],
+    "trainedSkills": [
+      "three nonphysical, non-combat skills of your choice",
+      "one task for ten minutes, as long as that task is not an attack or a defense"
+    ],
     "inabilities": [],
     "specialAbilities": [
       {
-        "name": "You gain the following benefits",
-        "description": "Self-Reliant: +1 to each of your Pools."
+        "name": "Self-Reliant",
+        "description": "+1 to each of your Pools."
       },
       {
         "name": "Confident Outlook",
@@ -198,15 +195,14 @@
     "source": "destiny",
     "description": "Your excellent education and privileged upbringing has lent you a refined taste. You’re able to discern degrees of difference where others see, hear, or taste the same thing. Your awareness extends to artistic endeavors and general knowledge of the area you reside in and areas far from you (to the extent this knowledge is possible). You’re an example, if you do say so yourself, of the benefits that civilization can bring to someone. Though that doesn’t mean you can’t appreciate other ways of living.",
     "poolModifiers": {},
-    "trainedSkills": [],
+    "trainedSkills": [
+      "all tasks related to knowledge of current events and history",
+      "all tasks related to perception, detecting differences, and noticing minor flaws (or strengths) in the works of others"
+    ],
     "inabilities": [
       "getting people to believe or trust you"
     ],
     "specialAbilities": [
-      {
-        "name": "You gain the following benefits",
-        "description": "Skill: You’re trained in all tasks related to knowledge of current events and history."
-      },
       {
         "name": "Learned",
         "description": "Being well read and well educated, you have a wide range of talents. You can attempt one task in which you have no training as if you were trained. This ability refreshes every time you make a recovery roll, but the uses never accumulate."
@@ -230,14 +226,12 @@
     "poolModifiers": {
       "intellect": 2
     },
-    "trainedSkills": [],
-    "inabilities": [],
-    "specialAbilities": [
-      {
-        "name": "You gain the following benefits",
-        "description": "Inquisitive: +2 to your Intellect Pool."
-      }
+    "trainedSkills": [
+      "perception",
+      "all tasks related to detecting falsehoods, piercing illusions or disguises, and seeing past facades"
     ],
+    "inabilities": [],
+    "specialAbilities": [],
     "additionalEquipment": [
       "You have three books on whatever subjects you choose"
     ],
@@ -256,16 +250,16 @@
     "poolModifiers": {
       "intellect": 2
     },
-    "trainedSkills": [],
+    "trainedSkills": [
+      "persuasion",
+      "one area of lore or knowledge of your choice",
+      "defense rolls to resist disease and poison",
+      "all tasks involving providing consolation and emotional support to others"
+    ],
     "inabilities": [
       "you never could detect a lie. tasks that involve seeing through lies or trickery are hindered."
     ],
-    "specialAbilities": [
-      {
-        "name": "You gain the following benefits",
-        "description": "Purposeful: +2 to your Intellect Pool."
-      }
-    ],
+    "specialAbilities": [],
     "additionalEquipment": [
       "You make deep and abiding friendships",
       "Thanks to your earnest nature",
@@ -292,12 +286,12 @@
     "inabilities": [],
     "specialAbilities": [
       {
-        "name": "You gain the following benefits",
-        "description": "Observer: +4 to your Intellect Pool."
-      },
-      {
         "name": "Quick Study",
         "description": "When you take a round to study whatever is in front of you and gain the facts, you feel more confident that you’re about to do the right thing. Your next non-combat action gains an asset."
+      },
+      {
+        "name": "Non-Resilient",
+        "description": "If you haven’t had time to study something, you have a hard time taking action and moving forward. Whenever you receive a GM intrusion, any action you take in response is hindered."
       }
     ],
     "additionalEquipment": [],
@@ -316,17 +310,15 @@
     "poolModifiers": {
       "might": 4
     },
-    "trainedSkills": [],
+    "trainedSkills": [
+      "persuasion and intimidation tasks",
+      "tasks to sense when someone isn’t telling the truth"
+    ],
     "inabilities": [
       "positive social interaction",
       "being so concerned with how those around you are performing their tasks makes you vulnerable to anything that attacks your mind. intellect defense rolls are hindered."
     ],
-    "specialAbilities": [
-      {
-        "name": "You gain the following benefits",
-        "description": "Unyielding: +4 to your Might Pool."
-      }
-    ],
+    "specialAbilities": [],
     "additionalEquipment": [],
     "initialLinks": [
       "The other PCs demonstrated they could meet your standards, and you offered to accompany them.",
@@ -376,10 +368,6 @@
     "inabilities": [],
     "specialAbilities": [
       {
-        "name": "You have the following characteristics",
-        "description": "Likable and Informed: +2 to your Intellect Pool."
-      },
-      {
         "name": "People Person",
         "description": "When you are within immediate range of at least two allies, the difficulty of one noncombat-related task is decreased by one step. You can do this only once, but its use is restored each time you make a recovery roll."
       },
@@ -404,15 +392,14 @@
     "poolModifiers": {
       "might": 2
     },
-    "trainedSkills": [],
+    "trainedSkills": [
+      "all social interactions",
+      "tasks involving perception and finding hidden things"
+    ],
     "inabilities": [
       "you tend to take others at their word. tasks that involve detecting falsehoods are hindered."
     ],
     "specialAbilities": [
-      {
-        "name": "You gain the following benefits",
-        "description": "Mighty: +2 to your Might Pool."
-      },
       {
         "name": "Heroic Guise",
         "description": "You hold yourself in a way that inspires others. You are trained in all social interactions."
@@ -434,13 +421,11 @@
     "poolModifiers": {
       "intellect": 2
     },
-    "trainedSkills": [],
+    "trainedSkills": [
+      "one of the following skills: painting, drawing, singing, poetry, writing, sculpting, playing a style of musical instrument, or something similar"
+    ],
     "inabilities": [],
     "specialAbilities": [
-      {
-        "name": "You gain the following benefits",
-        "description": "Brainy: +2 to your Intellect Pool."
-      },
       {
         "name": "Imaginative Solution",
         "description": "When you apply a level of Effort to any Intellect task, you gain a free level of Effort. You can do this one time, although the ability is renewed each time you make a ten-hour recovery roll."
@@ -468,10 +453,6 @@
     ],
     "specialAbilities": [
       {
-        "name": "You gain the following benefits",
-        "description": "Energetic: +4 to your Speed Pool."
-      },
-      {
         "name": "Imaginative Solution",
         "description": "When you apply a level of Effort to any Intellect task, you gain a free level of Effort. You can do this one time, although the ability is renewed each time you make a ten-hour recovery roll."
       }
@@ -493,15 +474,13 @@
       "might": 2,
       "intellect": 2
     },
-    "trainedSkills": [],
+    "trainedSkills": [
+      "all intimidation tasks. threaten: foes within immediate distance hesitate, which hinders their next action. you can do this once, although the ability is renewed each time you make a recovery roll"
+    ],
     "inabilities": [
       "you’re threatening but not a quick study. tasks related to lore and knowledge are hindered."
     ],
     "specialAbilities": [
-      {
-        "name": "You gain the following benefits",
-        "description": "Threatening: +2 to your Might Pool or +2 to your Intellect Pool or +1 to both Pools."
-      },
       {
         "name": "Menace",
         "description": "One foe you choose within immediate range uses their next action to move away from you. You can do this once, although the ability is renewed each time you make a recovery roll."
@@ -529,10 +508,6 @@
     "inabilities": [],
     "specialAbilities": [
       {
-        "name": "You gain the following benefits",
-        "description": "Innate: +2 to your Intellect Pool."
-      },
-      {
         "name": "Know What to Do",
         "description": "You can act immediately, even if it’s not your turn. Afterward, on your next regular turn, any action you take is hindered. You can do this one time, although the ability is renewed each time you make a recovery roll."
       }
@@ -553,15 +528,13 @@
     "poolModifiers": {
       "might": 4
     },
-    "trainedSkills": [],
+    "trainedSkills": [
+      "all tasks related to positive social interaction"
+    ],
     "inabilities": [
       "you have a hard time recognizing confidence games and similar schemes, especially when you’re the target. intellect defense tasks to do so are hindered."
     ],
     "specialAbilities": [
-      {
-        "name": "You gain the following benefits",
-        "description": "Sturdy Spirit: +4 to your Might Pool."
-      },
       {
         "name": "Bounces Back",
         "description": "You add +1 to your recovery rolls."
@@ -590,12 +563,7 @@
     "inabilities": [
       "you can’t abide law-breaking, especially when you’re the culprit, however unjust those laws might be. while engaged in any activity that breaks the law, your intellectbased tasks are hindered."
     ],
-    "specialAbilities": [
-      {
-        "name": "You gain the following benefits",
-        "description": "Justified: +2 to your Might Pool and +2 to your Speed Pool."
-      }
-    ],
+    "specialAbilities": [],
     "additionalEquipment": [],
     "initialLinks": [
       "You heard what the other PCs were up to and knew they could use your expertise.",
@@ -617,10 +585,6 @@
       "you have a hard time seeing disloyalty in others. tasks that involve detecting falsehoods and seeing through disguises are hindered."
     ],
     "specialAbilities": [
-      {
-        "name": "You gain the following benefits",
-        "description": "Resolute: +2 to your Intellect Pool."
-      },
       {
         "name": "Devoted",
         "description": "If an ally within immediate range descends one step on the damage track, you can act immediately but in a restricted fashion. You can use this action either to move the willing ally up to an immediate distance or to attempt a healing task on your ally."
@@ -646,14 +610,13 @@
     "poolModifiers": {
       "intellect": 2
     },
-    "trainedSkills": [],
-    "inabilities": [],
-    "specialAbilities": [
-      {
-        "name": "You gain the following benefits",
-        "description": "Analytical: +2 to your Intellect Pool."
-      }
+    "trainedSkills": [
+      "perception and detecting falsehoods",
+      "stealth tasks",
+      "tasks to remember pertinent details on a topic you once heard or read about"
     ],
+    "inabilities": [],
+    "specialAbilities": [],
     "additionalEquipment": [],
     "initialLinks": [
       "You noticed that strange noises were coming from an abandoned area, so you gathered the other PCs to check it out.",
@@ -675,10 +638,6 @@
     ],
     "inabilities": [],
     "specialAbilities": [
-      {
-        "name": "You gain the following benefits",
-        "description": "Caregiver: +2 to your Might Pool."
-      },
       {
         "name": "Nurturing",
         "description": "Allies who have spent the last day with you add +1 to their recovery rolls. You also gain this benefit if at least one other ally gains it."
@@ -702,8 +661,8 @@
     "inabilities": [],
     "specialAbilities": [
       {
-        "name": "You gain the following benefits",
-        "description": "Your Obsession: At the beginning of each day, choose one concept on which you will concentrate. For the rest of that day, you’re obsessed with that concept. This doesn’t mean you ignore anything not related to your obsession. It just means you are at your best when performing tasks related to the obsession, and you are slightly inattentive when performing tasks that are not."
+        "name": "Your Obsession",
+        "description": "At the beginning of each day, choose one concept on which you will concentrate. For the rest of that day, you’re obsessed with that concept. This doesn’t mean you ignore anything not related to your obsession. It just means you are at your best when performing tasks related to the obsession, and you are slightly inattentive when performing tasks that are not."
       },
       {
         "name": "Enthralled",
@@ -739,10 +698,6 @@
     ],
     "specialAbilities": [
       {
-        "name": "You gain the following benefits",
-        "description": "Spirited: +4 to your Intellect Pool."
-      },
-      {
         "name": "Shrugs Off Disappointment",
         "description": "When you fail at a non-combat task and try that task again the very next round, you can apply a free level of Effort toward the success of that task. This benefit effectively alleviates the requirement to apply a level of Effort when retrying failed tasks."
       }
@@ -771,10 +726,6 @@
     ],
     "specialAbilities": [
       {
-        "name": "You gain the following benefits",
-        "description": "Ordered: +4 to your Intellect Pool."
-      },
-      {
         "name": "Benefits of Organization",
         "description": "You can take one additional free action while you are at a location that you have organized to your liking (which means having spent at least ten minutes there tidying and organizing) or if you are following a plan that hasn’t diverged from the original conception. You can do this only once, but its use is restored each time you make a ten-hour recovery roll."
       }
@@ -802,10 +753,6 @@
       "your temper is hard to control. the difficulty of any task requiring restraint or subtlety, including sneaking or lying, is increased by one step."
     ],
     "specialAbilities": [
-      {
-        "name": "You have the following characteristics",
-        "description": "Skill: You are trained in running, climbing, and swimming."
-      },
       {
         "name": "Fever",
         "description": "You are a devil when angered, inflicting 1 additional point of damage with any attack."
@@ -838,10 +785,6 @@
     "inabilities": [],
     "specialAbilities": [
       {
-        "name": "You gain the following benefits",
-        "description": "Determined: +2 to your Intellect Pool or +2 to your Might Pool."
-      },
-      {
         "name": "Irrepressible Reaction",
         "description": "Whenever you receive a GM intrusion (either by rolling a 1 or by getting one from the GM), one action you take in response within the next minute gains an asset."
       }
@@ -867,10 +810,6 @@
     ],
     "inabilities": [],
     "specialAbilities": [
-      {
-        "name": "You gain the following benefits",
-        "description": "Ready: +4 to your Speed Pool."
-      },
       {
         "name": "Tool Aficionado",
         "description": "If a tool enables a noncombat task but does not provide an asset, you gain an asset to that task anyway when using a tool. If a tool provides an asset to a non-combat task, you gain one additional asset when using it."
@@ -898,15 +837,13 @@
     "poolModifiers": {
       "intellect": 4
     },
-    "trainedSkills": [],
+    "trainedSkills": [
+      "tasks related to perception and healing"
+    ],
     "inabilities": [
       "you’re watchful, not bright. knowledge-based tasks are hindered."
     ],
     "specialAbilities": [
-      {
-        "name": "You gain the following benefits",
-        "description": "Watchful: +4 to your Intellect Pool."
-      },
       {
         "name": "Step in Front",
         "description": "If you successfully draw the attack so that a foe attacks you instead of the target they originally intended to attack, you have +2 Armor against that attack. You can do this one time, although the ability renews each time you make a recovery roll."
@@ -928,16 +865,13 @@
     "poolModifiers": {
       "might": 4
     },
-    "trainedSkills": [],
+    "trainedSkills": [
+      "tasks related to healing and finding food and water"
+    ],
     "inabilities": [
       "you’re not a people person. interaction tasks are hindered."
     ],
-    "specialAbilities": [
-      {
-        "name": "You gain the following benefits",
-        "description": "Survivor: +4 to your Might Pool."
-      }
-    ],
+    "specialAbilities": [],
     "additionalEquipment": [],
     "initialLinks": [
       "You found the other PCs in trouble and decided to help.",
@@ -985,15 +919,11 @@
       "intellect": 2
     },
     "trainedSkills": [
-      "intellect defense tasks"
+      "intellect defense tasks",
+      "all actions that involve overcoming or ignoring the effects of fear, intimidation, or panic"
     ],
     "inabilities": [],
-    "specialAbilities": [
-      {
-        "name": "You gain the following benefits",
-        "description": "Self-Possessed: +2 to your Intellect Pool."
-      }
-    ],
+    "specialAbilities": [],
     "additionalEquipment": [],
     "initialLinks": [
       "By staying calm in a difficult situation, you gained the trust of the other PCs.",
@@ -1009,14 +939,10 @@
     "description": "You try to hide what’s inside, fold it into yourself when everything inside you screams to let go, make them pay, make them hurt, and make them bleed. Sometimes you succeed for your friends—smiling like they smile, laughing when they laugh, and sometimes even having other emotions of your own. But it’s always there, that feeling of frantic glee mixed with hate that sometimes leaps out of you when you confront a foe. Violence your friends can tolerate, but you sometimes worry they will also learn that you are cruel.",
     "poolModifiers": {},
     "trainedSkills": [
-      "tracking creatures"
+      "tracking creatures. if a creature has wronged you, the tracking task is eased"
     ],
     "inabilities": [],
     "specialAbilities": [
-      {
-        "name": "You gain the following benefits",
-        "description": "Skill: You are trained in tracking creatures. If a creature has wronged you, the tracking task is eased."
-      },
       {
         "name": "Bloodthirsty",
         "description": "Once you begin fighting, you see only red. You inflict 2 additional points of damage with any attack."

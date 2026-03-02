@@ -47,7 +47,6 @@ describe('characterAssembler', () => {
     expect(character.skills.trained).toContain('listening');
     expect(character.skills.trained).toContain('jumping');
     expect(character.skills.trained).toContain('balancing');
-    expect(character.skills.trained).toContain('intimidation');
     expect(character.skills.trained).toContain('might defense actions');
 
     // Inabilities from Glaive and Tough
