@@ -1634,10 +1634,10 @@
   },
   {
     "id": "tough",
-    "name": "TOUGH",
+    "name": "Tough",
     "source": "discovery",
     "description": "You’re strong and can take a lot of physical punishment. You might have a large frame and a square jaw. Tough characters frequently have visible scars.",
-    "poolModifiers": {},
+    "poolModifiers": { "might": 1 },
     "trainedSkills": ["Might defense actions", "intimidation"],
     "inabilities": ["initiative", "charm and persuasion"],
     "specialAbilities": [
