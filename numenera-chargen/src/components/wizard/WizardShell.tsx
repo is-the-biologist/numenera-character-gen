@@ -82,7 +82,15 @@ export default function WizardShell() {
     <div className="min-h-screen bg-slate-900 text-slate-100 flex flex-col">
       {/* Header */}
       <header className="bg-slate-800 border-b border-slate-700 px-6 py-4">
-        <h1 className="text-2xl font-bold text-cyan-400 mb-1">Numenera Character Generator</h1>
+        <div className="flex justify-between items-center mb-1">
+          <h1 className="text-2xl font-bold text-cyan-400">Numenera Character Generator</h1>
+          <button
+            onClick={() => { if (confirm('Start over? All selections will be reset.')) { store.resetAll(); } }}
+            className="text-xs text-slate-500 hover:text-slate-300 px-3 py-1 border border-slate-700 rounded transition-colors"
+          >
+            Start Over
+          </button>
+        </div>
         <p className="text-lg text-slate-300">
           I am a{' '}
           <span className={descriptor ? 'text-amber-400 font-semibold' : 'text-slate-600'}>

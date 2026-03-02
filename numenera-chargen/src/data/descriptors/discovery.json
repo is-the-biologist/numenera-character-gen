@@ -1,7 +1,7 @@
 [
   {
     "id": "abrasive",
-    "name": "ABRASIVE",
+    "name": "Abrasive",
     "source": "discovery",
     "description": "You are tough to be around sometimes—your manner and your words are blunt, and even cruel. The fineries of polite society hold no value for you. Instead, you focus on practical things. Things that matter. What someone could accomplish with honeyed words in an hour, you can accomplish in a few moments with a crowbar. You appreciate straightforward action. You don’t like to waste your time and if some idiot gets in your way, you’ll not only point out their idiocy, you’ll happily push right by. You’re cynical, blunt, and sometimes rude. Who cares what people think?",
     "poolModifiers": {
@@ -24,7 +24,7 @@
   },
   {
     "id": "aggressive",
-    "name": "AGGRESSIVE",
+    "name": "Aggressive",
     "source": "discovery",
     "description": "Action. Violence. These are your first instincts. Problems are solved through force. Strength is what matters, right? Let the others sit idly by, either through cowardice or indecision, but you’ll get things done. Certainly no one would ever call you a coward, but you’re not foolhardy. You’ve got a preservation instinct. But you know that the best defense is a good offense, and a dead or incapacitated foe is no threat to anyone. You’re bold, you’re quick, and some might say you’re rash. A few might call you dangerous, but again, those are mostly cowards. Sometimes, even your allies and friends need a good shaking to show them what’s what, and who’s boss.",
     "poolModifiers": {
@@ -57,7 +57,7 @@
   },
   {
     "id": "altruistic",
-    "name": "ALTRUISTIC",
+    "name": "Altruistic",
     "source": "discovery",
     "description": "You try to do what’s right for its own sake. You’re very generous, and sincerely enjoy helping people. Some may attempt to take advantage of you for these traits, but most people find you likable and your actions laudable. You’ve learned that to help others, you need to be capable and skilled yourself. Wishing to help others is an excellent incentive to become as skilled and powerful as you can. Eventually, you’re going to develop a bit of a reputation as a “do-gooder.” That doesn’t bother you, as long as fools don’t try to take advantage of you. After all, altruistic doesn’t mean stupid.",
     "poolModifiers": {
@@ -85,7 +85,7 @@
   },
   {
     "id": "amusing",
-    "name": "AMUSING",
+    "name": "Amusing",
     "source": "discovery",
     "description": "You are funny, charming, and extremely likable. You make your friends laugh, and even defuse dangerous situations with your humor. There’s nothing that puts people at ease like a good joke. Maybe you’re good at pointing out the faults of others without making them feel bad. Maybe your humor is self-deprecating. Maybe it’s all physical, with you doing funny things with your face, balancing things on your head, or wearing funny clothes. Humor comes in many forms. Some people might tend to underestimate you, thinking you a fool because sometimes you pretend to be foolish. That’s their problem.",
     "poolModifiers": {
@@ -113,7 +113,7 @@
   },
   {
     "id": "charming",
-    "name": "CHARMING",
+    "name": "Charming",
     "source": "discovery",
     "description": "You’re a smooth talker and a charmer. Whether through seemingly supernatural means or\njust a way with words, you can convince others to do as you wish. Most likely, you’re physically attractive or at least highly charismatic, and others enjoy listening to your voice. You probably pay attention to your appearance, keeping yourself well groomed. You make friends easily. You play up the personality facet of your Intellect stat; intelligence is not your strong suit. You’re personable, not necessarily studious or strong-willed.",
     "poolModifiers": {
@@ -149,7 +149,7 @@
   },
   {
     "id": "clever",
-    "name": "CLEVER",
+    "name": "Clever",
     "source": "discovery",
     "description": "You’re quick-witted, thinking well on your feet. You understand people, so you can fool them but are rarely fooled. Because you easily see things for what they are, you get the lay of the land swiftly, size up threats and allies, and assess situations with accuracy. Perhaps you’re physically attractive, or maybe you use your wit to overcome any physical or mental imperfections.",
     "poolModifiers": {
@@ -181,7 +181,7 @@
   },
   {
     "id": "clumsy",
-    "name": "CLUMSY",
+    "name": "Clumsy",
     "source": "discovery",
     "description": "Graceless and awkward, you were told that you’d grow out of it, but you never did. You often drop things, trip over your own feet, or knock things (or people) over. Some people get frustrated by this quality, but most find it funny and even a little charming.",
     "poolModifiers": {
@@ -208,7 +208,7 @@
   },
   {
     "id": "craven",
-    "name": "CRAVEN",
+    "name": "Craven",
     "source": "discovery",
     "description": "Courage fails you at every turn. You lack the willpower and resolve to stand fast in the face of danger. Fear gnaws at your heart, chewing away at your mind, driving you to distraction until you cannot bear it. Most times, you back down from confrontations. You flee from threats and vacillate when faced with difficult decisions. Yet for all that fear dogs you and possibly shames you, your cowardly nature proves to be a useful ally from time to time. Listening to your fears has helped you escape danger and avoid taking unnecessary risks. Others may have suffered in your place, and you might be the first to admit this fact, but secretly you feel intense relief from having avoided an unthinkable and terrible fate.",
     "poolModifiers": {
@@ -238,7 +238,7 @@
   },
   {
     "id": "cruel",
-    "name": "CRUEL",
+    "name": "Cruel",
     "source": "discovery",
     "description": "Misfortune and suffering do not move you. When another endures hardship, you find it hard to care, and you may even enjoy the pain and difficulty the person experiences. Your cruel streak may derive from bitterness brought about by your own struggles and disappointments. You might be a hard pragmatist, doing what you feel you must even if others are worse for it. Or you could be a sadist, delighting in the pain you inflict.\nBeing cruel does not necessarily make you a villain. Your cruelty may be reserved for those who cross you or other people useful to you. You might have become cruel as the result of an intensely awful experience. Abuse and torture, for example, can strip away compassion for other living beings. As well, you need not be cruel in every situation. In fact, others might see you as personable, friendly, and even helpful. But when angered or frustrated, your true nature reveals itself, and those who have earned your scorn are likely to suffer for it.",
     "poolModifiers": {
@@ -272,7 +272,7 @@
   },
   {
     "id": "deliberate",
-    "name": "DELIBERATE",
+    "name": "Deliberate",
     "source": "discovery",
     "description": "You don’t let events stir your emotions and tempt you into actions you might later regret. Others might see you as passive, possibly thinking you don’t act in the moment because you don’t care or are afraid. It’s the opposite. You’ve found you can accomplish more and stay happier when you don’t immediately act while you’re angry or afraid, tired or anxious. You prefer to act when it’s fully you making decisions, not a version of you blurred by emotion.",
     "poolModifiers": {
@@ -298,7 +298,7 @@
   },
   {
     "id": "devout",
-    "name": "DEVOUT",
+    "name": "Devout",
     "source": "discovery",
     "description": "You are a believer in a religious faith or an important, all-encompassing philosophy. These beliefs help to shape the decisions you make and how you see the world. Your outlook gives meaning to your life and the things that happen to you. On the downside, it can blind you to thoughts and ideas that run counter to the beliefs of your faith.",
     "poolModifiers": {
@@ -326,7 +326,7 @@
   },
   {
     "id": "dishonorable",
-    "name": "DISHONORABLE",
+    "name": "Dishonorable",
     "source": "discovery",
     "description": "There is no honor among thieves—or betrayers, backstabbers, liars, or cheats. You are all of these things, and either you don’t lose any sleep over it, or you deny the truth to others or to yourself. Regardless, you are willing to do whatever it takes to get your own way. Honor, ethics, and principles are merely words. In your estimation, they have no place in the real world.",
     "poolModifiers": {
@@ -360,7 +360,7 @@
   },
   {
     "id": "doomed",
-    "name": "DOOMED",
+    "name": "Doomed",
     "source": "discovery",
     "description": "You are quite certain that your fate is leading you, inextricably, toward a terrible end. This fate might be yours alone, or you might be dragging along the others closest to you.",
     "poolModifiers": {
@@ -388,7 +388,7 @@
   },
   {
     "id": "driven",
-    "name": "DRIVEN",
+    "name": "Driven",
     "source": "discovery",
     "description": "You have set your sights on a goal, and everything you do is in pursuit of that objective. The thing you seek defines you—it shapes your decisions, colors your outlook, and impels you to take action even when your body and mind scream for you to give up and set the task aside, at least for a while. No matter the hardships you face along the way, you believe in your purpose and will let nothing stop you from achieving it.\nWhen you choose this descriptor, choose a goal that is possible to attain. You might set a goal of finding a lost parent, making a sacrifice at a rumored temple, learning how to perform a particular task, or gaining the funds to pay for a healer to treat a loved one. Once you achieve this goal, you may choose a new one. You probably talk about your mission all the time, bringing it up even when it’s only tangentially connected to the conversation. You usually consider other pursuits in the context of whether or not it advances your own agenda.",
     "poolModifiers": {
@@ -414,7 +414,7 @@
   },
   {
     "id": "efficient",
-    "name": "EFFICIENT",
+    "name": "Efficient",
     "source": "discovery",
     "description": "Forced to make do with meager means, you’ve become a marvel of efficiency. You never equivocate, and rarely lie because it’s simply not economical to do so. If you know how to write, it’s probably using a shorthand alphabet that doesn’t linger on unnecessary lines and strokes. Efficiency isn’t necessarily your quest, but being efficient helps you accomplish your goals much sooner.",
     "poolModifiers": {
@@ -440,7 +440,7 @@
   },
   {
     "id": "empathic",
-    "name": "EMPATHIC",
+    "name": "Empathic",
     "source": "discovery",
     "description": "Other people are open books to you. You may have a knack for reading a person’s tells, those subtle movements that convey an individual’s mood and disposition. Or you may receive information in a more direct way, feeling a person’s emotions as if they were tangible things, sensations that lightly brush against your mind. Your gift for empathy helps you navigate social situations and control them to avoid misunderstandings and prevent useless conflicts from erupting. The constant bombardment of emotions from those around you likely takes a toll. You might move with the prevailing mood, swinging from giddy happiness to bitter sorrow with little warning. Or you might close yourself off and remain inscrutable to others out of a sense of self-preservation or an unconscious fear that everyone else might learn how you truly feel.",
     "poolModifiers": {
@@ -466,7 +466,7 @@
   },
   {
     "id": "exiled",
-    "name": "EXILED",
+    "name": "Exiled",
     "source": "discovery",
     "description": "You have walked a long and lonely road, leaving your home and your life behind. You might have committed a heinous crime, something so awful that your people forced you out, and if you dare return, you face death. You might have been accused of a crime you didn’t commit and now must pay the price for someone else’s wicked deed. Your exile might be the result of a social gaffe—perhaps you shamed your family or a friend, or you embarrassed yourself in front of your peers, an authority, or someone you respect. Whatever the reason, you have left your old life behind and now strive to make a new one. You probably have a memento from your past—an old picture, a locket with a few strands of hair inside, or a lighter given to you by someone important. You keep the object close at hand and pull it out to help you remember better times.",
     "poolModifiers": {
@@ -496,7 +496,7 @@
   },
   {
     "id": "extraterrestrial",
-    "name": "EXTRATERRESTRIAL",
+    "name": "Extraterrestrial",
     "source": "discovery",
     "description": "You’re not from around here. You’re from another world completely. The residents of the Ninth World are familiar with the weird, but you stand out as being something unique—or at least very rare—on the planet, which sometimes gives natives pause. What you look like, the reason you left your own world, and how you ended up on Earth are questions for you and your GM to work out. But whether you crashed, were exiled, are doing research, or got lost, the Ninth World is where you find yourself now.",
     "poolModifiers": {
@@ -522,7 +522,7 @@
   },
   {
     "id": "fabulous",
-    "name": "FABULOUS",
+    "name": "Fabulous",
     "source": "discovery",
     "description": "Fabulous is more than an attribute; it’s an attitude. Being who you are isn’t something that just happens. It is something you plan for, cultivate, and practice. A grin might turn heads, but a radiant smile backed up with wit and a shockingly well-put-together clothing ensemble could turn heads of state. Sometimes your fashion and antics risk being ridiculed. But that’s all right. Taking risks is part of what it means to be fabulous.",
     "poolModifiers": {
@@ -555,7 +555,7 @@
   },
   {
     "id": "foolish",
-    "name": "FOOLISH",
+    "name": "Foolish",
     "source": "discovery",
     "description": "Not everyone can be brilliant. Oh, you don’t think of yourself as stupid, and you’re not. It’s just that others might have a bit more…wisdom. Insight. You prefer to barrel along headfirst through life and let other people worry about things. Worrying’s never helped you, so why bother? You take things at face value and don’t fret about what tomorrow might bring. People call you “idiot” or “numbskull,” but it doesn’t faze you much.",
     "poolModifiers": {
@@ -590,13 +590,17 @@
   },
   {
     "id": "graceful",
-    "name": "GRACEFUL",
+    "name": "Graceful",
     "source": "discovery",
     "description": "You have a perfect sense of balance, moving and speaking with grace and beauty. You’re quick, lithe, flexible, and dexterous. Your body is perfectly suited to dance, and you use that advantage in combat to dodge blows. You might wear garments that enhance your agile movement and sense of style.",
     "poolModifiers": {
       "speed": 2
     },
-    "trainedSkills": ["balancing", "careful movement", "Speed defense"],
+    "trainedSkills": [
+      "balancing",
+      "careful movement",
+      "Speed defense"
+    ],
     "inabilities": [],
     "specialAbilities": [
       {
@@ -614,7 +618,7 @@
   },
   {
     "id": "gregarious",
-    "name": "GREGARIOUS",
+    "name": "Gregarious",
     "source": "discovery",
     "description": "You love people, and they generally love you. You know how to “work the crowd” and interact with large groups. You’re likely to be a leader, a diplomat, or a very successful businessperson. You just really like to be around people—you’re generally interested in what they have to say, and what they think about things. You ask a lot of questions, and are generous and kind to those that deserve it (and in fact, you’re often willing to give latitude to people that others would give up on).",
     "poolModifiers": {
@@ -646,7 +650,7 @@
   },
   {
     "id": "guarded",
-    "name": "GUARDED",
+    "name": "Guarded",
     "source": "discovery",
     "description": "You conceal your true nature behind a mask and are loath to let anyone see who you really are. Protecting yourself, physically and emotionally, is what you care about most, and you prefer to keep everyone else at a safe distance. You may be suspicious of everyone you meet, expecting the worst from people so you won’t be surprised when they prove you right. Or you might just be a bit reserved, careful about letting people through your gruff exterior to the person you really are.\nNo one can be as reserved as you are and make many friends. Most likely, you have an abrasive personality and tend to be pessimistic in your outlook. You probably nurse an old hurt and find that the only way you can cope is to keep it and your personality locked down.",
     "poolModifiers": {
@@ -675,7 +679,7 @@
   },
   {
     "id": "hardy",
-    "name": "HARDY",
+    "name": "Hardy",
     "source": "discovery",
     "description": "Your body was built to take abuse. Whether you’re pounding down stiff drinks while holding up a bar in your favorite watering hole or trading blows with a thug in a back alley, you keep going, shrugging off hurts and injuries that might slow or incapacitate a lesser person. Neither hunger nor thirst, cut flesh nor broken bone can stop you. You just press on through the pain and continue. As fit and healthy as you are, the signs of wear show in the myriad scars crisscrossing your body, your thrice-broken nose, your cauliflower ears, and any number of other disfigurements you wear with pride.",
     "poolModifiers": {
@@ -715,7 +719,7 @@
   },
   {
     "id": "hideous",
-    "name": "HIDEOUS",
+    "name": "Hideous",
     "source": "discovery",
     "description": "You are physically repugnant by almost any human standard. You might have had a serious accident, a harmful mutation, or just poor genetic luck, but you are incontrovertibly ugly. You’ve more than made up for your appearance in other ways, however. Because you had to hide your appearance, you excel at sneaking about unnoticed or disguising yourself. But perhaps most important, being ostracized while others socialized, you took the time growing up to develop yourself as you saw fit—you grew strong or quick, or you honed your mind.",
     "poolModifiers": {},
@@ -742,7 +746,7 @@
   },
   {
     "id": "honorable",
-    "name": "HONORABLE",
+    "name": "Honorable",
     "source": "discovery",
     "description": "You are trustworthy, fair, and forthright. You try to do what is right, to help others, and to treat them well. Lying and cheating are no way to get ahead—these things are for the weak, the lazy, or the despicable. You probably spend a lot of time thinking about your personal honor, how best to maintain it, and how to defend it if challenged. In combat, you are straightforward and offer quarter to any foe. You were likely instilled with this sense of honor by a parent or a mentor. Sometimes the distinction between what is and isn’t honorable varies with different schools of thought, but in broad strokes, honorable people can agree on most aspects of what honor means.",
     "poolModifiers": {
@@ -769,7 +773,7 @@
   },
   {
     "id": "impulsive",
-    "name": "IMPULSIVE",
+    "name": "Impulsive",
     "source": "discovery",
     "description": "You have a hard time tamping down your enthusiasm. Why wait when you can just do it (whatever it is) and get it done? You deal with problems when they arise rather than plan ahead. Putting out the small fires now prevents them from becoming one big fire later. You are the first to take risks, to jump in and lend a hand, to step into dark passages, and to find danger. Your impulsiveness likely gets you into trouble. While others might take time to study the numenera they discover, you use such items without hesitation. After all, the best way to learn what something can do is to use it. When a cautious explorer might look around and check for danger nearby, you have to physically stop yourself from bulling on ahead. Why fuss around when the exciting thing is just ahead?",
     "poolModifiers": {
@@ -795,7 +799,7 @@
   },
   {
     "id": "inquisitive",
-    "name": "INQUISITIVE",
+    "name": "Inquisitive",
     "source": "discovery",
     "description": "The world is vast and mysterious, with wonders and secrets to keep you amazed for several lifetimes. You feel the tugging on your heart, the call to explore the wreckage of past civilizations, to discover new peoples, new places, and whatever bizarre wonders you might find along the way. However, as strongly as you feel the pull to roam the world, you know there is danger aplenty, and you take precautions to ensure that you are prepared for any eventuality. Research, preparation, and readiness will help you live long enough to see everything you want to see and do everything you want to do.\nYou probably have a dozen books and travelogues about the world on you at any time. When not hitting the road and looking around, you spend your time with your nose in a book, learning everything you can about the place you’re going so you know what to expect when you get there.",
     "poolModifiers": {
@@ -824,7 +828,7 @@
   },
   {
     "id": "insolent",
-    "name": "INSOLENT",
+    "name": "Insolent",
     "source": "discovery",
     "description": "Why should you have to put up with others’ shortcomings? In your opinion, most people are idiots, your friends excluded. If you're being completely honest, compared to your versatility and obvious superiority, most people are misguided, thick-headed, and a waste of space. If someone wants your attention, you usually make them prove themselves first. That doesn’t win you many new friends. But it’s funny to see them fume.",
     "poolModifiers": {
@@ -860,7 +864,7 @@
   },
   {
     "id": "intelligent",
-    "name": "INTELLIGENT",
+    "name": "Intelligent",
     "source": "discovery",
     "description": "You’re quite smart. Your memory is sharp, and you easily grasp concepts that others might struggle with. This aptitude doesn’t necessarily mean that you’ve had years of formal education, but you have learned a great deal in your life, primarily because you pick things up quickly and retain so much.",
     "poolModifiers": {
@@ -884,13 +888,15 @@
   },
   {
     "id": "learned",
-    "name": "LEARNED",
+    "name": "Learned",
     "source": "discovery",
     "description": "You have studied, either on your own or with an instructor. You know many things and are an expert on a few topics, such as history, biology, geography, the numenera, nature, or any other area of study. Learned characters typically carry a few books around with them and spend their spare time reading.",
     "poolModifiers": {
       "intellect": 2
     },
-    "trainedSkills": ["three areas of knowledge of your choice"],
+    "trainedSkills": [
+      "three areas of knowledge of your choice"
+    ],
     "inabilities": [
       "charm, persuasion, or etiquette"
     ],
@@ -912,7 +918,7 @@
   },
   {
     "id": "intimidating",
-    "name": "INTIMIDATING",
+    "name": "Intimidating",
     "source": "discovery",
     "description": "You are imposing, either in manner or stature or both. People’s eyes often grow wide as you enter a room. There’s just a touch of danger around you, and most people can sense that. It’s off-putting and unnerving, but you can certainly use it to your advantage. Perhaps your voice is gravelly and low. Perhaps it’s the hardened stare you give people. Or the scars that cover your face. Or maybe you’re just a looming presence with a big weapon. Whatever it is, you scare people.",
     "poolModifiers": {},
@@ -944,7 +950,7 @@
   },
   {
     "id": "lonely",
-    "name": "LONELY",
+    "name": "Lonely",
     "source": "discovery",
     "description": "There are many possible reasons why you’re lonely. Maybe you’re on the run from justice (or injustice), and it’s not safe to show your face. Maybe your friends are missing, or dead. Or maybe you’re just really bad with people, and whenever you try to make friends, you inadvertently rebuff them. But for good or for ill, you’re getting used to being alone.",
     "poolModifiers": {
@@ -971,7 +977,7 @@
   },
   {
     "id": "mad",
-    "name": "MAD",
+    "name": "Mad",
     "source": "discovery",
     "description": "You have delved too deeply into subjects humans of the Ninth World were not meant to know. You are knowledgeable in things beyond the scope of most, but this knowledge has come at a terrible price. You are likely in questionable physical shape and occasionally shake with nervous tics. You sometimes mutter to yourself without realizing it.",
     "poolModifiers": {
@@ -1007,7 +1013,7 @@
   },
   {
     "id": "manipulative",
-    "name": "MANIPULATIVE",
+    "name": "Manipulative",
     "source": "discovery",
     "description": "People are easy. If you spend enough time with someone, you soon learn what is most important to them. Once you know that, you can use that knowledge to your own advantage, and get what you want from them. It’s not that you’re interested in hurting people for the sake of seeing them suffer. Not at all. You just want what you want, and manipulating others is by far the easiest way to that end.",
     "poolModifiers": {
@@ -1035,7 +1041,7 @@
   },
   {
     "id": "marine",
-    "name": "MARINE",
+    "name": "Marine",
     "source": "discovery",
     "description": "You are literally an aquatic creature. Either by mutation, experimentation, or heritage, you have some qualities of a marine creature. You very likely live either in the water or near it. While you’re not helpless out of water, you’re much better off when you’re swimming or otherwise underwater. Your appearance is likely quite striking—scales, fins, or gills might be a part of your natural physique.",
     "poolModifiers": {},
@@ -1070,7 +1076,7 @@
   },
   {
     "id": "meek",
-    "name": "MEEK",
+    "name": "Meek",
     "source": "discovery",
     "description": "You are quiet, unassuming, and not entirely confident. You might not see yourself as cowardly—just careful. You’re not great at facing challenges, and easily back down when threatened. On the other hand, you’re quick, and good at hiding and keeping abreast of what’s going on around you. Because you haven’t ventured forth into dangerous situations often, you spent that time instead focused on a variety of areas of study. You probably maintain a relatively nondescript appearance and generally don’t attempt to call attention to yourself.",
     "poolModifiers": {
@@ -1105,7 +1111,7 @@
   },
   {
     "id": "mercurial",
-    "name": "MERCURIAL",
+    "name": "Mercurial",
     "source": "discovery",
     "description": "You’re not moody—you’re adaptable. People who never change their mind are people who never learn, or who never want to. If new information comes your way (or you reimagine how you’ve been thinking about a topic), you don’t let how you used to regard something sway your newest opinion. Life is too short to do the same thing the same way for all your remaining days. The same is true for your emotions—you enjoy experiencing the full range.",
     "poolModifiers": {
@@ -1131,7 +1137,7 @@
   },
   {
     "id": "mysticalmechanical",
-    "name": "MYSTICAL/MECHANICAL",
+    "name": "Mystical/mechanical",
     "source": "discovery",
     "description": "You have a special talent that can be viewed in one of two ways. You might think of yourself as “mystical,” and thus attuned with the mysterious and the paranormal, or you might think of yourself as “mechanical,” and thus adept with devices and machines. In either case, your true talents lie with the numenera. You likely have experience with ancient lore, and you can sense and wield the numenera—though whether that means “magic” or “technology” is up to you (and probably up to those around you as well).\nMystical characters often wear jewelry, such as a ring or an amulet, or have tattoos or other marks that show their interests. Mechanical characters tend to carry a lot of tools and treat them almost like talismans.",
     "poolModifiers": {
@@ -1168,7 +1174,7 @@
   },
   {
     "id": "naive",
-    "name": "NAIVE",
+    "name": "Naive",
     "source": "discovery",
     "description": "You’ve lived a sheltered life. Your childhood was safe and secure, so you didn’t get a chance to learn much about the world—and even less chance to experience it. Whether you were training for something, had your nose in a book, or just were sequestered in a secluded place, you haven’t done much, met many people, or seen many interesting things so far. That’s probably going to change soon, but as you go forward into a larger world, you do so without some of the understanding that others possess about how it all works.",
     "poolModifiers": {},
@@ -1196,7 +1202,7 @@
   },
   {
     "id": "noble",
-    "name": "NOBLE",
+    "name": "Noble",
     "source": "discovery",
     "description": "You are of noble birth. You are not of the common people. Your family has a title and the prestige and (probably) the wealth that goes along with it. The Ninth World is, generally speaking, a classist place, and in that structure you are in the top echelon. Often, laws don’t apply to you, you gain special treatment, and sometimes people do as you command. You probably dress in finery and walk with a noble bearing, but sometimes the nobility must conceal their station to keep themselves safe—from brigands, thieves, or aristocratic enemies and their servants.",
     "poolModifiers": {},
@@ -1231,7 +1237,7 @@
   },
   {
     "id": "obsessive",
-    "name": "OBSESSIVE",
+    "name": "Obsessive",
     "source": "discovery",
     "description": "Few things are as wonderful as getting lost in doing what you love to do. Time slips past, hour after hour, while you’re in the flow. Whether you are obsessed with studying a particular aspect of the numenera, insects, mutants, or killing bandits, your particular ability to sink into what most interests you, at least for the time being, is what allows you to succeed. Everything else seems less important, which allows you to focus.",
     "poolModifiers": {},
@@ -1261,7 +1267,7 @@
   },
   {
     "id": "passionate",
-    "name": "PASSIONATE",
+    "name": "Passionate",
     "source": "discovery",
     "description": "A fire burns in you. Whether that fire is for a person, a place, a people, a concept, or something else, you are driven by this fire. Passionate characters are sometimes champions for a cause, or defenders of a faith. Or they might just be driven individuals. You might just be seen as a “hot-head” by some—temperamental and dangerous. But even if that’s true, you keep your word and take your commitments seriously, and it’s hard to find fault with that. You won’t let any challenge stand in your way. You charge right in.",
     "poolModifiers": {},
@@ -1295,7 +1301,7 @@
   },
   {
     "id": "perceptive",
-    "name": "PERCEPTIVE",
+    "name": "Perceptive",
     "source": "discovery",
     "description": "You miss little. You pick out the small details in the world around you and are skilled at making deductions from the information you find. Your talents make you an exceptional sleuth, a formidable scientist, or a talented scout. As adept as you are at finding clues, you have no skill at picking up on social cues. You overlook an offense that your deductions give or how uncomfortable your scrutiny can make the people around you. You tend to dismiss others as being intellectual dwarfs compared to you, which avails you little when you need a favor.",
     "poolModifiers": {
@@ -1323,7 +1329,7 @@
   },
   {
     "id": "polyglot",
-    "name": "POLYGLOT",
+    "name": "Polyglot",
     "source": "discovery",
     "description": "Languages come easily to you. Picking up the basics of a new language is a task you can do in just a few days. In a few weeks, you’re using idiom like a native speaker. People like you. You always seem to know the right thing to say, and you genuinely listen to what they have to say—if for no other reason than to continue to understand language as a general concept. More than most, you are a traveler, eager to seek out new places, people, and of course, languages. Your physical appearance isn’t likely your main concern. You’re more cerebral than that.",
     "poolModifiers": {
@@ -1355,7 +1361,7 @@
   },
   {
     "id": "rebellious",
-    "name": "REBELLIOUS",
+    "name": "Rebellious",
     "source": "discovery",
     "description": "You don’t trust authority. That goes double for authority that has proven itself to be cruel, conniving, and working against the interests of those held in its sway. But you find examples of corrupt authority all around you, not just at the highest levels of governance. It seems like a truism that in any collection of people, some subset seeks power not for everyone else’s benefit, but merely for themselves. You’re the cure to their control.",
     "poolModifiers": {
@@ -1379,7 +1385,7 @@
   },
   {
     "id": "resilient",
-    "name": "RESILIENT",
+    "name": "Resilient",
     "source": "discovery",
     "description": "You can take a lot of punishment, both physically and mentally, and still come back for more. It takes a lot to put you down. Neither physical nor mental shocks or damage have a lasting effect. You’re tough to faze. Unflappable. Unstoppable.",
     "poolModifiers": {
@@ -1414,7 +1420,7 @@
   },
   {
     "id": "resourceful",
-    "name": "RESOURCEFUL",
+    "name": "Resourceful",
     "source": "discovery",
     "description": "When things look tight, you’re the one your friends expect to find the way out or figure out what to do next. You don’t find it a burden. Figuring out what’s next or finding a clue that points the way forward is the kind of challenge you enjoy. If nothing else, you come prepared to most situations carrying a variety of small tools that just might serve in a pinch.",
     "poolModifiers": {
@@ -1446,7 +1452,7 @@
   },
   {
     "id": "rugged",
-    "name": "RUGGED",
+    "name": "Rugged",
     "source": "discovery",
     "description": "You’re a nature lover accustomed to living rough, pitting your wits against the elements. Most likely, you’re a skilled hunter, gatherer, or naturalist. Years of living in the wild have left their mark with a worn countenance, wild hair, or scars. Your clothing is probably much less refined than the garments worn by city dwellers.",
     "poolModifiers": {},
@@ -1471,7 +1477,7 @@
   },
   {
     "id": "stealthy",
-    "name": "STEALTHY",
+    "name": "Stealthy",
     "source": "discovery",
     "description": "You’re sneaky, slippery, and fast. These talents help you hide, move quietly, and pull off tricks that require sleight of hand. Most likely, you’re wiry and small. However, you’re not much of a sprinter—you’re more dexterous than fleet of foot.",
     "poolModifiers": {
@@ -1497,7 +1503,7 @@
   },
   {
     "id": "strong",
-    "name": "STRONG",
+    "name": "Strong",
     "source": "discovery",
     "description": "You’re extremely strong and physically powerful, and you use these qualities well, whether through violence or feats of prowess. You likely have a brawny build and impressive muscles.",
     "poolModifiers": {
@@ -1523,7 +1529,7 @@
   },
   {
     "id": "strong-willed",
-    "name": "STRONG-WILLED",
+    "name": "Strong-willed",
     "source": "discovery",
     "description": "You’re tough-minded, willful, and independent. No one can talk you into anything or change your mind when you don’t want it changed. This quality doesn’t necessarily make you smart, but it does make you a bastion of willpower and resolve. You likely dress and act with unique style and flair, not caring what others think.",
     "poolModifiers": {
@@ -1548,7 +1554,7 @@
   },
   {
     "id": "subterranean",
-    "name": "SUBTERRANEAN",
+    "name": "Subterranean",
     "source": "discovery",
     "description": "You prefer the close dark of tunnels, caves, buried corridors, and ancient underground passages to the open air. You’ll put up with overland travel, but you really come into your own once you head into a ruin or buried vault. You never feel more alive than when you are squeezing through apertures that wake instant claustrophobia in others.",
     "poolModifiers": {
@@ -1578,7 +1584,7 @@
   },
   {
     "id": "swift",
-    "name": "SWIFT",
+    "name": "Swift",
     "source": "discovery",
     "description": "You move quickly, able to sprint in short bursts and work with your hands with dexterity. You’re great at crossing distances quickly but not always smoothly. You are likely slim and muscular.",
     "poolModifiers": {
@@ -1604,7 +1610,7 @@
   },
   {
     "id": "tongue-tied",
-    "name": "TONGUE-TIED",
+    "name": "Tongue-tied",
     "source": "discovery",
     "description": "You’ve never been much of a talker. When forced to interact with others, you never think of the right thing to say—words fail you entirely, or they come out all wrong. You often end up saying precisely the wrong thing and insult someone unintentionally. Most of the time, you just keep mum. This makes you a listener instead—a careful observer. It also means that you’re better at doing things than talking about them. You’re quick to take action.",
     "poolModifiers": {
@@ -1637,9 +1643,17 @@
     "name": "Tough",
     "source": "discovery",
     "description": "You’re strong and can take a lot of physical punishment. You might have a large frame and a square jaw. Tough characters frequently have visible scars.",
-    "poolModifiers": { "might": 1 },
-    "trainedSkills": ["Might defense actions", "intimidation"],
-    "inabilities": ["initiative", "charm and persuasion"],
+    "poolModifiers": {
+      "might": 1
+    },
+    "trainedSkills": [
+      "Might defense actions",
+      "intimidation"
+    ],
+    "inabilities": [
+      "initiative",
+      "charm and persuasion"
+    ],
     "specialAbilities": [
       {
         "name": "You gain the following benefits",
@@ -1662,7 +1676,7 @@
   },
   {
     "id": "ultraterrestrial",
-    "name": "ULTRATERRESTRIAL",
+    "name": "Ultraterrestrial",
     "source": "discovery",
     "description": "You’re from another dimension, one radically different than the one where you find yourself now. Three dimensions of space and one of time took you a while to adapt to, but you’ve almost figured out what it means to be a “solid, living creature” in a place where time moves only in one direction. In fact, you’ve taken a shape that conforms with those who call themselves “humans” on this plane. You see the benefits of causality, but you miss your own dimension, where cosmic rules and reality were more flexible.",
     "poolModifiers": {},
@@ -1692,7 +1706,7 @@
   },
   {
     "id": "vengeful",
-    "name": "VENGEFUL",
+    "name": "Vengeful",
     "source": "discovery",
     "description": "One moment changed everything for you. One dreadful encounter, one betrayal, or one horrific tragedy altered your course and made you who you are today. Looking back at that time, you often wonder how your life would have unfolded if not for the event that ruined everything. The life you imagine you should have had haunts you and feeds your appetite for revenge until vengeance is the only thing you have left.\nTo be vengeful, you must have someone or something you want revenge against and someone or something to avenge. Work with your GM to determine what happened that affected you so strongly. Maybe a group of bandits wiped out your family. A corrupt official stole your family’s savings or otherwise brought ruin to you and your loved ones. Perhaps a rival destroyed your romance by sullying your name. Death, finances, love: any of these can support your motivation.\nIn addition, consider to what extent your character will go to gain vengeance. Will you compromise your values to destroy the ones who wronged you? Will you sacrifice your companions to get what you want? Can you imagine a life after you get revenge, or will you throw yours away to punish the people who wronged you?",
     "poolModifiers": {},
@@ -1716,7 +1730,7 @@
   },
   {
     "id": "vigilant",
-    "name": "VIGILANT",
+    "name": "Vigilant",
     "source": "discovery",
     "description": "You keep watch for the safety and protection of others (and sometimes, just for yourself). Your attention pays off, allowing you to detect when others lie and when foes wait in ambush, and to concentrate your mind more fully on the tasks you deem to be important.",
     "poolModifiers": {
@@ -1745,7 +1759,7 @@
   },
   {
     "id": "wealthy",
-    "name": "WEALTHY",
+    "name": "Wealthy",
     "source": "discovery",
     "description": "You can’t remember a time when you wanted for anything. You have always had money and have largely lived a life of comfort and plenty. You might be stingy with your wealth, hiding your abundance lest others try to steal it from you. Or you might be magnanimous, spreading it around to any and all who need it. The source of your funds is up to you. Maybe you inherited your vast fortune from a relative. A sudden windfall could have made you flush with funds and given you a life you never dreamed of. You might be a successful merchant or entrepreneur, making your fortune through hard work and determination.",
     "poolModifiers": {},
@@ -1769,7 +1783,7 @@
   },
   {
     "id": "weird",
-    "name": "WEIRD",
+    "name": "Weird",
     "source": "discovery",
     "description": "You aren’t like anyone else, and that’s fine with you. People don’t seem to understand you—they even seem put off by you—but who cares? You understand the Ninth World better than they do because you’re weird, and so is the world you live in. The concept of “the weird” is well known to you. Strange devices, ancient locales, bizarre creatures, storms that can transform you, living energy fields, and things most people can’t even name populate the world, and you thrive on it. You have a special attachment to it all, and the more you discover about the weirdness in the world, the more you might discover about yourself. Weird characters might be mutants or born with strange qualities, but sometimes they started out “normal” and adopted the weird by choice.",
     "poolModifiers": {

@@ -1,7 +1,7 @@
 [
   {
     "id": "adaptable",
-    "name": "ADAPTABLE",
+    "name": "Adaptable",
     "source": "destiny",
     "description": "You flex and sway with changes both physical and mental. When something bad happens to you, you feel the pain and the loss, but soon, you’re back on your feet and in the action. When you have to learn a new skill, you don’t back away, but instead, you jump in and try your best. Being adaptable means that you’re often cooperative, because you know that, by working together, a group can overcome things that might be impossible for an individual. Some seek you out because of your adaptability, but others don’t see it as a positive trait and instead see you as someone who always changes their mind—someone without a foundation. You laugh at those accusations. That’s just the sort of thing someone would say if they had never changed their mind about anything in their life—a way for that person to feel good about their lack of growth.",
     "poolModifiers": {},
@@ -27,7 +27,7 @@
   },
   {
     "id": "articulate",
-    "name": "ARTICULATE",
+    "name": "Articulate",
     "source": "destiny",
     "description": "When you speak, people understand exactly what you’re saying. You’re fluent, coherent, and, some might even say, silver-tongued, though you’d beg to differ. You don’t manipulate people; you just explain things so clearly and with such imaginative examples that those who disagree with you often come around to your point of view. Your eloquence is something that many praise you for, though some hate you for it because, compared to you, they find themselves wanting.",
     "poolModifiers": {
@@ -51,7 +51,7 @@
   },
   {
     "id": "beneficent",
-    "name": "BENEFICENT",
+    "name": "Beneficent",
     "source": "destiny",
     "description": "Helping others is your calling. It’s why you’re here. Others delight in your outgoing and charitable nature, and you delight in their happiness. You’re at your best when you’re aiding people, either by explaining how they can best overcome a challenge or by demonstrating how to do so yourself.",
     "poolModifiers": {
@@ -79,7 +79,7 @@
   },
   {
     "id": "cheerful",
-    "name": "CHEERFUL",
+    "name": "Cheerful",
     "source": "destiny",
     "description": "Happy and optimistic, you rarely feel down. Usually, you wake up with anticipation for what the day will hold. Your good spirits aren’t necessarily something you try to share with others, because you know that what lies in another’s heart isn’t for you to change. But sometimes your mere presence and lighthearted nature is enough to mend sadness. Of course, sometimes bad things happen to you too, and your basic nature is suppressed for a time. But eventually, your light-heartedness always returns.",
     "poolModifiers": {
@@ -108,7 +108,7 @@
   },
   {
     "id": "civic",
-    "name": "CIVIC",
+    "name": "Civic",
     "source": "destiny",
     "description": "You put the good of the many over the needs of the few, at least in a sense. You implicitly understand that only through cooperation can groups of people remain happy and productive. Your experience has shown that cooperation generates greater benefits for everyone in the long term—including access to food, protection, and knowledge. As a result, you tend to become especially invested in whatever community you live in or, perhaps one day, found yourself.",
     "poolModifiers": {
@@ -134,7 +134,7 @@
   },
   {
     "id": "committed",
-    "name": "COMMITTED",
+    "name": "Committed",
     "source": "destiny",
     "description": "You are wholeheartedly dedicated and loyal to a cause, activity, or job, shrugging off any obstacles that get in your way. When you pick this descriptor, you can work with your GM to figure out what that cause is. For instance, maybe you’re committed to tracking down someone who wronged you long ago. Alternatively, you can wait for a cause to catch your attention in the campaign. Either way, being committed is a personality trait for you, and once you decide to do something, you throw yourself into it with a vengeance.",
     "poolModifiers": {
@@ -164,7 +164,7 @@
   },
   {
     "id": "confident",
-    "name": "CONFIDENT",
+    "name": "Confident",
     "source": "destiny",
     "description": "You’re self-assured, which helps in almost every situation—at least situations where violence is not involved. Fortunately, because you’re so self-confident and positive, you’re usually able to steer situations away from violent endings. It’s possible that your confidence makes you seem levelheaded and cool in a tough situation, or your confidence could make you eager to prove your skills when the going gets rough—it’s up to you. Either way, others eventually learn that you’re confident for a good reason.",
     "poolModifiers": {},
@@ -194,7 +194,7 @@
   },
   {
     "id": "cultured",
-    "name": "CULTURED",
+    "name": "Cultured",
     "source": "destiny",
     "description": "Your excellent education and privileged upbringing has lent you a refined taste. You’re able to discern degrees of difference where others see, hear, or taste the same thing. Your awareness extends to artistic endeavors and general knowledge of the area you reside in and areas far from you (to the extent this knowledge is possible). You’re an example, if you do say so yourself, of the benefits that civilization can bring to someone. Though that doesn’t mean you can’t appreciate other ways of living.",
     "poolModifiers": {},
@@ -224,7 +224,7 @@
   },
   {
     "id": "curious",
-    "name": "CURIOUS",
+    "name": "Curious",
     "source": "destiny",
     "description": "There once was a time when the prior worlds spoke to the stars, reshaped the creatures of the world, and mastered form and essence. Isn’t that incredible? Each day is a chance to rediscover a secret, a bit of knowledge, a story, or something you can’t even imagine yet. It’s dizzying, when you consider all there is to learn and discover. You’re drawn to explore the ruins of the prior worlds, places that are brand new and unique to the Ninth World, or civilizations that still exist among the stars high overhead.\nOf course, if you’re going to satisfy your curiosity, you need to be careful. Before plunging directly into the unknown, you learn as much as you can about a new area through inquiry or exploration. Otherwise, you might not live long enough to see everything you want to see and do everything you want to do.",
     "poolModifiers": {
@@ -250,7 +250,7 @@
   },
   {
     "id": "earnest",
-    "name": "EARNEST",
+    "name": "Earnest",
     "source": "destiny",
     "description": "You always speak from the heart, rarely remembering that dissembling can be useful to smooth over awkward interpersonal situations. You’re sincere and feel things deeply. You like to get to the meat of whatever problem prevents you from succeeding, whether it’s a person, a physical obstacle, or a puzzle of some kind.",
     "poolModifiers": {
@@ -280,7 +280,7 @@
   },
   {
     "id": "empirical",
-    "name": "EMPIRICAL",
+    "name": "Empirical",
     "source": "destiny",
     "description": "You trust only what you can see with your own eyes—and sometimes not even that. You’re most comfortable when you’ve had time to complete your research, find all the facts, and figure out the truth.",
     "poolModifiers": {
@@ -310,7 +310,7 @@
   },
   {
     "id": "exacting",
-    "name": "EXACTING",
+    "name": "Exacting",
     "source": "destiny",
     "description": "You expect a lot from others. From your point of view, you are drawing out their very best. Demanding the utmost of those around you can be challenging in and of itself. Many people would rather take things easier because putting in extra effort is hard. But for you, effort is what it’s all about. You expect the most from yourself, so why wouldn’t you expect greatness from those you work with? People sometimes call you demanding, but you take it as a compliment.",
     "poolModifiers": {
@@ -337,7 +337,7 @@
   },
   {
     "id": "forward-thinking",
-    "name": "FORWARD-THINKING",
+    "name": "Forward-thinking",
     "source": "destiny",
     "description": "You take time to think about all angles of a future project or mission, so you can prepare for any and all contingencies. You’re not necessarily bad at thinking on your feet, but you work better when you have time to prepare for a situation. Because you’re forwardthinking, people may come to you for advice. You’re not better at guessing equally weighted outcomes, but then again, you know that few events are completely random. Things usually happen for a reason, and you excel at identifying such things ahead of time.",
     "poolModifiers": {
@@ -366,7 +366,7 @@
   },
   {
     "id": "gregarious",
-    "name": "GREGARIOUS",
+    "name": "Gregarious",
     "source": "destiny",
     "description": "(This also appears on the Descriptors page).\nYou love people, and they generally love you. You know how to “work the crowd” and interact with large groups. You’re likely to be a leader, a diplomat, or a very successful businessperson. You just really like to be around people—you’re generally interested in what they have to say, and what they think about things. You ask a lot of questions, and are generous and kind to those that deserve it (and in fact, you’re often willing to give latitude to people that others would give up on).",
     "poolModifiers": {
@@ -398,7 +398,7 @@
   },
   {
     "id": "heroic",
-    "name": "HEROIC",
+    "name": "Heroic",
     "source": "destiny",
     "description": "You are courageous, daring, and altruistic in equal measures. You’re not afraid to face horrors that make others quaver, especially if it means helping someone who couldn’t succeed (or survive) without you. Some say you’re made of the stuff of legends and that your exploits will one day become the stories that inspire a new generation.",
     "poolModifiers": {
@@ -428,7 +428,7 @@
   },
   {
     "id": "imaginative",
-    "name": "IMAGINATIVE",
+    "name": "Imaginative",
     "source": "destiny",
     "description": "You have a flair for making things up. Whenever something else isn’t occupying your attention, you’re creating an ongoing narrative or mental picture within the confines of your own mind. Sometimes, what you imagine becomes a useful idea or something you write, paint, or draw. Mainly, however, you live inside your own head, content to imagine all the things that the world around you sometimes fails to provide.",
     "poolModifiers": {
@@ -456,7 +456,7 @@
   },
   {
     "id": "industrious",
-    "name": "INDUSTRIOUS",
+    "name": "Industrious",
     "source": "destiny",
     "description": "You’re rarely satisfied with the status quo. You’re always thinking about how you’d like to advance your agenda or improve a situation (whether it’s your situation or someone else’s). Whatever your goal, you come at things with an idea of how you’ll accomplish everything that needs to be done to achieve it.",
     "poolModifiers": {
@@ -486,7 +486,7 @@
   },
   {
     "id": "intimidating",
-    "name": "INTIMIDATING",
+    "name": "Intimidating",
     "source": "destiny",
     "description": "You are imposing, either in manner, stature, or both. People’s eyes often grow wide as you enter a room. There’s a touch of danger around you, and most people can sense it. It’s off-putting and unnerving, but you can use it to your advantage. Perhaps your voice is gravelly and low. Perhaps it’s the hardened stare you give people or the scars that cover your face. Or maybe you’re just a looming presence with a big weapon. Whatever it is, you scare people.",
     "poolModifiers": {
@@ -517,7 +517,7 @@
   },
   {
     "id": "intuitive",
-    "name": "INTUITIVE",
+    "name": "Intuitive",
     "source": "destiny",
     "description": "You are often tickled by a sense of knowing what someone will say, how they will react, or how events might unfold. Maybe you have a mutant sense, maybe you can see just a few moments ahead through time, or maybe you’re just good at reading people and extrapolating a situation. Whatever the case, many who look into your eyes immediately glance away, as if afraid of what you might see in their expression.",
     "poolModifiers": {
@@ -547,7 +547,7 @@
   },
   {
     "id": "irrepressible",
-    "name": "IRREPRESSIBLE",
+    "name": "Irrepressible",
     "source": "destiny",
     "description": "Your enthusiasm knows few bounds. Even when things become truly dire, you aren’t deterred for long. If you’re hurt, you bounce back. If you’re insulted, you try to find common ground. In fact, that’s what people say about you—that you always make a comeback, even if it seems like you were beaten. You may change your plans based on the situation at hand, but you never really give up. You just move along toward something better and brighter.",
     "poolModifiers": {
@@ -577,7 +577,7 @@
   },
   {
     "id": "lawful",
-    "name": "LAWFUL",
+    "name": "Lawful",
     "source": "destiny",
     "description": "You live by a code. It might be your own set of rules or the rules of a religious, military, or other organization (perhaps one steeped in dogma) to which you belong or once belonged. The important thing is that you’re not governed by passions but by a steadfast confidence that to follow the law is to live in grace.",
     "poolModifiers": {
@@ -606,7 +606,7 @@
   },
   {
     "id": "loyal",
-    "name": "LOYAL",
+    "name": "Loyal",
     "source": "destiny",
     "description": "It’s in your nature to form strong attachments. And when you attach yourself to a person, a group, or an institution, you can’t do anything else but remain true to it, even in the face of attacks that put you at risk of life and limb. It gives you pleasure to give your aid to others. In the past, some may have accused you of being blindly loyal, which is ridiculous. If someone shows you truly incontrovertible evidence that the person or institution that you’ve given yourself to is not worthy, you’d like to think that you would weigh all the evidence and come to a decision based on the facts and the facts alone.",
     "poolModifiers": {
@@ -640,7 +640,7 @@
   },
   {
     "id": "meddlesome",
-    "name": "MEDDLESOME",
+    "name": "Meddlesome",
     "source": "destiny",
     "description": "Some say you’re nosy and ask too many questions. It’s true you constantly ask why, because the Ninth World is a big place full of both wonderful and terrifying things. If you don’t explore it, how will you ever know what’s going on? But even more than the mysteries of prior-world ruins, you relish uncovering the complexities and relationships that spring up inside communities. You especially like to figure out who is sweet on whom, who is lying to whom, and who is secretly on the wrong side of the law. You relish knowing the full story, and the only way to get that in difficult situations is to meddle.",
     "poolModifiers": {
@@ -664,7 +664,7 @@
   },
   {
     "id": "nurturing",
-    "name": "NURTURING",
+    "name": "Nurturing",
     "source": "destiny",
     "description": "You’re a born caregiver. When you see someone in need, you’re there with an encouraging word, assistance, and an honest desire to see them grow and improve. Some nurturers focus only on children, who of course have the most growing to do, but your focus is wider. You nurture anyone—not only people but institutions and communities, too.",
     "poolModifiers": {
@@ -694,7 +694,7 @@
   },
   {
     "id": "obsessive",
-    "name": "OBSESSIVE",
+    "name": "Obsessive",
     "source": "destiny",
     "description": "(This also appears on the Descriptors page).\nFew things are as wonderful as getting lost in what you love. Time slips past, hour after hour, while you’re in the flow. Whether you are obsessed with killing bandits, climbing, or studying something like secrets, abhumans, or mutants, your ability to sink into what most interests you is what allows you to succeed. Everything else seems less important, and this allows you to focus.",
     "poolModifiers": {},
@@ -724,7 +724,7 @@
   },
   {
     "id": "optimistic",
-    "name": "OPTIMISTIC",
+    "name": "Optimistic",
     "source": "destiny",
     "description": "You’re more than hopeful about what the future will bring, confident that it will be bright. Some optimistic people are bubbly and full of cheer. Others are quietly confident, their optimism revealed by the shine in their eyes and the way they’re quick to try again when they fail. Optimism sometimes means you expect the best in others, but it doesn’t mean you are blind to other’s failings. You only hope they can do better, just as you hope you yourself can.",
     "poolModifiers": {
@@ -757,7 +757,7 @@
   },
   {
     "id": "organized",
-    "name": "ORGANIZED",
+    "name": "Organized",
     "source": "destiny",
     "description": "You can’t stand a mess, whether physically or metaphorically, when it comes to plans and activities. Your explorer’s pack is neatly catalogued and perfectly packed, so you never have to dig around in it when you’re looking for something. The same is true of where you live, whether that’s in a home, a temporary lodging, or a camp site. A neatly arranged living space and a well-conceived plan both contribute to everyone’s peace of mind.",
     "poolModifiers": {
@@ -791,7 +791,7 @@
   },
   {
     "id": "passionate",
-    "name": "PASSIONATE",
+    "name": "Passionate",
     "source": "destiny",
     "description": "(This also appears on the Descriptors page).\nA fire burns in you. Whether that fire is for a person, a place, a people, a concept, or something else, you are driven by this fire. Passionate characters are sometimes champions for a cause, or defenders of a faith. Or they might just be driven individuals. You might just be seen as a “hot-head” by some—temperamental and dangerous. But even if that’s true, you keep your word and take your commitments seriously, and it’s hard to find fault with that. You won’t let any challenge stand in your way. You charge right in.",
     "poolModifiers": {},
@@ -825,7 +825,7 @@
   },
   {
     "id": "persevering",
-    "name": "PERSEVERING",
+    "name": "Persevering",
     "source": "destiny",
     "description": "You don’t give up even in the face of calamity, danger, or personal tragedy. Luckily, calamity and tragedy are rare enough that you’re not constantly testing your resolve. Instead, you show your perseverance most often in the face of boredom, long slogs, and situations where others are tempted to give up.",
     "poolModifiers": {
@@ -856,7 +856,7 @@
   },
   {
     "id": "prepared",
-    "name": "PREPARED",
+    "name": "Prepared",
     "source": "destiny",
     "description": "It’s usually not for you to make the plans. Instead, you prepare for whatever the plan is. You’re happiest when you’ve got enough time before an event to assemble the best possible selection of tools, provisions, or resources that will contribute toward that event’s overall success. Often, being prepared means having the tools necessary to fix, fashion, or modify another piece of equipment, be it mundane or exotic.",
     "poolModifiers": {
@@ -892,7 +892,7 @@
   },
   {
     "id": "protective",
-    "name": "PROTECTIVE",
+    "name": "Protective",
     "source": "destiny",
     "description": "You protect what’s close to you, which is usually your friends and allies, as well as an institution or a community. To some extent, people and communities can look out for themselves, but people join together for a reason. When others find themselves in harm’s way, you’re a perfect fit for helping to avoid such outcomes. It’s deeply satisfying to know that your attention contributes to the safety and well-being of everyone around you.",
     "poolModifiers": {
@@ -922,7 +922,7 @@
   },
   {
     "id": "relentless",
-    "name": "RELENTLESS",
+    "name": "Relentless",
     "source": "destiny",
     "description": "Life has thrown a lot of trouble your way. Disasters large and small have nearly stamped you out, but you’ve emerged from each alive and moving forward. You are stronger for it, but also scarred by what you had to do to survive. People less unyielding than you are now gone. That’s not going to happen to you because you never give up.",
     "poolModifiers": {
@@ -948,7 +948,7 @@
   },
   {
     "id": "risk-taking",
-    "name": "RISK-TAKING",
+    "name": "Risk-taking",
     "source": "destiny",
     "description": "It’s part of your nature to question what others think can’t or shouldn’t be done. You’re not insane, of course—you wouldn’t attempt to leap across a mile-wide chasm just because you were dared. There’s impossible and then there’s the just barely possible. You like to push the latter further than others, because it gives you a rush of satisfaction and pleasure when you succeed. The more you succeed, the more you find yourself looking for that next risky challenge to try yourself against.",
     "poolModifiers": {
@@ -978,7 +978,7 @@
   },
   {
     "id": "serene",
-    "name": "SERENE",
+    "name": "Serene",
     "source": "destiny",
     "description": "You are as still as untroubled water and as smooth as glass. Even when difficulties arise, you maintain your cool, your self-control, and your serene demeanor. Part of it comes to you naturally, but serenity also requires discipline and conscious control of your emotions. Rising to the bait offered by an ally, a foe, or a chance-met lout in the street is something you would do only if it advanced your own agenda-not because you lost control.",
     "poolModifiers": {
@@ -1004,7 +1004,7 @@
   },
   {
     "id": "vicious",
-    "name": "VICIOUS",
+    "name": "Vicious",
     "source": "destiny",
     "description": "You try to hide what’s inside, fold it into yourself when everything inside you screams to let go, make them pay, make them hurt, and make them bleed. Sometimes you succeed for your friends—smiling like they smile, laughing when they laugh, and sometimes even having other emotions of your own. But it’s always there, that feeling of frantic glee mixed with hate that sometimes leaps out of you when you confront a foe. Violence your friends can tolerate, but you sometimes worry they will also learn that you are cruel.",
     "poolModifiers": {},
