@@ -85,11 +85,12 @@ export function validateCharacter(input: ValidationInput): ValidationResult {
       }
     }
 
-    // 8. Skill choices count
+    // 8. Skill choices count (filter empty strings from freeform inputs)
     const requiredSkillCount = type.skillChoices.reduce((sum, c) => sum + c.pickCount, 0);
-    if (input.chosenSkills.length !== requiredSkillCount) {
+    const filledSkillCount = input.chosenSkills.filter(s => s.trim() !== '').length;
+    if (filledSkillCount !== requiredSkillCount) {
       errors.push(
-        `You must choose ${requiredSkillCount} skills (currently chosen: ${input.chosenSkills.length})`
+        `You must choose ${requiredSkillCount} skills (currently chosen: ${filledSkillCount})`
       );
     }
   }

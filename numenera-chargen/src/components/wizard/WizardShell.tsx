@@ -49,7 +49,8 @@ function canProceed(step: number, state: ReturnType<typeof useCharacterStore.get
       const type = state.typeId ? getTypeById(state.typeId) : undefined;
       if (!type) return false;
       const required = type.skillChoices.reduce((sum, c) => sum + c.pickCount, 0);
-      return state.chosenSkills.length === required;
+      const filled = state.chosenSkills.filter(s => s.trim() !== '').length;
+      return filled >= required;
     }
     case 6: return true;
     default: return false;

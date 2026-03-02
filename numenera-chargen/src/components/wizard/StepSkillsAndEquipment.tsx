@@ -13,10 +13,29 @@ export default function StepSkillsAndEquipment() {
 
   if (!type) return <p className="text-slate-400">Please select a Type first.</p>;
 
-  // Handle skill choice selection
-  const handleSkillSelect = (choiceIndex: number, value: string) => {
+  // Build a flat list of skill slots from all skill choices.
+  // Each choice with pickCount N produces N slots.
+  const skillSlots: { label: string; slotIndex: number; options: string[]; freeform: boolean; pickNum: number; pickTotal: number }[] = [];
+  let slotIndex = 0;
+  for (const choice of type.skillChoices) {
+    for (let p = 0; p < choice.pickCount; p++) {
+      skillSlots.push({
+        label: choice.label,
+        slotIndex,
+        options: choice.options,
+        freeform: choice.freeform,
+        pickNum: p + 1,
+        pickTotal: choice.pickCount,
+      });
+      slotIndex++;
+    }
+  }
+
+  const handleSkillSelect = (index: number, value: string) => {
     const newSkills = [...chosenSkills];
-    newSkills[choiceIndex] = value;
+    // Ensure array is long enough
+    while (newSkills.length <= index) newSkills.push('');
+    newSkills[index] = value;
     setChosenSkills(newSkills);
   };
 
@@ -42,27 +61,28 @@ export default function StepSkillsAndEquipment() {
       {/* Skill Choices */}
       <div className="mb-8">
         <h3 className="text-lg font-semibold text-slate-200 mb-3">Skill Choices</h3>
-        {type.skillChoices.map((choice, idx) => (
-          <div key={idx} className="mb-4">
+        {skillSlots.map((slot) => (
+          <div key={slot.slotIndex} className="mb-4">
             <label className="block text-sm font-medium text-slate-400 mb-1">
-              {choice.label} (Choose {choice.pickCount})
+              {slot.label}
+              {slot.pickTotal > 1 && ` (${slot.pickNum} of ${slot.pickTotal})`}
             </label>
-            {choice.freeform ? (
+            {slot.freeform ? (
               <input
                 type="text"
-                value={chosenSkills[idx] ?? ''}
-                onChange={e => handleSkillSelect(idx, e.target.value)}
+                value={chosenSkills[slot.slotIndex] ?? ''}
+                onChange={e => handleSkillSelect(slot.slotIndex, e.target.value)}
                 placeholder="Enter a skill name..."
                 className="w-full px-3 py-2 rounded bg-slate-800 border border-slate-700 text-slate-200 focus:border-cyan-500 focus:outline-none"
               />
             ) : (
               <select
-                value={chosenSkills[idx] ?? ''}
-                onChange={e => handleSkillSelect(idx, e.target.value)}
+                value={chosenSkills[slot.slotIndex] ?? ''}
+                onChange={e => handleSkillSelect(slot.slotIndex, e.target.value)}
                 className="w-full px-3 py-2 rounded bg-slate-800 border border-slate-700 text-slate-200 focus:border-cyan-500 focus:outline-none"
               >
                 <option value="">— Select —</option>
-                {choice.options.map(opt => (
+                {slot.options.map(opt => (
                   <option key={opt} value={opt}>{opt}</option>
                 ))}
               </select>
