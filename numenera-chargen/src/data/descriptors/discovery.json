@@ -1,0 +1,1806 @@
+[
+  {
+    "id": "abrasive",
+    "name": "ABRASIVE",
+    "source": "discovery",
+    "description": "You are tough to be around sometimes—your manner and your words are blunt, and even cruel. The fineries of polite society hold no value for you. Instead, you focus on practical things. Things that matter. What someone could accomplish with honeyed words in an hour, you can accomplish in a few moments with a crowbar. You appreciate straightforward action. You don’t like to waste your time and if some idiot gets in your way, you’ll not only point out their idiocy, you’ll happily push right by. You’re cynical, blunt, and sometimes rude. Who cares what people think?",
+    "poolModifiers": {
+      "might": 2
+    },
+    "trainedSkills": [
+      "two of the following skills of your choice: climbing, running, breaking things, jumping, swimming, lockpicking, stealth, or repair"
+    ],
+    "inabilities": [
+      "pleasant social interaction"
+    ],
+    "specialAbilities": [],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "These idiots don’t have a chance of success without you.",
+      "Your goal and that of another player character (PC) coincides, and maybe they can be useful.",
+      "You need money.",
+      "The other PCs actually seem halfway competent, unlike most people."
+    ]
+  },
+  {
+    "id": "aggressive",
+    "name": "AGGRESSIVE",
+    "source": "discovery",
+    "description": "Action. Violence. These are your first instincts. Problems are solved through force. Strength is what matters, right? Let the others sit idly by, either through cowardice or indecision, but you’ll get things done. Certainly no one would ever call you a coward, but you’re not foolhardy. You’ve got a preservation instinct. But you know that the best defense is a good offense, and a dead or incapacitated foe is no threat to anyone. You’re bold, you’re quick, and some might say you’re rash. A few might call you dangerous, but again, those are mostly cowards. Sometimes, even your allies and friends need a good shaking to show them what’s what, and who’s boss.",
+    "poolModifiers": {
+      "might": 2,
+      "speed": 2
+    },
+    "trainedSkills": [
+      "all initiative tasks"
+    ],
+    "inabilities": [
+      "pleasant social interaction"
+    ],
+    "specialAbilities": [
+      {
+        "name": "You have the following characteristics",
+        "description": "Hostile: +2 to your Might Pool."
+      },
+      {
+        "name": "First Strike",
+        "description": "The first time you strike a foe in combat, you inflict 1 additional point of damage."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "Things need to get done. You get things done.",
+      "You need something that the other PCs have or are going after.",
+      "There’s at least one other PC in the group that understands the need for the use of strength. The others will come around.",
+      "Knowing your capabilities, one of the other PCs asked you to join them."
+    ]
+  },
+  {
+    "id": "altruistic",
+    "name": "ALTRUISTIC",
+    "source": "discovery",
+    "description": "You try to do what’s right for its own sake. You’re very generous, and sincerely enjoy helping people. Some may attempt to take advantage of you for these traits, but most people find you likable and your actions laudable. You’ve learned that to help others, you need to be capable and skilled yourself. Wishing to help others is an excellent incentive to become as skilled and powerful as you can. Eventually, you’re going to develop a bit of a reputation as a “do-gooder.” That doesn’t bother you, as long as fools don’t try to take advantage of you. After all, altruistic doesn’t mean stupid.",
+    "poolModifiers": {
+      "might": 3
+    },
+    "trainedSkills": [],
+    "inabilities": [],
+    "specialAbilities": [
+      {
+        "name": "You have the following characteristics",
+        "description": "Capable: +3 to your Might Pool."
+      },
+      {
+        "name": "Expert Helper",
+        "description": "When you use your action to help someone else, they gain an asset even if you are not trained in that task. Enabler."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "You just wanted to help.",
+      "One of the other PCs asked for your assistance and you couldn’t refuse.",
+      "You found out about the PCs’ plans and knew they couldn’t succeed without your help.",
+      "In helping another (uninvolved) person, you found that your goal is the same as that of the other PCs."
+    ]
+  },
+  {
+    "id": "amusing",
+    "name": "AMUSING",
+    "source": "discovery",
+    "description": "You are funny, charming, and extremely likable. You make your friends laugh, and even defuse dangerous situations with your humor. There’s nothing that puts people at ease like a good joke. Maybe you’re good at pointing out the faults of others without making them feel bad. Maybe your humor is self-deprecating. Maybe it’s all physical, with you doing funny things with your face, balancing things on your head, or wearing funny clothes. Humor comes in many forms. Some people might tend to underestimate you, thinking you a fool because sometimes you pretend to be foolish. That’s their problem.",
+    "poolModifiers": {
+      "intellect": 2
+    },
+    "trainedSkills": [],
+    "inabilities": [],
+    "specialAbilities": [
+      {
+        "name": "You have the following characteristics",
+        "description": "Witty: +2 to your Intellect Pool."
+      },
+      {
+        "name": "Disarm With Humor",
+        "description": "You can use your action to convince a hostile, intelligent foe to take no action. They must be able to perceive and understand you."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "Seemed like a lark.",
+      "You just really like the other PCs. They’re fun to be around.",
+      "One of the other PCs specifically asked you to come along, but you don’t know why.",
+      "You overheard the other PCs discussing their plans and wanted in on the fun."
+    ]
+  },
+  {
+    "id": "charming",
+    "name": "CHARMING",
+    "source": "discovery",
+    "description": "You’re a smooth talker and a charmer. Whether through seemingly supernatural means or\njust a way with words, you can convince others to do as you wish. Most likely, you’re physically attractive or at least highly charismatic, and others enjoy listening to your voice. You probably pay attention to your appearance, keeping yourself well groomed. You make friends easily. You play up the personality facet of your Intellect stat; intelligence is not your strong suit. You’re personable, not necessarily studious or strong-willed.",
+    "poolModifiers": {
+      "intellect": 2
+    },
+    "trainedSkills": [
+      "positive or pleasant social interaction",
+      "influencing minds with esoteries or special abilities"
+    ],
+    "inabilities": [
+      "lore, knowledge, or understanding",
+      "resisting mental attacks"
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Personable: +2 to your Intellect Pool."
+      },
+      {
+        "name": "Contact",
+        "description": "You have an important contact who is in an influential position, such as a minor noble, the captain of the town guard, an Aeon Priest, or the head of a large gang of thieves. You and the GM should work out the details together."
+      }
+    ],
+    "additionalEquipment": [
+      "10 extra shins"
+    ],
+    "initialLinks": [
+      "You convinced one of the other PCs to tell you what they were doing.",
+      "You instigated the whole thing and convinced the others to join you.",
+      "One of the other PCs did a favor for you, and now you’re repaying that obligation by helping them with the task at hand.",
+      "There is reward involved, and you need the money."
+    ]
+  },
+  {
+    "id": "clever",
+    "name": "CLEVER",
+    "source": "discovery",
+    "description": "You’re quick-witted, thinking well on your feet. You understand people, so you can fool them but are rarely fooled. Because you easily see things for what they are, you get the lay of the land swiftly, size up threats and allies, and assess situations with accuracy. Perhaps you’re physically attractive, or maybe you use your wit to overcome any physical or mental imperfections.",
+    "poolModifiers": {
+      "intellect": 2
+    },
+    "trainedSkills": [
+      "all interactions involving lies or trickery",
+      "defense rolls to resist mental effects",
+      "identifying or assessing danger, lies, quality, importance, function, or power"
+    ],
+    "inabilities": [
+      "lore, knowledge, or understanding"
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Smart: +2 to your Intellect Pool."
+      }
+    ],
+    "additionalEquipment": [
+      "10 extra shins"
+    ],
+    "initialLinks": [
+      "You convinced one of the other PCs to tell you what they were doing.",
+      "From afar, you observed that something interesting was going on.",
+      "You talked your way into the situation because you thought it might earn some money.",
+      "You suspect that the other PCs won’t succeed without you."
+    ]
+  },
+  {
+    "id": "clumsy",
+    "name": "CLUMSY",
+    "source": "discovery",
+    "description": "Graceless and awkward, you were told that you’d grow out of it, but you never did. You often drop things, trip over your own feet, or knock things (or people) over. Some people get frustrated by this quality, but most find it funny and even a little charming.",
+    "poolModifiers": {
+      "speed": -2,
+      "might": 2
+    },
+    "trainedSkills": [],
+    "inabilities": [
+      "the difficulty of any task that involves balance, grace, or hand-to-eye coordination is increased by one step."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following characteristics",
+        "description": "Butterfingers: −2 to your Speed Pool."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "You were in the right place at the right time.",
+      "You had a piece of information that the other PCs needed to make their plans.",
+      "A sibling recommended you to the other PCs.",
+      "You stumbled into the PCs as they were discussing their mission, and they took a liking to you."
+    ]
+  },
+  {
+    "id": "craven",
+    "name": "CRAVEN",
+    "source": "discovery",
+    "description": "Courage fails you at every turn. You lack the willpower and resolve to stand fast in the face of danger. Fear gnaws at your heart, chewing away at your mind, driving you to distraction until you cannot bear it. Most times, you back down from confrontations. You flee from threats and vacillate when faced with difficult decisions. Yet for all that fear dogs you and possibly shames you, your cowardly nature proves to be a useful ally from time to time. Listening to your fears has helped you escape danger and avoid taking unnecessary risks. Others may have suffered in your place, and you might be the first to admit this fact, but secretly you feel intense relief from having avoided an unthinkable and terrible fate.",
+    "poolModifiers": {
+      "speed": 2
+    },
+    "trainedSkills": [],
+    "inabilities": [
+      "you do not willingly enter dangerous situations. the difficulty of any initiative actions (to determine who goes first in combat) is increased by one step.",
+      "you fall to pieces when you have to undertake a dangerous task alone. the difficulty of any potentially dangerous task you undertake alone (such as attacking a creature by yourself) is increased by one step."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following characteristics",
+        "description": "Furtive: +2 to your Speed Pool."
+      }
+    ],
+    "additionalEquipment": [
+      "You have a good luck charm or protective device to keep you out of harm’s way",
+      "You begin the game with one extra oddity"
+    ],
+    "initialLinks": [
+      "You believe that you’re being hunted, and you have hired one of the other PCs as your protector.",
+      "You seek to escape your shame and take up with capable individuals in the hopes of repairing your reputation.",
+      "One of the other PCs bullied you into coming along.",
+      "The group answered your cries for help when you were in trouble."
+    ]
+  },
+  {
+    "id": "cruel",
+    "name": "CRUEL",
+    "source": "discovery",
+    "description": "Misfortune and suffering do not move you. When another endures hardship, you find it hard to care, and you may even enjoy the pain and difficulty the person experiences. Your cruel streak may derive from bitterness brought about by your own struggles and disappointments. You might be a hard pragmatist, doing what you feel you must even if others are worse for it. Or you could be a sadist, delighting in the pain you inflict.\nBeing cruel does not necessarily make you a villain. Your cruelty may be reserved for those who cross you or other people useful to you. You might have become cruel as the result of an intensely awful experience. Abuse and torture, for example, can strip away compassion for other living beings. As well, you need not be cruel in every situation. In fact, others might see you as personable, friendly, and even helpful. But when angered or frustrated, your true nature reveals itself, and those who have earned your scorn are likely to suffer for it.",
+    "poolModifiers": {
+      "intellect": 2
+    },
+    "trainedSkills": [],
+    "inabilities": [
+      "you have a hard time connecting with others, understanding their motives, or sharing their feelings. the difficulty of any task made to ascertain another character’s motives, feelings, or disposition is increased by one step."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following characteristics",
+        "description": "Cunning: +2 to your Intellect Pool."
+      },
+      {
+        "name": "Cruelty",
+        "description": "When you use force, you can choose to maim or deliver painful injuries to draw out your foe’s suffering. Whenever you inflict damage, you can choose to inflict 2 fewer points of damage to decrease the difficulty of the next attack against that foe by one step."
+      }
+    ],
+    "additionalEquipment": [
+      "You have a valuable memento from the last person you destroyed",
+      "The memento is worth 10 shins",
+      "and you can sell it or trade it for an item of equal or lesser value"
+    ],
+    "initialLinks": [
+      "You suspect that you might gain a longterm advantage from helping the other PCs and may be able to use that advantage against your enemies.",
+      "By joining the PCs, you see an opportunity to grow your personal power and status at the expense of others.",
+      "You hope to make another PC’s life more difficult by joining the group.",
+      "Joining the PCs gives you an opportunity to escape justice for a crime you committed."
+    ]
+  },
+  {
+    "id": "deliberate",
+    "name": "DELIBERATE",
+    "source": "discovery",
+    "description": "You don’t let events stir your emotions and tempt you into actions you might later regret. Others might see you as passive, possibly thinking you don’t act in the moment because you don’t care or are afraid. It’s the opposite. You’ve found you can accomplish more and stay happier when you don’t immediately act while you’re angry or afraid, tired or anxious. You prefer to act when it’s fully you making decisions, not a version of you blurred by emotion.",
+    "poolModifiers": {
+      "intellect": 4
+    },
+    "trainedSkills": [],
+    "inabilities": [
+      "the difficulty of all speed defense tasks is one step higher for you."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following characteristics",
+        "description": "Intellectual: +4 to your Intellect Pool."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "Before you’d made up your mind one way or another, one of the PCs dragged you along on the mission.",
+      "You wanted to break out of your shell a little, and going with the PCs seemed like a great way to do so.",
+      "You wanted to prove another PC wrong when they accused you of being incapable of ever making a decision.",
+      "You deliberated, and realized going on the mission was your best course of action."
+    ]
+  },
+  {
+    "id": "devout",
+    "name": "DEVOUT",
+    "source": "discovery",
+    "description": "You are a believer in a religious faith or an important, all-encompassing philosophy. These beliefs help to shape the decisions you make and how you see the world. Your outlook gives meaning to your life and the things that happen to you. On the downside, it can blind you to thoughts and ideas that run counter to the beliefs of your faith.",
+    "poolModifiers": {
+      "intellect": 3
+    },
+    "trainedSkills": [],
+    "inabilities": [],
+    "specialAbilities": [
+      {
+        "name": "You have the following characteristics",
+        "description": "Inwardly Focused: +3 to your Intellect Pool."
+      },
+      {
+        "name": "Steadfast",
+        "description": "Your faith gives you the foundation to deal with stress. When something would alter the difficulty of your action to your detriment, you can negate one step of the modification. Once you use this ability, you cannot use it again until after your next ten-hour recovery roll."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "Your understanding of your religion’s dogma suggested that it would be a good idea.",
+      "You had a dream or vision that guided you to this point.",
+      "A religious leader asked you to get involved.",
+      "You believe getting involved might advance your religion in an indirect manner."
+    ]
+  },
+  {
+    "id": "dishonorable",
+    "name": "DISHONORABLE",
+    "source": "discovery",
+    "description": "There is no honor among thieves—or betrayers, backstabbers, liars, or cheats. You are all of these things, and either you don’t lose any sleep over it, or you deny the truth to others or to yourself. Regardless, you are willing to do whatever it takes to get your own way. Honor, ethics, and principles are merely words. In your estimation, they have no place in the real world.",
+    "poolModifiers": {
+      "speed": 4
+    },
+    "trainedSkills": [
+      "deception",
+      "stealth",
+      "intimidation"
+    ],
+    "inabilities": [
+      "people don’t like or trust you. the difficulty of pleasant social interactions is increased by one step."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following characteristics",
+        "description": "Sneaky: +4 to your Speed Pool."
+      },
+      {
+        "name": "Just Desserts",
+        "description": "When the GM gives another character an XP to award to someone for a GM intrusion, that character cannot give it to you."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "You are interested in what the PCs are doing, so you lied to them to get into their group.",
+      "While skulking about, you overheard the PCs’ plans and realized that you wanted in.",
+      "One of the other PCs invited you, having no idea of what you’re truly like.",
+      "You bullied your way in with intimidation and bluster."
+    ]
+  },
+  {
+    "id": "doomed",
+    "name": "DOOMED",
+    "source": "discovery",
+    "description": "You are quite certain that your fate is leading you, inextricably, toward a terrible end. This fate might be yours alone, or you might be dragging along the others closest to you.",
+    "poolModifiers": {
+      "speed": 2
+    },
+    "trainedSkills": [],
+    "inabilities": [],
+    "specialAbilities": [
+      {
+        "name": "You gain the following characteristics",
+        "description": "Jumpy: +2 to your Speed Pool."
+      },
+      {
+        "name": "Doom",
+        "description": "Every other time the GM uses GM intrusion on your character, you cannot refuse it and do not get an XP for it (you still get an XP to award to another player). This is because you are doomed. The universe is a cold, uncaring place, and your efforts are futile at best."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "You attempted to avoid it, but events seemed to conspire to draw you to where you are.",
+      "Why not? It doesn’t matter. You’re doomed no matter what you do.",
+      "One of the other PCs saved your life, and now you’re repaying that obligation by helping her with the task at hand.",
+      "You suspect that the only hope you have of avoiding your fate might lie on this path."
+    ]
+  },
+  {
+    "id": "driven",
+    "name": "DRIVEN",
+    "source": "discovery",
+    "description": "You have set your sights on a goal, and everything you do is in pursuit of that objective. The thing you seek defines you—it shapes your decisions, colors your outlook, and impels you to take action even when your body and mind scream for you to give up and set the task aside, at least for a while. No matter the hardships you face along the way, you believe in your purpose and will let nothing stop you from achieving it.\nWhen you choose this descriptor, choose a goal that is possible to attain. You might set a goal of finding a lost parent, making a sacrifice at a rumored temple, learning how to perform a particular task, or gaining the funds to pay for a healer to treat a loved one. Once you achieve this goal, you may choose a new one. You probably talk about your mission all the time, bringing it up even when it’s only tangentially connected to the conversation. You usually consider other pursuits in the context of whether or not it advances your own agenda.",
+    "poolModifiers": {
+      "might": 2
+    },
+    "trainedSkills": [],
+    "inabilities": [
+      "your commitment to your goals makes it hard to relate to others who don’t share your objectives or to notice things that don’t pertain to your present mission. the difficulty of all perception tasks is increased by one step."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following characteristics",
+        "description": "Determined: +2 to your Might Pool."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "You saw that the other PCs were pursuing the same goal as you, and you believed that joining forces would improve both of your chances at attaining your objectives.",
+      "One of the PCs gave you information or other assistance in your mission, and you now repay the favor.",
+      "Helping the PCs may put key resources you need to complete your mission into your hands.",
+      "One of the other PCs found you when you were wounded and nursed you back to health."
+    ]
+  },
+  {
+    "id": "efficient",
+    "name": "EFFICIENT",
+    "source": "discovery",
+    "description": "Forced to make do with meager means, you’ve become a marvel of efficiency. You never equivocate, and rarely lie because it’s simply not economical to do so. If you know how to write, it’s probably using a shorthand alphabet that doesn’t linger on unnecessary lines and strokes. Efficiency isn’t necessarily your quest, but being efficient helps you accomplish your goals much sooner.",
+    "poolModifiers": {
+      "speed": 2
+    },
+    "trainedSkills": [],
+    "inabilities": [
+      "deceiving others"
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following characteristics",
+        "description": "Deft: +2 to your Speed Pool."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "Seeing the PCs taking the slowest possible way to reach their ends, you showed them a more economical path.",
+      "You’ve solved all the problems where you were, and moved on to new challenges.",
+      "Efficient doesn’t mean boring—the PCs offered you a chance to explore.",
+      "You had a piece of information that the other PCs needed to make their plans."
+    ]
+  },
+  {
+    "id": "empathic",
+    "name": "EMPATHIC",
+    "source": "discovery",
+    "description": "Other people are open books to you. You may have a knack for reading a person’s tells, those subtle movements that convey an individual’s mood and disposition. Or you may receive information in a more direct way, feeling a person’s emotions as if they were tangible things, sensations that lightly brush against your mind. Your gift for empathy helps you navigate social situations and control them to avoid misunderstandings and prevent useless conflicts from erupting. The constant bombardment of emotions from those around you likely takes a toll. You might move with the prevailing mood, swinging from giddy happiness to bitter sorrow with little warning. Or you might close yourself off and remain inscrutable to others out of a sense of self-preservation or an unconscious fear that everyone else might learn how you truly feel.",
+    "poolModifiers": {
+      "intellect": 4
+    },
+    "trainedSkills": [],
+    "inabilities": [
+      "being so receptive to others’ thoughts and moods makes you vulnerable to anything that attacks your mind. the difficulty of intellect defense rolls is increased by one step."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following characteristics",
+        "description": "Open Mind: +4 to your Intellect Pool."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "You sensed the commitment to the task the other PCs have and felt moved to help them.",
+      "You established a close bond with another PC and can’t bear to be parted from him or her.",
+      "You sensed something strange in one of the PCs and decided to join the group to see if you can sense it again and uncover the truth.",
+      "You join the PCs to escape an unpleasant relationship or negative environment."
+    ]
+  },
+  {
+    "id": "exiled",
+    "name": "EXILED",
+    "source": "discovery",
+    "description": "You have walked a long and lonely road, leaving your home and your life behind. You might have committed a heinous crime, something so awful that your people forced you out, and if you dare return, you face death. You might have been accused of a crime you didn’t commit and now must pay the price for someone else’s wicked deed. Your exile might be the result of a social gaffe—perhaps you shamed your family or a friend, or you embarrassed yourself in front of your peers, an authority, or someone you respect. Whatever the reason, you have left your old life behind and now strive to make a new one. You probably have a memento from your past—an old picture, a locket with a few strands of hair inside, or a lighter given to you by someone important. You keep the object close at hand and pull it out to help you remember better times.",
+    "poolModifiers": {
+      "might": 2
+    },
+    "trainedSkills": [],
+    "inabilities": [
+      "social interactions"
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following characteristics",
+        "description": "Self-Reliant: +2 to your Might Pool."
+      },
+      {
+        "name": "Loner",
+        "description": "You gain no benefit when you get help with a task from another character who is trained or specialized in that task."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "The other PCs earned your trust by helping you when you were in need. You accompany them to repay their aid.",
+      "While exploring on your own, you discovered something strange. When you traveled to a settlement, the PCs were the only ones who believed you, and they have accompanied you to help you deal with the problem.",
+      "One of the other PCs reminds you of someone you used to know.",
+      "You have grown weary of your isolation. Joining the other PCs gives you a chance to belong."
+    ]
+  },
+  {
+    "id": "extraterrestrial",
+    "name": "EXTRATERRESTRIAL",
+    "source": "discovery",
+    "description": "You’re not from around here. You’re from another world completely. The residents of the Ninth World are familiar with the weird, but you stand out as being something unique—or at least very rare—on the planet, which sometimes gives natives pause. What you look like, the reason you left your own world, and how you ended up on Earth are questions for you and your GM to work out. But whether you crashed, were exiled, are doing research, or got lost, the Ninth World is where you find yourself now.",
+    "poolModifiers": {
+      "might": 2
+    },
+    "trainedSkills": [],
+    "inabilities": [
+      "people are sometimes put off by your visage or strange manner. the difficulty of pleasant social interactions with strangers is increased by one step."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following characteristics",
+        "description": "Alien Biology: +2 to your Might Pool."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "The PCs found you in a stasis pod of your crashed and destroyed space vessel.",
+      "You sought the PCs out because you thought one of them had a clue to you finding a way back to your homeworld.",
+      "You were abducted by strange forces from the Ninth World, but the PCs rescued you.",
+      "You want the PCs to show you what it means to be human."
+    ]
+  },
+  {
+    "id": "fabulous",
+    "name": "FABULOUS",
+    "source": "discovery",
+    "description": "Fabulous is more than an attribute; it’s an attitude. Being who you are isn’t something that just happens. It is something you plan for, cultivate, and practice. A grin might turn heads, but a radiant smile backed up with wit and a shockingly well-put-together clothing ensemble could turn heads of state. Sometimes your fashion and antics risk being ridiculed. But that’s all right. Taking risks is part of what it means to be fabulous.",
+    "poolModifiers": {
+      "speed": 2
+    },
+    "trainedSkills": [
+      "tasks related to pleasant social interaction",
+      "all speed defense tasks"
+    ],
+    "inabilities": [],
+    "specialAbilities": [
+      {
+        "name": "You gain the following characteristics",
+        "description": "Graceful: +2 to your Speed Pool."
+      },
+      {
+        "name": "Artistic",
+        "description": "You’re always coming up with some new artistic endeavor. You’re trained in any task related to creating art (such as drawing, painting, or putting together the perfect set of clothing to wear). You can usually sell a piece of art you spend at least ten hours working on for about 1d6 shins if you’re in a city."
+      }
+    ],
+    "additionalEquipment": [
+      "A set of fabulous clothing"
+    ],
+    "initialLinks": [
+      "The PCs needed someone confident and amazing along to swing the odds in their favor.",
+      "You sold one of your fabulous creations to one of the PCs.",
+      "You have made a few enemies and take up with the PCs for protection.",
+      "There is reward involved, and you need the money."
+    ]
+  },
+  {
+    "id": "foolish",
+    "name": "FOOLISH",
+    "source": "discovery",
+    "description": "Not everyone can be brilliant. Oh, you don’t think of yourself as stupid, and you’re not. It’s just that others might have a bit more…wisdom. Insight. You prefer to barrel along headfirst through life and let other people worry about things. Worrying’s never helped you, so why bother? You take things at face value and don’t fret about what tomorrow might bring. People call you “idiot” or “numbskull,” but it doesn’t faze you much.",
+    "poolModifiers": {
+      "intellect": -4
+    },
+    "trainedSkills": [],
+    "inabilities": [
+      "the difficulty of any intellect defense task is increased by one step.",
+      "the difficulty of any task that involves seeing through a deception, an illusion, or a trap is increased by one step."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following characteristics",
+        "description": "Unwise: −4 to your Intellect Pool."
+      },
+      {
+        "name": "Carefree",
+        "description": "You succeed more on luck than anything. Every time you roll for a task, roll twice and take the higher result."
+      },
+      {
+        "name": "Intellect Weakness",
+        "description": "Any time you spend points from your Intellect Pool, it costs you 1 more point than usual."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "Who knows? Seemed like a good idea at the time.",
+      "Someone asked you to join up with the other PCs. They told you not to ask too many questions, and that seemed fine to you.",
+      "Your parent (or a parental/mentor figure) got you involved to give you something to do and maybe “teach you some sense.”",
+      "The other PCs needed some muscle that wouldn’t overthink things."
+    ]
+  },
+  {
+    "id": "graceful",
+    "name": "GRACEFUL",
+    "source": "discovery",
+    "description": "You have a perfect sense of balance, moving and speaking with grace and beauty. You’re quick, lithe, flexible, and dexterous. Your body is perfectly suited to dance, and you use that advantage in combat to dodge blows. You might wear garments that enhance your agile movement and sense of style.",
+    "poolModifiers": {
+      "speed": 2
+    },
+    "trainedSkills": ["balancing", "careful movement", "Speed defense"],
+    "inabilities": [],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Agile: +2 to your Speed Pool."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "Against your better judgment, you joined the other PCs because you saw that they were in danger.",
+      "One of the other PCs convinced you that joining the group would be in your best interest.",
+      "You’re afraid of what might happen if the other PCs fail.",
+      "There is reward involved, and you need the money."
+    ]
+  },
+  {
+    "id": "gregarious",
+    "name": "GREGARIOUS",
+    "source": "discovery",
+    "description": "You love people, and they generally love you. You know how to “work the crowd” and interact with large groups. You’re likely to be a leader, a diplomat, or a very successful businessperson. You just really like to be around people—you’re generally interested in what they have to say, and what they think about things. You ask a lot of questions, and are generous and kind to those that deserve it (and in fact, you’re often willing to give latitude to people that others would give up on).",
+    "poolModifiers": {
+      "intellect": 2
+    },
+    "trainedSkills": [],
+    "inabilities": [],
+    "specialAbilities": [
+      {
+        "name": "You have the following characteristics",
+        "description": "Likable and Informed: +2 to your Intellect Pool."
+      },
+      {
+        "name": "People Person",
+        "description": "When you are within immediate range of at least two allies, the difficulty of one noncombat-related task is decreased by one step. You can do this only once, but its use is restored each time you make a recovery roll."
+      },
+      {
+        "name": "Getting the Word",
+        "description": "If you spend an hour amid a large group of people, you can glean the general rumors, gossip, or opinions held."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "You asked around, and learned the other PCs were doing something interesting.",
+      "You bought the other PCs a round of drinks and they welcomed you into their ranks.",
+      "You gathered the other PCs together for the task at hand.",
+      "It’s better than being alone."
+    ]
+  },
+  {
+    "id": "guarded",
+    "name": "GUARDED",
+    "source": "discovery",
+    "description": "You conceal your true nature behind a mask and are loath to let anyone see who you really are. Protecting yourself, physically and emotionally, is what you care about most, and you prefer to keep everyone else at a safe distance. You may be suspicious of everyone you meet, expecting the worst from people so you won’t be surprised when they prove you right. Or you might just be a bit reserved, careful about letting people through your gruff exterior to the person you really are.\nNo one can be as reserved as you are and make many friends. Most likely, you have an abrasive personality and tend to be pessimistic in your outlook. You probably nurse an old hurt and find that the only way you can cope is to keep it and your personality locked down.",
+    "poolModifiers": {
+      "intellect": 2
+    },
+    "trainedSkills": [
+      "all intellect defense tasks",
+      "all tasks involving discerning the truth, piercing disguises, and recognizing falsehoods and other deceptions"
+    ],
+    "inabilities": [
+      "deception or persuasion"
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following characteristics",
+        "description": "Suspicious: +2 to your Intellect Pool."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "One of the PCs managed to overcome your defenses and befriend you.",
+      "You want to see what the PCs are up to, so you accompany them to catch them in the act of some wrongdoing.",
+      "You have made a few enemies and take up with the PCs for protection.",
+      "The PCs are the only people who will put up with you."
+    ]
+  },
+  {
+    "id": "hardy",
+    "name": "HARDY",
+    "source": "discovery",
+    "description": "Your body was built to take abuse. Whether you’re pounding down stiff drinks while holding up a bar in your favorite watering hole or trading blows with a thug in a back alley, you keep going, shrugging off hurts and injuries that might slow or incapacitate a lesser person. Neither hunger nor thirst, cut flesh nor broken bone can stop you. You just press on through the pain and continue. As fit and healthy as you are, the signs of wear show in the myriad scars crisscrossing your body, your thrice-broken nose, your cauliflower ears, and any number of other disfigurements you wear with pride.",
+    "poolModifiers": {
+      "might": 4
+    },
+    "trainedSkills": [
+      "might defense actions"
+    ],
+    "inabilities": [
+      "initiative"
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following characteristics",
+        "description": "Mighty: +4 to your Might Pool."
+      },
+      {
+        "name": "Fast Healer",
+        "description": "You halve the time it takes to make a recovery roll (minimum one action)."
+      },
+      {
+        "name": "Unstoppable",
+        "description": "While you are impaired, you function as if you were hale. While you are debilitated, you function as if you were impaired. In other words, you don’t suffer the effects of being impaired until you become debilitated, and you never suffer the effects of being debilitated. You still die if all your stat Pools are 0."
+      },
+      {
+        "name": "Ponderous",
+        "description": "When you apply Effort when making a Speed roll, you must spend 1 extra point from your Speed Pool."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "The PCs recruited you after learning about your reputation as a survivor.",
+      "You join the PCs because you want or need the money.",
+      "The PCs offer you a challenge equal to your physical power.",
+      "You believe the only way the PCs will succeed is if you are along to protect them."
+    ]
+  },
+  {
+    "id": "hideous",
+    "name": "HIDEOUS",
+    "source": "discovery",
+    "description": "You are physically repugnant by almost any human standard. You might have had a serious accident, a harmful mutation, or just poor genetic luck, but you are incontrovertibly ugly. You’ve more than made up for your appearance in other ways, however. Because you had to hide your appearance, you excel at sneaking about unnoticed or disguising yourself. But perhaps most important, being ostracized while others socialized, you took the time growing up to develop yourself as you saw fit—you grew strong or quick, or you honed your mind.",
+    "poolModifiers": {},
+    "trainedSkills": [
+      "intimidation and any other fear-based interactions",
+      "disguise and stealth tasks"
+    ],
+    "inabilities": [
+      "the difficulty of all tasks relating to pleasant social interaction is increased by one step."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following characteristics",
+        "description": "Versatile: You get 4 additional points to divide among your stat Pools."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "One of the other PCs approached you while you were in disguise, recruiting you while believing you were someone else.",
+      "While skulking about, you overheard the other PCs’ plans and realized you wanted in.",
+      "One of the other PCs invited you, but you wonder if it was out of pity.",
+      "You bullied your way in with intimidation and bluster."
+    ]
+  },
+  {
+    "id": "honorable",
+    "name": "HONORABLE",
+    "source": "discovery",
+    "description": "You are trustworthy, fair, and forthright. You try to do what is right, to help others, and to treat them well. Lying and cheating are no way to get ahead—these things are for the weak, the lazy, or the despicable. You probably spend a lot of time thinking about your personal honor, how best to maintain it, and how to defend it if challenged. In combat, you are straightforward and offer quarter to any foe. You were likely instilled with this sense of honor by a parent or a mentor. Sometimes the distinction between what is and isn’t honorable varies with different schools of thought, but in broad strokes, honorable people can agree on most aspects of what honor means.",
+    "poolModifiers": {
+      "might": 2
+    },
+    "trainedSkills": [
+      "pleasant social interactions",
+      "discerning people’s true motives or seeing through lies"
+    ],
+    "inabilities": [],
+    "specialAbilities": [
+      {
+        "name": "You gain the following characteristics",
+        "description": "Stalwart: +2 to your Might Pool."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "The PCs’ goals appear to be honorable and commendable.",
+      "You see that what the other PCs are about to do is dangerous, and you’d like to help protect them.",
+      "One of the other PCs invited you, hearing of your trustworthiness.",
+      "You asked politely if you could join the other PCs in their mission."
+    ]
+  },
+  {
+    "id": "impulsive",
+    "name": "IMPULSIVE",
+    "source": "discovery",
+    "description": "You have a hard time tamping down your enthusiasm. Why wait when you can just do it (whatever it is) and get it done? You deal with problems when they arise rather than plan ahead. Putting out the small fires now prevents them from becoming one big fire later. You are the first to take risks, to jump in and lend a hand, to step into dark passages, and to find danger. Your impulsiveness likely gets you into trouble. While others might take time to study the numenera they discover, you use such items without hesitation. After all, the best way to learn what something can do is to use it. When a cautious explorer might look around and check for danger nearby, you have to physically stop yourself from bulling on ahead. Why fuss around when the exciting thing is just ahead?",
+    "poolModifiers": {
+      "speed": 2
+    },
+    "trainedSkills": [],
+    "inabilities": [
+      "you’ll try anything once or twice. the difficulty of any task that involves patience, willpower, or discipline is increased by one step."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following characteristics",
+        "description": "Reckless: +2 to your Speed Pool."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "You heard what the other PCs were up to and suddenly decided to join them.",
+      "You pulled everyone together after you heard rumors about something interesting you want to see or do.",
+      "You blew all of your money and now find yourself strapped for cash.",
+      "You’re in trouble for acting recklessly. You join the other PCs because they offer a way out of your problem."
+    ]
+  },
+  {
+    "id": "inquisitive",
+    "name": "INQUISITIVE",
+    "source": "discovery",
+    "description": "The world is vast and mysterious, with wonders and secrets to keep you amazed for several lifetimes. You feel the tugging on your heart, the call to explore the wreckage of past civilizations, to discover new peoples, new places, and whatever bizarre wonders you might find along the way. However, as strongly as you feel the pull to roam the world, you know there is danger aplenty, and you take precautions to ensure that you are prepared for any eventuality. Research, preparation, and readiness will help you live long enough to see everything you want to see and do everything you want to do.\nYou probably have a dozen books and travelogues about the world on you at any time. When not hitting the road and looking around, you spend your time with your nose in a book, learning everything you can about the place you’re going so you know what to expect when you get there.",
+    "poolModifiers": {
+      "intellect": 4
+    },
+    "trainedSkills": [],
+    "inabilities": [
+      "you tend to fixate on the details, making you somewhat oblivious to what’s going on around you. the difficulty of any task to hear or notice dangers around you is increased by one step.",
+      "when you see something interesting, you hesitate as you take in all the details. the difficulty of initiative actions (to determine who goes first in combat) is increased by one step."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following characteristics",
+        "description": "Smart: +4 to your Intellect Pool."
+      }
+    ],
+    "additionalEquipment": [
+      "You have three books on whatever subjects you choose"
+    ],
+    "initialLinks": [
+      "One of the PCs approached you to learn information related to the mission, having heard you were an expert.",
+      "You have always wanted to see the place where the other PCs are going.",
+      "You were interested in what the other PCs were up to and decided to go along with them.",
+      "One of the PCs fascinates you, perhaps due to a special or weird ability she has."
+    ]
+  },
+  {
+    "id": "insolent",
+    "name": "INSOLENT",
+    "source": "discovery",
+    "description": "Why should you have to put up with others’ shortcomings? In your opinion, most people are idiots, your friends excluded. If you're being completely honest, compared to your versatility and obvious superiority, most people are misguided, thick-headed, and a waste of space. If someone wants your attention, you usually make them prove themselves first. That doesn’t win you many new friends. But it’s funny to see them fume.",
+    "poolModifiers": {
+      "speed": 2
+    },
+    "trainedSkills": [],
+    "inabilities": [
+      "the difficulty of all tasks relating to social interaction is increased by one step."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following characteristics",
+        "description": "Flip: +2 to your Speed Pool."
+      },
+      {
+        "name": "Goad",
+        "description": "If a creature within short range has not yet attacked you, you can use your action to goad it so that it does attack you. It’s so angry at your impertinence that the difficulty of its first attack is increased by one step."
+      }
+    ],
+    "additionalEquipment": [
+      "Thanks to your insolent behavior",
+      "you have an additional oddity",
+      "given to you by someone who",
+      "having reached the breaking point over your impudence",
+      "offered you the object if you would just go away"
+    ],
+    "initialLinks": [
+      "You browbeat one of the other PCs until they told you what they were up to.",
+      "From afar, you observed that something interesting was going on and invited yourself along.",
+      "Someone took violent exception to your insolence, but the PCs saved you.",
+      "You told your friend that nothing could impress you because you'd seen it all before. They brought you to your current point to prove you wrong."
+    ]
+  },
+  {
+    "id": "intelligent",
+    "name": "INTELLIGENT",
+    "source": "discovery",
+    "description": "You’re quite smart. Your memory is sharp, and you easily grasp concepts that others might struggle with. This aptitude doesn’t necessarily mean that you’ve had years of formal education, but you have learned a great deal in your life, primarily because you pick things up quickly and retain so much.",
+    "poolModifiers": {
+      "intellect": 2
+    },
+    "trainedSkills": [],
+    "inabilities": [],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Smart: +2 to your Intellect Pool."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "One of the other PCs asked your opinion of the mission, knowing that if you thought it was a good idea, it probably was.",
+      "You saw value in what the other PCs were doing.",
+      "You believed that the task might lead to important and interesting discoveries.",
+      "A colleague requested that you take part in the mission as a favor."
+    ]
+  },
+  {
+    "id": "learned",
+    "name": "LEARNED",
+    "source": "discovery",
+    "description": "You have studied, either on your own or with an instructor. You know many things and are an expert on a few topics, such as history, biology, geography, the numenera, nature, or any other area of study. Learned characters typically carry a few books around with them and spend their spare time reading.",
+    "poolModifiers": {
+      "intellect": 2
+    },
+    "trainedSkills": ["three areas of knowledge of your choice"],
+    "inabilities": [
+      "charm, persuasion, or etiquette"
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Smart: +2 to your Intellect Pool."
+      }
+    ],
+    "additionalEquipment": [
+      "two additional books on topics of your choice"
+    ],
+    "initialLinks": [
+      "One of the other PCs asked you to come along because of your knowledge.",
+      "You need money to fund your studies.",
+      "You believed that the task might lead to important and interesting discoveries.",
+      "A colleague requested that you take part in the mission as a favor."
+    ]
+  },
+  {
+    "id": "intimidating",
+    "name": "INTIMIDATING",
+    "source": "discovery",
+    "description": "You are imposing, either in manner or stature or both. People’s eyes often grow wide as you enter a room. There’s just a touch of danger around you, and most people can sense that. It’s off-putting and unnerving, but you can certainly use it to your advantage. Perhaps your voice is gravelly and low. Perhaps it’s the hardened stare you give people. Or the scars that cover your face. Or maybe you’re just a looming presence with a big weapon. Whatever it is, you scare people.",
+    "poolModifiers": {},
+    "trainedSkills": [
+      "all intimidation tasks"
+    ],
+    "inabilities": [],
+    "specialAbilities": [
+      {
+        "name": "You have the following characteristics",
+        "description": "Skill: You are trained in all intimidation tasks."
+      },
+      {
+        "name": "Lower Morale",
+        "description": "If you use your action in a combat situation, you can make all foes within immediate distance hesitate, modifying the difficulty of their next action to their detriment."
+      },
+      {
+        "name": "Cause Fear",
+        "description": "If you use your action in a combat situation, you can make one foe within immediate distance use their next action to move away from you."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "You saw that the other PCs were in trouble and moved in on your own to see what was going on.",
+      "You heard rumors that the other PCs were doing something interesting or profitable.",
+      "One of the other PCs is a childhood friend of yours.",
+      "One of the other PCs hired you to be a bodyguard."
+    ]
+  },
+  {
+    "id": "lonely",
+    "name": "LONELY",
+    "source": "discovery",
+    "description": "There are many possible reasons why you’re lonely. Maybe you’re on the run from justice (or injustice), and it’s not safe to show your face. Maybe your friends are missing, or dead. Or maybe you’re just really bad with people, and whenever you try to make friends, you inadvertently rebuff them. But for good or for ill, you’re getting used to being alone.",
+    "poolModifiers": {
+      "might": 2
+    },
+    "trainedSkills": [],
+    "inabilities": [
+      "willpower is not one of your strong points. whenever you try to resist a mental attack, the difficulty is increased by one step.",
+      "you’re not the outdoorsy type. the difficulty of all climbing, running, jumping, and swimming tasks is increased by one step."
+    ],
+    "specialAbilities": [
+      {
+        "name": "Side Track",
+        "description": "While talking, you annoy and distract another creature, even if the creature can’t understand you. For as long as you do nothing but speak (you can’t even move), the other creature takes no actions other than to defend itself, even over multiple rounds. If the creature is attacked, the effect ends. You can do this one time, although the ability is renewed each time you make a recovery roll."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "You were so lonely, you jumped at the first offer a PC made you.",
+      "Coming along was better than staying by yourself.",
+      "Joining the PCs gives you an opportunity to escape justice for a crime you committed.",
+      "You didn’t want to come, but you needed the money."
+    ]
+  },
+  {
+    "id": "mad",
+    "name": "MAD",
+    "source": "discovery",
+    "description": "You have delved too deeply into subjects humans of the Ninth World were not meant to know. You are knowledgeable in things beyond the scope of most, but this knowledge has come at a terrible price. You are likely in questionable physical shape and occasionally shake with nervous tics. You sometimes mutter to yourself without realizing it.",
+    "poolModifiers": {
+      "intellect": 4
+    },
+    "trainedSkills": [
+      "numenera knowledge"
+    ],
+    "inabilities": [
+      "your mind is quite fragile. whenever you try to resist a mental attack, the difficulty is increased by one step."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following characteristics",
+        "description": "Knowledgeable: +4 to your Intellect Pool."
+      },
+      {
+        "name": "Fits of Insight",
+        "description": "Whenever such knowledge is appropriate, the GM feeds you information although there is no clear explanation as to how you could know such a thing. This is up to the GM’s discretion, but it should happen as often as once each session."
+      },
+      {
+        "name": "Erratic Behavior",
+        "description": "You are prone to acting erratically or irrationally. When you are in the presence of a major numenera discovery or subjected to great stress (such as a serious physical threat), the GM can use GM intrusion that directs your next action without awarding XP. You can still pay 1 XP to refuse the intrusion. The GM’s influence is the manifestation of your madness and thus is always something you would not likely do otherwise, but it is not directly, obviously harmful to you unless there are extenuating circumstances. (For example, if a foe suddenly leaps out of the darkness, you might spend the first round babbling incoherently or screaming the name of your first true love.)"
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "Voices in your head told you to go.",
+      "You instigated the whole thing and convinced the others to join you.",
+      "One of the other PCs obtained a book of numenera knowledge for you, and now you’re repaying that favor by helping her with the task at hand.",
+      "You feel compelled by inexplicable intuition."
+    ]
+  },
+  {
+    "id": "manipulative",
+    "name": "MANIPULATIVE",
+    "source": "discovery",
+    "description": "People are easy. If you spend enough time with someone, you soon learn what is most important to them. Once you know that, you can use that knowledge to your own advantage, and get what you want from them. It’s not that you’re interested in hurting people for the sake of seeing them suffer. Not at all. You just want what you want, and manipulating others is by far the easiest way to that end.",
+    "poolModifiers": {
+      "intellect": 2
+    },
+    "trainedSkills": [
+      "deception",
+      "persuasion",
+      "intimidation"
+    ],
+    "inabilities": [],
+    "specialAbilities": [
+      {
+        "name": "Cautious",
+        "description": "You are devious, not quick. Any time you spend points from your Speed Pool, it costs you 1 more than usual."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "You convinced the PCs to take you along.",
+      "You created a situation where you were indispensable to the mission.",
+      "In a rare turnaround, you were manipulated into accepting a mission you would’ve normally avoided.",
+      "This mission ties in with a personal, and secret, goal of your own."
+    ]
+  },
+  {
+    "id": "marine",
+    "name": "MARINE",
+    "source": "discovery",
+    "description": "You are literally an aquatic creature. Either by mutation, experimentation, or heritage, you have some qualities of a marine creature. You very likely live either in the water or near it. While you’re not helpless out of water, you’re much better off when you’re swimming or otherwise underwater. Your appearance is likely quite striking—scales, fins, or gills might be a part of your natural physique.",
+    "poolModifiers": {},
+    "trainedSkills": [
+      "swimming"
+    ],
+    "inabilities": [
+      "out of the water, your vision is blurry and your hearing a bit muted. the difficulty of all perception tasks out of water is increased by one step.",
+      "out of the water, you are a bit clumsy. the difficulty of any speed-based action out of the water, other than defense, is increased by one step."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You have the following characteristics",
+        "description": "Skill: You are trained in swimming."
+      },
+      {
+        "name": "Water Breathing",
+        "description": "You can breathe water and air equally well, for an unlimited time."
+      },
+      {
+        "name": "Underwater Adaptation",
+        "description": "You see twice as well as a human does underwater. Your body adapts to pressure well, and you can survive incredible depths. You do not face any of the normal underwater penalties for movement or combat."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "The mission involves going underwater, and one of the other PCs came to you for help.",
+      "You were sent by the wise among your own kind to perform a task. It turns out the other PCs have a similar goal for unrelated reasons.",
+      "You were lost on the surface, but one of the other PCs befriended you.",
+      "A foe that the PCs will go up against wronged you, and you want revenge."
+    ]
+  },
+  {
+    "id": "meek",
+    "name": "MEEK",
+    "source": "discovery",
+    "description": "You are quiet, unassuming, and not entirely confident. You might not see yourself as cowardly—just careful. You’re not great at facing challenges, and easily back down when threatened. On the other hand, you’re quick, and good at hiding and keeping abreast of what’s going on around you. Because you haven’t ventured forth into dangerous situations often, you spent that time instead focused on a variety of areas of study. You probably maintain a relatively nondescript appearance and generally don’t attempt to call attention to yourself.",
+    "poolModifiers": {
+      "speed": 2
+    },
+    "trainedSkills": [
+      "sneaking and hiding",
+      "two areas of knowledge of your choice",
+      "perception",
+      "speed defense"
+    ],
+    "inabilities": [
+      "the difficulty of resisting intimidation, threats, or fear-inducing effects is increased by one step."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You have the following characteristics",
+        "description": "Nimble: +2 to your Speed Pool."
+      },
+      {
+        "name": "Easily Intimidated",
+        "description": "Any time you are confronted with a situation where you could suffer damage, you must first make an Intellect defense roll, with the difficulty being equal to the level of the threat. If you fail, you cannot act for one round, and when you do act, the difficulty of all tasks related to that threat is increased by one step."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "One of the other PCs saved your life previously, so you’ve (somewhat reluctantly) agreed to help.",
+      "One of the other PCs intimidated you into coming along.",
+      "The alternative to joining the PCs was even more frightening.",
+      "You didn’t want to, but you’re desperate for money."
+    ]
+  },
+  {
+    "id": "mercurial",
+    "name": "MERCURIAL",
+    "source": "discovery",
+    "description": "You’re not moody—you’re adaptable. People who never change their mind are people who never learn, or who never want to. If new information comes your way (or you reimagine how you’ve been thinking about a topic), you don’t let how you used to regard something sway your newest opinion. Life is too short to do the same thing the same way for all your remaining days. The same is true for your emotions—you enjoy experiencing the full range.",
+    "poolModifiers": {
+      "speed": 2
+    },
+    "trainedSkills": [],
+    "inabilities": [
+      "by changing your mind so often, you leave yourself open to manipulation. the difficulty of any intellect defense task is increased by one step."
+    ],
+    "specialAbilities": [
+      {
+        "name": "Changeable",
+        "description": "Changing tacks sometimes achieves your objective. When you fail at a task, you can change the way you go about achieving it and roll twice on the second attempt and take the higher result. For example, instead of trying to pick the lock a second time, you might elect to bash the door down. Or instead of trying to skewer the tetrahydra with your sword a second time, you might take a shot with your buzzer."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "The mood to help struck you, so you helped the other PCs out with a problem.",
+      "You jumped in to save one of the PCs from danger.",
+      "It seemed like a good idea at the time.",
+      "You know you’re impulsive in a way that can sometimes lead you to do things that aren’t in your best interest. Helping with the PCs’ mission seemed like a way to moderate yourself."
+    ]
+  },
+  {
+    "id": "mysticalmechanical",
+    "name": "MYSTICAL/MECHANICAL",
+    "source": "discovery",
+    "description": "You have a special talent that can be viewed in one of two ways. You might think of yourself as “mystical,” and thus attuned with the mysterious and the paranormal, or you might think of yourself as “mechanical,” and thus adept with devices and machines. In either case, your true talents lie with the numenera. You likely have experience with ancient lore, and you can sense and wield the numenera—though whether that means “magic” or “technology” is up to you (and probably up to those around you as well).\nMystical characters often wear jewelry, such as a ring or an amulet, or have tattoos or other marks that show their interests. Mechanical characters tend to carry a lot of tools and treat them almost like talismans.",
+    "poolModifiers": {
+      "intellect": 2
+    },
+    "trainedSkills": [],
+    "inabilities": [
+      "charm, persuasion, or deception"
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Smart: +2 to your Intellect Pool."
+      },
+      {
+        "name": "Esotery",
+        "description": "You can perform the esotery known as Hedge Magic when you have a free hand and can pay the Intellect point cost."
+      },
+      {
+        "name": "Hedge Magic",
+        "description": "You can perform small tricks: temporarily change the color or basic appearance of a small object, cause small objects to float through the air, clean a small area, mend a broken object, prepare (but not create) food, and so on. You can’t use Hedge Magic to harm another creature or object. Action."
+      }
+    ],
+    "additionalEquipment": [
+      "You have an extra oddity",
+      "determined by the GM"
+    ],
+    "initialLinks": [
+      "A dream guided you to this point.",
+      "You need money to fund your studies.",
+      "You believed the mission would be a great way to learn more about the numenera.",
+      "Various signs and portents led you here."
+    ]
+  },
+  {
+    "id": "naive",
+    "name": "NAIVE",
+    "source": "discovery",
+    "description": "You’ve lived a sheltered life. Your childhood was safe and secure, so you didn’t get a chance to learn much about the world—and even less chance to experience it. Whether you were training for something, had your nose in a book, or just were sequestered in a secluded place, you haven’t done much, met many people, or seen many interesting things so far. That’s probably going to change soon, but as you go forward into a larger world, you do so without some of the understanding that others possess about how it all works.",
+    "poolModifiers": {},
+    "trainedSkills": [],
+    "inabilities": [
+      "the difficulty of any task that involves seeing through deceptions or determining someone’s secret motive is increased by one step."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following characteristics",
+        "description": "Fresh: You add +1 to your recovery rolls."
+      },
+      {
+        "name": "Incorruptible",
+        "description": "You are trained in Intellect defense tasks and all tasks that involve resisting temptation."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "Someone told you that you should get involved.",
+      "You needed money, and this seemed like a good way to earn some.",
+      "You believed that you could learn a lot by joining the other PCs.",
+      "Sounded like fun."
+    ]
+  },
+  {
+    "id": "noble",
+    "name": "NOBLE",
+    "source": "discovery",
+    "description": "You are of noble birth. You are not of the common people. Your family has a title and the prestige and (probably) the wealth that goes along with it. The Ninth World is, generally speaking, a classist place, and in that structure you are in the top echelon. Often, laws don’t apply to you, you gain special treatment, and sometimes people do as you command. You probably dress in finery and walk with a noble bearing, but sometimes the nobility must conceal their station to keep themselves safe—from brigands, thieves, or aristocratic enemies and their servants.",
+    "poolModifiers": {},
+    "trainedSkills": [
+      "etiquette and interacting with the nobility"
+    ],
+    "inabilities": [],
+    "specialAbilities": [
+      {
+        "name": "You gain the following characteristics",
+        "description": "Respect: People who are not of noble station often treat you with deference. A few, however, secretly treat you with contempt. The difficulty of interactions with non-nobles is decreased by one step 75% of the time, and increased by one step 25% of the time."
+      },
+      {
+        "name": "Retainer or Mount",
+        "description": "You start with a level 2 servant or mount that serves you faithfully. You and the GM should work out the details."
+      },
+      {
+        "name": "Contact",
+        "description": "You have a contact among the nobility who helps you and treats you well. You and the GM should work out the details."
+      }
+    ],
+    "additionalEquipment": [
+      "20 extra shins",
+      "You begin the game with"
+    ],
+    "initialLinks": [
+      "It seemed like a lark.",
+      "You’re on the run from an enemy, and joining the PCs seemed like a good way to hide among the common folk.",
+      "The mission involves somehow redeeming or helping your family.",
+      "Your parent(s) forced you into it, hoping the experience would be good for you."
+    ]
+  },
+  {
+    "id": "obsessive",
+    "name": "OBSESSIVE",
+    "source": "discovery",
+    "description": "Few things are as wonderful as getting lost in doing what you love to do. Time slips past, hour after hour, while you’re in the flow. Whether you are obsessed with studying a particular aspect of the numenera, insects, mutants, or killing bandits, your particular ability to sink into what most interests you, at least for the time being, is what allows you to succeed. Everything else seems less important, which allows you to focus.",
+    "poolModifiers": {},
+    "trainedSkills": [],
+    "inabilities": [],
+    "specialAbilities": [
+      {
+        "name": "You gain the following characteristics",
+        "description": "Your Obsession: At the beginning of each day, choose one topic or ideal on which you will concentrate. For the rest of that day, you’re obsessed with that choice. This doesn’t mean you ignore anything not related to your obsession—it just means you are at your best when performing tasks related to it, and slightly inattentive when performing tasks that are not."
+      },
+      {
+        "name": "Enthralled",
+        "description": "When you attempt a task that is directly related to your current obsession, the difficulty of that task is one step lower. The player and GM can decide whether a particular situation warrants the step reduction."
+      },
+      {
+        "name": "Preoccupied",
+        "description": "When you attempt a task that is not related to your current obsession, the difficulty of that task is one step higher. The player and GM can decide whether a particular situation warrants the step increase."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "You wouldn’t take no for an answer when you asked the PCs if you could join their mission.",
+      "You were preoccupied with something else, and didn’t realize what you’d agreed to until it was too late.",
+      "You believed that you could learn a lot by joining the other PCs.",
+      "One of the PCs asked you to come along, believing that your dogged nature would be invaluable to the mission."
+    ]
+  },
+  {
+    "id": "passionate",
+    "name": "PASSIONATE",
+    "source": "discovery",
+    "description": "A fire burns in you. Whether that fire is for a person, a place, a people, a concept, or something else, you are driven by this fire. Passionate characters are sometimes champions for a cause, or defenders of a faith. Or they might just be driven individuals. You might just be seen as a “hot-head” by some—temperamental and dangerous. But even if that’s true, you keep your word and take your commitments seriously, and it’s hard to find fault with that. You won’t let any challenge stand in your way. You charge right in.",
+    "poolModifiers": {},
+    "trainedSkills": [
+      "running, climbing, and swimming"
+    ],
+    "inabilities": [
+      "your temper is hard to control. the difficulty of any task requiring restraint or subtlety, including sneaking or lying, is increased by one step."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You have the following characteristics",
+        "description": "Skill: You are trained in running, climbing, and swimming."
+      },
+      {
+        "name": "Fever",
+        "description": "You are a devil when angered, inflicting 1 additional point of damage with any attack."
+      },
+      {
+        "name": "Fire Inside",
+        "description": "You have the ability to lower the difficulty of an action by one step when doing so can be justified by your passion. You can do this only once, but its use is restored each time you make a recovery roll."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "You are madly in love with one of the other PCs and will do anything for them.",
+      "The mission the other PCs were planning seemed vital to you, for your own reasons. They had no choice but to let you get involved.",
+      "You were guided to the other PCs and their task by someone you deeply respect.",
+      "You’re looking for a cause worthy of you and your skills."
+    ]
+  },
+  {
+    "id": "perceptive",
+    "name": "PERCEPTIVE",
+    "source": "discovery",
+    "description": "You miss little. You pick out the small details in the world around you and are skilled at making deductions from the information you find. Your talents make you an exceptional sleuth, a formidable scientist, or a talented scout. As adept as you are at finding clues, you have no skill at picking up on social cues. You overlook an offense that your deductions give or how uncomfortable your scrutiny can make the people around you. You tend to dismiss others as being intellectual dwarfs compared to you, which avails you little when you need a favor.",
+    "poolModifiers": {
+      "intellect": 2
+    },
+    "trainedSkills": [],
+    "inabilities": [
+      "positive social interactions"
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following characteristics",
+        "description": "Smart: +2 to your Intellect Pool."
+      }
+    ],
+    "additionalEquipment": [
+      "You have a bag of light tools"
+    ],
+    "initialLinks": [
+      "You overheard the other PCs discussing their mission and volunteered your services.",
+      "One of the PCs asked you to come along, believing that your talents would be invaluable to the mission.",
+      "You believe that the PCs’ mission is somehow related to one of your investigations.",
+      "A third party recruited you to follow the PCs and see what they were up to."
+    ]
+  },
+  {
+    "id": "polyglot",
+    "name": "POLYGLOT",
+    "source": "discovery",
+    "description": "Languages come easily to you. Picking up the basics of a new language is a task you can do in just a few days. In a few weeks, you’re using idiom like a native speaker. People like you. You always seem to know the right thing to say, and you genuinely listen to what they have to say—if for no other reason than to continue to understand language as a general concept. More than most, you are a traveler, eager to seek out new places, people, and of course, languages. Your physical appearance isn’t likely your main concern. You’re more cerebral than that.",
+    "poolModifiers": {
+      "intellect": 2
+    },
+    "trainedSkills": [
+      "pleasant social interaction"
+    ],
+    "inabilities": [
+      "your intelligence focuses on language, but not science. the difficulty of any task requiring scientific understanding is increased by one step."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You have the following characteristics",
+        "description": "Insightful: +2 to your Intellect Pool."
+      },
+      {
+        "name": "Language Mastery",
+        "description": "If you hear a language spoken for an hour or so, you can attempt a difficulty 6 task to discern basic meaning of anything spoken in that language thereafter. If you hear a language spoken for a day or so, the difficulty becomes 4. After a week, the difficulty becomes 2. After two weeks, you are fluent in the language."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "You overheard the other PCs talking about their plans and wanted to join in.",
+      "In order for the group to get the information needed to start, they need a translation of some old text, and bring you in to help.",
+      "Seeking new people and the new languages they might speak entices you to join the mission.",
+      "One of the other PCs speaks a language you don’t know, and you want to learn it."
+    ]
+  },
+  {
+    "id": "rebellious",
+    "name": "REBELLIOUS",
+    "source": "discovery",
+    "description": "You don’t trust authority. That goes double for authority that has proven itself to be cruel, conniving, and working against the interests of those held in its sway. But you find examples of corrupt authority all around you, not just at the highest levels of governance. It seems like a truism that in any collection of people, some subset seeks power not for everyone else’s benefit, but merely for themselves. You’re the cure to their control.",
+    "poolModifiers": {
+      "might": 2
+    },
+    "trainedSkills": [],
+    "inabilities": [],
+    "specialAbilities": [
+      {
+        "name": "Headstrong",
+        "description": "The GM can introduce a GM intrusion on you (as if you had rolled a 1 on a d20), without awarding you any XP, based on your always-charging-ahead nature. However, if this happens, 50% of the time, your headstrong nature works to your advantage. Rather than hurting you, it helps, or it hurts your enemies. For example, you might discover you’re charging many more enemies than you realized, but they are intimidated by your “conviction” and run. You and the GM should work together to determine the details. The GM can also use GM intrusions based on your headstrong nature normally (awarding XP) if she desires."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "The PCs’ mission was the kind of rebellious action you believe in, so you joined them.",
+      "You recruited the team to help deal with something you couldn’t manage on your own.",
+      "You think you can convince the PCs to join your cause if you help them with their goals for a while.",
+      "You’re an escaped rebel fleeing an authority you undermined. The PCs can help keep you safe."
+    ]
+  },
+  {
+    "id": "resilient",
+    "name": "RESILIENT",
+    "source": "discovery",
+    "description": "You can take a lot of punishment, both physically and mentally, and still come back for more. It takes a lot to put you down. Neither physical nor mental shocks or damage have a lasting effect. You’re tough to faze. Unflappable. Unstoppable.",
+    "poolModifiers": {
+      "might": 2,
+      "intellect": 2
+    },
+    "trainedSkills": [
+      "might defense tasks",
+      "intellect defense tasks"
+    ],
+    "inabilities": [
+      "moving, bending, or breaking things",
+      "knowledge or figuring out problems or puzzles"
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following characteristics",
+        "description": "Resistant: +2 to your Might Pool, and +2 to your Intellect Pool."
+      },
+      {
+        "name": "Recover",
+        "description": "You can make an extra recovery roll each day. This roll is just one action. So you can make two recovery rolls that each take one action, one roll that takes ten minutes, a fourth roll that takes one hour, and a fifth roll that requires ten hours of rest."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "You saw that the PCs clearly need someone like you to help them out.",
+      "Someone asked you to watch over one of the PCs in particular, and you agreed.",
+      "You are bored and desperately in need of a challenge.",
+      "You lost a bet—unfairly, you think—and had to take someone’s place on this mission."
+    ]
+  },
+  {
+    "id": "resourceful",
+    "name": "RESOURCEFUL",
+    "source": "discovery",
+    "description": "When things look tight, you’re the one your friends expect to find the way out or figure out what to do next. You don’t find it a burden. Figuring out what’s next or finding a clue that points the way forward is the kind of challenge you enjoy. If nothing else, you come prepared to most situations carrying a variety of small tools that just might serve in a pinch.",
+    "poolModifiers": {
+      "intellect": 2
+    },
+    "trainedSkills": [],
+    "inabilities": [
+      "you tend to fixate on the details, making you somewhat oblivious to what’s going on around you. the difficulty of any task to notice danger around you is increased by one step."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following characteristics",
+        "description": "Smart: +2 to your Intellect Pool."
+      },
+      {
+        "name": "Planner",
+        "description": "You’re the one with a plan. When you observe or study a location for at least one round as your action, the next time you interact with it (possibly in the following round), the difficulty of a related task (such as finding a clue, a tool, or a secret compartment) is reduced by one step."
+      }
+    ],
+    "additionalEquipment": [
+      "You have a bag of light tools"
+    ],
+    "initialLinks": [
+      "Another PC approached you to get your opinion on the mission, having heard how resourceful you were.",
+      "You were interested in what the other PCs were up to and decided to go along with them.",
+      "In order to get the PCs to agree to help you achieve a goal at a later time, you agreed to go on their mission first.",
+      "You have always wanted to see the place where the other PCs are going."
+    ]
+  },
+  {
+    "id": "rugged",
+    "name": "RUGGED",
+    "source": "discovery",
+    "description": "You’re a nature lover accustomed to living rough, pitting your wits against the elements. Most likely, you’re a skilled hunter, gatherer, or naturalist. Years of living in the wild have left their mark with a worn countenance, wild hair, or scars. Your clothing is probably much less refined than the garments worn by city dwellers.",
+    "poolModifiers": {},
+    "trainedSkills": [],
+    "inabilities": [
+      "charm, persuasion, etiquette, or deception"
+    ],
+    "specialAbilities": [],
+    "additionalEquipment": [
+      "You carry an explorer’s pack",
+      "If you already have one",
+      "you can instead take 50 extra feet (15 m) of rope",
+      "two more days’ worth of rations",
+      "and an extra ranged weapon"
+    ],
+    "initialLinks": [
+      "Against your better judgment, you joined the other PCs because you saw that they were in danger.",
+      "One of the other PCs convinced you that joining the group would be in your best interest.",
+      "You’re afraid of what might happen if the other PCs fail.",
+      "There is reward involved, and you need the money."
+    ]
+  },
+  {
+    "id": "stealthy",
+    "name": "STEALTHY",
+    "source": "discovery",
+    "description": "You’re sneaky, slippery, and fast. These talents help you hide, move quietly, and pull off tricks that require sleight of hand. Most likely, you’re wiry and small. However, you’re not much of a sprinter—you’re more dexterous than fleet of foot.",
+    "poolModifiers": {
+      "speed": 2
+    },
+    "trainedSkills": [],
+    "inabilities": [
+      "you’re sneaky but not fast. all movement-related tasks are hindered."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Quick: +2 to your Speed Pool."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "You attempted to steal from one of the other PCs. That character caught you and forced you to come along with them.",
+      "You were tailing one of the other PCs for reasons of your own, which brought you into the action.",
+      "An NPC employer secretly paid you to get involved.",
+      "You overheard the other PCs talking about a topic that interested you, so you decided to approach the group."
+    ]
+  },
+  {
+    "id": "strong",
+    "name": "STRONG",
+    "source": "discovery",
+    "description": "You’re extremely strong and physically powerful, and you use these qualities well, whether through violence or feats of prowess. You likely have a brawny build and impressive muscles.",
+    "poolModifiers": {
+      "might": 4
+    },
+    "trainedSkills": [],
+    "inabilities": [],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Very Powerful: +4 to your Might Pool."
+      }
+    ],
+    "additionalEquipment": [
+      "You have an extra medium weapon or heavy weapon"
+    ],
+    "initialLinks": [
+      "Against your better judgment, you joined the other PCs because you saw that they were in danger.",
+      "One of the other PCs convinced you that joining the group would be in your best interest.",
+      "You’re afraid of what might happen if the other PCs fail.",
+      "There is reward involved, and you need the money."
+    ]
+  },
+  {
+    "id": "strong-willed",
+    "name": "STRONG-WILLED",
+    "source": "discovery",
+    "description": "You’re tough-minded, willful, and independent. No one can talk you into anything or change your mind when you don’t want it changed. This quality doesn’t necessarily make you smart, but it does make you a bastion of willpower and resolve. You likely dress and act with unique style and flair, not caring what others think.",
+    "poolModifiers": {
+      "intellect": 4
+    },
+    "trainedSkills": [],
+    "inabilities": [
+      "willful doesn’t mean brilliant. any task that involves figuring out puzzles or problems, memorizing things, or using lore is hindered."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Willful: +4 to your Intellect Pool."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "Against your better judgment, you joined the other PCs because you saw that they were in danger.",
+      "One of the other PCs convinced you that joining the group would be in your best interest. 3. You’re afraid of what might happen if the other PCs fail.",
+      "There is reward involved, and you need the money."
+    ]
+  },
+  {
+    "id": "subterranean",
+    "name": "SUBTERRANEAN",
+    "source": "discovery",
+    "description": "You prefer the close dark of tunnels, caves, buried corridors, and ancient underground passages to the open air. You’ll put up with overland travel, but you really come into your own once you head into a ruin or buried vault. You never feel more alive than when you are squeezing through apertures that wake instant claustrophobia in others.",
+    "poolModifiers": {
+      "might": 2
+    },
+    "trainedSkills": [],
+    "inabilities": [
+      "you’re slightly unsettled in open spaces. you regain 1 less point than normal when you make recovery rolls out in the open (minimum 1 point)."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following characteristics",
+        "description": "Sturdy: +2 to your Might Pool."
+      }
+    ],
+    "additionalEquipment": [
+      "You have a glowglobe",
+      "a dozen pitons",
+      "and a rope"
+    ],
+    "initialLinks": [
+      "The PCs wanted assistance exploring an underground ruin, and recruited you to help.",
+      "You found the PCs lost beneath the ground, and showed them a safe way out.",
+      "Against your better judgment, you joined the other PCs because you saw that they were in danger.",
+      "You need money to fund explorations of even deeper areas underground."
+    ]
+  },
+  {
+    "id": "swift",
+    "name": "SWIFT",
+    "source": "discovery",
+    "description": "You move quickly, able to sprint in short bursts and work with your hands with dexterity. You’re great at crossing distances quickly but not always smoothly. You are likely slim and muscular.",
+    "poolModifiers": {
+      "speed": 4
+    },
+    "trainedSkills": [],
+    "inabilities": [
+      "balance"
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Fast: +4 to your Speed Pool."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "Against your better judgment, you joined the other PCs because you saw that they were in danger.",
+      "One of the other PCs convinced you that joining the group would be in your best interest.",
+      "You’re afraid of what might happen if the other PCs fail.",
+      "There is reward involved, and you need the money."
+    ]
+  },
+  {
+    "id": "tongue-tied",
+    "name": "TONGUE-TIED",
+    "source": "discovery",
+    "description": "You’ve never been much of a talker. When forced to interact with others, you never think of the right thing to say—words fail you entirely, or they come out all wrong. You often end up saying precisely the wrong thing and insult someone unintentionally. Most of the time, you just keep mum. This makes you a listener instead—a careful observer. It also means that you’re better at doing things than talking about them. You’re quick to take action.",
+    "poolModifiers": {
+      "might": 2,
+      "speed": 2
+    },
+    "trainedSkills": [
+      "perception"
+    ],
+    "inabilities": [
+      "the difficulty of all tasks relating to social interaction is increased by one step.",
+      "verbal communication or relaying information"
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following characteristics",
+        "description": "Actions, Not Words: +2 to your Might Pool, and +2 to your Speed Pool."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "You just tagged along and no one told you to leave.",
+      "You saw something important the other PCs did not and (with some effort) managed to relate it to them.",
+      "You intervened to save one of the other PCs when he was in danger.",
+      "One of the other PCs recruited you for your talents."
+    ]
+  },
+  {
+    "id": "tough",
+    "name": "TOUGH",
+    "source": "discovery",
+    "description": "You’re strong and can take a lot of physical punishment. You might have a large frame and a square jaw. Tough characters frequently have visible scars.",
+    "poolModifiers": {},
+    "trainedSkills": ["Might defense actions", "intimidation"],
+    "inabilities": ["initiative", "charm and persuasion"],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Resilient: +1 to Armor."
+      },
+      {
+        "name": "Healthy",
+        "description": "Add 1 to the points you regain when you make a recovery roll."
+      }
+    ],
+    "additionalEquipment": [
+      "an extra weapon"
+    ],
+    "initialLinks": [
+      "You’re acting as a bodyguard for one of the other PCs.",
+      "One of the PCs is your sibling, and you came along to watch out for them.",
+      "You need money because your family is in debt.",
+      "You stepped in to defend one of the PCs when they were threatened. While talking to them afterward, you heard about the group’s task."
+    ]
+  },
+  {
+    "id": "ultraterrestrial",
+    "name": "ULTRATERRESTRIAL",
+    "source": "discovery",
+    "description": "You’re from another dimension, one radically different than the one where you find yourself now. Three dimensions of space and one of time took you a while to adapt to, but you’ve almost figured out what it means to be a “solid, living creature” in a place where time moves only in one direction. In fact, you’ve taken a shape that conforms with those who call themselves “humans” on this plane. You see the benefits of causality, but you miss your own dimension, where cosmic rules and reality were more flexible.",
+    "poolModifiers": {},
+    "trainedSkills": [
+      "tasks related to knowing about alternate dimensions"
+    ],
+    "inabilities": [
+      "despite all your practice, this new reality you find yourself living in is still a bit of a shock. the difficulty of your intellect defense tasks is increased by one step."
+    ],
+    "specialAbilities": [
+      {
+        "name": "Versatile",
+        "description": "You get 4 additional points to divide among your stat Pools."
+      },
+      {
+        "name": "Noncausal",
+        "description": "When you roll a die on a task and get a result you don’t like, you can insert yourself a few seconds back in your own timeline and reroll and choose the result you like best. However, when you take advantage of this ability, reality rebounds and you are dazed, increasing the difficulty of all your tasks by one step on your next turn."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "When you fell out of the dimensional anomaly, the PCs helped you adjust.",
+      "You came to this dimension to explore, and the PCs were looking for someone to fill out their company.",
+      "The PCs released you from the lab of a Nano who had been studying you.",
+      "The other PCs were caught in a dimensional anomaly, and you helped them escape back to their home plane, even though that meant you had to go with them."
+    ]
+  },
+  {
+    "id": "vengeful",
+    "name": "VENGEFUL",
+    "source": "discovery",
+    "description": "One moment changed everything for you. One dreadful encounter, one betrayal, or one horrific tragedy altered your course and made you who you are today. Looking back at that time, you often wonder how your life would have unfolded if not for the event that ruined everything. The life you imagine you should have had haunts you and feeds your appetite for revenge until vengeance is the only thing you have left.\nTo be vengeful, you must have someone or something you want revenge against and someone or something to avenge. Work with your GM to determine what happened that affected you so strongly. Maybe a group of bandits wiped out your family. A corrupt official stole your family’s savings or otherwise brought ruin to you and your loved ones. Perhaps a rival destroyed your romance by sullying your name. Death, finances, love: any of these can support your motivation.\nIn addition, consider to what extent your character will go to gain vengeance. Will you compromise your values to destroy the ones who wronged you? Will you sacrifice your companions to get what you want? Can you imagine a life after you get revenge, or will you throw yours away to punish the people who wronged you?",
+    "poolModifiers": {},
+    "trainedSkills": [],
+    "inabilities": [],
+    "specialAbilities": [
+      {
+        "name": "You gain the following characteristics",
+        "description": "Skill: The fires of your hatred make you an imposing figure. You’re trained in any task that involves intimidation, threats, or inflicting pain through torture."
+      }
+    ],
+    "additionalEquipment": [
+      "You have an additional medium weapon"
+    ],
+    "initialLinks": [
+      "You and the other PCs are headed in the same direction.",
+      "You believe that one of the PCs knows something about your enemy. You accompany the group to find out what that character knows.",
+      "One of the PCs survived the event that caused you to become vengeful. You travel with that character to protect him or her.",
+      "You drew everyone together to help you get revenge on your enemies."
+    ]
+  },
+  {
+    "id": "vigilant",
+    "name": "VIGILANT",
+    "source": "discovery",
+    "description": "You keep watch for the safety and protection of others (and sometimes, just for yourself). Your attention pays off, allowing you to detect when others lie and when foes wait in ambush, and to concentrate your mind more fully on the tasks you deem to be important.",
+    "poolModifiers": {
+      "intellect": 2
+    },
+    "trainedSkills": [
+      "detecting deception",
+      "initiative actions"
+    ],
+    "inabilities": [],
+    "specialAbilities": [
+      {
+        "name": "You gain the following characteristics",
+        "description": "Mindful: +2 to your Intellect Pool."
+      }
+    ],
+    "additionalEquipment": [
+      "You have a spyglass"
+    ],
+    "initialLinks": [
+      "You feared for the safety of one of the other PCs, and wanted to protect them from danger.",
+      "You believe that you can do more for your cause if you join the PCs.",
+      "You saw that it was in your own best interest to join the other PCs.",
+      "One of the other PCs did a favor for you, and now you’re repaying that obligation by helping them with the task at hand."
+    ]
+  },
+  {
+    "id": "wealthy",
+    "name": "WEALTHY",
+    "source": "discovery",
+    "description": "You can’t remember a time when you wanted for anything. You have always had money and have largely lived a life of comfort and plenty. You might be stingy with your wealth, hiding your abundance lest others try to steal it from you. Or you might be magnanimous, spreading it around to any and all who need it. The source of your funds is up to you. Maybe you inherited your vast fortune from a relative. A sudden windfall could have made you flush with funds and given you a life you never dreamed of. You might be a successful merchant or entrepreneur, making your fortune through hard work and determination.",
+    "poolModifiers": {},
+    "trainedSkills": [],
+    "inabilities": [],
+    "specialAbilities": [
+      {
+        "name": "You gain the following characteristics",
+        "description": "Connected: You have connections, resources, and a head for business. Whenever you spend at least an hour in a community with a population of 1,000 or more, you can find comfortable accommodations for you and your companions for as long as you stay there. The accommodations also provide you with food and 50 shins to spend in whatever manner you choose."
+      }
+    ],
+    "additionalEquipment": [
+      "You have 50 shins"
+    ],
+    "initialLinks": [
+      "You crave a life of adventure. You hired all the other PCs for your expedition.",
+      "Having wealth only creates an appetite for more. You join the other PCs to grow your fortunes.",
+      "You want to do good works with your wealth, and you see the PCs’ mission as an opportunity to help people.",
+      "The source of your wealth—a relative, a business, or your position in the community—controls your life, and you have begun to feel stifled. You disguise your true identity and accompany the PCs for a chance at the freedom your fortune denies you."
+    ]
+  },
+  {
+    "id": "weird",
+    "name": "WEIRD",
+    "source": "discovery",
+    "description": "You aren’t like anyone else, and that’s fine with you. People don’t seem to understand you—they even seem put off by you—but who cares? You understand the Ninth World better than they do because you’re weird, and so is the world you live in. The concept of “the weird” is well known to you. Strange devices, ancient locales, bizarre creatures, storms that can transform you, living energy fields, and things most people can’t even name populate the world, and you thrive on it. You have a special attachment to it all, and the more you discover about the weirdness in the world, the more you might discover about yourself. Weird characters might be mutants or born with strange qualities, but sometimes they started out “normal” and adopted the weird by choice.",
+    "poolModifiers": {
+      "intellect": 2
+    },
+    "trainedSkills": [
+      "numenera knowledge"
+    ],
+    "inabilities": [
+      "people find you unnerving. the difficulty of all tasks relating to pleasant social interaction is increased by one step."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following characteristics",
+        "description": "Inner Light: +2 to your Intellect Pool."
+      },
+      {
+        "name": "Distinctive Physical Quirk",
+        "description": "You have a unique physical aspect that is, well, bizarre. For example, perhaps instead of hair, you have metal spikes on your head. Perhaps your hands don’t connect to your arms, although they move as if they do. Maybe a third eye stares out from the side of your head, superfluous tendrils grow from your back, or you have no nose. Whatever it is, your quirk might be a mutation, a biomechanical transformation, or a feature with no explanation."
+      },
+      {
+        "name": "A Sense for the Weird",
+        "description": "Sometimes—at the GM’s discretion—weird things relating to the numenera or its effects on the world seem to call out to you. You can sense them from afar, and if you get within long range of such a thing, you can sense whether it is overtly dangerous or not."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "It seemed weird, so why not?",
+      "Whether the other PCs realize it or not, their mission has to do with something weird that you know about, so you got involved.",
+      "As an expert in the weird, you were specifically recruited by the other PCs.",
+      "You felt drawn to join the other PCs, but you don’t know why."
+    ]
+  }
+]

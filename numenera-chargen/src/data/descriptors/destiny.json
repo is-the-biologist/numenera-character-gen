@@ -1,0 +1,1039 @@
+[
+  {
+    "id": "adaptable",
+    "name": "ADAPTABLE",
+    "source": "destiny",
+    "description": "You flex and sway with changes both physical and mental. When something bad happens to you, you feel the pain and the loss, but soon, you’re back on your feet and in the action. When you have to learn a new skill, you don’t back away, but instead, you jump in and try your best. Being adaptable means that you’re often cooperative, because you know that, by working together, a group can overcome things that might be impossible for an individual. Some seek you out because of your adaptability, but others don’t see it as a positive trait and instead see you as someone who always changes their mind—someone without a foundation. You laugh at those accusations. That’s just the sort of thing someone would say if they had never changed their mind about anything in their life—a way for that person to feel good about their lack of growth.",
+    "poolModifiers": {},
+    "trainedSkills": [],
+    "inabilities": [],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Versatile: +2 to any one Pool, which you can reassign after each ten-hour recovery roll."
+      },
+      {
+        "name": "Resilient",
+        "description": "You’re trained in all actions that involve overcoming or ignoring the effects of deprivation, sorrow, or pain. This includes tasks related to ending an ongoing condition such as being dazed, blinded, stunned, and so on. (However, you are not trained in tasks to resist effects that confer those conditions in the first place.)"
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "The other PCs were impressed by how quickly you adapted to a bad situation and invited you to join them.",
+      "The other PCs were looking for someone else, but you convinced them that you were the perfect person to join them instead.",
+      "The other PCs were in a bind, but you were able to convince a third party to let the PCs go about their business—and you with them.",
+      "One of the other PCs used to remark on your adaptability when you were younger, and now they’ve asked you to come along on a new outing where your skills are likely to be useful."
+    ]
+  },
+  {
+    "id": "articulate",
+    "name": "ARTICULATE",
+    "source": "destiny",
+    "description": "When you speak, people understand exactly what you’re saying. You’re fluent, coherent, and, some might even say, silver-tongued, though you’d beg to differ. You don’t manipulate people; you just explain things so clearly and with such imaginative examples that those who disagree with you often come around to your point of view. Your eloquence is something that many praise you for, though some hate you for it because, compared to you, they find themselves wanting.",
+    "poolModifiers": {
+      "intellect": 2
+    },
+    "trainedSkills": [],
+    "inabilities": [],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Lucid: +2 to your Intellect Pool."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "One of the other PCs asked you to explain something to them. Impressed, they asked you to accompany them on a mission.",
+      "You were delighted with one of the other PCs’ ability to convey their ideas and asked to come along.",
+      "You’ve made some enemies despite—or perhaps because of—your articulate nature, and you need to find friends or, better yet, leave the area for a while.",
+      "Another PC asked you to take part in the mission because they felt it would fail without you."
+    ]
+  },
+  {
+    "id": "beneficent",
+    "name": "BENEFICENT",
+    "source": "destiny",
+    "description": "Helping others is your calling. It’s why you’re here. Others delight in your outgoing and charitable nature, and you delight in their happiness. You’re at your best when you’re aiding people, either by explaining how they can best overcome a challenge or by demonstrating how to do so yourself.",
+    "poolModifiers": {
+      "intellect": 2
+    },
+    "trainedSkills": [],
+    "inabilities": [],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Helpful: +2 to your Intellect Pool."
+      },
+      {
+        "name": "Devoted",
+        "description": "Allies who have spent the last day with you add +1 to their recovery rolls. You also gain this benefit if at least one other ally gains it."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "Even though you didn’t know most of the other PCs beforehand, you invited yourself on their quest to help them.",
+      "You saw the other PCs struggling to overcome a problem and selflessly joined them to help.",
+      "You’re nearly certain the other PCs will fail without you.",
+      "You had to choose between living your tattered life and helping others. You haven’t looked back since."
+    ]
+  },
+  {
+    "id": "cheerful",
+    "name": "CHEERFUL",
+    "source": "destiny",
+    "description": "Happy and optimistic, you rarely feel down. Usually, you wake up with anticipation for what the day will hold. Your good spirits aren’t necessarily something you try to share with others, because you know that what lies in another’s heart isn’t for you to change. But sometimes your mere presence and lighthearted nature is enough to mend sadness. Of course, sometimes bad things happen to you too, and your basic nature is suppressed for a time. But eventually, your light-heartedness always returns.",
+    "poolModifiers": {
+      "intellect": 4
+    },
+    "trainedSkills": [
+      "one activity that most would consider to be a hobby, such as woodworking, singing, writing, and so on",
+      "tasks related to making friends, ending conflicts, and making a positive first impression on strangers"
+    ],
+    "inabilities": [
+      "you have a hard time recognizing when others aren’t as bright and forthcoming as you. tasks to detect falsehoods and disguises are hindered."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Bright: +4 to your Intellect Pool."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "One of the other PCs asked you to come along because of your pleasant nature in the hopes that it would help bond the group.",
+      "You were just trying to be agreeable, but you ended up agreeing to go on a mission.",
+      "You woke up with a great idea for an expedition and got the other PCs to join you.",
+      "Your cheerfulness saved you from violence when bad elements confronted you. Instead of beating you (or worse), they told you about something that led to your mission."
+    ]
+  },
+  {
+    "id": "civic",
+    "name": "CIVIC",
+    "source": "destiny",
+    "description": "You put the good of the many over the needs of the few, at least in a sense. You implicitly understand that only through cooperation can groups of people remain happy and productive. Your experience has shown that cooperation generates greater benefits for everyone in the long term—including access to food, protection, and knowledge. As a result, you tend to become especially invested in whatever community you live in or, perhaps one day, found yourself.",
+    "poolModifiers": {
+      "intellect": 2
+    },
+    "trainedSkills": [],
+    "inabilities": [],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Civic-Minded: You add +1 to the health of any community you are currently living in."
+      }
+    ],
+    "additionalEquipment": [
+      "You start with a numenera plan for an installation"
+    ],
+    "initialLinks": [
+      "While picking up litter around the community, you overheard the other PCs talking about a mission and asked to join.",
+      "You need resources and friends to help you in your civic aspirations later.",
+      "It was clear that the mission couldn’t succeed without your civic skills and knowledge.",
+      "You thought the community would be endangered if you didn’t come along."
+    ]
+  },
+  {
+    "id": "committed",
+    "name": "COMMITTED",
+    "source": "destiny",
+    "description": "You are wholeheartedly dedicated and loyal to a cause, activity, or job, shrugging off any obstacles that get in your way. When you pick this descriptor, you can work with your GM to figure out what that cause is. For instance, maybe you’re committed to tracking down someone who wronged you long ago. Alternatively, you can wait for a cause to catch your attention in the campaign. Either way, being committed is a personality trait for you, and once you decide to do something, you throw yourself into it with a vengeance.",
+    "poolModifiers": {
+      "might": 4
+    },
+    "trainedSkills": [],
+    "inabilities": [
+      "sometimes you come across as so single-minded that you put people off. persuasion tasks are hindered."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Steadfast: +4 to your Might Pool."
+      },
+      {
+        "name": "Dedication Brings Rewards",
+        "description": "You tend to practice things over and over. Once between each ten-hour recovery roll, you gain an asset to similar actions involving the same task (such as making attacks against the same foe or operating the same device). The asset doesn’t apply to similar but different tasks (such as attacking a different foe, even if of the same kind, or operating a different but very similar device)."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "Your commitment to your cause seems to overlap some aspect of what the other PCs want to accomplish.",
+      "You were looking for something to commit to, and the other PCs had a job they needed to get done.",
+      "Obviously, a task like what the PCs had in mind needed someone as committed as you to see it through.",
+      "As you completed another mission with great success, you overheard the other PCs talking about a new mission and asked to join."
+    ]
+  },
+  {
+    "id": "confident",
+    "name": "CONFIDENT",
+    "source": "destiny",
+    "description": "You’re self-assured, which helps in almost every situation—at least situations where violence is not involved. Fortunately, because you’re so self-confident and positive, you’re usually able to steer situations away from violent endings. It’s possible that your confidence makes you seem levelheaded and cool in a tough situation, or your confidence could make you eager to prove your skills when the going gets rough—it’s up to you. Either way, others eventually learn that you’re confident for a good reason.",
+    "poolModifiers": {},
+    "trainedSkills": [],
+    "inabilities": [],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Self-Reliant: +1 to each of your Pools."
+      },
+      {
+        "name": "Confident Outlook",
+        "description": "Sometimes confidence counts as much as or more than competence. When you set your mind to it, you are trained in one task for ten minutes, as long as that task is not an attack or a defense. You can do this once per rest (the ability is renewed each time you make a recovery roll)."
+      },
+      {
+        "name": "Failure Has Its Consequence",
+        "description": "Sometimes confidence leads to overconfidence and a stark realization of failure. You trigger a GM intrusion on a d20 roll of 1 or 2."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "You dragged one of the other PCs into it, certain that together you could accomplish anything.",
+      "When the other PCs asked for help, you were confident that you could provide whatever was necessary.",
+      "How could you not be involved? The mission requires someone with your skills to succeed.",
+      "You told another PC that you’ve never failed and probably never would. They took you at your word and brought you along."
+    ]
+  },
+  {
+    "id": "cultured",
+    "name": "CULTURED",
+    "source": "destiny",
+    "description": "Your excellent education and privileged upbringing has lent you a refined taste. You’re able to discern degrees of difference where others see, hear, or taste the same thing. Your awareness extends to artistic endeavors and general knowledge of the area you reside in and areas far from you (to the extent this knowledge is possible). You’re an example, if you do say so yourself, of the benefits that civilization can bring to someone. Though that doesn’t mean you can’t appreciate other ways of living.",
+    "poolModifiers": {},
+    "trainedSkills": [],
+    "inabilities": [
+      "getting people to believe or trust you"
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Skill: You’re trained in all tasks related to knowledge of current events and history."
+      },
+      {
+        "name": "Learned",
+        "description": "Being well read and well educated, you have a wide range of talents. You can attempt one task in which you have no training as if you were trained. This ability refreshes every time you make a recovery roll, but the uses never accumulate."
+      }
+    ],
+    "additionalEquipment": [
+      "You have a book on a topic of your choice and a set of very fine clothing"
+    ],
+    "initialLinks": [
+      "You could see that the other PCs would fail without your help.",
+      "You convinced one of the other PCs that you had invaluable skills.",
+      "You know that expanding your education requires experience as well as study, and you believe that you can learn a lot by joining the other PCs.",
+      "Just because you’re cultured doesn’t mean you don’t wish to explore, see new places, and make a name for yourself!"
+    ]
+  },
+  {
+    "id": "curious",
+    "name": "CURIOUS",
+    "source": "destiny",
+    "description": "There once was a time when the prior worlds spoke to the stars, reshaped the creatures of the world, and mastered form and essence. Isn’t that incredible? Each day is a chance to rediscover a secret, a bit of knowledge, a story, or something you can’t even imagine yet. It’s dizzying, when you consider all there is to learn and discover. You’re drawn to explore the ruins of the prior worlds, places that are brand new and unique to the Ninth World, or civilizations that still exist among the stars high overhead.\nOf course, if you’re going to satisfy your curiosity, you need to be careful. Before plunging directly into the unknown, you learn as much as you can about a new area through inquiry or exploration. Otherwise, you might not live long enough to see everything you want to see and do everything you want to do.",
+    "poolModifiers": {
+      "intellect": 2
+    },
+    "trainedSkills": [],
+    "inabilities": [],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Inquisitive: +2 to your Intellect Pool."
+      }
+    ],
+    "additionalEquipment": [
+      "You have three books on whatever subjects you choose"
+    ],
+    "initialLinks": [
+      "You were curious about what the PCs were doing and followed them.",
+      "You heard that the other PCs were going someplace new and begged to go along.",
+      "You got in over your head pursuing something fascinating, and the other PCs rescued you.",
+      "One of the other PCs fascinates you, perhaps due to a special or weird ability they have."
+    ]
+  },
+  {
+    "id": "earnest",
+    "name": "EARNEST",
+    "source": "destiny",
+    "description": "You always speak from the heart, rarely remembering that dissembling can be useful to smooth over awkward interpersonal situations. You’re sincere and feel things deeply. You like to get to the meat of whatever problem prevents you from succeeding, whether it’s a person, a physical obstacle, or a puzzle of some kind.",
+    "poolModifiers": {
+      "intellect": 2
+    },
+    "trainedSkills": [],
+    "inabilities": [
+      "you never could detect a lie. tasks that involve seeing through lies or trickery are hindered."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Purposeful: +2 to your Intellect Pool."
+      }
+    ],
+    "additionalEquipment": [
+      "You make deep and abiding friendships",
+      "Thanks to your earnest nature",
+      "a friend has given you an additional expensive item worth up to 10 shins"
+    ],
+    "initialLinks": [
+      "Another PC told you what they were up to, and you joined them.",
+      "Hard times overwhelmed you, and having no funds, you joined the other PCs.",
+      "It was either join the other PCs or be kidnapped into a far worse situation.",
+      "You suspect that the other PCs won’t succeed without you."
+    ]
+  },
+  {
+    "id": "empirical",
+    "name": "EMPIRICAL",
+    "source": "destiny",
+    "description": "You trust only what you can see with your own eyes—and sometimes not even that. You’re most comfortable when you’ve had time to complete your research, find all the facts, and figure out the truth.",
+    "poolModifiers": {
+      "intellect": 4
+    },
+    "trainedSkills": [
+      "all actions involved with conducting tests to find proof, discern the truth, or glean information"
+    ],
+    "inabilities": [],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Observer: +4 to your Intellect Pool."
+      },
+      {
+        "name": "Quick Study",
+        "description": "When you take a round to study whatever is in front of you and gain the facts, you feel more confident that you’re about to do the right thing. Your next non-combat action gains an asset."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "You’ve been studying a topic for a long time, and you think one of the other PCs has some knowledge about said topic.",
+      "You need to gather some additional materials for something you are studying, and joining the other PCs seemed like a good way to get it.",
+      "Someone told you an impossible story about this area, and you absolutely need to see for yourself to prove them wrong (or begrudgingly let them know they’re right).",
+      "You recently read something that suggested there was more knowledge in the world than could be found in study. You’d like to find out if that is true."
+    ]
+  },
+  {
+    "id": "exacting",
+    "name": "EXACTING",
+    "source": "destiny",
+    "description": "You expect a lot from others. From your point of view, you are drawing out their very best. Demanding the utmost of those around you can be challenging in and of itself. Many people would rather take things easier because putting in extra effort is hard. But for you, effort is what it’s all about. You expect the most from yourself, so why wouldn’t you expect greatness from those you work with? People sometimes call you demanding, but you take it as a compliment.",
+    "poolModifiers": {
+      "might": 4
+    },
+    "trainedSkills": [],
+    "inabilities": [
+      "positive social interaction",
+      "being so concerned with how those around you are performing their tasks makes you vulnerable to anything that attacks your mind. intellect defense rolls are hindered."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Unyielding: +4 to your Might Pool."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "The other PCs demonstrated they could meet your standards, and you offered to accompany them.",
+      "Another PC helped you out of a difficult situation, and you accompanied them to repay the debt.",
+      "Most people aren’t even worth considering, but the other PCs show promise.",
+      "To tell the truth, being exacting all the time also leads to loneliness. You joined the other PCs because you wanted some company."
+    ]
+  },
+  {
+    "id": "forward-thinking",
+    "name": "FORWARD-THINKING",
+    "source": "destiny",
+    "description": "You take time to think about all angles of a future project or mission, so you can prepare for any and all contingencies. You’re not necessarily bad at thinking on your feet, but you work better when you have time to prepare for a situation. Because you’re forwardthinking, people may come to you for advice. You’re not better at guessing equally weighted outcomes, but then again, you know that few events are completely random. Things usually happen for a reason, and you excel at identifying such things ahead of time.",
+    "poolModifiers": {
+      "intellect": 2
+    },
+    "trainedSkills": [
+      "initiative tasks"
+    ],
+    "inabilities": [],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Thinker: +2 to your Intellect Pool."
+      }
+    ],
+    "additionalEquipment": [
+      "30 extra shins",
+      "You have about"
+    ],
+    "initialLinks": [
+      "A new danger arose, but you were prepared and responded with a pre-planned contingency.",
+      "You showed up when and where you did after due consideration and forethought.",
+      "In order to gain the resources you need for some longer-term projects, you need to accomplish shorter-term goals.",
+      "You told one of the other PCs that nothing could surprise you because you’re always thinking ahead. They brought you along to test your claim."
+    ]
+  },
+  {
+    "id": "gregarious",
+    "name": "GREGARIOUS",
+    "source": "destiny",
+    "description": "(This also appears on the Descriptors page).\nYou love people, and they generally love you. You know how to “work the crowd” and interact with large groups. You’re likely to be a leader, a diplomat, or a very successful businessperson. You just really like to be around people—you’re generally interested in what they have to say, and what they think about things. You ask a lot of questions, and are generous and kind to those that deserve it (and in fact, you’re often willing to give latitude to people that others would give up on).",
+    "poolModifiers": {
+      "intellect": 2
+    },
+    "trainedSkills": [],
+    "inabilities": [],
+    "specialAbilities": [
+      {
+        "name": "You have the following characteristics",
+        "description": "Likable and Informed: +2 to your Intellect Pool."
+      },
+      {
+        "name": "People Person",
+        "description": "When you are within immediate range of at least two allies, the difficulty of one noncombat-related task is decreased by one step. You can do this only once, but its use is restored each time you make a recovery roll."
+      },
+      {
+        "name": "Getting the Word",
+        "description": "If you spend an hour amid a large group of people, you can glean the general rumors, gossip, or opinions held."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "You asked around, and learned the other PCs were doing something interesting.",
+      "You bought the other PCs a round of drinks and they welcomed you into their ranks.",
+      "You gathered the other PCs together for the task at hand.",
+      "It’s better than being alone."
+    ]
+  },
+  {
+    "id": "heroic",
+    "name": "HEROIC",
+    "source": "destiny",
+    "description": "You are courageous, daring, and altruistic in equal measures. You’re not afraid to face horrors that make others quaver, especially if it means helping someone who couldn’t succeed (or survive) without you. Some say you’re made of the stuff of legends and that your exploits will one day become the stories that inspire a new generation.",
+    "poolModifiers": {
+      "might": 2
+    },
+    "trainedSkills": [],
+    "inabilities": [
+      "you tend to take others at their word. tasks that involve detecting falsehoods are hindered."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Mighty: +2 to your Might Pool."
+      },
+      {
+        "name": "Heroic Guise",
+        "description": "You hold yourself in a way that inspires others. You are trained in all social interactions."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "You were hunting a great foe and hired the other PCs to accompany you.",
+      "The PCs were looking for someone like you to round out their number.",
+      "A mentor recommended you to the other PCs.",
+      "You killed a mighty foe, and the other PCs were aided (or rescued from captivity) by that act."
+    ]
+  },
+  {
+    "id": "imaginative",
+    "name": "IMAGINATIVE",
+    "source": "destiny",
+    "description": "You have a flair for making things up. Whenever something else isn’t occupying your attention, you’re creating an ongoing narrative or mental picture within the confines of your own mind. Sometimes, what you imagine becomes a useful idea or something you write, paint, or draw. Mainly, however, you live inside your own head, content to imagine all the things that the world around you sometimes fails to provide.",
+    "poolModifiers": {
+      "intellect": 2
+    },
+    "trainedSkills": [],
+    "inabilities": [],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Brainy: +2 to your Intellect Pool."
+      },
+      {
+        "name": "Imaginative Solution",
+        "description": "When you apply a level of Effort to any Intellect task, you gain a free level of Effort. You can do this one time, although the ability is renewed each time you make a ten-hour recovery roll."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "In your head, the only way the group would succeed is if you were with them to save the day.",
+      "You needed money, and this seemed like a good way to earn some.",
+      "Experience is the best ingredient for even better panoramas of imagination.",
+      "It sounded like fun."
+    ]
+  },
+  {
+    "id": "industrious",
+    "name": "INDUSTRIOUS",
+    "source": "destiny",
+    "description": "You’re rarely satisfied with the status quo. You’re always thinking about how you’d like to advance your agenda or improve a situation (whether it’s your situation or someone else’s). Whatever your goal, you come at things with an idea of how you’ll accomplish everything that needs to be done to achieve it.",
+    "poolModifiers": {
+      "speed": 4
+    },
+    "trainedSkills": [],
+    "inabilities": [
+      "you’re energetic but not fast. all movement-related tasks are hindered."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Energetic: +4 to your Speed Pool."
+      },
+      {
+        "name": "Imaginative Solution",
+        "description": "When you apply a level of Effort to any Intellect task, you gain a free level of Effort. You can do this one time, although the ability is renewed each time you make a ten-hour recovery roll."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "Following your plan got you to this point.",
+      "Industry requires resources, and this mission seemed likely to provide what you needed.",
+      "You believed the mission would be a great way to learn more about some of the roadblocks that stand in the way of achieving your goal.",
+      "One of the other PCs said they’d help you if you helped them."
+    ]
+  },
+  {
+    "id": "intimidating",
+    "name": "INTIMIDATING",
+    "source": "destiny",
+    "description": "You are imposing, either in manner, stature, or both. People’s eyes often grow wide as you enter a room. There’s a touch of danger around you, and most people can sense it. It’s off-putting and unnerving, but you can use it to your advantage. Perhaps your voice is gravelly and low. Perhaps it’s the hardened stare you give people or the scars that cover your face. Or maybe you’re just a looming presence with a big weapon. Whatever it is, you scare people.",
+    "poolModifiers": {
+      "might": 2,
+      "intellect": 2
+    },
+    "trainedSkills": [],
+    "inabilities": [
+      "you’re threatening but not a quick study. tasks related to lore and knowledge are hindered."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Threatening: +2 to your Might Pool or +2 to your Intellect Pool or +1 to both Pools."
+      },
+      {
+        "name": "Menace",
+        "description": "One foe you choose within immediate range uses their next action to move away from you. You can do this once, although the ability is renewed each time you make a recovery roll."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "You saw that the other PCs were in trouble and moved in on your own to see what was going on.",
+      "You heard rumors that the other PCs were doing something interesting or profitable.",
+      "One of the other PCs is a childhood friend of yours.",
+      "One of the other PCs hired you to be a bodyguard."
+    ]
+  },
+  {
+    "id": "intuitive",
+    "name": "INTUITIVE",
+    "source": "destiny",
+    "description": "You are often tickled by a sense of knowing what someone will say, how they will react, or how events might unfold. Maybe you have a mutant sense, maybe you can see just a few moments ahead through time, or maybe you’re just good at reading people and extrapolating a situation. Whatever the case, many who look into your eyes immediately glance away, as if afraid of what you might see in their expression.",
+    "poolModifiers": {
+      "intellect": 2
+    },
+    "trainedSkills": [
+      "perception tasks"
+    ],
+    "inabilities": [],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Innate: +2 to your Intellect Pool."
+      },
+      {
+        "name": "Know What to Do",
+        "description": "You can act immediately, even if it’s not your turn. Afterward, on your next regular turn, any action you take is hindered. You can do this one time, although the ability is renewed each time you make a recovery roll."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "You just knew you had to come along.",
+      "You convinced one of the other PCs that your intuition is invaluable.",
+      "You felt that something terrible would happen if you didn’t go.",
+      "You’re confident the reason you arrived at this point will soon become clear."
+    ]
+  },
+  {
+    "id": "irrepressible",
+    "name": "IRREPRESSIBLE",
+    "source": "destiny",
+    "description": "Your enthusiasm knows few bounds. Even when things become truly dire, you aren’t deterred for long. If you’re hurt, you bounce back. If you’re insulted, you try to find common ground. In fact, that’s what people say about you—that you always make a comeback, even if it seems like you were beaten. You may change your plans based on the situation at hand, but you never really give up. You just move along toward something better and brighter.",
+    "poolModifiers": {
+      "might": 4
+    },
+    "trainedSkills": [],
+    "inabilities": [
+      "you have a hard time recognizing confidence games and similar schemes, especially when you’re the target. intellect defense tasks to do so are hindered."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Sturdy Spirit: +4 to your Might Pool."
+      },
+      {
+        "name": "Bounces Back",
+        "description": "You add +1 to your recovery rolls."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "The other PCs needed someone like you to keep them on track.",
+      "One of the other PCs is a good friend or relation, and you wanted to look after them.",
+      "Your last situation didn’t turn out as you had hoped, so you’re looking for a new direction.",
+      "How hard can it be?"
+    ]
+  },
+  {
+    "id": "lawful",
+    "name": "LAWFUL",
+    "source": "destiny",
+    "description": "You live by a code. It might be your own set of rules or the rules of a religious, military, or other organization (perhaps one steeped in dogma) to which you belong or once belonged. The important thing is that you’re not governed by passions but by a steadfast confidence that to follow the law is to live in grace.",
+    "poolModifiers": {
+      "might": 2,
+      "speed": 2
+    },
+    "trainedSkills": [
+      "tasks related to knowing, understanding, and interpreting the laws of the land"
+    ],
+    "inabilities": [
+      "you can’t abide law-breaking, especially when you’re the culprit, however unjust those laws might be. while engaged in any activity that breaks the law, your intellectbased tasks are hindered."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Justified: +2 to your Might Pool and +2 to your Speed Pool."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "You heard what the other PCs were up to and knew they could use your expertise.",
+      "You gathered the other PCs together to accomplish a lawful task.",
+      "You agreed to provide money for the upkeep of an organization you are or were previously affiliated with and find yourself in need of new funds, so you joined the other PCs.",
+      "You think the other PCs will help you bring law to areas that suffer lawlessness, once you get them on board with your way of thinking."
+    ]
+  },
+  {
+    "id": "loyal",
+    "name": "LOYAL",
+    "source": "destiny",
+    "description": "It’s in your nature to form strong attachments. And when you attach yourself to a person, a group, or an institution, you can’t do anything else but remain true to it, even in the face of attacks that put you at risk of life and limb. It gives you pleasure to give your aid to others. In the past, some may have accused you of being blindly loyal, which is ridiculous. If someone shows you truly incontrovertible evidence that the person or institution that you’ve given yourself to is not worthy, you’d like to think that you would weigh all the evidence and come to a decision based on the facts and the facts alone.",
+    "poolModifiers": {
+      "intellect": 2
+    },
+    "trainedSkills": [],
+    "inabilities": [
+      "you have a hard time seeing disloyalty in others. tasks that involve detecting falsehoods and seeing through disguises are hindered."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Resolute: +2 to your Intellect Pool."
+      },
+      {
+        "name": "Devoted",
+        "description": "If an ally within immediate range descends one step on the damage track, you can act immediately but in a restricted fashion. You can use this action either to move the willing ally up to an immediate distance or to attempt a healing task on your ally."
+      },
+      {
+        "name": "Faithful",
+        "description": "When you help a creature to make or avoid an attack in combat, you regain 1 point to one of your Pools (this is true whether the task you helped with succeeds or fails). You can do this one time, although the ability renews each time you make a recovery roll."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "One of the other PCs needed help, and you obliged without a second’s hesitation.",
+      "The other PCs were going somewhere, and you came along even though they didn’t ask you to.",
+      "The other PCs thought you’d bring some much-needed grounding and connection for the team.",
+      "You decided that the institution that previously commanded your loyalty wasn’t worthy of you, so you joined up with the other PCs."
+    ]
+  },
+  {
+    "id": "meddlesome",
+    "name": "MEDDLESOME",
+    "source": "destiny",
+    "description": "Some say you’re nosy and ask too many questions. It’s true you constantly ask why, because the Ninth World is a big place full of both wonderful and terrifying things. If you don’t explore it, how will you ever know what’s going on? But even more than the mysteries of prior-world ruins, you relish uncovering the complexities and relationships that spring up inside communities. You especially like to figure out who is sweet on whom, who is lying to whom, and who is secretly on the wrong side of the law. You relish knowing the full story, and the only way to get that in difficult situations is to meddle.",
+    "poolModifiers": {
+      "intellect": 2
+    },
+    "trainedSkills": [],
+    "inabilities": [],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Analytical: +2 to your Intellect Pool."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "You noticed that strange noises were coming from an abandoned area, so you gathered the other PCs to check it out.",
+      "One of your mutual friends has gone missing, and you and the other PCs are determined to find them.",
+      "You believed that the other PCs’ task might lead to important and maybe even amazing discoveries.",
+      "Frightened by something, you fled to safety, but you returned with the other PCs to watch your back."
+    ]
+  },
+  {
+    "id": "nurturing",
+    "name": "NURTURING",
+    "source": "destiny",
+    "description": "You’re a born caregiver. When you see someone in need, you’re there with an encouraging word, assistance, and an honest desire to see them grow and improve. Some nurturers focus only on children, who of course have the most growing to do, but your focus is wider. You nurture anyone—not only people but institutions and communities, too.",
+    "poolModifiers": {
+      "might": 2
+    },
+    "trainedSkills": [
+      "healing tasks"
+    ],
+    "inabilities": [],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Caregiver: +2 to your Might Pool."
+      },
+      {
+        "name": "Nurturing",
+        "description": "Allies who have spent the last day with you add +1 to their recovery rolls. You also gain this benefit if at least one other ally gains it."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "You saw that one of the other PCs was hurt, so you offered your aid.",
+      "You thought you heard someone crying out in need. When you investigated, you found the other PCs.",
+      "You believed that the other PCs’ task could end up helping a huge number of people.",
+      "You’d helped someone else until they no longer needed your care. So you went looking for someone or something new to nurture."
+    ]
+  },
+  {
+    "id": "obsessive",
+    "name": "OBSESSIVE",
+    "source": "destiny",
+    "description": "(This also appears on the Descriptors page).\nFew things are as wonderful as getting lost in what you love. Time slips past, hour after hour, while you’re in the flow. Whether you are obsessed with killing bandits, climbing, or studying something like secrets, abhumans, or mutants, your ability to sink into what most interests you is what allows you to succeed. Everything else seems less important, and this allows you to focus.",
+    "poolModifiers": {},
+    "trainedSkills": [],
+    "inabilities": [],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Your Obsession: At the beginning of each day, choose one concept on which you will concentrate. For the rest of that day, you’re obsessed with that concept. This doesn’t mean you ignore anything not related to your obsession. It just means you are at your best when performing tasks related to the obsession, and you are slightly inattentive when performing tasks that are not."
+      },
+      {
+        "name": "Enthralled",
+        "description": "When you attempt a non-combat task that is directly related to your current obsession, you gain an asset. The player and GM can decide whether a particular situation warrants this benefit."
+      },
+      {
+        "name": "Preoccupied",
+        "description": "Any task that is not related to your current obsession is hindered. The player and GM can decide whether a particular situation warrants this disadvantage."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "You wouldn’t take no for an answer when you asked the other PCs if you could join their mission.",
+      "You were preoccupied with something else and didn’t realize what you’d agreed to until it was too late.",
+      "You believed that you could learn a lot by joining the other PCs.",
+      "One of the other PCs asked you to come along, believing that your obsessive nature would be invaluable to the mission."
+    ]
+  },
+  {
+    "id": "optimistic",
+    "name": "OPTIMISTIC",
+    "source": "destiny",
+    "description": "You’re more than hopeful about what the future will bring, confident that it will be bright. Some optimistic people are bubbly and full of cheer. Others are quietly confident, their optimism revealed by the shine in their eyes and the way they’re quick to try again when they fail. Optimism sometimes means you expect the best in others, but it doesn’t mean you are blind to other’s failings. You only hope they can do better, just as you hope you yourself can.",
+    "poolModifiers": {
+      "intellect": 4
+    },
+    "trainedSkills": [
+      "intellect defense tasks"
+    ],
+    "inabilities": [
+      "you have a lightness of being, but you really feel it when you’re physically challenged. might defense tasks are hindered.",
+      "you’re spirited but not fast. all movement-related tasks are hindered."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Spirited: +4 to your Intellect Pool."
+      },
+      {
+        "name": "Shrugs Off Disappointment",
+        "description": "When you fail at a non-combat task and try that task again the very next round, you can apply a free level of Effort toward the success of that task. This benefit effectively alleviates the requirement to apply a level of Effort when retrying failed tasks."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "The PCs were in a bad spot, and one of the other PCs asked you along to add some perspective.",
+      "You had a spot of bad luck, but you jumped back in to try something new, hopeful it would work out.",
+      "To make good on a promise to help, you came with the other PCs.",
+      "You answered a cry for help when another PC got in over their head."
+    ]
+  },
+  {
+    "id": "organized",
+    "name": "ORGANIZED",
+    "source": "destiny",
+    "description": "You can’t stand a mess, whether physically or metaphorically, when it comes to plans and activities. Your explorer’s pack is neatly catalogued and perfectly packed, so you never have to dig around in it when you’re looking for something. The same is true of where you live, whether that’s in a home, a temporary lodging, or a camp site. A neatly arranged living space and a well-conceived plan both contribute to everyone’s peace of mind.",
+    "poolModifiers": {
+      "intellect": 4
+    },
+    "trainedSkills": [
+      "tasks related to perception, planning, and organizing"
+    ],
+    "inabilities": [
+      "messy or chaotic locations."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Ordered: +4 to your Intellect Pool."
+      },
+      {
+        "name": "Benefits of Organization",
+        "description": "You can take one additional free action while you are at a location that you have organized to your liking (which means having spent at least ten minutes there tidying and organizing) or if you are following a plan that hasn’t diverged from the original conception. You can do this only once, but its use is restored each time you make a ten-hour recovery roll."
+      }
+    ],
+    "additionalEquipment": [
+      "You have an explorer’s pack with extra pockets and compartments"
+    ],
+    "initialLinks": [
+      "You could tell from a distance that the other PCs needed your skills.",
+      "The other PCs came to you looking for help with a plan of action.",
+      "Things fell through, and going with the other PCs was your backup plan.",
+      "There wasn’t a lot of call for neatness where you came from, which brought you to your current point."
+    ]
+  },
+  {
+    "id": "passionate",
+    "name": "PASSIONATE",
+    "source": "destiny",
+    "description": "(This also appears on the Descriptors page).\nA fire burns in you. Whether that fire is for a person, a place, a people, a concept, or something else, you are driven by this fire. Passionate characters are sometimes champions for a cause, or defenders of a faith. Or they might just be driven individuals. You might just be seen as a “hot-head” by some—temperamental and dangerous. But even if that’s true, you keep your word and take your commitments seriously, and it’s hard to find fault with that. You won’t let any challenge stand in your way. You charge right in.",
+    "poolModifiers": {},
+    "trainedSkills": [
+      "running, climbing, and swimming"
+    ],
+    "inabilities": [
+      "your temper is hard to control. the difficulty of any task requiring restraint or subtlety, including sneaking or lying, is increased by one step."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You have the following characteristics",
+        "description": "Skill: You are trained in running, climbing, and swimming."
+      },
+      {
+        "name": "Fever",
+        "description": "You are a devil when angered, inflicting 1 additional point of damage with any attack."
+      },
+      {
+        "name": "Fire Inside",
+        "description": "You have the ability to lower the difficulty of an action by one step when doing so can be justified by your passion. You can do this only once, but its use is restored each time you make a recovery roll."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "You are madly in love with one of the other PCs and will do anything for them.",
+      "The mission the other PCs were planning seemed vital to you, for your own reasons. They had no choice but to let you get involved.",
+      "You were guided to the other PCs and their task by someone you deeply respect.",
+      "You’re looking for a cause worthy of you and your skills."
+    ]
+  },
+  {
+    "id": "persevering",
+    "name": "PERSEVERING",
+    "source": "destiny",
+    "description": "You don’t give up even in the face of calamity, danger, or personal tragedy. Luckily, calamity and tragedy are rare enough that you’re not constantly testing your resolve. Instead, you show your perseverance most often in the face of boredom, long slogs, and situations where others are tempted to give up.",
+    "poolModifiers": {
+      "intellect": 2,
+      "might": 2
+    },
+    "trainedSkills": [
+      "tasks related to endurance and keeping at an undertaking in the face of difficulties"
+    ],
+    "inabilities": [],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Determined: +2 to your Intellect Pool or +2 to your Might Pool."
+      },
+      {
+        "name": "Irrepressible Reaction",
+        "description": "Whenever you receive a GM intrusion (either by rolling a 1 or by getting one from the GM), one action you take in response within the next minute gains an asset."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "By sticking with a difficult situation, you found the other PCs already involved in a task that you joined.",
+      "Sometimes persevering means starting over when things don’t work out, and that’s how you found the other PCs.",
+      "The other PCs earned your respect by accomplishing a difficult task in the face of many challenges.",
+      "The other PCs said their mission would be difficult to complete, so you signed up to help."
+    ]
+  },
+  {
+    "id": "prepared",
+    "name": "PREPARED",
+    "source": "destiny",
+    "description": "It’s usually not for you to make the plans. Instead, you prepare for whatever the plan is. You’re happiest when you’ve got enough time before an event to assemble the best possible selection of tools, provisions, or resources that will contribute toward that event’s overall success. Often, being prepared means having the tools necessary to fix, fashion, or modify another piece of equipment, be it mundane or exotic.",
+    "poolModifiers": {
+      "speed": 4
+    },
+    "trainedSkills": [
+      "initiative tasks"
+    ],
+    "inabilities": [],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Ready: +4 to your Speed Pool."
+      },
+      {
+        "name": "Tool Aficionado",
+        "description": "If a tool enables a noncombat task but does not provide an asset, you gain an asset to that task anyway when using a tool. If a tool provides an asset to a non-combat task, you gain one additional asset when using it."
+      },
+      {
+        "name": "Inflexible",
+        "description": "You’re not usually surprised, so it’s extra surprising when you are. The first action you take after being surprised or when a foe attacks you before you have acted is hindered."
+      }
+    ],
+    "additionalEquipment": [
+      "A bag of light tools"
+    ],
+    "initialLinks": [
+      "You could tell the other PCs weren’t bringing the right tools for the job, so you offered to help.",
+      "For someone as prepared as you are, having friends to help you is just common sense.",
+      "When all your preparations came to nothing, you had nothing left but to strike out on your own, which is when the other PCs found you.",
+      "The other PCs asked you to help them get ready for an important journey, and you ended up going with them."
+    ]
+  },
+  {
+    "id": "protective",
+    "name": "PROTECTIVE",
+    "source": "destiny",
+    "description": "You protect what’s close to you, which is usually your friends and allies, as well as an institution or a community. To some extent, people and communities can look out for themselves, but people join together for a reason. When others find themselves in harm’s way, you’re a perfect fit for helping to avoid such outcomes. It’s deeply satisfying to know that your attention contributes to the safety and well-being of everyone around you.",
+    "poolModifiers": {
+      "intellect": 4
+    },
+    "trainedSkills": [],
+    "inabilities": [
+      "you’re watchful, not bright. knowledge-based tasks are hindered."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Watchful: +4 to your Intellect Pool."
+      },
+      {
+        "name": "Step in Front",
+        "description": "If you successfully draw the attack so that a foe attacks you instead of the target they originally intended to attack, you have +2 Armor against that attack. You can do this one time, although the ability renews each time you make a recovery roll."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "You protected another PC from a bad situation, and now you’re friends.",
+      "You thought that, without you, the other PCs would be in too much danger, and you offered to come along.",
+      "The other PCs sought you out because of your reputation for helping others.",
+      "You believed that by coming along with the other PCs, you would learn something that would help you protect an entire community later on."
+    ]
+  },
+  {
+    "id": "relentless",
+    "name": "RELENTLESS",
+    "source": "destiny",
+    "description": "Life has thrown a lot of trouble your way. Disasters large and small have nearly stamped you out, but you’ve emerged from each alive and moving forward. You are stronger for it, but also scarred by what you had to do to survive. People less unyielding than you are now gone. That’s not going to happen to you because you never give up.",
+    "poolModifiers": {
+      "might": 4
+    },
+    "trainedSkills": [],
+    "inabilities": [
+      "you’re not a people person. interaction tasks are hindered."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Survivor: +4 to your Might Pool."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "You found the other PCs in trouble and decided to help.",
+      "Uncharacteristically, you were caught in a bind. The other PCs helped to free you.",
+      "It was either do what needed doing or die. Now, here you are along with the other PCs.",
+      "To protect a loved one, you agreed to join the other PCs because their quest was related to your own."
+    ]
+  },
+  {
+    "id": "risk-taking",
+    "name": "RISK-TAKING",
+    "source": "destiny",
+    "description": "It’s part of your nature to question what others think can’t or shouldn’t be done. You’re not insane, of course—you wouldn’t attempt to leap across a mile-wide chasm just because you were dared. There’s impossible and then there’s the just barely possible. You like to push the latter further than others, because it gives you a rush of satisfaction and pleasure when you succeed. The more you succeed, the more you find yourself looking for that next risky challenge to try yourself against.",
+    "poolModifiers": {
+      "speed": 4
+    },
+    "trainedSkills": [],
+    "inabilities": [
+      "you may be nimble, but you’re not sneaky. tasks related to sneaking and staying quiet are hindered."
+    ],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Nimble: +4 to your Speed Pool."
+      },
+      {
+        "name": "Pressing Your Luck",
+        "description": "You can choose to automatically succeed on one task without rolling, as long as the task’s difficulty is no higher than level 6. When you do so, however, you also trigger a GM intrusion as if you had rolled a 1. The intrusion doesn’t invalidate the success, but it probably qualifies it in some fashion. You can do this one time, although the ability renews each time you make a ten-hour recovery roll."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "It seemed like there were equal odds that the other PCs wouldn’t succeed, which sounded good to you.",
+      "You think the tasks ahead will present you with unique and fulfilling challenges.",
+      "One of your biggest risks failed to go your way, and you need money to help pay that debt.",
+      "You bragged that you never saw a risk you didn’t like, which is how you reached your current point."
+    ]
+  },
+  {
+    "id": "serene",
+    "name": "SERENE",
+    "source": "destiny",
+    "description": "You are as still as untroubled water and as smooth as glass. Even when difficulties arise, you maintain your cool, your self-control, and your serene demeanor. Part of it comes to you naturally, but serenity also requires discipline and conscious control of your emotions. Rising to the bait offered by an ally, a foe, or a chance-met lout in the street is something you would do only if it advanced your own agenda-not because you lost control.",
+    "poolModifiers": {
+      "intellect": 2
+    },
+    "trainedSkills": [
+      "intellect defense tasks"
+    ],
+    "inabilities": [],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Self-Possessed: +2 to your Intellect Pool."
+      }
+    ],
+    "additionalEquipment": [],
+    "initialLinks": [
+      "By staying calm in a difficult situation, you gained the trust of the other PCs.",
+      "No one else would take up the task, but you weren’t afraid to try.",
+      "You were investigating a series of strange occurrences, which led you to the other PCs and your current situation.",
+      "Sometimes you need to blow off a little steam and helping the other PCs seemed like a way to do that."
+    ]
+  },
+  {
+    "id": "vicious",
+    "name": "VICIOUS",
+    "source": "destiny",
+    "description": "You try to hide what’s inside, fold it into yourself when everything inside you screams to let go, make them pay, make them hurt, and make them bleed. Sometimes you succeed for your friends—smiling like they smile, laughing when they laugh, and sometimes even having other emotions of your own. But it’s always there, that feeling of frantic glee mixed with hate that sometimes leaps out of you when you confront a foe. Violence your friends can tolerate, but you sometimes worry they will also learn that you are cruel.",
+    "poolModifiers": {},
+    "trainedSkills": [
+      "tracking creatures"
+    ],
+    "inabilities": [],
+    "specialAbilities": [
+      {
+        "name": "You gain the following benefits",
+        "description": "Skill: You are trained in tracking creatures. If a creature has wronged you, the tracking task is eased."
+      },
+      {
+        "name": "Bloodthirsty",
+        "description": "Once you begin fighting, you see only red. You inflict 2 additional points of damage with any attack."
+      },
+      {
+        "name": "Berserk",
+        "description": "Once you begin fighting, it’s hard for you to stop. In fact, it’s a difficulty 2 Intellect task to do so, even if your foe surrenders or you’ve run out of foes. If the latter occurs and you fail to stop, you attack the nearest ally within short range."
+      }
+    ],
+    "additionalEquipment": [
+      "You have a book in which you’ve listed the names of those who’ve wronged you"
+    ],
+    "initialLinks": [
+      "Another PC saw you take down a mean drunk in a tavern, not realizing you were the one who started the fight.",
+      "You wanted to get away from a bad situation, so you went with the other PCs.",
+      "You want to change, and you hope that being with the other PCs will help you calm yourself.",
+      "One of the other PCs asked you to come along, believing that your viciousness could be harnessed for the benefit of the mission."
+    ]
+  }
+]

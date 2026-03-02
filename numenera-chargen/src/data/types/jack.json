@@ -1,0 +1,174 @@
+{
+  "id": "jack",
+  "name": "Jack",
+  "description": "Jacks are intrepid explorers. They are jacks of all trades—hence the name—although the word also hearkens back to fables involving a wily, resourceful hero who always seems to be named Jack. Used as a verb, “to jack” means to steal, to deceive, or to get out of a tight scrape through ingenuity or luck. Jacks don’t use one skill or tactic exclusively; they use whatever weapons, armor, esoteries, or anything else might help them. They are hunters (particularly treasure hunters), con artists, skalds, rogues, scouts, and experts in a variety of fields.",
+  "basePools": {
+    "might": 10,
+    "speed": 10,
+    "intellect": 10
+  },
+  "bonusPoolPoints": 6,
+  "baseEdge": {
+    "might": 0,
+    "speed": 0,
+    "intellect": 0
+  },
+  "flexEdge": 1,
+  "effort": 1,
+  "cypherLimit": 2,
+  "weaponProficiency": "light-and-medium",
+  "trainedInArmor": false,
+  "practiceWithAllWeapons": false,
+  "startingEquipment": [
+    "clothing",
+    "two weapons",
+    "light armor",
+    "an explorer’s pack",
+    "a pack of light tools",
+    "two cyphers (chosen for you by the GM)",
+    "one oddity (chosen by the GM)"
+  ],
+  "shins": 8,
+  "backgrounds": [
+    {
+      "name": "Born Lucky",
+      "description": "You seem to be better than most people because you are. Your ancestors were part of a genetic experiment, and your genes are superior to those of the average human. You’re smarter, stronger, more dexterous, and able to learn mental and physical skills more quickly. Folks might call you charismatic, blessed, divinely gifted, or just plain lucky. They probably said the same thing about your parents, their parents, and so on. Some of your genetic advantage might even grant you low-level psychic abilities that greatly resemble the “miracles” performed by Nanos."
+    },
+    {
+      "name": "School of Hard Knocks",
+      "description": "You learned things the hard way—on your own. Adaptive and canny, you express the true strengths of humanity in your ability to adjust quickly to circumstances, pick up new tricks to succeed, and ultimately survive when you probably should be dead. Most likely, you grew up on your own, perhaps on the streets, in the wilderness, or amid ruins. The details don’t really matter. What’s important is that you taught yourself how to overcome whatever challenges came along."
+    },
+    {
+      "name": "A Cobbled Jumble",
+      "description": "You’re the product of generations of eugenics, bolstered by minor cybernetic enhancements, a few small psychic abilities, and the lessons of secret masters. In other words, you don’t have one source of power or one explanation for your abilities—you have many, and as far as you’re concerned, that’s the best formula for success. You don’t put all your eggs in a single proverbial basket. To really get ahead, you must rely on multiple strengths. You’ve always got an unexpected trick up your sleeve or a fallback contingency. For example, you might have subdermal implants that make you more resilient, your training might let you sense a foe’s attack before he strikes, and your psychic abilities could allow you to push your enemy’s blade slightly to the left so you can just barely dodge it. In the end, you’re simply hard to hurt"
+    }
+  ],
+  "abilityChoices": [
+    {
+      "label": "Tricks of the Trade",
+      "pickCount": 2,
+      "options": [
+        {
+          "id": "trained-in-armor",
+          "name": "Trained in Armor",
+          "description": "You can wear armor for long periods of time without tiring and can compensate for slowed reactions from wearing armor. You can wear any kind of armor. You reduce the Speed Effort cost for wearing armor by 1. Enabler.",
+          "type": "enabler",
+          "tier": 1,
+          "source": "jack"
+        },
+        {
+          "id": "create-deadly-poison",
+          "name": "Create Deadly Poison",
+          "description": "You create one dose of a level 2 poison that inflicts 5 points of damage. You can apply this poison to a weapon, food, or drink as part of the action of creating it. In addition to the normal options for using Effort, you can choose to use Effort to increase the level of the poison; each level of Effort used in this way increases the poison level by 1. If unused, the poison loses its potency after one hour. Action.",
+          "cost": {
+            "amount": 3,
+            "pool": "intellect"
+          },
+          "type": "action",
+          "tier": 1,
+          "source": "jack"
+        },
+        {
+          "id": "critter-companion",
+          "name": "Critter Companion",
+          "description": "A level 1 creature accompanies you and follows your instructions. This creature is no larger than a large cat (about 20 pounds, or 9 kg) and is normally some sort of domesticated species. You and the GM must work out the details of your creature, and you’ll probably make rolls for it in combat or when it takes actions. The critter companion acts on your turn. As a level 1 creature, it has a target number of 3 and a 3 health, and it inflicts 1 point of damage. Its movement is based on its creature type (avian, swimmer, and so on). If your critter companion dies, you can search an urban or wild environment for 1d6 days to find a new companion. Enabler",
+          "type": "enabler",
+          "tier": 1,
+          "source": "jack"
+        },
+        {
+          "id": "face-morph",
+          "name": "Face Morph",
+          "description": "You alter your features and coloration for one hour, hiding your identity or impersonating someone. This affects only your face, not the rest of your body. You can’t perfectly duplicate someone else’s face, but you can be accurate enough to fool someone who knows that person casually. You have an asset in all tasks involving disguise. You must apply a level of Effort to be able to impersonate a different species. Action.",
+          "cost": {
+            "amount": 2,
+            "pool": "intellect"
+          },
+          "type": "action",
+          "tier": 1,
+          "source": "jack"
+        },
+        {
+          "id": "fleet-of-foot",
+          "name": "Fleet of Foot",
+          "description": "You can move a short distance as part of another action. You can move a long distance as your entire action for a turn. If you apply a level of Effort to this ability, you can move a long distance and make an attack as your entire action for a turn, but the attack is hindered. Enabler.",
+          "cost": {
+            "amount": 1,
+            "pool": "speed"
+          },
+          "type": "enabler",
+          "tier": 1,
+          "source": "jack"
+        },
+        {
+          "id": "late-inspiration",
+          "name": "Late Inspiration",
+          "description": "You retry a task you failed within the past one minute, using the same difficulty and modifiers, except this time you have an asset on the task. If this retry fails, you can’t use this ability to retry it again. Enabler.",
+          "cost": {
+            "amount": 3,
+            "pool": "intellect"
+          },
+          "type": "enabler",
+          "tier": 1,
+          "source": "jack"
+        },
+        {
+          "id": "link-senses",
+          "name": "Link Senses",
+          "description": "You touch a willing creature and link its senses to yours for one minute. At any time during that duration, you can concentrate to see, hear, and smell what that creature is experiencing, instead of using your own senses. If you or the creature move out of long range, the connection is broken. Action to initiate.",
+          "cost": {
+            "amount": 2,
+            "pool": "intellect"
+          },
+          "type": "action",
+          "tier": 1,
+          "source": "jack"
+        },
+        {
+          "id": "phased-pocket",
+          "name": "Phased Pocket",
+          "description": "You connect yourself for one hour to a small space that is out of phase and moves with you. You can access this space as if it were a convenient pocket or bag, but nobody else can perceive or access the space unless they have the ability to interact with transdimensional areas. The space can hold up to 1 cubic foot. The space is a part of you, so you can’t use it to carry more cyphers than your limit, a detonation cypher activated inside the space harms you, and so on. When the connection ends, anything in the space falls out. For each 2 additional Intellect points you spend, the pocket lasts an additional hour. Enabler.",
+          "cost": {
+            "amount": 2,
+            "pool": "intellect"
+          },
+          "type": "enabler",
+          "tier": 1,
+          "source": "jack"
+        },
+        {
+          "id": "vanish",
+          "name": "Vanish",
+          "description": "You become invisible for a short amount of time. While invisible, you have an asset on stealth and Speed defense tasks. The invisibility ends at the end of your next turn, or if you do something to reveal your presence or position—attacking, using an ability, moving a large object, and so on. Action.",
+          "cost": {
+            "amount": 2,
+            "pool": "intellect"
+          },
+          "type": "action",
+          "tier": 1,
+          "source": "jack"
+        }
+      ]
+    }
+  ],
+  "skillChoices": [
+    {
+      "label": "Trained Skill",
+      "pickCount": 2,
+      "options": [],
+      "freeform": true
+    }
+  ],
+  "automaticSkills": [],
+  "inabilities": [],
+  "specialAbilities": [
+    {
+      "id": "practiced-with-light-and-medium-weapons-jack",
+      "name": "Practiced With Light and Medium Weapons",
+      "description": "You can use light and medium weapons without penalty. Enabler.",
+      "type": "enabler",
+      "tier": 1,
+      "source": "jack"
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "id": "arkus",
+  "name": "Arkus",
+  "description": "Arkai are natural leaders of the Ninth World, using wit, rhetoric, and the strength of working together to overcome problems. Heralds, nobles, and pioneers could be Arkai. Sometimes warlords, generals, and even guardians are Arkai. “Arkus” is common vernacular used by humans in the Steadfast and the Beyond for any person skilled in governing others, but in truth, the word applies only to those who are specially gifted in leadership. Arkai have the potential to spearhead armies, cities, or even entire regions, because their abilities surpass those who are merely good at running a long confidence game. Arkai are usually quite intelligent, but being able to survive physical challenges is important for anyone exploring or establishing new communities in the Ninth World. As a result, many Arkai have a high Intellect and either Might or Speed as a high secondary statistic, depending on whether they like to come in strong or to get out of the way of threats. When forced to fight, Arkai prefer ranged weapons, though they’d rather get someone else to fight on their behalf if they can’t defuse the situation another way.",
+  "basePools": {
+    "might": 8,
+    "speed": 9,
+    "intellect": 11
+  },
+  "bonusPoolPoints": 6,
+  "baseEdge": {
+    "might": 0,
+    "speed": 0,
+    "intellect": 1
+  },
+  "effort": 1,
+  "cypherLimit": 2,
+  "weaponProficiency": "light-and-medium",
+  "trainedInArmor": false,
+  "practiceWithAllWeapons": false,
+  "startingEquipment": [
+    "stylish clothing and a light weapon of your choice",
+    "two cyphers (chosen by the GM)",
+    "one oddity"
+  ],
+  "shins": 9,
+  "backgrounds": [
+    {
+      "name": "Inborn Traits",
+      "description": "You were born this way. Everyone always took to you. You always seemed to know the right thing to say. It all came naturally. Your voice was pleasant, your eyes shining and honest, and your face attractive. These qualities have always been strong enough that you could rely on them. While others studied a craft, learned to fight or steal, or tinkered with the numenera, you found that you could usually get what you needed and wanted by talking to people. Now, all this might come from a heritage of quality forebears, or it could come from something more. A silver-tongued Arkus like yourself might have inherited these qualities from your family, or you might benefit from subtle mutations that alter your voice and mannerisms to be perfect for influencing others. You don’t really know. You just know that you’ve always been this way and that, while you look just like everyone else, you’re different. Of course, no one ever need know that but you."
+    },
+    {
+      "name": "Enhancements",
+      "description": "You might be a leader, but you don’t fit the mold. Although you gained your share of practical experience in learning how to influence others, you have the numenera on your side as well. Some of your knowledge of rhetoric and ability to speak at an enhanced volume is due to biomechanical bits implanted in your brain and spine, wired into your nerves and muscles. Your vocal cords are woven with subtle resonant threads. Subdermal plating makes your appearance more symmetrical and pleasing. Your facial muscles are interlaced with small elements that give you complete control over your micro expressions. Alternatively, your genetic code could have been rewritten by engineered viruses, or the tissues in your body could have been reworked by nanotech, turning you into a paragon that others are drawn to. Or maybe you’ve been altered by strange science—radioactive treatments of bizarre energies, chemical compounds and drugs, or extradimensional enhancements—that makes you smarter and more able to see the implications of long-term planning than anyone around you. Whatever the case, you’re the result of ancient knowledge made manifest in the present, and now you’re shaping the future. Perhaps your modifications are obvious and visible; perhaps they’re not. Regardless, you know that you’re more than merely human."
+    },
+    {
+      "name": "Training and Experience",
+      "description": "You are eloquent, good-looking, or both, but what really separates you from the crowd is your training. Perhaps you worked as an intern with the Aeon Priests in Qi that work behind the scenes to lead the Order of Truth, where they taught you how to speak eloquently, debate convincingly, and synthesize the best plans from all those put forth. You know a thousand different ways to argue and influence. You learned how to read people to ascertain their moods, distinguish their truths from their lies, and determine what they want and what they need to hear. You got a lot of practice using your skills in public, starting small at first but working your way up to leading community movements and taking charge of short-term community projects."
+    }
+  ],
+  "abilityChoices": [
+    {
+      "label": "Precepts",
+      "pickCount": 2,
+      "options": [
+        {
+          "id": "anecdote",
+          "name": "Anecdote",
+          "description": "You can lift the spirits of a group of creatures and help them bond together by entertaining them with an uplifting or pointed anecdote. For the next hour, those who pay attention to your story are trained in a task you choose that’s related to the anecdote, as long as it’s not an attack or defense task. Action to initiate, one minute to complete.",
+          "cost": {
+            "amount": 2,
+            "pool": "intellect"
+          },
+          "type": "action",
+          "tier": 1,
+          "source": "arkus"
+        },
+        {
+          "id": "babel",
+          "name": "Babel",
+          "description": "Once each day, choose one language that you’ve encountered on which you will concentrate. For the rest of that day, you can speak that language with reasonable facility. You don’t lose the use of any other languages you know normally during this period. Action to initiate, ten minutes to complete.",
+          "cost": {
+            "amount": 3,
+            "pool": "intellect"
+          },
+          "type": "action",
+          "tier": 1,
+          "source": "arkus"
+        },
+        {
+          "id": "connection-with-an-organization",
+          "name": "Connection With an Organization",
+          "description": "You have a general connection with an important organization, such as the Order of Truth, the Angulan Knights, the aristocracy of a region, a merchant guild, and so on. Tasks related to interacting with members of that group gain an asset. Further, you can use this connection to learn about events related to that organization’s focus. For instance, if you have a connection with the Angulan Knights, you may learn of events related to mutants in the area. You and the GM should work out the details together. You can choose this ability more than once and choose a new organization each time. Enabler.",
+          "type": "enabler",
+          "tier": 1,
+          "source": "arkus"
+        },
+        {
+          "id": "goad",
+          "name": "Goad",
+          "description": "You can attempt to goad a target into a belligerent—and probably foolish—reaction that requires the target to try to close the distance between you and attempt to physically strike you on its next turn. They attempt this action even if this would cause them to break formation or to give up cover or a tactically superior position. Whether the target strikes you or fails to do so, they come to their senses immediately afterward, after which further tasks attempting to goad the target again are hindered. Action to initiate.",
+          "cost": {
+            "amount": 1,
+            "pool": "intellect"
+          },
+          "type": "action",
+          "tier": 1,
+          "source": "arkus"
+        },
+        {
+          "id": "powerful-rhetoric",
+          "name": "Powerful Rhetoric",
+          "description": "After engaging a creature in conversation for at least a minute, you can attempt to influence how that creature is perceived, promoting it as a friend, dismissing it as a fool, or denouncing it as an enemy. Your words are so well chosen that even you and it are affected, because your conviction and its doubt are paramount. The accuracy of your assessment isn’t important as long as you keep up the rhetoric. From then on (or until you change your rhetoric or the creature offers a convincing defense to those who’ve heard your label), the friend’s social interactions gain an asset, the fool’s social interactions are hindered, or the enemy’s defenses are hindered. Action to initiate, one minute to complete.",
+          "cost": {
+            "amount": 1,
+            "pool": "intellect"
+          },
+          "type": "action",
+          "tier": 1,
+          "source": "arkus"
+        },
+        {
+          "id": "trained-without-armor",
+          "name": "Trained Without Armor",
+          "description": "You are trained in Speed defense actions when not wearing armor. Enabler.",
+          "type": "enabler",
+          "tier": 1,
+          "source": "arkus"
+        },
+        {
+          "id": "understanding",
+          "name": "Understanding",
+          "description": "You observe or study a creature or object. Your next interaction with that creature or object gains one asset. Action.",
+          "cost": {
+            "amount": 1,
+            "pool": "intellect"
+          },
+          "type": "action",
+          "tier": 1,
+          "source": "arkus"
+        }
+      ]
+    }
+  ],
+  "skillChoices": [],
+  "automaticSkills": [],
+  "inabilities": [
+    "crafting numenera",
+    "salvaging numenera",
+    "understanding numenera"
+  ],
+  "specialAbilities": [
+    {
+      "id": "practiced-with-light-weapons-arkus",
+      "name": "Practiced With Light Weapons",
+      "description": "You can use light weapons without penalty. Enabler.",
+      "type": "enabler",
+      "tier": 1,
+      "source": "arkus"
+    }
+  ]
+}

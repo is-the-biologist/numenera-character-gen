@@ -1,0 +1,397 @@
+[
+  {
+    "id": "bears-a-halo-of-fire",
+    "name": "Bears a Halo of Fire",
+    "description": "You can create a sheath of flames around your body. You leave scorch marks wherever you go, and you can’t handle combustible objects without first dousing your inherent flames. Your special abilities (such as Nano esoteries) are tainted with flame. Fiery visuals accompany your powers, and in some cases, your predilection for flame actually reshapes your abilities to take on a fiery nature where none existed before. You probably wear red and yellow, or perhaps black. Although most of those who take up this mantle are Nanos, flame-wielding Glaives and Jacks are fearsome indeed.",
+    "connection": "Pick one other PC. Through a quirk of fate, your fire cannot harm that character.",
+    "tier1": {
+      "grantedAbilities": [
+        {
+          "id": "shroud-of-flame",
+          "name": "Shroud of Flame",
+          "description": "At your command, your entire body becomes wreathed in flames that last up to ten minutes. The fire doesn’t burn you, but it automatically inflicts 2 points of damage to anyone who tries to touch you or strike you with a melee attack. Flames from another source can still hurt you. While the shroud is active, you gain +2 to Armor against damage from fire from any source. Enabler.",
+          "cost": { "pool": "intellect", "amount": 1 },
+          "type": "action",
+          "tier": 1,
+          "source": "bears-a-halo-of-fire"
+        }
+      ],
+      "trainedSkills": [],
+      "additionalEquipment": ["a fireproof pouch"]
+    },
+    "higherTiers": []
+  },
+  {
+    "id": "commands-mental-powers",
+    "name": "Commands Mental Powers",
+    "description": "You have always had special abilities that others didn’t seem to share. Through practice and devotion, you have honed this unique talent so that you can harness the power of your mind to perform deeds. No one can tell that you have this ability just by looking at you, although you wear a crystal or jewel somewhere on your head to help focus your power. Either this focusing object was given to you by someone who recognized your ability, or you came upon it by accident and it triggered your abilities. Some people with mental powers—often called psychics or psionics by ordinary folks—are secretive and a little paranoid. Although Nanos frequently command mental powers, psionic characters of every other type are not uncommon.",
+    "connection": "Choose one of the following.",
+    "tier1": {
+      "grantedAbilities": [],
+      "trainedSkills": [],
+      "additionalEquipment": []
+    },
+    "higherTiers": []
+  },
+  {
+    "id": "controls-beasts",
+    "name": "Controls Beasts",
+    "description": "To say that you have a way with animals and nonhuman creatures doesn’t begin to cover it. Your mastery and communication with beasts is positively uncanny. They come to you fearlessly, and it’s not uncommon for birds to alight on your shoulder or for small animals to climb up your arms or legs. You probably wear tough clothing and have a disheveled or grizzled appearance that suggests a rugged, outdoor life. Perhaps you even smell like an animal. Any type of character is likely to have this focus.",
+    "connection": "Pick one other PC. This character’s presence calms your beast companion.",
+    "tier1": {
+      "grantedAbilities": [
+        {
+          "id": "beast-companion",
+          "name": "Beast Companion",
+          "description": "A level 2 creature of your size or smaller accompanies you and follows your instructions. You and the GM must work out the details of your creature. The beast companion acts on your turn. As a level 2 creature, it has a target number of 6, a health of 6, and it inflicts 2 points of damage. If your beast companion dies, you can hunt in the wild for 1d6 days to find a new one. Enabler.",
+          "type": "enabler",
+          "tier": 1,
+          "source": "controls-beasts"
+        }
+      ],
+      "trainedSkills": ["all interactions with natural beasts"],
+      "additionalEquipment": ["a leash or harness for your beast companion"]
+    },
+    "higherTiers": []
+  },
+  {
+    "id": "controls-gravity",
+    "name": "Controls Gravity",
+    "description": "Gravity must have been quite a concern for the people of prior epochs because there are many paths within the numenera to control it. Through a quirk of fate, some unique device(s), or supreme devotion (or a combination of all three), you have learned to tap into the power of gravity. With one foot planted in the distant past, you are a mysterious individual. Most likely, you are also older, having spent much of your life honing your odd, ancient talents. You might prefer billowy garments that display your mastery of gravity’s pull and conceal your identity and intentions. No one type of character is more likely to control gravity than another, but the power is rare.",
+    "connection": "Choose one of the following.",
+    "tier1": {
+      "grantedAbilities": [],
+      "trainedSkills": [],
+      "additionalEquipment": []
+    },
+    "higherTiers": []
+  },
+  {
+    "id": "crafts-illusions",
+    "name": "Crafts Illusions",
+    "description": "You use the numenera to create holographic images that appear real. You are, in effect, an artist—a crafter of light and sound. Holographic images can never inflict direct harm or exert real force, but they can fool creatures, changing opinions and even behaviors if you craft them cleverly. You likely dress with flair and color. The appearance of things is important to you, both their beauty and their ugliness. You are a visual performer who can entertain, terrify, or fool everyone you encounter. A Nano is the most likely character to be an illusionist, but Jacks find illusions to be helpful as well. The rare Glaive illusionist can find ways to use tricks in battle.",
+    "connection": "Pick one other PC. This character can always see through your illusions.",
+    "tier1": {
+      "grantedAbilities": [
+        {
+          "id": "minor-illusion",
+          "name": "Minor Illusion",
+          "description": "You create a single image of a creature or object within immediate range. The image must fit within a 10-foot cube. The image can move but stays in the area. It lasts for ten minutes and is convincing. Anyone who interacts with or studies the illusion carefully can attempt an Intellect task to see through it.",
+          "cost": { "pool": "intellect", "amount": 1 },
+          "type": "action",
+          "tier": 1,
+          "source": "crafts-illusions"
+        }
+      ],
+      "trainedSkills": ["disguise", "seeing through deception"],
+      "additionalEquipment": ["a small mirror"]
+    },
+    "higherTiers": []
+  },
+  {
+    "id": "employs-magnetism",
+    "name": "Employs Magnetism",
+    "description": "Electromagnetism is a fundamental force in the universe, and it is yours to command. You are a master of metal. You probably wear a lot of metal, perhaps as part of your clothing or armor, as part of your accessories (such as jewelry or piercings), embedded into your body surgically, or in some combination of these options. No one type of character is more likely than any other to employ magnetism, although Glaives who wield weapons and wear armor will find it an interesting complement to their powers.",
+    "connection": "Choose one of the following.",
+    "tier1": {
+      "grantedAbilities": [],
+      "trainedSkills": [
+        "speed defense tasks against any incoming attack that uses metal"
+      ],
+      "additionalEquipment": []
+    },
+    "higherTiers": []
+  },
+  {
+    "id": "entertains",
+    "name": "Entertains",
+    "description": "You are an entertainer: a singer, dancer, poet, storyteller, or something similar. You perform for the benefit of others. Naturally charismatic and talented, you have also studied to master your art. You know all the old poems, songs, jokes, and stories, and you’re skilled at creating new ones, too. You probably wear flamboyant or at least fashionable clothes and use cosmetics, tattoos, or hair stylings for dramatic effect. The role of the entertainer fits the Jack best, though Glaives and Nanos sometimes entertain as well.",
+    "connection": "Choose one of the following.",
+    "tier1": {
+      "grantedAbilities": [],
+      "trainedSkills": [
+        "all social interactions other than those involving coercion or intimidation"
+      ],
+      "additionalEquipment": []
+    },
+    "higherTiers": []
+  },
+  {
+    "id": "exists-partially-out-of-phase",
+    "name": "Exists Partially Out of Phase",
+    "description": "You have the ability to change your phase state. In fact, you’re always slightly out of phase, giving you a ghostly translucence. With concentration, you can pass your hand through a solid object, allow a solid object to pass harmlessly through you, or literally walk through walls. However, moving in and out of different phase states requires extreme force of will and can be mentally taxing. The explanation for your strange power lies within some aspect of the numenera. Perhaps the ability emerged through the use of (or exposure to) lingering transdimensional technology or as the result of an encounter with a creature not native to this world or dimension. Perhaps one of your ancestors first developed the power and passed it down through generations. You might do whatever you can to play up your translucent appearance by wearing diaphanous, billowy clothing, or, depending on your personality, you might do just the opposite. Jacks enjoy the infiltration possibilities of changing their phase state, and Nanos appreciate the defensive capabilities. Glaives can use the offensive and defensive aspects but might find them a bit hindering as well.",
+    "connection": "Choose one of the following.",
+    "tier1": {
+      "grantedAbilities": [],
+      "trainedSkills": [],
+      "additionalEquipment": []
+    },
+    "higherTiers": []
+  },
+  {
+    "id": "explores-dark-places",
+    "name": "Explores Dark Places",
+    "description": "You explore the foreboding ruins and mysterious locales of the ancient eras, trained in such activities by those who have gone before you. You’re the archetypical treasure hunter, scavenger, and finder of lost things. You spend so much of your time in the dark that you slowly adapt to it, almost becoming a creature of the gloom yourself. Even in civilized areas, you prefer to keep to the shadows. Most likely, you wear dark clothing to help you blend into the blackness. On the other hand, you might wear sensible garments and gear because you have serious and dangerous business to attend to in the dark. Jacks are suited to exploring dark places; those who do so are called shadowjacks. Glaives who follow this path are known as shadow warriors, and Nanos are called shadowcasters.",
+    "connection": "Pick one other PC. This character once saved your life underground.",
+    "tier1": {
+      "grantedAbilities": [
+        {
+          "id": "trained-explorer",
+          "name": "Trained Explorer",
+          "description": "You are trained in searching, listening, climbing, balancing, and jumping. Enabler.",
+          "type": "enabler",
+          "tier": 1,
+          "source": "explores-dark-places"
+        }
+      ],
+      "trainedSkills": ["searching", "listening", "climbing", "balancing", "jumping"],
+      "additionalEquipment": ["an explorer’s pack with extra climbing gear", "a set of maps"]
+    },
+    "higherTiers": []
+  },
+  {
+    "id": "fights-with-panache",
+    "name": "Fights with Panache",
+    "description": "You know that style is at least as important as substance. Defeating foes is secondary to looking good while doing it. Some might call you a swashbuckler or daredevil. You leap through the air, make a flourish with your weapon, and attack, usually with a clever, biting show of wit. Your enemies hate you, but your allies adore you. Just watching you fight is entertaining. You very likely wear no armor, instead preferring stylish clothing—perhaps even a hat with a feather. Jacks and Glaives make the best swashbucklers, and they are the most common types of characters to fight with panache.",
+    "connection": "Choose one of the following.",
+    "tier1": {
+      "grantedAbilities": [],
+      "trainedSkills": [
+        "speed defense tasks"
+      ],
+      "additionalEquipment": []
+    },
+    "higherTiers": []
+  },
+  {
+    "id": "focuses-mind-over-matter",
+    "name": "Focuses Mind over Matter",
+    "description": "Telekinesis. Psychokinesis. Mind over matter. The power has many names, but in the end, it all boils down to one thing—the molecules that make up all matter are yours to command. You likely call yourself a telekinetic or just a TK. Many telekinetics prefer to wear tight clothing without much accoutrement, so there is little that another TK could grab hold of psychically. On the other hand, you have the power to create very minor telekinetic effects at will, so your hair might always be in motion, you could have a few tiny objects floating around you, or you might wear a long cape that’s always billowing. Jacks are the most likely characters to be telekinetics, but Glaives find that the abilities add to their combat prowess, and Nanos, of course, appreciate the additional power.",
+    "connection": "Choose one of the following.",
+    "tier1": {
+      "grantedAbilities": [],
+      "trainedSkills": [
+        "speed defense tasks"
+      ],
+      "additionalEquipment": []
+    },
+    "higherTiers": []
+  },
+  {
+    "id": "fuses-flesh-and-steel",
+    "name": "Fuses Flesh and Steel",
+    "description": "At some point in your past, some of your organic parts were replaced with artificial components. (Alternatively, you belong to a secret species of biomechanical hybrids.) These artificial components might be subdermal, or they might resemble more overt metal or synth plating on your skin. They can also take the form of threadlike tendrils of circuitry winding across your flesh. Whatever their appearance, these components give you special abilities. As you advance, you can add to, modify, or discover new functions for them. Unfortunately, your artificial body also has special requirements when it takes damage. You might wear a cloak with a hood or something similar to hide your artificial parts from those who would persecute you. Because your components are tricky to repair, as time goes on, it might become more difficult to conceal your true nature, with exposed circuitry, metal plates, and more in a state of partial disassembly. Anyone might be a cybernetic organism.",
+    "connection": "Choose one of the following.",
+    "tier1": {
+      "grantedAbilities": [],
+      "trainedSkills": [],
+      "additionalEquipment": []
+    },
+    "higherTiers": []
+  },
+  {
+    "id": "howls-at-the-moon",
+    "name": "Howls at the Moon",
+    "description": "Sometimes the numenera is a double-edged sword. You are cursed and blessed to be able to transform into a powerful creature, drawing additional mass from a transdimensional source. You and the GM should work out the exact nature of the creature, including its appearance, but it’s a wild beast of rage and blood—at least until you learn to control it. Creatures like you are often called “lycanthropes.” Style and appearance are probably low on your list of concerns. Your clothes might be ragged because your transformation is hard on them (or they’re cheap because you know they’ll be destroyed the next time you transform). Anyone can be a lycanthrope. A Glaive likely benefits the most from the transformation.",
+    "connection": "Choose one of the following.",
+    "tier1": {
+      "grantedAbilities": [],
+      "trainedSkills": [],
+      "additionalEquipment": []
+    },
+    "higherTiers": []
+  },
+  {
+    "id": "hunts",
+    "name": "Hunts",
+    "description": "You are a tracker. Perhaps you hunt animals or more deadly creatures. Perhaps you go after people as a bounty hunter, law enforcer, or killer for hire. Whatever form your hunting takes, you are trained in stalking your quarry and bringing it down. You are a dangerous individual. If you hunt animals or creatures, you might carry the trophies of past kills, such as teeth or skins. If you’re a bounty hunter, you probably wear whatever your quarry would find most intimidating so it feels as though it has no chance of getting away from you. Most hunters are Glaives, but Jacks and Nanos bring unique skills to the chase.",
+    "connection": "Choose one of the following.",
+    "tier1": {
+      "grantedAbilities": [],
+      "trainedSkills": [],
+      "additionalEquipment": []
+    },
+    "higherTiers": []
+  },
+  {
+    "id": "lives-in-the-wilderness",
+    "name": "Lives in the Wilderness",
+    "description": "You dwell in the wilds. You probably have done so most, if not all, of your life, coming to understand the mysteries of nature, weather, and survival. The ways of flora and fauna are your ways.",
+    "connection": "Choose one of the following.",
+    "tier1": {
+      "grantedAbilities": [],
+      "trainedSkills": [],
+      "additionalEquipment": []
+    },
+    "higherTiers": []
+  },
+  {
+    "id": "masters-defense",
+    "name": "Masters Defense",
+    "description": "Protecting yourself is obviously important in dangerous situations, and you are particularly good at it. Cautious and prudent, you learn techniques to defend against all kinds of attacks, both physical and mental. The winner is often the last person standing, and you’ve done all you can to ensure that person will be you. You carry a shield and probably wear the best armor you can find. Glaives make excellent defensive masters, but Jacks and Nanos also find at least some of these skills of great value. Connection: Choose one of the following.",
+    "connection": "Choose one of the following.",
+    "tier1": {
+      "grantedAbilities": [],
+      "trainedSkills": [
+        "speed defense tasks"
+      ],
+      "additionalEquipment": []
+    },
+    "higherTiers": []
+  },
+  {
+    "id": "masters-weaponry",
+    "name": "Masters Weaponry",
+    "description": "You have worked long and hard with one particular type of weapon: bows, swords, axes, daggers, whips, or whatever you choose. Thus, you are an archer, a swordsman, an axe master, a mistress of knives, or whatever is appropriate to your chosen weapon. A master of the rapier is different than a master of the warhammer, and an archer is different than a whip wielder. You might wear a symbol—a badge, a pin, a tattoo, an amulet, certain colors, or the like—that indicates the school in which you trained, the style of fighting you have mastered, or the name of your mentor. Your weapon is almost certainly your finest possession. Not only is it well cared for and of high quality, but you probably keep it in a beautiful scabbard, harness, belt, case, or something similar. Many Glaives are weapon masters, but sometimes a Jack might choose this path, particularly with lighter weapons.",
+    "connection": "Choose one of the following",
+    "tier1": {
+      "grantedAbilities": [],
+      "trainedSkills": [
+        "crafting tasks associated with your chosen weapon"
+      ],
+      "additionalEquipment": []
+    },
+    "higherTiers": []
+  },
+  {
+    "id": "murders",
+    "name": "Murders",
+    "description": "The murderous assassin is a master of dealing death. No one is better at sneaking into a location, eliminating a target, and slipping out again. Obviously, a professional killer is not likely to have a lot of friends. You probably wear dark colors—black, charcoal grey, or midnight blue—to help blend into the shadows. But since you’re also a master of disguise, in truth you could look like anyone.",
+    "connection": "Choose one of the following.",
+    "tier1": {
+      "grantedAbilities": [],
+      "trainedSkills": [
+        "stealth",
+        "disguise"
+      ],
+      "additionalEquipment": []
+    },
+    "higherTiers": []
+  },
+  {
+    "id": "rages",
+    "name": "Rages",
+    "description": "The berserker is a feared fighter who cannot be stopped. You put yourself into a howling battle frenzy that can make you a terror on the battlefield. You might hail from a less civilized society, perhaps even a tribal one. You likely wear little or no armor so as not to restrict your speed or maneuverability. Your clothing is probably simple and utilitarian. Glaives make the best berserkers. Connection: Choose one of the following.",
+    "connection": "Choose one of the following.",
+    "tier1": {
+      "grantedAbilities": [],
+      "trainedSkills": [
+        "climbing",
+        "jumping"
+      ],
+      "additionalEquipment": []
+    },
+    "higherTiers": []
+  },
+  {
+    "id": "rides-the-lightning",
+    "name": "Rides the Lightning",
+    "description": "The ancients harnessed electricity in strange and wonderful ways. Through practice and inherent ability (or the subtle use of hidden or implanted devices), you control the same energy. Not only can you create and discharge electrical power, but you can eventually learn to use it to transport yourself. You probably wear tight-fitting clothing that allows you to move quickly. Your garments might be blue and black, perhaps with a lightning-bolt motif.",
+    "connection": "Choose one of the following.",
+    "tier1": {
+      "grantedAbilities": [],
+      "trainedSkills": [],
+      "additionalEquipment": []
+    },
+    "higherTiers": []
+  },
+  {
+    "id": "speaks-with-a-silver-tongue",
+    "name": "Speaks with a Silver Tongue",
+    "description": "You are poetry incarnate. The words flow from your tongue like liquid metal. Your voice is golden and captivating. With enough time and focus, you can convince almost anyone to do almost anything for you, with you, or in spite of you. Words—words are what matter. You believe they have power. There’s a chance you don’t care much about your appearance, as long as you can say what you want to say.Some might call you the “face” because when your friends or allies need to put forth their best face, they send you. You’re a charmer. The word “charisma” was coined for people like you—there’s just something about you that people seem to like. Since words are important to you, you may have covered your skin with tattooed words or have written things on your outfit. You might play an instrument, write books, or compose songs in your spare time. Jacks, with their ability to take a related flex skill each day, make excellent speakers, but Nanos and Glaives might choose this route to inspire their companions.",
+    "connection": "Choose one of the following.",
+    "tier1": {
+      "grantedAbilities": [],
+      "trainedSkills": [],
+      "additionalEquipment": []
+    },
+    "higherTiers": []
+  },
+  {
+    "id": "talks-to-machines",
+    "name": "Talks to Machines",
+    "description": "Since you were young, you had an affinity for machines. It seemed almost like you were speaking to them. You were. You have the ability to use your organic brain like an intelligent machine, interfacing “wirelessly” with any electronic device. You can control and influence them in ways that others can’t. Intelligent machines are your friends and companions. You have also learned to repair machines of all kinds because the better they work, the better off you are as well. You likely wear a tool belt full of various implements, and machine oils stain your clothes and fingertips. All types of characters can spend their time talking to machines, although this practice is best suited to Nanos.",
+    "connection": "Choose one of the following.",
+    "tier1": {
+      "grantedAbilities": [],
+      "trainedSkills": [
+        "tasks involving electrical machines"
+      ],
+      "additionalEquipment": []
+    },
+    "higherTiers": []
+  },
+  {
+    "id": "wears-a-sheen-of-ice",
+    "name": "Wears a Sheen of Ice",
+    "description": "Through your studies, you have learned to focus your natural talents to command the powers of ice and cold. People might refer to you as an ice mage. Sometimes ice mages are thought to come into conflict with those known as fire mages, but this is a fallacy believed by ordinary folks more than anything based in truth. You likely wear white or blue garments that are heavier than they need to be—unless you live in a cold region or wintry clime, in which case you probably wear less clothing than other people do because the cold doesn’t bother you. Most ice mages are Nanos, but a Glaive armored in ice, perhaps wielding an ice sword, would be quite impressive.",
+    "connection": "Choose one of the following.",
+    "tier1": {
+      "grantedAbilities": [],
+      "trainedSkills": [],
+      "additionalEquipment": []
+    },
+    "higherTiers": []
+  },
+  {
+    "id": "wields-power-with-precision",
+    "name": "Wields Power with Precision",
+    "description": "Not only are you blessed with a great command of the numenera, but you are also trained to exploit esoteries in ways that elevate you above other Nanos. Some people believe that those who perform esoteries are born with the ability, but you know that skill and intelligence play important roles. The ancients created the numenera through knowledge, discovery, and intellect, and to use it properly, you must follow the same path. You probably wear spectacles and dapper outfits, carrying extra books, notebooks, and pens so you can continually focus on your studies and experiments. Nanos usually receive this instruction and focus, but some Jacks do as well. Glaives never do.",
+    "connection": "Choose one of the following.",
+    "tier1": {
+      "grantedAbilities": [],
+      "trainedSkills": [],
+      "additionalEquipment": []
+    },
+    "higherTiers": []
+  },
+  {
+    "id": "wields-two-weapons-at-once",
+    "name": "Wields Two Weapons at Once",
+    "description": "You bear steel with both hands, ready to take on any foe. You fight with two weapons in melee, sometimes called dual wielding. A fearsome warrior, quick and strong, you believe that the best defense is a strong offense. You probably sheathe one weapon on each side or both crossed behind your back. They are likely your most prized possessions, and you might have names for them. Many Glaives and Jacks train to fight with two weapons at once. Very rarely would other characters spend the time required to learn such a purely physical art, but it’s possible.",
+    "connection": "Pick one other PC. You once fought alongside this character in battle.",
+    "tier1": {
+      "grantedAbilities": [
+        {
+          "id": "dual-light-wield",
+          "name": "Dual Light Wield",
+          "description": "You can use two light weapons at the same time, making two attacks as a single action, but the second attack is hindered. Enabler.",
+          "type": "enabler",
+          "tier": 1,
+          "source": "wields-two-weapons-at-once"
+        }
+      ],
+      "trainedSkills": [],
+      "additionalEquipment": ["an additional light weapon"]
+    },
+    "higherTiers": []
+  },
+  {
+    "id": "works-the-back-alleys",
+    "name": "Works the Back Alleys",
+    "description": "The thief, the burglar, the pickpocket: these are the dangerous individuals who haunt the back alleys of every community. You are a thief in a city or town, making your livelihood at the expense of the wealthy. Your talents, however, prepare you for all kinds of pursuits, even when you’re not crouching in an alley or climbing into a window.",
+    "connection": "Choose one of the following.",
+    "tier1": {
+      "grantedAbilities": [],
+      "trainedSkills": [
+        "sneaking",
+        "pickpocketing",
+        "lockpicking"
+      ],
+      "additionalEquipment": []
+    },
+    "higherTiers": []
+  },
+  {
+    "id": "works-miracles",
+    "name": "Works Miracles",
+    "description": "You manipulate matter and time to help others and are beloved by everyone you encounter. Some people consider you a representative of the gods or a power from beyond this world. Perhaps they’re right—transdimensional experiments in the prior worlds might be what created the energies that you now wield. You probably wear simple clothes—nothing too flashy or stylish. There’s no need to call more attention to yourself. A Glaive who can heal himself is an interesting and dangerous proposition.",
+    "connection": "Choose one of the following.",
+    "tier1": {
+      "grantedAbilities": [],
+      "trainedSkills": [],
+      "additionalEquipment": []
+    },
+    "higherTiers": []
+  }
+]

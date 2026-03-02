@@ -1,0 +1,120 @@
+{
+  "id": "nano",
+  "name": "Nano",
+  "description": "Nanos are sometimes called mages, wizards, sorcerers, or witches by the people of the Ninth World. Nano-sorcerer is also a common term, with their abilities referred to as nanosorcery. Some claim to be the representatives of gods or other supernatural agencies. Whatever they’re called, Nanos master the mysteries of the past to the degree that they seem to perform miracles. They tap into the numenera to alter reality or learn things that they couldn’t otherwise know. The term “Nano” is derived from the nanotechnology that is omnipresent throughout the Ninth World (whether anyone realizes it or not). Sometimes people call these invisible, numinous particles that infuse the landscape nano-spirits. Sometimes these spirits take on a devastating manifestation called the iron wind and move through the air in clouds, which can be far more dangerous than any conventional storm. In truth, nanites are literally everywhere.\nNanos wield their power in the form of what they call esoteries, although some prefer to call them spells, enchantments, or charms. Nanos are proficient with other devices as well, and sometimes their powers are actually the subtle use of such items hidden upon their person. All Nanos call forth their power in slightly different ways. Typically, Nanos are intelligent, learned, and insightful. Most of the time, they devote themselves to the numenera and other esoterica rather than to purely physical pursuits. As a result, they’re often well versed in the artifacts and leftovers of the previous worlds.",
+  "basePools": {
+    "might": 7,
+    "speed": 9,
+    "intellect": 12
+  },
+  "bonusPoolPoints": 6,
+  "baseEdge": {
+    "might": 0,
+    "speed": 0,
+    "intellect": 1
+  },
+  "effort": 1,
+  "cypherLimit": 3,
+  "weaponProficiency": "light-only",
+  "trainedInArmor": false,
+  "practiceWithAllWeapons": false,
+  "startingEquipment": [
+    "clothing",
+    "one weapon",
+    "a book about the numenera",
+    "three cyphers (chosen for you by the GM)",
+    "one oddity (chosen for you by the GM)"
+  ],
+  "shins": 4,
+  "backgrounds": [
+    {
+      "name": "Forbidden Knowledge",
+      "description": "You understand the numenera far better than most people do. You know that it isn’t just strange machines buried in old ruins. The numenera is everywhere, beyond the perception of humans. You know that microscopic machines called nanites are threaded through every inch of the world, waiting to be activated. You know that satellites in orbit are broadcasting information, waiting for someone to access it. Having studied long and hard, learning the proper ways to tap into the forces all around you, you know how to activate these machines and make them do what you wish, at least in limited, specific ways. These uses of power are called esoteries. Through various tiny devices that you possess, which probably seem like magic charms to the ininitiated, you “conjure” energy. By accessing the datasphere transmitted across the world, you connect with machines—including the nanites—to change your environment."
+    },
+    {
+      "name": "Psionics",
+      "description": "You know that the world is filled with ancient machines and their creations. Some of them are visible, but many are not. It’s not just skill or knowledge that allows you to gain access to them. You have a psychic talent to interface with the machines to produce various effects. Some of these machines are secreted about your person, and others are infused into the environment of the Ninth World. You can’t conjure energy or warp matter on your own, but you have the rare and spectacular ability to control the invisible nano-machines that do it for you. Is this gift the natural result of extreme exposure to technology? Is it the fusion of the biological and the mechanical? Is it the design of a genius architect, generations earlier, who manipulated the genetics of your family? Or is it just a random mutation? In any case, you’re the natural synthesis of human and machine, working as one."
+    },
+    {
+      "name": "Ports and Plugs",
+      "description": "You have a connection with machines for one clear reason: you’re practically a machine yourself. Your nervous system is laced with circuitry, and your body has implanted jacks and ports where you plug in modules and other technological bits that provide your capabilities. When you produce effects or manipulate nanites, you do so through your body’s direct mechanical interface. Your force blasts might come from a device implanted in your palm or fingertip. Your ability to tap into the datasphere might come from the receiver plugged into a port you built in the back of your neck. Obviously, to become a Nano, you have undergone numerous surgeries and procedures (either willingly or unwillingly). You are forever changed. Some people treat you with disdain or derision, but perhaps most of your modifications can be hidden by a hooded cloak or similar garment."
+    }
+  ],
+  "abilityChoices": [
+    {
+      "label": "Esoteries",
+      "pickCount": 2,
+      "options": [
+        {
+          "id": "hedge-magic",
+          "name": "Hedge Magic",
+          "description": "You can perform small tricks: temporarily change the color or basic appearance of a small object, cause small objects to float through the air, clean a small area, mend a broken object, prepare (but not create) food, and so on. You can’t use Hedge Magic to harm another creature or object. Action.",
+          "cost": {
+            "amount": 1,
+            "pool": "intellect"
+          },
+          "type": "action",
+          "tier": 1,
+          "source": "nano"
+        },
+        {
+          "id": "onslaught",
+          "name": "Onslaught",
+          "description": "You attack a foe using energies that assail either their physical form or their mind. In either case, you must be able to see your target. If the attack is physical, you emit a short-range ray of force that inflicts 4 points of damage. If the attack is mental, you focus your mental energy to blast the thought processes of another creature within short range. This mindslice inflicts 2 points of Intellect damage (and thus ignores Armor). Some creatures without minds (such as automatons) might be immune to your mindslice. Action.",
+          "cost": {
+            "amount": 1,
+            "pool": "intellect"
+          },
+          "type": "action",
+          "tier": 1,
+          "source": "nano"
+        },
+        {
+          "id": "push",
+          "name": "Push",
+          "description": "You push a creature or object an immediate distance in any direction you wish. You must be able to see the target, which must be your size or smaller, must not be affixed to anything, and must be within short range. The push is quick, and the force is too crude to be manipulated. For example, you can’t use this esotery to pull a lever or even close a door. Action.",
+          "cost": {
+            "amount": 2,
+            "pool": "intellect"
+          },
+          "type": "action",
+          "tier": 1,
+          "source": "nano"
+        },
+        {
+          "id": "scan",
+          "name": "Scan",
+          "description": "You scan an area equal in size to a 10-foot (3 m) cube, including all objects or creatures within that area. The area must be within short range. Scanning a creature or object always reveals its level (a measure of how powerful, dangerous, or difficult it is). You also learn whatever facts the GM feels are pertinent about the matter and energy in that area. For example, you might learn that the wooden box contains a device of metal and synth. You might learn that the glass cylinder is full of poisonous gas, and that its metal stand has an electrical field running through it that connects to a metal mesh in the floor. You might learn that the creature standing before you is a mammal with a small brain. However, this esotery doesn’t tell you what the information means. Thus, in the first example, you don’t know what the metal and synth device does. In the second, you don’t know if stepping on the floor causes the cylinder to release the gas. In the third, you might suspect that the creature is not very intelligent, but scans, like looks, can be deceiving. Many materials and energy fields prevent or resist scanning. Action.",
+          "cost": {
+            "amount": 2,
+            "pool": "intellect"
+          },
+          "type": "action",
+          "tier": 1,
+          "source": "nano"
+        },
+        {
+          "id": "ward",
+          "name": "Ward",
+          "description": "You have a shield of energy around you at all times that helps deflect attacks. You gain +1 to Armor. Enabler.",
+          "type": "enabler",
+          "tier": 1,
+          "source": "nano"
+        }
+      ]
+    }
+  ],
+  "skillChoices": [],
+  "automaticSkills": [],
+  "inabilities": [],
+  "specialAbilities": [
+    {
+      "id": "practiced-with-light-weapons-nano",
+      "name": "Practiced With Light Weapons",
+      "description": "You can use light weapons without penalty. Enabler.",
+      "type": "enabler",
+      "tier": 1,
+      "source": "nano"
+    }
+  ]
+}

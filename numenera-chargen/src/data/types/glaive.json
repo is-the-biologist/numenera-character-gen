@@ -1,0 +1,161 @@
+{
+  "id": "glaive",
+  "name": "Glaive",
+  "description": "Glaives are the elite warriors of the Ninth World, using weapons and armor to fight their enemies. Hunters, guardians, and soldiers could be Glaives. Sometimes scouts, warlords, bandits, and even athletes are Glaives. “Glaive” is a common slang term used almost everywhere in the Steadfast and the Beyond for any person skilled with weapons or a martial art, but in truth, it applies only to the best of the best. Glaives are warriors who command abilities far beyond those of a typical person with a sword. Most Glaives are either strong (using the heaviest armor and weapons available and having a high Might) or fast (sticking with light weapons and armor and having a high Speed). A few attempt to use both Might and Speed and stay somewhere in the middle. Glaives also use ranged weapons such as bows or darts. Some don’t rely on weapons at all, preferring to use their bodies in hand-to-hand combat—punching, kicking, grabbing, throwing, and so on.",
+  "basePools": {
+    "might": 11,
+    "speed": 10,
+    "intellect": 7
+  },
+  "bonusPoolPoints": 6,
+  "baseEdge": {
+    "might": 1,
+    "speed": 1,
+    "intellect": 0
+  },
+  "effort": 1,
+  "cypherLimit": 2,
+  "weaponProficiency": "all",
+  "trainedInArmor": true,
+  "practiceWithAllWeapons": true,
+  "startingEquipment": [
+    "clothing",
+    "two weapons (or one weapon and a shield)",
+    "light or medium armor",
+    "an explorer’s pack",
+    "two cyphers (chosen for you by the GM)",
+    "one oddity (chosen for you by the GM)"
+  ],
+  "shins": 5,
+  "backgrounds": [
+    {
+      "name": "Intensive Training",
+      "description": "You are strong, fast, or both, but what really separates you from the crowd is your training. Perhaps you ascended the highest peak of the Black Riage or sought the deepest sewers beneath Qi to find teachers who could show you how to move, fight, and endure beyond normal human limits. You know a thousand ways to kill a foe, most of them secret to all but a chosen few. You’re privy to techniques and fighting styles that most people in the Ninth World have never seen. You have learned that the impossible is possible—as long as you know the secret. Your body is a weapon, and your weapon is part of your body. You have studied with the masters, and now you carry that regimen as you venture into the world."
+    },
+    {
+      "name": "Inborn Traits",
+      "description": "You’ve trained under excellent instructors and have experience in many dangerous situations, but what makes you different is deep inside, entwined in your genetic heritage. Maybe it was the luck of being born fit. Maybe you’re a hulking brute—a mountainous figure who commands attention when you enter a room. Or maybe your strength is more subtle; you might be the descendant of a bioengineered species bred (or designed) for perfection. Perhaps you’re a mutant with psychic abilities that augment your physical nature; you guide and enhance your attacks with telekinesis, or you use a natural mutation in your brain to control matter on a molecular level to resist blows and inflict harm. Perhaps you’re something wholly new: an aberration or a human so perfect that you’re beyond human. You might be a posthuman—the next step toward the true destiny of the people of the Ninth World."
+    },
+    {
+      "name": "Biomechanical Modification",
+      "description": "You might be a fighter, but you’re no archaic stereotype—this is the Ninth World, after all. Although you trained and gained your share of practical experience, you have the numenera on your side as well. Some of your knowledge of fighting techniques is implanted in your brain and spine, wired into your nerves and muscles. Your joints have surgically implanted servo motors. Subdermal plating makes you tougher than should be possible. Your muscle tissue is augmented with artificial fibers. Perhaps your genetic code has been rewritten by engineered viruses, or the tissues in your body have been reworked by nanotech, turning you into an efficient battle machine. Or maybe you’ve been altered by strange science—radioactive treatments of bizarre energies, chemical compounds and drugs, or extradimensional enhancements—that makes you stronger, faster, tougher, and more proficient in attack and defense than anyone around you. Whatever the case, you’re the result of ancient knowledge made manifest in the present, and now you’re shaping the future. Perhaps your modifications are obvious and visible; perhaps they’re not. Regardless, you know that you’re more than merely human."
+    }
+  ],
+  "abilityChoices": [
+    {
+      "label": "Fighting Moves",
+      "pickCount": 2,
+      "options": [
+        {
+          "id": "aggression",
+          "name": "Aggression",
+          "description": "You focus on making attacks to such an extent that you leave yourself vulnerable to your opponents. While this ability is active, you gain an asset on your melee attacks, and your Speed defense rolls against melee and ranged attacks are hindered. This effect lasts for as long as you wish, but it ends if no combat is taking place within range of your senses. Enabler.",
+          "cost": {
+            "amount": 2,
+            "pool": "might"
+          },
+          "type": "enabler",
+          "tier": 1,
+          "source": "glaive"
+        },
+        {
+          "id": "fleet-of-foot",
+          "name": "Fleet of Foot",
+          "description": "You can move a short distance as part of another action. You can move a long distance as your entire action for a turn. If you apply a level of Effort to this ability, you can move a long distance and make an attack as your entire action for a turn, but the attack is hindered. Enabler.",
+          "cost": {
+            "amount": 1,
+            "pool": "speed"
+          },
+          "type": "enabler",
+          "tier": 1,
+          "source": "glaive"
+        },
+        {
+          "id": "impressive-display",
+          "name": "Impressive Display",
+          "description": "You perform a feat of strength, speed, or combat, impressing those nearby. For the next minute you gain an asset in all interaction tasks with people who saw you use this ability. Action.",
+          "cost": {
+            "amount": 2,
+            "pool": "might"
+          },
+          "type": "action",
+          "tier": 1,
+          "source": "glaive"
+        },
+        {
+          "id": "misdirect",
+          "name": "Misdirect",
+          "description": "When an opponent misses you, you can redirect their attack to another target (a creature or object) of your choosing that’s within immediate range of you. Make an unmodified attack roll against the new target (do not use any of your or the opponent’s modifiers to the attack roll, but you can apply Effort for accuracy). If the attack hits, the target takes damage from your opponent’s attack. Enabler.",
+          "cost": {
+            "amount": 3,
+            "pool": "speed"
+          },
+          "type": "enabler",
+          "tier": 1,
+          "source": "glaive"
+        },
+        {
+          "id": "no-need-for-weapons",
+          "name": "No Need for Weapons",
+          "description": "When you make an unarmed attack (such as a punch or kick), it counts as a medium weapon instead of a light weapon. Enabler.",
+          "type": "enabler",
+          "tier": 1,
+          "source": "glaive"
+        },
+        {
+          "id": "trained-without-armor",
+          "name": "Trained Without Armor",
+          "description": "You are trained in Speed defense actions when not wearing armor. Enabler.",
+          "type": "enabler",
+          "tier": 1,
+          "source": "glaive"
+        }
+      ]
+    }
+  ],
+  "skillChoices": [
+    {
+      "label": "Physical Skill",
+      "pickCount": 1,
+      "options": [
+        "balancing",
+        "climbing",
+        "jumping",
+        "swimming"
+      ],
+      "freeform": false
+    }
+  ],
+  "automaticSkills": [],
+  "inabilities": [
+    "crafting numenera",
+    "salvaging numenera",
+    "understanding numenera"
+  ],
+  "specialAbilities": [
+    {
+      "id": "combat-prowess",
+      "name": "Combat Prowess",
+      "description": "You add +1 damage to one type of attack of your choice: melee attacks or ranged attacks. Enabler.",
+      "type": "enabler",
+      "tier": 1,
+      "source": "glaive"
+    },
+    {
+      "id": "trained-in-armor",
+      "name": "Trained in Armor",
+      "description": "You can wear armor for long periods of time without tiring and can compensate for slowed reactions from wearing armor. You reduce the Speed Effort cost for wearing armor by 1. Enabler.",
+      "type": "enabler",
+      "tier": 1,
+      "source": "glaive"
+    },
+    {
+      "id": "practiced-with-all-weapons",
+      "name": "Practiced With All Weapons",
+      "description": "You can use any weapon without penalty. Enabler.",
+      "type": "enabler",
+      "tier": 1,
+      "source": "glaive"
+    }
+  ]
+}
