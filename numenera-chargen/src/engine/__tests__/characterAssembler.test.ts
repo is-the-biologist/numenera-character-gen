@@ -12,6 +12,7 @@ describe('characterAssembler', () => {
       chosenSkills: ['climbing'],
       backgroundName: 'Intensive Training',
       initialLink: "You're acting as a bodyguard for one of the other PCs.",
+      connection: 'Pick one other PC. This character once saved your life underground.',
       characterName: 'Kael',
       notes: '',
     });
@@ -92,6 +93,7 @@ describe('characterAssembler', () => {
         chosenSkills: [],
         backgroundName: '',
         initialLink: '',
+        connection: '',
         characterName: 'Test',
         notes: '',
       })

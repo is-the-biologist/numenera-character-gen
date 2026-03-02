@@ -10,6 +10,7 @@ export default function StepReview() {
     characterName, setCharacterName,
     backgroundName, setBackground,
     initialLink, setInitialLink,
+    connection, setConnection,
     notes, setNotes,
   } = store;
 
@@ -97,13 +98,25 @@ export default function StepReview() {
         </div>
       )}
 
-      {/* Connection (read-only) */}
-      {focus?.connection && (
+      {/* Connection */}
+      {focus && focus.connections && focus.connections.length > 0 && (
         <div className="mb-4">
           <label className="block text-sm font-medium text-slate-400 mb-1">Focus Connection</label>
-          <p className="text-sm text-slate-300 bg-slate-800 border border-slate-700 rounded p-3 italic">
-            {focus.connection}
-          </p>
+          <select
+            value={connection}
+            onChange={e => setConnection(e.target.value)}
+            className="w-full px-3 py-2 rounded bg-slate-800 border border-slate-700 text-slate-200 focus:border-cyan-500 focus:outline-none mb-2"
+          >
+            <option value="">— Select a connection —</option>
+            {focus.connections.map((c, i) => (
+              <option key={i} value={c}>{c.length > 100 ? c.substring(0, 100) + '...' : c}</option>
+            ))}
+          </select>
+          {connection && (
+            <p className="text-sm text-slate-300 bg-slate-800/50 border border-slate-700 rounded p-3 italic">
+              {connection}
+            </p>
+          )}
         </div>
       )}
 

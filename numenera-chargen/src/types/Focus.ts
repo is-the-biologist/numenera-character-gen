@@ -5,6 +5,7 @@ export interface Focus {
   name: string;
   description: string;
   connection: string;
+  connections: string[];
   tier1: {
     grantedAbilities: Ability[];
     abilityChoice?: {

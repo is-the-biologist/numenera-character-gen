@@ -10,16 +10,30 @@
           "id": "shroud-of-flame",
           "name": "Shroud of Flame",
           "description": "At your command, your entire body becomes wreathed in flames that last up to ten minutes. The fire doesn’t burn you, but it automatically inflicts 2 points of damage to anyone who tries to touch you or strike you with a melee attack. Flames from another source can still hurt you. While the shroud is active, you gain +2 to Armor against damage from fire from any source. Enabler.",
-          "cost": { "pool": "intellect", "amount": 1 },
+          "cost": {
+            "pool": "intellect",
+            "amount": 1
+          },
           "type": "action",
           "tier": 1,
           "source": "bears-a-halo-of-fire"
         }
       ],
       "trainedSkills": [],
-      "additionalEquipment": ["a fireproof pouch"]
+      "additionalEquipment": [
+        "a fireproof pouch"
+      ]
     },
-    "higherTiers": []
+    "higherTiers": [],
+    "connections": [
+      "Pick one other PC. Through a quirk of fate, your fire cannot harm that character.",
+      "Pick one other PC. You burned this character by accident, and they still have a scar.",
+      "Pick one other PC. You’re always trying to impress them with your fire, but you’re not sure why.",
+      "Pick one other PC. When you’re near this character, sometimes your flames burn with weird patterns.",
+      "Pick one other PC. You recently discovered that if she stands near you when you use your Shroud of Flame ability, she too becomes covered in flames. This doesn’t harm her, and anyone who tries to touch her or strike her with a melee attack suffers 1 point of damage. She must remain within short range of you.",
+      "Pick one other PC. He had a devastating experience with fire in his past and must decide how to react to your constant use of flame around him.",
+      "Pick one other PC. For some reason, one of his limbs is especially vulnerable to your flames. Occasionally when you use Hurl Flame to harm a foe, his vulnerable body part bursts into flame. The flame doesn’t harm him or his equipment, but it can be an impediment during combat due to surprise."
+    ]
   },
   {
     "id": "commands-mental-powers",
@@ -31,7 +45,17 @@
       "trainedSkills": [],
       "additionalEquipment": []
     },
-    "higherTiers": []
+    "higherTiers": [],
+    "connections": [
+      "Pick one other PC. You have found that this character is particularly tuned into your mental powers. While you’re within short range of them, the two of you are always in telepathic contact, and they are never harmed by your Psychic Bursts.",
+      "Pick one other PC. For some reason, you can’t telepathically interact with them.",
+      "Pick one other PC. That character and you always enjoy the effect of your Telepathic ability even when you haven’t triggered it.",
+      "Pick one other PC. When they stand next to you and use their action to concentrate on helping you, your Telepathic ability extends to a very long range.",
+      "Pick one other PC. You have found that this character is particularly tuned into your mental powers. While you’re within short range of him, the two of you are always in telepathic contact, and he is never harmed by your Psychic Burst.",
+      "Pick one other PC. She is what you might call a “loud thinker,” and her thoughts sometimes come through to you when you are within short range, even when you’re not using your Mind Reading ability. You can’t seem to turn this off. Whether your tell her or not is up to you.",
+      "Pick one other PC. For some reason, he seems to act as an antenna for your mental powers. If the two of you are touching, your Telepathic and Mind Reading abilities sometimes extend to long range.",
+      "Pick one other PC. Your close mentor or teacher once used Mind Control on her and forced her to do something against her will. To this day, you haven’t talked about it, but you are both intensely aware of the connection."
+    ]
   },
   {
     "id": "controls-beasts",
@@ -49,10 +73,20 @@
           "source": "controls-beasts"
         }
       ],
-      "trainedSkills": ["all interactions with natural beasts"],
-      "additionalEquipment": ["a leash or harness for your beast companion"]
+      "trainedSkills": [
+        "all interactions with natural beasts"
+      ],
+      "additionalEquipment": [
+        "a leash or harness for your beast companion"
+      ]
     },
-    "higherTiers": []
+    "higherTiers": [],
+    "connections": [
+      "Pick one other PC. That character seems to disturb your creatures in a way that you can’t explain. You know that you must keep your animals away from them if possible, or you might lose control.",
+      "Pick one other PC. The creature that you’re bonded with seems to have a special bond with this other person as well. You must decide whether it brings up feelings of jealousy or camaraderie within you and whether to thwart the connection or help it blossom.",
+      "Pick one other PC. Recently, they accidentally (or perhaps intentionally) put your beast companion in a position of danger. Your companion is now nervous around them, and you are struggling with your own emotional response to the incident.",
+      "Pick one other PC. They dislike beasts of all kinds, seeing them as little more than food or prey. You hope that exposing them to your beast companion will change their mind. It’s up to that player how their character responds to the experience."
+    ]
   },
   {
     "id": "controls-gravity",
@@ -64,7 +98,13 @@
       "trainedSkills": [],
       "additionalEquipment": []
     },
-    "higherTiers": []
+    "higherTiers": [],
+    "connections": [
+      "Pick one other PC. In the recent past, while using your gravitational powers, you accidentally sent that character hurtling into the air or plummeting toward the ground. Either way, they barely survived. It is up to the player of that character to decide whether they resent, fear, or forgive you.",
+      "Pick one other PC whose focus intertwines with yours. This odd connection affects them in some way. For example, if the character uses a bow, your ability to manipulate gravity sometimes extends the range of their arrows. If they are good at jumping, they seem less bound by the laws of gravity, and jump farther.",
+      "Pick one other PC. They are deathly afraid of heights. Through your ability to control gravity, you would like to teach them how to be more comfortable with their feet off the ground. They must decide whether or not to take you up on your offer.",
+      "Pick one other PC. They are skeptical of your ability to control gravity and think it’s just one big illusion. They might even attempt to discredit you or discover the “secret” behind your so-called skills."
+    ]
   },
   {
     "id": "crafts-illusions",
@@ -77,16 +117,30 @@
           "id": "minor-illusion",
           "name": "Minor Illusion",
           "description": "You create a single image of a creature or object within immediate range. The image must fit within a 10-foot cube. The image can move but stays in the area. It lasts for ten minutes and is convincing. Anyone who interacts with or studies the illusion carefully can attempt an Intellect task to see through it.",
-          "cost": { "pool": "intellect", "amount": 1 },
+          "cost": {
+            "pool": "intellect",
+            "amount": 1
+          },
           "type": "action",
           "tier": 1,
           "source": "crafts-illusions"
         }
       ],
-      "trainedSkills": ["disguise", "seeing through deception"],
-      "additionalEquipment": ["a small mirror"]
+      "trainedSkills": [
+        "disguise",
+        "seeing through deception"
+      ],
+      "additionalEquipment": [
+        "a small mirror"
+      ]
     },
-    "higherTiers": []
+    "higherTiers": [],
+    "connections": [
+      "Pick one other PC. This character is never fooled by your illusions and is never affected by the trickery of your special abilities. You can choose whether or not you know this fact.",
+      "Pick one other PC. They have a special angle on your illusions and can sometimes point out potential places of weakness.",
+      "Pick two other PCs who are willing to be trained as your assistants. When you use your Minor Illusion ability, if both of these characters are in immediate range, they can assist you, working together to ease your action.",
+      "Pick one other PC. That character’s face is so intriguing to you in a way you don’t understand that your minor illusions sometimes look like them, even when you don’t intend them to."
+    ]
   },
   {
     "id": "employs-magnetism",
@@ -100,7 +154,13 @@
       ],
       "additionalEquipment": []
     },
-    "higherTiers": []
+    "higherTiers": [],
+    "connections": [
+      "Pick one other PC. Whenever you use your powers, the metallic items on that character’s body shudder, rattle, clink, and shake if they are within short range.",
+      "Pick one other PC. You worked together in the past, and the job ended badly.",
+      "Pick two other PCs. While practicing your Diamagnetism ability, you once accidentally sent them careening into each other. You’ve never been able to repeat it. Whether you tell them that you’ve been trying to replicate the strange effect is up to you.",
+      "Pick one other PC who has metallic elements in their body. You’re afraid to use your magnetism abilities near them because you once had a bad experience involving Move Metal and a (probably former) friend’s mechanical eyes."
+    ]
   },
   {
     "id": "entertains",
@@ -114,7 +174,13 @@
       ],
       "additionalEquipment": []
     },
-    "higherTiers": []
+    "higherTiers": [],
+    "connections": [
+      "Pick one other PC. This character is your worst critic. Your abilities to help or inspire others don’t function for them.",
+      "Pick one other PC. They seem to really enjoy your attempts to entertain, and this brings out the performer in you. It’s up to that character whether their appreciation is real or they’re just being polite.",
+      "Pick one other PC. They are so inspired and put at ease by your stories or other forms of entertainment that when you use Levity, they gain +2 to their recovery rolls (instead of +1).",
+      "Pick one other PC. This person knows the secret to one of your favorite forms of entertainment. You worry constantly that they will steal it or reveal it."
+    ]
   },
   {
     "id": "exists-partially-out-of-phase",
@@ -126,7 +192,13 @@
       "trainedSkills": [],
       "additionalEquipment": []
     },
-    "higherTiers": []
+    "higherTiers": [],
+    "connections": [
+      "Pick one other PC. You have known that character for a while, and they helped you gain control of your phase states.",
+      "Pick one other PC. Sometime in this character’s past, they had a devastating experience with going out of phase. Whether they choose to tell you about it is up to them.",
+      "Pick one other PC. You once accidentally moved your hand right through them. It was an unnerving experience for you both.",
+      "Pick two other PCs. They both really want to go out of phase and have been pestering you about it. But you’re not convinced they even know what that phrase means."
+    ]
   },
   {
     "id": "explores-dark-places",
@@ -144,10 +216,25 @@
           "source": "explores-dark-places"
         }
       ],
-      "trainedSkills": ["searching", "listening", "climbing", "balancing", "jumping"],
-      "additionalEquipment": ["an explorer’s pack with extra climbing gear", "a set of maps"]
+      "trainedSkills": [
+        "searching",
+        "listening",
+        "climbing",
+        "balancing",
+        "jumping"
+      ],
+      "additionalEquipment": [
+        "an explorer’s pack with extra climbing gear",
+        "a set of maps"
+      ]
     },
-    "higherTiers": []
+    "higherTiers": [],
+    "connections": [
+      "Pick one other PC. This character was your companion on previous expeditions, and the two of you work so well together that you both gain an asset to any die rolls to collaborate on the same task, fight the same foe, and so on.",
+      "Pick two other PCs. You think you once saw them through a keyhole doing something illegal. You can choose whether or not to share that information. The characters can choose whether it was really them (it could have been neither, one, or both), and they may or may not share that information in return.",
+      "Pick one other PC. This person always seems to hear you, no matter how stealthy you try to be.",
+      "Pick one other PC. This character is so loud in everything they do that you feel obligated to try to help them learn to move more quietly through the world. Whether or not they’re interested is up to them."
+    ]
   },
   {
     "id": "fights-with-panache",
@@ -161,7 +248,13 @@
       ],
       "additionalEquipment": []
     },
-    "higherTiers": []
+    "higherTiers": [],
+    "connections": [
+      "Pick one other PC. You’re always trying to impress this character with your skill, wit, appearance, or bravado. Perhaps they are a rival, perhaps you need their respect, or perhaps you’re romantically interested in them.",
+      "Pick one other PC. This character seems to anticipate your next move almost before you even begin it. When they collaborate with you on the same task or fight the same foe, you gain an asset on the task.",
+      "Pick one other PC. You fear that the character is jealous of your abilities and worry that it might lead to problems.",
+      "Pick one other PC. This character is so enamored of your swashbuckling, entertaining ways during combat that they sometimes forget to take their own action."
+    ]
   },
   {
     "id": "focuses-mind-over-matter",
@@ -175,7 +268,13 @@
       ],
       "additionalEquipment": []
     },
-    "higherTiers": []
+    "higherTiers": [],
+    "connections": [
+      "Pick one other PC. This character can cause your telekinetic powers to act oddly. Every once in a while, if the character stands directly next to you, your powers are canceled, but at other times, they seem improved when used near the PC.",
+      "Pick one other PC. This person thinks that your powers are completely hypothetical.",
+      "Pick one other PC. You once joked that you could read their mind. Whether they found that exciting or utterly terrifying is up to them.",
+      "Pick one other PC. You feel strangely protective of that character and plan to do your best to keep them from harm."
+    ]
   },
   {
     "id": "fuses-flesh-and-steel",
@@ -187,7 +286,13 @@
       "trainedSkills": [],
       "additionalEquipment": []
     },
-    "higherTiers": []
+    "higherTiers": [],
+    "connections": [
+      "Pick one other PC. This character knows your true nature, even if no one else does. If your components are not particularly hidden, they know a different secret of yours, such as a preprogrammed word that will shut you down for ten minutes.",
+      "Pick one other PC. Being close to this person sometimes makes your mechanical parts vibrate slightly. You can decide whether this sensation is unnerving or pleasant.",
+      "Pick one other PC. You’re pretty sure that this character is just here to mine you for parts. They choose whether or not this is true.",
+      "Pick one other PC who also has mechanical parts. The two of you have bonded over conversations about this element you share, and you feel a special connection."
+    ]
   },
   {
     "id": "howls-at-the-moon",
@@ -199,7 +304,13 @@
       "trainedSkills": [],
       "additionalEquipment": []
     },
-    "higherTiers": []
+    "higherTiers": [],
+    "connections": [
+      "Pick one other PC. That character is able to soothe you when you’re in beast form. You’ll never attack them while transformed, and if they spend three consecutive turns using their action to calm you down, you can revert to your normal form without having to make a roll.",
+      "Pick one other PC. You believe that this character intends to convince you to join an entertainment venue (or capture you for the same). They choose whether or not this is true.",
+      "Pick two other PCs. They know that it’s beneficial for you to kill and eat a creature while you’re in beast form, and they often work together to make sure that happens.",
+      "Pick one other PC. Since this character saw you in beast form, they have been terrified of you. You are determined to show them that you’re not as dangerous as they believe."
+    ]
   },
   {
     "id": "hunts",
@@ -211,7 +322,13 @@
       "trainedSkills": [],
       "additionalEquipment": []
     },
-    "higherTiers": []
+    "higherTiers": [],
+    "connections": [
+      "Pick one other PC. That person once saw you show surprising mercy toward your prey, and now you hope they keep it quiet—it might harm your reputation.",
+      "Pick one other PC. You accidentally caught them in one of your traps, and they had to get free.",
+      "Pick one other PC. Back in your bounty hunter days (which may or may not be over), you were hired to track down someone who was close to this character.",
+      "Pick one other PC. You’ve noticed that it’s almost impossible to track this character, but you’re determined to figure out a way."
+    ]
   },
   {
     "id": "lives-in-the-wilderness",
@@ -223,7 +340,13 @@
       "trainedSkills": [],
       "additionalEquipment": []
     },
-    "higherTiers": []
+    "higherTiers": [],
+    "connections": [
+      "Pick one other PC who isn’t from the wilderness. You can’t help but feel a little contempt for that character and their “civilized” ways, which show disdain for all things natural and (to your mind) true.",
+      "Pick one other PC. This character is one of the few people that you are completely comfortable around, and you are often surprised at how easily you let down your guard near them.",
+      "Pick one other PC. This character once saved you from an uncomfortable social situation, and you still feel grateful.",
+      "Pick one other PC. This person seems to understand civilization in the same way that you understand the wilderness. You could choose to help each other or despise each other for this different way of seeing the world."
+    ]
   },
   {
     "id": "masters-defense",
@@ -237,7 +360,13 @@
       ],
       "additionalEquipment": []
     },
-    "higherTiers": []
+    "higherTiers": [],
+    "connections": [
+      "Pick one other PC. This character protected you from harm recently, and you feel indebted to them for saving your life.",
+      "Pick one other PC. This person thinks you are an incredibly selfish person, perhaps based on their belief that you always save yourself first.",
+      "Pick one other PC. You once fought on opposite sides of a combat.",
+      "Pick one other PC. This character seems to be a jinx for you. Whenever they are next to you, your Speed defense tasks are hindered."
+    ]
   },
   {
     "id": "masters-weaponry",
@@ -251,7 +380,16 @@
       ],
       "additionalEquipment": []
     },
-    "higherTiers": []
+    "higherTiers": [],
+    "connections": [
+      "Pick one other PC. That character shows potential in the use of your weapon. You would like to train them, but you’re not necessarily qualified to teach (that’s up to you), and they might not be interested (that’s up to them).",
+      "Pick one other PC. If that person is within immediate range when you’re in a fight, sometimes they grant you an asset, and sometimes they hinder you (50% chance either way, determined per fight).",
+      "Pick one other PC. You once saved this person’s life, and they feel indebted to you. You wish they didn’t; it’s all just part of the job.",
+      "Pick one other PC. This person recently mocked your combat stance. How you deal with this (if at all) is up to you.",
+      "Pick one other PC. That character shows potential in the use of your weapon. You would like to train her, but you’re not necessarily qualified to teach (that’s up to you), and she might not be interested (that’s up to her).",
+      "Pick one other PC. If she is within immediate range when you’re in a fight, sometimes she helps, and sometimes she accidentally hinders (50% chance either way, determined per fight). When she helps, you gain +1 to all attack rolls. When she hinders, you suffer a –1 penalty to attack rolls.",
+      "Pick one other PC. You once saved his life, and he clearly feels indebted to you. You wish he didn’t; it’s all just part of the job."
+    ]
   },
   {
     "id": "murders",
@@ -266,7 +404,13 @@
       ],
       "additionalEquipment": []
     },
-    "higherTiers": []
+    "higherTiers": [],
+    "connections": [
+      "Pick one other PC. That character knows your real identity, profession, and background. To all others, the truth about you is a closely guarded secret.",
+      "Pick one other PC. You were recently approached by someone who wanted to hire you to take that character out. You haven’t yet decided whether to take the job or warn them that their life is in danger.",
+      "Pick two other PCs. One night after perhaps too much celebrating, you loudly claimed responsibility for a murder you didn’t commit. These two characters were the only ones who heard. Whether they believe you or not is up to them.",
+      "Pick one other PC. That character is the one who got you started down the path of taking lives, whether they know it or not."
+    ]
   },
   {
     "id": "rages",
@@ -281,7 +425,13 @@
       ],
       "additionalEquipment": []
     },
-    "higherTiers": []
+    "higherTiers": [],
+    "connections": [
+      "Choose one other PC. You feel strangely protective toward that character and don’t want to see them come to harm.",
+      "Pick one other PC. That character knows a secret about your past that is tied to your Frenzy ability.",
+      "Pick one other PC. The first time you went into a frenzy was in an attempt to save their loved one from an attack. You failed, partly because of your inexperience.",
+      "Choose one other PC. That character is terrified by your rage and sometimes can’t help but flee at inopportune times."
+    ]
   },
   {
     "id": "rides-the-lightning",
@@ -293,7 +443,13 @@
       "trainedSkills": [],
       "additionalEquipment": []
     },
-    "higherTiers": []
+    "higherTiers": [],
+    "connections": [
+      "Pick one other PC. This character has been your friend for a long time, and you have learned to bring them along when you ride the lightning. If the character is standing right next to you, you can take them with you when you use the Bolt Rider or Electrical Flight powers. (Normally, neither ability allows you to transport other creatures.)",
+      "Pick two other PCs. You know about an important connection between them that even they don’t know about.",
+      "Pick one other PC. This character has interesting ideas about electricity and how it can be harnessed. If you are trained with machines, after you talk to this character for an hour, you gain an asset on any task involving identifying, crafting, or repairing a machine that uses electricity.",
+      "Pick one other PC. This person has the worst luck with electrical devices of anyone you’ve ever met. You want to help them, but you aren’t sure how or even whether they will be open to your assistance."
+    ]
   },
   {
     "id": "speaks-with-a-silver-tongue",
@@ -305,7 +461,13 @@
       "trainedSkills": [],
       "additionalEquipment": []
     },
-    "higherTiers": []
+    "higherTiers": [],
+    "connections": [
+      "Pick one other PC. That character seems overly affected by your words. You’ve accidentally made them cry or laugh just by talking to them.",
+      "Pick one other PC. That character believes that you speak falsely and is never affected by your words.",
+      "Pick one other PC. You’d like to get to know them better, but don’t want to use your skills to do so.",
+      "Pick one other PC. That character would like to learn your storytelling techniques, and you’re trying to decide whether to teach them."
+    ]
   },
   {
     "id": "talks-to-machines",
@@ -319,7 +481,13 @@
       ],
       "additionalEquipment": []
     },
-    "higherTiers": []
+    "higherTiers": [],
+    "connections": [
+      "Pick one other PC. That character seems to have a terrible relationship with machines—or at least the machines that you communicate with. If that person is next to a machine that you interact with in a friendly manner, that machine is treated in all ways as being 1 level lower than normal (unless doing so benefits you or them, in which case the level does not change).",
+      "Pick one other PC. That person seems especially leery of you, though this could just be your perception.",
+      "Pick one other PC. That character has a small machine among their equipment but won’t tell you any details about it or let you see it.",
+      "Pick one other PC. You know that this character knows an incriminating or embarrassing secret about you, and you hope that they do not reveal it."
+    ]
   },
   {
     "id": "wears-a-sheen-of-ice",
@@ -331,7 +499,13 @@
       "trainedSkills": [],
       "additionalEquipment": []
     },
-    "higherTiers": []
+    "higherTiers": [],
+    "connections": [
+      "Pick one other PC. Due to a quirk of the numenera, if that character is standing next to you when you use your Ice Armor ability, they are also protected by a sheen of ice. (They do not get the added protection of your Resilient Ice Armor ability.)",
+      "Pick one other PC. For a reason unknown to you, their very presence seems to heat the air around you, making it more difficult to command the powers of ice and cold. If they are within immediate range, their presence occasionally hinders your attempts to hit a target with a focus ability.",
+      "Pick one other PC. That person is especially susceptible to the cold that radiates from you. How they handle that vulnerability is up to them.",
+      "Pick one other PC. The two of you have a long history and almost always disagree about the best way to handle situations."
+    ]
   },
   {
     "id": "wields-power-with-precision",
@@ -343,7 +517,13 @@
       "trainedSkills": [],
       "additionalEquipment": []
     },
-    "higherTiers": []
+    "higherTiers": [],
+    "connections": [
+      "Pick one other PC. You’ve placed an immutable, one-time ward that renders them immune to the esoteries you perform unless they want to be affected.",
+      "Pick one other PC. Due to some quirk of the numenera, you can occasionally (and accidentally) share your powers with them, which gives them an asset on any task they attempt using their esoteries.",
+      "Pick one other PC. That character doesn’t seem to trust or like you, but you feel compelled to win them over.",
+      "Pick one other PC. You’ve noticed that they have a book in their possession that you’d very much like to study, but you’re unsure how to ask them about it."
+    ]
   },
   {
     "id": "wields-two-weapons-at-once",
@@ -362,9 +542,17 @@
         }
       ],
       "trainedSkills": [],
-      "additionalEquipment": ["an additional light weapon"]
+      "additionalEquipment": [
+        "an additional light weapon"
+      ]
     },
-    "higherTiers": []
+    "higherTiers": [],
+    "connections": [
+      "Pick one other PC. You have trained with this character so much that if the two of you stand back to back in a fight, you both gain an asset to Speed defense tasks.",
+      "Pick one other PC. This character always seems to inadvertently foil your actions, or at least make them more difficult. If they are within immediate range, actions related to this focus are hindered.",
+      "Pick one other PC. You recently had a weapon go missing, and you’re becoming convinced that they took it. Whether or not they did is up to them.",
+      "Pick one other PC. You used to dislike them immensely, but as you get to know this person, you’re growing more fond of them against your better judgment."
+    ]
   },
   {
     "id": "works-the-back-alleys",
@@ -380,7 +568,13 @@
       ],
       "additionalEquipment": []
     },
-    "higherTiers": []
+    "higherTiers": [],
+    "connections": [
+      "Pick one other PC. The character knew you beforehand and convinced you to leave your life of crime for other pursuits—at least temporarily.",
+      "Pick one other PC. A while back, you attempted to “borrow” something from this person, but they caught you in the process. You managed to convince them that it was a simple misunderstanding, but they may not entirely trust you.",
+      "Pick one other PC. You never seem to be able to hide so that this person can’t see you.",
+      "Pick one other PC. This character knows your real identity (if it’s a secret) or that you work secretly as a thief (if it’s a secret) and has kept the knowledge safe so far. It’s up to them whether they continue to do so."
+    ]
   },
   {
     "id": "works-miracles",
@@ -392,6 +586,12 @@
       "trainedSkills": [],
       "additionalEquipment": []
     },
-    "higherTiers": []
+    "higherTiers": [],
+    "connections": [
+      "Pick one other PC. This character quietly suspects that you’re a messiah or supernatural being.",
+      "Pick one other PC. This person knows a secret of yours, and you desperately hope that they do not tell anyone. You can choose whether or not you’re aware of their suspicion.",
+      "Pick one other PC. This character believes that you cured someone close to them of a deadly disease, and they are grateful. You aren’t sure whether you actually helped or if that person wasn’t as sick as was thought.",
+      "Pick one other PC. You secretly believe that this person might be a hypochondriac, and you’re never sure whether they actually need your help."
+    ]
   }
 ]

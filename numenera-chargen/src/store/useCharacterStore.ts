@@ -81,7 +81,7 @@ export const useCharacterStore = create<CharacterStore>()(
 
       selectDescriptor: (id) => set({ descriptorId: id }),
 
-      selectFocus: (id) => set({ focusId: id }),
+      selectFocus: (id) => set({ focusId: id, connection: '' }),
 
       setBonusAllocation: (allocation) => set({ bonusAllocation: allocation }),
 
@@ -135,6 +135,7 @@ export const useCharacterStore = create<CharacterStore>()(
           chosenSkills: state.chosenSkills,
           backgroundName: state.backgroundName,
           initialLink: state.initialLink,
+          connection: state.connection,
           characterName: state.characterName,
           notes: state.notes,
         });

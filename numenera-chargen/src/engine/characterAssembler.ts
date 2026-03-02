@@ -15,6 +15,7 @@ export interface AssemblerInput {
   chosenSkills: string[];
   backgroundName: string;
   initialLink: string;
+  connection: string;
   characterName: string;
   notes: string;
 }
@@ -104,7 +105,7 @@ export function assembleCharacter(input: AssemblerInput): Character | null {
     cyphers: Array(type.cypherLimit).fill(''),
     background: input.backgroundName,
     initialLink: input.initialLink,
-    connection: focus.connection,
+    connection: input.connection || focus.connection,
     notes: input.notes,
     recoveryRollBonus: 1,
   };
