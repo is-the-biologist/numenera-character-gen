@@ -1,5 +1,7 @@
+import { useState } from 'react';
 import { useCharacterStore } from '../../store/useCharacterStore';
 import { getTypeById, getDescriptorById, getFocusById } from '../../data';
+import { generatePDF } from '../sheet/CharacterSheetPDF';
 
 export default function StepReview() {
   const store = useCharacterStore();
@@ -15,8 +17,26 @@ export default function StepReview() {
   const descriptor = descriptorId ? getDescriptorById(descriptorId) : undefined;
   const focus = focusId ? getFocusById(focusId) : undefined;
 
+  const [downloading, setDownloading] = useState(false);
+
   const errors = store.getValidationErrors();
   const character = store.getAssembledCharacter();
+
+  const handleDownload = async () => {
+    if (!character) return;
+    setDownloading(true);
+    try {
+      const blob = await generatePDF(character);
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `${character.name || 'character'}-character-sheet.pdf`;
+      a.click();
+      URL.revokeObjectURL(url);
+    } finally {
+      setDownloading(false);
+    }
+  };
 
   return (
     <div>
@@ -161,13 +181,12 @@ export default function StepReview() {
             )}
           </div>
 
-          {/* Download button - will be wired in Phase 5 */}
           <button
-            disabled={errors.length > 0}
+            disabled={errors.length > 0 || downloading}
             className="mt-4 w-full py-3 rounded-lg bg-cyan-700 text-white font-bold hover:bg-cyan-600 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
-            onClick={() => alert('PDF generation will be added in Phase 5')}
+            onClick={handleDownload}
           >
-            Download Character Sheet
+            {downloading ? 'Generating PDF...' : 'Download Character Sheet'}
           </button>
         </div>
       )}
