@@ -93,7 +93,7 @@ export default function WizardShell() {
           </button>
         </div>
         <p className="text-lg text-slate-300">
-          I am a{' '}
+          I am {descriptor && /^[aeiou]/i.test(descriptor.name) ? 'an' : 'a'}{' '}
           <span className={descriptor ? 'text-amber-400 font-semibold' : 'text-slate-600'}>
             {descriptor?.name ?? '...'}
           </span>{' '}

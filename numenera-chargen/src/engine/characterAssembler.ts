@@ -75,7 +75,8 @@ export function assembleCharacter(input: AssemblerInput): Character | null {
   }
 
   // 5. Build sentence
-  const sentence = `I am a ${descriptor.name} ${type.name} who ${focus.name}.`;
+  const article = /^[aeiou]/i.test(descriptor.name) ? 'an' : 'a';
+  const sentence = `I am ${article} ${descriptor.name} ${type.name} who ${focus.name}.`;
 
   // 6. Armor speed cost reduction
   const armorSpeedCostReduction = type.trainedInArmor ? 1 : 0;
