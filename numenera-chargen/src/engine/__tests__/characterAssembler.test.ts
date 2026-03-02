@@ -65,6 +65,10 @@ describe('characterAssembler', () => {
     expect(abilityNames).toContain('No Need for Weapons');
     expect(abilityNames).toContain('Trained Explorer');
 
+    // Descriptor special abilities (Tough)
+    expect(abilityNames).toContain('Resilient');
+    expect(abilityNames).toContain('Healthy');
+
     // Cypher limit
     expect(character.cypherLimit).toBe(2);
 

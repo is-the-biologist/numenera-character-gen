@@ -53,6 +53,18 @@ export function assembleCharacter(input: AssemblerInput): Character | null {
     ...type.specialAbilities,
   ];
 
+  // Add descriptor special abilities (convert from plain objects to Ability)
+  for (const sa of descriptor.specialAbilities) {
+    abilities.push({
+      id: sa.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''),
+      name: sa.name,
+      description: sa.description,
+      type: 'enabler',
+      tier: 0,
+      source: descriptor.id,
+    });
+  }
+
   // Add chosen abilities from type
   for (const choice of type.abilityChoices) {
     for (const option of choice.options) {
