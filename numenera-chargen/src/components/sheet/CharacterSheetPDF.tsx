@@ -287,7 +287,7 @@ function drawStatPoolsSection(
   let y = startY;
   y = drawSectionHeader(page, fontBold, 'STAT POOLS', MARGIN, y, CONTENT_WIDTH);
 
-  const panelH = 95;
+  const panelH = 100;
   drawPanel(page, MARGIN, y, CONTENT_WIDTH, panelH);
 
   const stats = ['might', 'speed', 'intellect'] as const;
@@ -319,9 +319,11 @@ function drawStatPoolsSection(
       color: ACCENT,
     });
 
+    // Fields start below label: label baseline y-14, font ~10px tall,
+    // so field top must be at y-26 or lower → rowY = y-34 (field top = y-34+18 = y-16)
     const fieldX = colX + 55;
     const fieldW = 55;
-    let rowY = y - 30;
+    let rowY = y - 34;
 
     // Max
     page.drawText('Max:', { x: colX + 12, y: rowY + 4, size: SIZE_SMALL, font, color: TEXT_SECONDARY });
