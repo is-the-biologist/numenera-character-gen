@@ -54,7 +54,7 @@ const POOL_FIELD_BORDER = ACCENT;
 const PANEL_BG = rgb(0.95, 0.96, 0.96);
 const DIVIDER = rgb(0.75, 0.78, 0.82);
 const TEXT_PRIMARY = rgb(0.12, 0.14, 0.17);
-const TEXT_SECONDARY = rgb(0.40, 0.43, 0.47);
+const TEXT_SECONDARY = rgb(0.25, 0.28, 0.32);
 const FIELD_BORDER_WIDTH = 0.75;
 
 // --- Helper Functions ---
@@ -333,7 +333,7 @@ function drawStatPoolsSection(
       width: fieldW, height: FIELD_HEIGHT,
       value: String(pool.pool),
     });
-    rowY -= ROW_SPACING;
+    rowY -= FIELD_HEIGHT + 4;
 
     // Current
     page.drawText('Current:', { x: colX + 12, y: rowY + 6, size: SIZE_SMALL, font, color: TEXT_SECONDARY });
