@@ -421,15 +421,15 @@ function drawRecoveryAndDamageSection(
   page.drawText('Hale', { x: dmgX, y: dmgY + 2, size: SIZE_BODY, font: fontBold, color: TEXT_PRIMARY });
   dmgY -= 20;
 
-  page.drawText('\u2192', { x: dmgX, y: dmgY + 2, size: SIZE_BODY, font, color: TEXT_SECONDARY });
+  page.drawText('>', { x: dmgX, y: dmgY + 2, size: SIZE_BODY, font, color: TEXT_SECONDARY });
   addCheckbox(form, page, font, { name: 'damage.impaired', label: 'Impaired', x: dmgX + 14, y: dmgY });
   dmgY -= 20;
 
-  page.drawText('\u2192', { x: dmgX, y: dmgY + 2, size: SIZE_BODY, font, color: TEXT_SECONDARY });
+  page.drawText('>', { x: dmgX, y: dmgY + 2, size: SIZE_BODY, font, color: TEXT_SECONDARY });
   addCheckbox(form, page, font, { name: 'damage.debilitated', label: 'Debilitated', x: dmgX + 14, y: dmgY });
   dmgY -= 18;
 
-  page.drawText('\u2192 Dead', { x: dmgX, y: dmgY + 2, size: SIZE_BODY, font, color: TEXT_SECONDARY });
+  page.drawText('> Dead', { x: dmgX, y: dmgY + 2, size: SIZE_BODY, font, color: TEXT_SECONDARY });
 
   return y - panelH - SECTION_SPACING;
 }
@@ -558,7 +558,7 @@ function drawAttacksSection(
       let value = '';
       if (isPreFilled) {
         if (c === 0) value = allWeapons[row];
-        if (c === 1) value = '\u2014'; // em dash default
+        if (c === 1) value = '-'; // dash default
       }
 
       addTextField(form, page, font, {
@@ -841,5 +841,5 @@ export async function generatePDF(character: Character): Promise<Blob> {
 
   // Serialize
   const pdfBytes = await pdfDoc.save();
-  return new Blob([pdfBytes as unknown as ArrayBuffer], { type: 'application/pdf' });
+  return new Blob([new Uint8Array(pdfBytes)], { type: 'application/pdf' });
 }
