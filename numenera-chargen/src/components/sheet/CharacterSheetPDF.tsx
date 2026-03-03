@@ -35,7 +35,6 @@ const SIZE_SENTENCE = 11;
 const FIELD_HEIGHT = 18;
 const FIELD_HEIGHT_POOL = 24;
 const FIELD_HEIGHT_SMALL = 14;
-const FIELD_HEIGHT_NOTES = 100;
 const CHECKBOX_SIZE = 14;
 const ROW_SPACING = 20;
 const SECTION_GAP = 8;
@@ -731,10 +730,10 @@ function drawNarrativeSection(
   });
   y -= FIELD_HEIGHT + 4;
 
-  // Notes — fill remaining space above footer
+  // Notes — fill remaining space down to bottom margin
   page.drawText('Notes:', { x: MARGIN, y: y - 10, size: SIZE_SMALL, font, color: TEXT_SECONDARY });
   y -= 14;
-  const notesH = Math.max(FIELD_HEIGHT_NOTES, y - 30);
+  const notesH = Math.max(30, y - MARGIN);
 
   drawPanel(page, MARGIN, y, CONTENT_WIDTH, notesH);
   addTextField(form, page, font, {
