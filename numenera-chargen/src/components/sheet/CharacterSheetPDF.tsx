@@ -28,7 +28,6 @@ const SIZE_HEADER = 11;
 const SIZE_STAT_LABEL = 10;
 const SIZE_BODY = 10;
 const SIZE_SMALL = 8;
-const SIZE_CAPTION = 7;
 const SIZE_POOL_VALUE = 14;
 const SIZE_SENTENCE = 11;
 
@@ -58,7 +57,6 @@ const PANEL_BG = rgb(0.95, 0.96, 0.96);
 const DIVIDER = rgb(0.75, 0.78, 0.82);
 const TEXT_PRIMARY = rgb(0.12, 0.14, 0.17);
 const TEXT_SECONDARY = rgb(0.40, 0.43, 0.47);
-const TEXT_MUTED = rgb(0.55, 0.58, 0.62);
 const FIELD_BORDER_WIDTH = 0.75;
 
 // --- Helper Functions ---
@@ -177,13 +175,6 @@ function drawPanel(page: PDFPage, x: number, y: number, width: number, height: n
   });
 }
 
-function drawFooter(page: PDFPage, font: PDFFont): void {
-  const footerY = 14;
-  page.drawText('Numenera is a product of Monte Cook Games, LLC.', {
-    x: MARGIN, y: footerY,
-    size: SIZE_CAPTION, font, color: TEXT_MUTED,
-  });
-}
 
 // --- Section Drawing Functions ---
 
@@ -378,7 +369,7 @@ function drawRecoveryAndDamageSection(
   let y = startY;
   y = drawSectionHeader(page, fontBold, 'RECOVERY & DAMAGE TRACK', MARGIN, y, CONTENT_WIDTH);
 
-  const panelH = 80;
+  const panelH = 95;
 
   // Recovery panel (left half)
   drawPanel(page, MARGIN, y, COL_HALF - 5, panelH);
@@ -387,7 +378,7 @@ function drawRecoveryAndDamageSection(
   drawPanel(page, MARGIN + COL_HALF + 5, y, COL_HALF - 5, panelH);
 
   // Recovery checkboxes
-  let cbY = y - 20;
+  let cbY = y - 22;
   const recoveries = [
     { name: 'recovery.action', label: '1 Action' },
     { name: 'recovery.tenMin', label: '10 Minutes' },
@@ -423,7 +414,8 @@ function drawRecoveryAndDamageSection(
   addCheckbox(form, page, font, { name: 'damage.debilitated', label: 'Debilitated', x: dmgX + 14, y: dmgY });
   dmgY -= 18;
 
-  page.drawText('> Dead', { x: dmgX, y: dmgY + 2, size: SIZE_BODY, font, color: TEXT_SECONDARY });
+  page.drawText('>', { x: dmgX, y: dmgY + 2, size: SIZE_BODY, font, color: TEXT_SECONDARY });
+  addCheckbox(form, page, font, { name: 'damage.dead', label: 'Dead', x: dmgX + 14, y: dmgY });
 
   return y - panelH - SECTION_SPACING;
 }
@@ -484,9 +476,9 @@ function drawSkillsSection(
   }
 
   // Inabilities
-  rightY -= 10;
+  rightY -= 12;
   page.drawText('INABILITIES', { x: rightX, y: rightY, size: SIZE_SMALL, font: fontBold, color: TEXT_SECONDARY });
-  rightY -= 18;
+  rightY -= 20;
 
   for (let i = 0; i < character.skills.inabilities.length; i++) {
     addTextField(form, page, font, {
@@ -817,7 +809,7 @@ export async function generatePDF(character: Character): Promise<Blob> {
   y = drawSkillsSection(page1, form, font, fontBold, character, y);
   y = drawAttacksSection(page1, form, font, fontBold, character, y);
   drawArmorShinsSection(page1, form, font, fontBold, character, y);
-  drawFooter(page1, font);
+
 
   // ---- PAGE 2 ----
   const page2 = pdfDoc.addPage([PAGE_WIDTH, PAGE_HEIGHT]);
@@ -831,7 +823,7 @@ export async function generatePDF(character: Character): Promise<Blob> {
   y = drawCyphersSection(page2, form, font, fontBold, character, y);
   y = drawEquipmentSection(page2, form, font, fontBold, character, y);
   drawNarrativeSection(page2, form, font, fontBold, character, y);
-  drawFooter(page2, font);
+
 
   // Serialize
   const pdfBytes = await pdfDoc.save();
