@@ -35,13 +35,11 @@ const SIZE_SENTENCE = 11;
 const FIELD_HEIGHT = 18;
 const FIELD_HEIGHT_POOL = 24;
 const FIELD_HEIGHT_SMALL = 14;
-const FIELD_HEIGHT_MULTI = 42;
-const FIELD_HEIGHT_CYPHER = 35;
 const FIELD_HEIGHT_NOTES = 100;
 const CHECKBOX_SIZE = 14;
-const ROW_SPACING = 22;
-const SECTION_GAP = 12;
-const SECTION_SPACING = 28;
+const ROW_SPACING = 20;
+const SECTION_GAP = 8;
+const SECTION_SPACING = 16;
 const HEADER_BAR_HEIGHT = 20;
 
 // --- Colors ---
@@ -289,7 +287,7 @@ function drawStatPoolsSection(
   let y = startY;
   y = drawSectionHeader(page, fontBold, 'STAT POOLS', MARGIN, y, CONTENT_WIDTH);
 
-  const panelH = 105;
+  const panelH = 95;
   drawPanel(page, MARGIN, y, CONTENT_WIDTH, panelH);
 
   const stats = ['might', 'speed', 'intellect'] as const;
@@ -323,7 +321,7 @@ function drawStatPoolsSection(
 
     const fieldX = colX + 55;
     const fieldW = 55;
-    let rowY = y - 38;
+    let rowY = y - 30;
 
     // Max
     page.drawText('Max:', { x: colX + 12, y: rowY + 4, size: SIZE_SMALL, font, color: TEXT_SECONDARY });
@@ -369,7 +367,7 @@ function drawRecoveryAndDamageSection(
   let y = startY;
   y = drawSectionHeader(page, fontBold, 'RECOVERY & DAMAGE TRACK', MARGIN, y, CONTENT_WIDTH);
 
-  const panelH = 95;
+  const panelH = 84;
 
   // Recovery panel (left half)
   drawPanel(page, MARGIN, y, COL_HALF - 5, panelH);
@@ -378,7 +376,7 @@ function drawRecoveryAndDamageSection(
   drawPanel(page, MARGIN + COL_HALF + 5, y, COL_HALF - 5, panelH);
 
   // Recovery checkboxes
-  let cbY = y - 22;
+  let cbY = y - 16;
   const recoveries = [
     { name: 'recovery.action', label: '1 Action' },
     { name: 'recovery.tenMin', label: '10 Minutes' },
@@ -444,7 +442,7 @@ function drawSkillsSection(
     });
     leftY -= ROW_SPACING;
   }
-  for (let j = 1; j <= 3; j++) {
+  for (let j = 1; j <= 2; j++) {
     addTextField(form, page, font, {
       name: `skills.trained.extra.${j}`,
       x: leftX, y: leftY,
@@ -466,7 +464,7 @@ function drawSkillsSection(
     });
     rightY -= ROW_SPACING;
   }
-  for (let j = 1; j <= 2; j++) {
+  for (let j = 1; j <= 1; j++) {
     addTextField(form, page, font, {
       name: `skills.specialized.extra.${j}`,
       x: rightX, y: rightY,
@@ -531,7 +529,7 @@ function drawAttacksSection(
 
   // Weapon rows from character data
   const allWeapons = [...character.weapons];
-  const totalRows = allWeapons.length + 2; // + 2 blank
+  const totalRows = allWeapons.length + 1; // + 1 blank
 
   for (let row = 0; row < totalRows; row++) {
     const isPreFilled = row < allWeapons.length;
@@ -595,11 +593,10 @@ function drawAbilitiesSection(
   let y = startY;
   y = drawSectionHeader(page, fontBold, 'SPECIAL ABILITIES', MARGIN, y, CONTENT_WIDTH);
 
-  const totalSlots = character.abilities.length + 3;
-  // Calculate description height to fit all abilities
-  const availableH = y - 400; // reserve space for sections below
-  const perSlotH = Math.max(30, Math.min(FIELD_HEIGHT_MULTI + FIELD_HEIGHT + 6, availableH / totalSlots));
-  const descH = Math.max(30, perSlotH - FIELD_HEIGHT - 6);
+  const extraSlots = 2;
+  const totalSlots = character.abilities.length + extraSlots;
+  // Single multiline field per ability to keep it compact
+  const slotH = Math.min(36, Math.max(26, (y - MARGIN - 350) / totalSlots));
 
   // Pre-filled abilities
   for (let i = 0; i < character.abilities.length; i++) {
@@ -607,43 +604,26 @@ function drawAbilitiesSection(
     const costStr = a.cost ? ` (${a.cost.amount} ${a.cost.pool})` : ' (Enabler)';
 
     addTextField(form, page, font, {
-      name: `abilities.${i}.name`,
-      x: MARGIN, y: y - FIELD_HEIGHT,
-      width: CONTENT_WIDTH, height: FIELD_HEIGHT,
-      value: `${a.name}${costStr}`,
-      fontSize: SIZE_BODY,
-    });
-    y -= FIELD_HEIGHT + 2;
-
-    addTextField(form, page, font, {
-      name: `abilities.${i}.desc`,
-      x: MARGIN, y: y - descH,
-      width: CONTENT_WIDTH, height: descH,
-      value: a.description,
+      name: `abilities.${i}`,
+      x: MARGIN, y: y - slotH,
+      width: CONTENT_WIDTH, height: slotH,
+      value: `${a.name}${costStr}: ${a.description}`,
       fontSize: 9,
       multiline: true,
     });
-    y -= descH + 4;
+    y -= slotH + 3;
   }
 
-  // 3 blank ability slots
-  for (let j = 1; j <= 3; j++) {
+  // Blank ability slots
+  for (let j = 1; j <= extraSlots; j++) {
     addTextField(form, page, font, {
-      name: `abilities.extra.${j}.name`,
-      x: MARGIN, y: y - FIELD_HEIGHT,
-      width: CONTENT_WIDTH, height: FIELD_HEIGHT,
-      fontSize: SIZE_BODY,
-    });
-    y -= FIELD_HEIGHT + 2;
-
-    addTextField(form, page, font, {
-      name: `abilities.extra.${j}.desc`,
-      x: MARGIN, y: y - descH,
-      width: CONTENT_WIDTH, height: descH,
+      name: `abilities.extra.${j}`,
+      x: MARGIN, y: y - slotH,
+      width: CONTENT_WIDTH, height: slotH,
       fontSize: 9,
       multiline: true,
     });
-    y -= descH + 4;
+    y -= slotH + 3;
   }
 
   return y - SECTION_SPACING + 8;
@@ -664,11 +644,13 @@ function drawCyphersSection(
     width: 40, height: FIELD_HEIGHT,
     value: String(character.cypherLimit),
   });
-  y -= FIELD_HEIGHT + 8;
+  y -= FIELD_HEIGHT + 6;
 
-  // 3 cypher slots
-  for (let i = 1; i <= 3; i++) {
-    drawPanel(page, MARGIN, y, CONTENT_WIDTH, FIELD_HEIGHT + FIELD_HEIGHT_CYPHER + 8);
+  // Cypher slots
+  const cypherEffectH = 22;
+  const cypherSlotCount = Math.min(3, character.cypherLimit || 2);
+  for (let i = 1; i <= cypherSlotCount; i++) {
+    drawPanel(page, MARGIN, y, CONTENT_WIDTH, FIELD_HEIGHT + cypherEffectH + 6);
 
     page.drawText(`${i}.`, { x: MARGIN + 4, y: y - 12, size: SIZE_BODY, font: fontBold, color: TEXT_PRIMARY });
 
@@ -678,16 +660,16 @@ function drawCyphersSection(
       width: CONTENT_WIDTH - 22, height: FIELD_HEIGHT,
       fontSize: SIZE_BODY,
     });
-    y -= FIELD_HEIGHT + 4;
+    y -= FIELD_HEIGHT + 2;
 
     addTextField(form, page, font, {
       name: `cyphers.${i}.effect`,
-      x: MARGIN + 18, y: y - FIELD_HEIGHT_CYPHER,
-      width: CONTENT_WIDTH - 22, height: FIELD_HEIGHT_CYPHER,
+      x: MARGIN + 18, y: y - cypherEffectH,
+      width: CONTENT_WIDTH - 22, height: cypherEffectH,
       fontSize: 9,
       multiline: true,
     });
-    y -= FIELD_HEIGHT_CYPHER + 8;
+    y -= cypherEffectH + 6;
   }
 
   return y - SECTION_SPACING + 8;
@@ -702,8 +684,9 @@ function drawEquipmentSection(
 
   const colW = COL_HALF - 5;
   const allEquip = [...character.equipment];
-  const totalFields = allEquip.length + 4; // + 4 blank
+  const totalFields = allEquip.length + 2; // + 2 blank
   const rows = Math.ceil(totalFields / 2);
+  const equipRowH = 16;
 
   let fieldIdx = 0;
   for (let row = 0; row < rows; row++) {
@@ -719,16 +702,16 @@ function drawEquipmentSection(
 
       addTextField(form, page, font, {
         name,
-        x: colX, y: y - FIELD_HEIGHT,
-        width: colW, height: FIELD_HEIGHT,
+        x: colX, y: y - FIELD_HEIGHT_SMALL,
+        width: colW, height: FIELD_HEIGHT_SMALL,
         value: isPreFilled ? allEquip[idx] : undefined,
         fontSize: SIZE_SMALL,
       });
     }
-    y -= ROW_SPACING;
+    y -= equipRowH;
   }
 
-  return y - SECTION_SPACING + ROW_SPACING;
+  return y - SECTION_SPACING + equipRowH;
 }
 
 function drawNarrativeSection(
@@ -738,33 +721,27 @@ function drawNarrativeSection(
   let y = startY;
   y = drawSectionHeader(page, fontBold, 'NARRATIVE & NOTES', MARGIN, y, CONTENT_WIDTH);
 
-  const multiH = 36;
-
   // Connection
   page.drawText('Connection:', { x: MARGIN, y: y - 10, size: SIZE_SMALL, font, color: TEXT_SECONDARY });
-  y -= 14;
   addTextField(form, page, font, {
     name: 'connection',
-    x: MARGIN, y: y - multiH,
-    width: CONTENT_WIDTH, height: multiH,
+    x: MARGIN + 65, y: y - FIELD_HEIGHT,
+    width: CONTENT_WIDTH - 65, height: FIELD_HEIGHT,
     value: character.connection || '',
-    fontSize: 9,
-    multiline: true,
+    fontSize: SIZE_SMALL,
   });
-  y -= multiH + 6;
+  y -= FIELD_HEIGHT + 4;
 
   // Initial Link
   page.drawText('Initial Link:', { x: MARGIN, y: y - 10, size: SIZE_SMALL, font, color: TEXT_SECONDARY });
-  y -= 14;
   addTextField(form, page, font, {
     name: 'initialLink',
-    x: MARGIN, y: y - multiH,
-    width: CONTENT_WIDTH, height: multiH,
+    x: MARGIN + 65, y: y - FIELD_HEIGHT,
+    width: CONTENT_WIDTH - 65, height: FIELD_HEIGHT,
     value: character.initialLink || '',
-    fontSize: 9,
-    multiline: true,
+    fontSize: SIZE_SMALL,
   });
-  y -= multiH + 6;
+  y -= FIELD_HEIGHT + 4;
 
   // Notes — fill remaining space above footer
   page.drawText('Notes:', { x: MARGIN, y: y - 10, size: SIZE_SMALL, font, color: TEXT_SECONDARY });
