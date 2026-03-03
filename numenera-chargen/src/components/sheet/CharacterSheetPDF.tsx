@@ -647,7 +647,9 @@ function drawAbilitiesSection(
   // Pre-filled abilities
   for (let i = 0; i < character.abilities.length; i++) {
     const a = character.abilities[i];
-    const costStr = a.cost ? ` (${a.cost.amount} ${a.cost.pool})` : ' (Enabler)';
+    const costStr = a.cost
+      ? ` (${a.cost.amount} ${a.cost.pool.charAt(0).toUpperCase() + a.cost.pool.slice(1)})`
+      : /\benabler\b/i.test(a.description) ? ' (Enabler)' : '';
 
     addTextField(form, page, font, {
       name: `abilities.${i}`,

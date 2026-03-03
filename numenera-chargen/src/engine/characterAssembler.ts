@@ -64,11 +64,12 @@ export function assembleCharacter(input: AssemblerInput): Character | null {
 
   // Add descriptor special abilities (convert from plain objects to Ability)
   for (const sa of descriptor.specialAbilities) {
+    const isEnabler = /\benabler\b/i.test(sa.description);
     abilities.push({
       id: sa.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''),
       name: sa.name,
       description: sa.description,
-      type: 'enabler',
+      type: isEnabler ? 'enabler' : 'action',
       tier: 0,
       source: descriptor.id,
     });
