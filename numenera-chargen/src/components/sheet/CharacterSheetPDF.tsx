@@ -684,36 +684,22 @@ function drawEquipmentSection(
   let y = startY;
   y = drawSectionHeader(page, fontBold, 'EQUIPMENT', MARGIN, y, CONTENT_WIDTH);
 
-  const colW = COL_HALF - 5;
-  const allEquip = [...character.equipment];
-  const totalFields = allEquip.length + 2; // + 2 blank
-  const rows = Math.ceil(totalFields / 2);
-  const equipRowH = 16;
+  const equipH = 80;
+  const equipText = character.equipment.join('\n');
 
-  let fieldIdx = 0;
-  for (let row = 0; row < rows; row++) {
-    for (let col = 0; col < 2; col++) {
-      const idx = fieldIdx++;
-      if (idx >= totalFields) break;
+  drawPanel(page, MARGIN, y, CONTENT_WIDTH, equipH);
+  addTextField(form, page, font, {
+    name: 'equipment',
+    x: MARGIN, y: y - equipH,
+    width: CONTENT_WIDTH, height: equipH,
+    value: equipText,
+    fontSize: 8,
+    multiline: true,
+    borderColor: ACCENT,
+    borderWidth: 1,
+  });
 
-      const isPreFilled = idx < allEquip.length;
-      const name = isPreFilled
-        ? `equipment.${idx}`
-        : `equipment.extra.${idx - allEquip.length + 1}`;
-      const colX = col === 0 ? MARGIN : MARGIN + COL_HALF + 5;
-
-      addTextField(form, page, font, {
-        name,
-        x: colX, y: y - FIELD_HEIGHT_SMALL,
-        width: colW, height: FIELD_HEIGHT_SMALL,
-        value: isPreFilled ? allEquip[idx] : undefined,
-        fontSize: SIZE_SMALL,
-      });
-    }
-    y -= equipRowH;
-  }
-
-  return y - SECTION_SPACING + equipRowH;
+  return y - equipH - SECTION_SPACING;
 }
 
 function drawNarrativeSection(
