@@ -1,267 +1,845 @@
+// src/components/sheet/CharacterSheetPDF.tsx
+//
+// Form-fillable AcroForm PDF generation using pdf-lib.
+// Replaces the previous @react-pdf/renderer static PDF.
+
 import {
-  Document, Page, View, Text, StyleSheet, pdf,
-} from '@react-pdf/renderer';
+  PDFDocument,
+  StandardFonts,
+  rgb,
+  PDFPage,
+  PDFForm,
+  PDFFont,
+  PDFTextField,
+} from 'pdf-lib';
 import type { Character } from '../../types/Character';
 
-const styles = StyleSheet.create({
-  page: {
-    padding: 30,
-    fontSize: 9,
-    fontFamily: 'Helvetica',
-    color: '#1e293b',
-  },
-  header: {
-    marginBottom: 12,
-    borderBottomWidth: 1,
-    borderBottomColor: '#94a3b8',
-    paddingBottom: 8,
-  },
-  name: {
-    fontSize: 20,
-    fontFamily: 'Helvetica-Bold',
-    marginBottom: 2,
-  },
-  sentence: {
-    fontSize: 11,
-    fontStyle: 'italic',
-    color: '#475569',
-    marginBottom: 4,
-  },
-  headerRow: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-  },
-  headerMeta: {
-    fontSize: 9,
-    color: '#64748b',
-  },
-  section: {
-    marginBottom: 10,
-  },
-  sectionTitle: {
-    fontSize: 10,
-    fontFamily: 'Helvetica-Bold',
-    backgroundColor: '#e2e8f0',
-    padding: 4,
-    marginBottom: 4,
-  },
-  row: {
-    flexDirection: 'row',
-  },
-  poolsContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    marginBottom: 10,
-    borderWidth: 1,
-    borderColor: '#cbd5e1',
-    borderRadius: 4,
-    padding: 8,
-  },
-  poolBox: {
-    alignItems: 'center',
-    width: '30%',
-  },
-  poolLabel: {
-    fontSize: 10,
-    fontFamily: 'Helvetica-Bold',
-    textTransform: 'uppercase',
-    marginBottom: 2,
-  },
-  poolValue: {
-    fontSize: 18,
-    fontFamily: 'Helvetica-Bold',
-  },
-  poolEdge: {
-    fontSize: 8,
-    color: '#64748b',
-  },
-  skillsRow: {
-    flexDirection: 'row',
-    gap: 12,
-  },
-  skillCol: {
-    flex: 1,
-  },
-  skillColTitle: {
-    fontSize: 9,
-    fontFamily: 'Helvetica-Bold',
-    marginBottom: 2,
-  },
-  item: {
-    fontSize: 8,
-    marginBottom: 1,
-    paddingLeft: 6,
-  },
-  abilityName: {
-    fontFamily: 'Helvetica-Bold',
-    fontSize: 8,
-  },
-  abilityDesc: {
-    fontSize: 7,
-    color: '#475569',
-    marginBottom: 2,
-    paddingLeft: 6,
-  },
-  recoveryRow: {
-    flexDirection: 'row',
-    gap: 12,
-    borderWidth: 1,
-    borderColor: '#cbd5e1',
-    borderRadius: 4,
-    padding: 6,
-    marginBottom: 10,
-    fontSize: 8,
-  },
-  equipRow: {
-    flexDirection: 'row',
-    gap: 12,
-  },
-  equipCol: {
-    flex: 1,
-  },
-  footer: {
-    marginTop: 'auto',
-    paddingTop: 8,
-    borderTopWidth: 1,
-    borderTopColor: '#e2e8f0',
-    fontSize: 7,
-    color: '#94a3b8',
-    textAlign: 'center',
-  },
-});
+// --- Page Setup ---
+const PAGE_WIDTH = 612;
+const PAGE_HEIGHT = 792;
+const MARGIN = 36;
+const CONTENT_WIDTH = PAGE_WIDTH - MARGIN * 2;  // 540
+const COL_HALF = CONTENT_WIDTH / 2;             // 270
+const COL_THIRD = CONTENT_WIDTH / 3;            // 180
 
-function CharacterSheetDocument({ character }: { character: Character }) {
-  const c = character;
-  return (
-    <Document>
-      <Page size="LETTER" style={styles.page}>
-        {/* Header */}
-        <View style={styles.header}>
-          <View style={styles.headerRow}>
-            <Text style={styles.name}>{c.name || 'Unnamed Character'}</Text>
-            <View>
-              <Text style={styles.headerMeta}>Tier: {c.tier}  Effort: {c.effort}</Text>
-              <Text style={styles.headerMeta}>Cypher Limit: {c.cypherLimit}</Text>
-            </View>
-          </View>
-          <Text style={styles.sentence}>{c.sentence}</Text>
-          <View style={styles.headerRow}>
-            <Text style={styles.headerMeta}>Background: {c.background || '—'}</Text>
-            <Text style={styles.headerMeta}>XP: 0</Text>
-          </View>
-        </View>
+// --- Font Sizes ---
+const SIZE_NAME = 16;
+const SIZE_HEADER = 11;
+const SIZE_STAT_LABEL = 10;
+const SIZE_BODY = 10;
+const SIZE_SMALL = 8;
+const SIZE_CAPTION = 7;
+const SIZE_POOL_VALUE = 14;
+const SIZE_SENTENCE = 11;
 
-        {/* Stat Pools */}
-        <View style={styles.poolsContainer}>
-          {(['might', 'speed', 'intellect'] as const).map(stat => (
-            <View key={stat} style={styles.poolBox}>
-              <Text style={styles.poolLabel}>{stat}</Text>
-              <Text style={styles.poolValue}>{c.pools[stat].pool}</Text>
-              <Text style={styles.poolEdge}>Edge: {c.pools[stat].edge}</Text>
-            </View>
-          ))}
-        </View>
+// --- Spacing ---
+const FIELD_HEIGHT = 18;
+const FIELD_HEIGHT_POOL = 24;
+const FIELD_HEIGHT_SMALL = 14;
+const FIELD_HEIGHT_MULTI = 42;
+const FIELD_HEIGHT_CYPHER = 35;
+const FIELD_HEIGHT_NOTES = 100;
+const CHECKBOX_SIZE = 14;
+const ROW_SPACING = 22;
+const SECTION_GAP = 12;
+const SECTION_SPACING = 28;
+const HEADER_BAR_HEIGHT = 20;
 
-        {/* Recovery & Damage Track */}
-        <View style={styles.recoveryRow}>
-          <Text>Recovery: [ ] 1 Action  [ ] 10 Min  [ ] 1 Hr  [ ] 10 Hr</Text>
-          <Text>Recovery Roll: 1d6 + {c.recoveryRollBonus}</Text>
-          <Text>Damage Track: [ ] Impaired  [ ] Debilitated</Text>
-        </View>
+// --- Colors ---
+const PAGE_BG = rgb(0.98, 0.98, 0.97);
+const HEADER_BAR_BG = rgb(0.15, 0.18, 0.22);
+const HEADER_BAR_TEXT = rgb(0.92, 0.94, 0.96);
+const ACCENT = rgb(0.18, 0.62, 0.65);
+const FIELD_BG = rgb(1, 1, 1);
+const FIELD_BORDER = rgb(0.65, 0.68, 0.72);
+const POOL_FIELD_BG = rgb(0.88, 0.95, 0.95);
+const POOL_FIELD_BORDER = ACCENT;
+const PANEL_BG = rgb(0.95, 0.96, 0.96);
+const DIVIDER = rgb(0.75, 0.78, 0.82);
+const TEXT_PRIMARY = rgb(0.12, 0.14, 0.17);
+const TEXT_SECONDARY = rgb(0.40, 0.43, 0.47);
+const TEXT_MUTED = rgb(0.55, 0.58, 0.62);
+const FIELD_BORDER_WIDTH = 0.75;
 
-        {/* Skills */}
-        <View style={styles.section}>
-          <Text style={styles.sectionTitle}>SKILLS</Text>
-          <View style={styles.skillsRow}>
-            <View style={styles.skillCol}>
-              <Text style={styles.skillColTitle}>Trained</Text>
-              {c.skills.trained.map(s => (
-                <Text key={s} style={styles.item}>• {s}</Text>
-              ))}
-            </View>
-            <View style={styles.skillCol}>
-              <Text style={styles.skillColTitle}>Specialized</Text>
-              {c.skills.specialized.map(s => (
-                <Text key={s} style={styles.item}>• {s}</Text>
-              ))}
-              {c.skills.specialized.length === 0 && (
-                <Text style={styles.item}>—</Text>
-              )}
-            </View>
-            <View style={styles.skillCol}>
-              <Text style={styles.skillColTitle}>Inabilities</Text>
-              {c.skills.inabilities.map(s => (
-                <Text key={s} style={styles.item}>• {s}</Text>
-              ))}
-            </View>
-          </View>
-        </View>
+// --- Helper Functions ---
 
-        {/* Abilities */}
-        <View style={styles.section}>
-          <Text style={styles.sectionTitle}>SPECIAL ABILITIES</Text>
-          {c.abilities.map(a => (
-            <View key={a.id}>
-              <Text style={styles.abilityName}>
-                • {a.name}
-                {a.cost ? ` (${a.cost.amount} ${a.cost.pool})` : ' (Enabler)'}
-              </Text>
-              <Text style={styles.abilityDesc}>{a.description}</Text>
-            </View>
-          ))}
-        </View>
+function addTextField(
+  form: PDFForm,
+  page: PDFPage,
+  font: PDFFont,
+  opts: {
+    name: string;
+    x: number;
+    y: number;
+    width: number;
+    height?: number;
+    value?: string;
+    fontSize?: number;
+    multiline?: boolean;
+    readOnly?: boolean;
+    backgroundColor?: ReturnType<typeof rgb>;
+    borderColor?: ReturnType<typeof rgb>;
+    borderWidth?: number;
+    alignment?: number;
+  }
+): PDFTextField {
+  const field = form.createTextField(opts.name);
+  if (opts.value) field.setText(opts.value);
+  if (opts.multiline) field.enableMultiline();
+  if (opts.readOnly) field.enableReadOnly();
 
-        {/* Equipment & Cyphers */}
-        <View style={styles.section}>
-          <Text style={styles.sectionTitle}>EQUIPMENT & CYPHERS</Text>
-          <View style={styles.equipRow}>
-            <View style={styles.equipCol}>
-              {c.weapons.length > 0 && (
-                <>
-                  <Text style={styles.skillColTitle}>Weapons</Text>
-                  {c.weapons.map((w, i) => <Text key={i} style={styles.item}>• {w}</Text>)}
-                </>
-              )}
-              <Text style={styles.skillColTitle}>Armor</Text>
-              <Text style={styles.item}>{c.armor}</Text>
-              <Text style={styles.skillColTitle}>Equipment</Text>
-              {c.equipment.map((e, i) => <Text key={i} style={styles.item}>• {e}</Text>)}
-              <Text style={styles.item}>Shins: {c.shins}</Text>
-            </View>
-            <View style={styles.equipCol}>
-              <Text style={styles.skillColTitle}>Cyphers (Limit: {c.cypherLimit})</Text>
-              {Array.from({ length: c.cypherLimit }, (_, i) => (
-                <Text key={i} style={styles.item}>{i + 1}. ___________________</Text>
-              ))}
-            </View>
-          </View>
-        </View>
+  const isReadOnly = opts.readOnly ?? false;
 
-        {/* Connection, Link, Notes */}
-        <View style={styles.section}>
-          {c.connection && (
-            <Text style={styles.item}>Connection: {c.connection}</Text>
-          )}
-          {c.initialLink && (
-            <Text style={styles.item}>Initial Link: {c.initialLink}</Text>
-          )}
-          {c.notes && (
-            <Text style={styles.item}>Notes: {c.notes}</Text>
-          )}
-        </View>
+  field.addToPage(page, {
+    x: opts.x,
+    y: opts.y,
+    width: opts.width,
+    height: opts.height ?? FIELD_HEIGHT,
+    borderColor: isReadOnly ? rgb(1, 1, 1) : (opts.borderColor ?? FIELD_BORDER),
+    backgroundColor: isReadOnly ? PAGE_BG : (opts.backgroundColor ?? FIELD_BG),
+    borderWidth: isReadOnly ? 0 : (opts.borderWidth ?? FIELD_BORDER_WIDTH),
+    font,
+  });
 
-        {/* Footer */}
-        <View style={styles.footer}>
-          <Text>Numenera is a product of Monte Cook Games, LLC.</Text>
-          <Text>Character generated with Numenera Character Sheet Generator.</Text>
-        </View>
-      </Page>
-    </Document>
-  );
+  field.setFontSize(opts.fontSize ?? SIZE_BODY);
+
+  return field;
 }
+
+function addCheckbox(
+  form: PDFForm,
+  page: PDFPage,
+  font: PDFFont,
+  opts: {
+    name: string;
+    label: string;
+    x: number;
+    y: number;
+    checked?: boolean;
+  }
+): void {
+  const cb = form.createCheckBox(opts.name);
+  cb.addToPage(page, {
+    x: opts.x,
+    y: opts.y,
+    width: CHECKBOX_SIZE,
+    height: CHECKBOX_SIZE,
+    borderColor: ACCENT,
+    borderWidth: 1,
+    backgroundColor: FIELD_BG,
+  });
+  if (opts.checked) cb.check();
+
+  page.drawText(opts.label, {
+    x: opts.x + CHECKBOX_SIZE + 4,
+    y: opts.y + 2,
+    size: SIZE_BODY,
+    font,
+    color: TEXT_PRIMARY,
+  });
+}
+
+function drawSectionHeader(
+  page: PDFPage, fontBold: PDFFont,
+  text: string, x: number, y: number, width: number
+): number {
+  const barHeight = HEADER_BAR_HEIGHT;
+  const textY = y - barHeight + 5;
+
+  page.drawRectangle({
+    x, y: y - barHeight, width, height: barHeight,
+    color: HEADER_BAR_BG,
+  });
+
+  page.drawText(text, {
+    x: x + 8, y: textY,
+    size: SIZE_HEADER,
+    font: fontBold,
+    color: HEADER_BAR_TEXT,
+  });
+
+  page.drawLine({
+    start: { x, y: y - barHeight },
+    end: { x: x + width, y: y - barHeight },
+    thickness: 1.5,
+    color: ACCENT,
+  });
+
+  return y - barHeight - SECTION_GAP;
+}
+
+function drawPanel(page: PDFPage, x: number, y: number, width: number, height: number): void {
+  page.drawRectangle({
+    x, y: y - height, width, height,
+    color: PANEL_BG,
+    borderColor: DIVIDER,
+    borderWidth: 0.5,
+  });
+}
+
+function drawFooter(page: PDFPage, font: PDFFont): void {
+  const footerY = 30;
+  page.drawLine({
+    start: { x: MARGIN, y: footerY + 12 },
+    end: { x: PAGE_WIDTH - MARGIN, y: footerY + 12 },
+    thickness: 0.5,
+    color: DIVIDER,
+  });
+  page.drawText('Numenera is a product of Monte Cook Games, LLC.', {
+    x: MARGIN, y: footerY,
+    size: SIZE_CAPTION, font, color: TEXT_MUTED,
+  });
+}
+
+// --- Section Drawing Functions ---
+
+function drawIdentitySection(
+  page: PDFPage, form: PDFForm, font: PDFFont, _fontBold: PDFFont, fontItalic: PDFFont,
+  character: Character, startY: number
+): number {
+  let y = startY;
+
+  // Character name field — large with accent underline
+  const nameW = 340;
+  const nameH = 22;
+  const nameFieldY = y - nameH;
+
+  addTextField(form, page, font, {
+    name: 'character.name',
+    x: MARGIN,
+    y: nameFieldY,
+    width: nameW,
+    height: nameH,
+    value: character.name || '',
+    fontSize: SIZE_NAME,
+    borderColor: rgb(1, 1, 1),
+    borderWidth: 0,
+  });
+
+  // Accent underline beneath name
+  page.drawLine({
+    start: { x: MARGIN, y: nameFieldY },
+    end: { x: MARGIN + nameW, y: nameFieldY },
+    thickness: 2,
+    color: ACCENT,
+  });
+
+  // Tier, Effort, XP — to the right of name
+  const rightX = MARGIN + nameW + 15;
+  const smallW = 40;
+
+  page.drawText('Tier:', { x: rightX, y: y - 12, size: SIZE_SMALL, font, color: TEXT_SECONDARY });
+  addTextField(form, page, font, {
+    name: 'character.tier',
+    x: rightX + 25,
+    y: y - nameH,
+    width: smallW,
+    height: FIELD_HEIGHT,
+    value: String(character.tier),
+    fontSize: SIZE_BODY,
+  });
+
+  page.drawText('Effort:', { x: rightX + 75, y: y - 12, size: SIZE_SMALL, font, color: TEXT_SECONDARY });
+  addTextField(form, page, font, {
+    name: 'character.effort',
+    x: rightX + 110,
+    y: y - nameH,
+    width: smallW,
+    height: FIELD_HEIGHT,
+    value: String(character.effort),
+    fontSize: SIZE_BODY,
+  });
+
+  y -= nameH + 4;
+
+  // Character sentence — static italic text
+  page.drawText(character.sentence, {
+    x: MARGIN,
+    y: y - 14,
+    size: SIZE_SENTENCE,
+    font: fontItalic,
+    color: TEXT_SECONDARY,
+  });
+  y -= 20;
+
+  // Background and XP on same row
+  const bgLabelW = 75;
+  page.drawText('Background:', { x: MARGIN, y: y - 12, size: SIZE_SMALL, font, color: TEXT_SECONDARY });
+  addTextField(form, page, font, {
+    name: 'background',
+    x: MARGIN + bgLabelW,
+    y: y - FIELD_HEIGHT,
+    width: 310,
+    height: FIELD_HEIGHT,
+    value: character.background || '',
+  });
+
+  page.drawText('XP:', { x: MARGIN + bgLabelW + 320, y: y - 12, size: SIZE_SMALL, font, color: TEXT_SECONDARY });
+  addTextField(form, page, font, {
+    name: 'character.xp',
+    x: MARGIN + bgLabelW + 340,
+    y: y - FIELD_HEIGHT,
+    width: 50,
+    height: FIELD_HEIGHT,
+    value: '0',
+  });
+
+  y -= FIELD_HEIGHT + 4;
+
+  // Divider line
+  page.drawLine({
+    start: { x: MARGIN, y },
+    end: { x: PAGE_WIDTH - MARGIN, y },
+    thickness: 0.5,
+    color: DIVIDER,
+  });
+
+  return y - 6;
+}
+
+function drawStatPoolsSection(
+  page: PDFPage, form: PDFForm, font: PDFFont, fontBold: PDFFont,
+  character: Character, startY: number
+): number {
+  let y = startY;
+  y = drawSectionHeader(page, fontBold, 'STAT POOLS', MARGIN, y, CONTENT_WIDTH);
+
+  const panelH = 90;
+  drawPanel(page, MARGIN, y, CONTENT_WIDTH, panelH);
+
+  const stats = ['might', 'speed', 'intellect'] as const;
+  const colW = COL_THIRD;
+
+  for (let i = 0; i < stats.length; i++) {
+    const stat = stats[i];
+    const colX = MARGIN + i * colW;
+    const pool = character.pools[stat];
+
+    // Vertical divider between columns
+    if (i > 0) {
+      page.drawLine({
+        start: { x: colX, y },
+        end: { x: colX, y: y - panelH },
+        thickness: 0.5,
+        color: DIVIDER,
+      });
+    }
+
+    // Stat label in accent color
+    const labelText = stat.toUpperCase();
+    const labelW = fontBold.widthOfTextAtSize(labelText, SIZE_STAT_LABEL);
+    page.drawText(labelText, {
+      x: colX + (colW - labelW) / 2,
+      y: y - 16,
+      size: SIZE_STAT_LABEL,
+      font: fontBold,
+      color: ACCENT,
+    });
+
+    const fieldX = colX + 55;
+    const fieldW = 55;
+    let rowY = y - 30;
+
+    // Max
+    page.drawText('Max:', { x: colX + 12, y: rowY + 4, size: SIZE_SMALL, font, color: TEXT_SECONDARY });
+    addTextField(form, page, font, {
+      name: `${stat}.pool.max`,
+      x: fieldX, y: rowY,
+      width: fieldW, height: FIELD_HEIGHT,
+      value: String(pool.pool),
+    });
+    rowY -= ROW_SPACING;
+
+    // Current — emphasized
+    page.drawText('Current:', { x: colX + 12, y: rowY + 6, size: SIZE_SMALL, font, color: TEXT_SECONDARY });
+    addTextField(form, page, font, {
+      name: `${stat}.pool.current`,
+      x: fieldX, y: rowY,
+      width: fieldW, height: FIELD_HEIGHT_POOL,
+      value: String(pool.pool),
+      fontSize: SIZE_POOL_VALUE,
+      backgroundColor: POOL_FIELD_BG,
+      borderColor: POOL_FIELD_BORDER,
+      borderWidth: 1.5,
+    });
+    rowY -= FIELD_HEIGHT_POOL + 4;
+
+    // Edge
+    page.drawText('Edge:', { x: colX + 12, y: rowY + 4, size: SIZE_SMALL, font, color: TEXT_SECONDARY });
+    addTextField(form, page, font, {
+      name: `${stat}.edge`,
+      x: fieldX, y: rowY,
+      width: fieldW, height: FIELD_HEIGHT,
+      value: String(pool.edge),
+    });
+  }
+
+  return y - panelH - SECTION_SPACING;
+}
+
+function drawRecoveryAndDamageSection(
+  page: PDFPage, form: PDFForm, font: PDFFont, fontBold: PDFFont,
+  character: Character, startY: number
+): number {
+  let y = startY;
+  y = drawSectionHeader(page, fontBold, 'RECOVERY & DAMAGE TRACK', MARGIN, y, CONTENT_WIDTH);
+
+  const panelH = 80;
+
+  // Recovery panel (left half)
+  drawPanel(page, MARGIN, y, COL_HALF - 5, panelH);
+
+  // Damage panel (right half)
+  drawPanel(page, MARGIN + COL_HALF + 5, y, COL_HALF - 5, panelH);
+
+  // Recovery checkboxes
+  let cbY = y - 20;
+  const recoveries = [
+    { name: 'recovery.action', label: '1 Action' },
+    { name: 'recovery.tenMin', label: '10 Minutes' },
+    { name: 'recovery.oneHour', label: '1 Hour' },
+    { name: 'recovery.tenHours', label: '10 Hours' },
+  ];
+  for (const rec of recoveries) {
+    addCheckbox(form, page, font, { ...rec, x: MARGIN + 8, y: cbY });
+    cbY -= 16;
+  }
+
+  // Recovery roll text
+  page.drawText(`Recovery: 1d6 + ${character.recoveryRollBonus}`, {
+    x: MARGIN + 8,
+    y: y - panelH + 6,
+    size: SIZE_SMALL,
+    font,
+    color: TEXT_SECONDARY,
+  });
+
+  // Damage track
+  const dmgX = MARGIN + COL_HALF + 15;
+  let dmgY = y - 20;
+
+  page.drawText('Hale', { x: dmgX, y: dmgY + 2, size: SIZE_BODY, font: fontBold, color: TEXT_PRIMARY });
+  dmgY -= 20;
+
+  page.drawText('\u2192', { x: dmgX, y: dmgY + 2, size: SIZE_BODY, font, color: TEXT_SECONDARY });
+  addCheckbox(form, page, font, { name: 'damage.impaired', label: 'Impaired', x: dmgX + 14, y: dmgY });
+  dmgY -= 20;
+
+  page.drawText('\u2192', { x: dmgX, y: dmgY + 2, size: SIZE_BODY, font, color: TEXT_SECONDARY });
+  addCheckbox(form, page, font, { name: 'damage.debilitated', label: 'Debilitated', x: dmgX + 14, y: dmgY });
+  dmgY -= 18;
+
+  page.drawText('\u2192 Dead', { x: dmgX, y: dmgY + 2, size: SIZE_BODY, font, color: TEXT_SECONDARY });
+
+  return y - panelH - SECTION_SPACING;
+}
+
+function drawSkillsSection(
+  page: PDFPage, form: PDFForm, font: PDFFont, fontBold: PDFFont,
+  character: Character, startY: number
+): number {
+  let y = startY;
+  y = drawSectionHeader(page, fontBold, 'SKILLS', MARGIN, y, CONTENT_WIDTH);
+
+  const leftX = MARGIN;
+  const rightX = MARGIN + COL_HALF + 10;
+  const fieldW = COL_HALF - 20;
+
+  // Left column: Trained skills
+  page.drawText('TRAINED', { x: leftX, y: y - 12, size: SIZE_SMALL, font: fontBold, color: TEXT_SECONDARY });
+  let leftY = y - 24;
+
+  for (let i = 0; i < character.skills.trained.length; i++) {
+    addTextField(form, page, font, {
+      name: `skills.trained.${i}`,
+      x: leftX, y: leftY,
+      width: fieldW, height: FIELD_HEIGHT,
+      value: character.skills.trained[i],
+    });
+    leftY -= ROW_SPACING;
+  }
+  for (let j = 1; j <= 3; j++) {
+    addTextField(form, page, font, {
+      name: `skills.trained.extra.${j}`,
+      x: leftX, y: leftY,
+      width: fieldW, height: FIELD_HEIGHT,
+    });
+    leftY -= ROW_SPACING;
+  }
+
+  // Right column: Specialized + Inabilities
+  page.drawText('SPECIALIZED', { x: rightX, y: y - 12, size: SIZE_SMALL, font: fontBold, color: TEXT_SECONDARY });
+  let rightY = y - 24;
+
+  for (let i = 0; i < character.skills.specialized.length; i++) {
+    addTextField(form, page, font, {
+      name: `skills.specialized.${i}`,
+      x: rightX, y: rightY,
+      width: fieldW, height: FIELD_HEIGHT,
+      value: character.skills.specialized[i],
+    });
+    rightY -= ROW_SPACING;
+  }
+  for (let j = 1; j <= 2; j++) {
+    addTextField(form, page, font, {
+      name: `skills.specialized.extra.${j}`,
+      x: rightX, y: rightY,
+      width: fieldW, height: FIELD_HEIGHT,
+    });
+    rightY -= ROW_SPACING;
+  }
+
+  // Inabilities
+  rightY -= 6;
+  page.drawText('INABILITIES', { x: rightX, y: rightY, size: SIZE_SMALL, font: fontBold, color: TEXT_SECONDARY });
+  rightY -= 14;
+
+  for (let i = 0; i < character.skills.inabilities.length; i++) {
+    addTextField(form, page, font, {
+      name: `skills.inabilities.${i}`,
+      x: rightX, y: rightY,
+      width: fieldW, height: FIELD_HEIGHT,
+      value: character.skills.inabilities[i],
+    });
+    rightY -= ROW_SPACING;
+  }
+
+  const bottomY = Math.min(leftY, rightY);
+  return bottomY - SECTION_SPACING + ROW_SPACING;
+}
+
+function drawAttacksSection(
+  page: PDFPage, form: PDFForm, font: PDFFont, fontBold: PDFFont,
+  character: Character, startY: number
+): number {
+  let y = startY;
+  y = drawSectionHeader(page, fontBold, 'ATTACKS', MARGIN, y, CONTENT_WIDTH);
+
+  // Column widths
+  const cols = [
+    { label: 'Weapon', width: 140 },
+    { label: 'Skill', width: 45 },
+    { label: 'Damage', width: 60 },
+    { label: 'Range', width: 60 },
+    { label: 'Notes', width: CONTENT_WIDTH - 140 - 45 - 60 - 60 },
+  ];
+
+  // Table header background
+  const headerRowH = 16;
+  page.drawRectangle({
+    x: MARGIN, y: y - headerRowH,
+    width: CONTENT_WIDTH, height: headerRowH,
+    color: rgb(0.90, 0.91, 0.93),
+  });
+
+  // Header labels
+  let colX = MARGIN;
+  for (const col of cols) {
+    page.drawText(col.label, {
+      x: colX + 4, y: y - headerRowH + 4,
+      size: SIZE_SMALL, font: fontBold, color: TEXT_SECONDARY,
+    });
+    colX += col.width;
+  }
+  y -= headerRowH + 4;
+
+  // Weapon rows from character data
+  const allWeapons = [...character.weapons];
+  const totalRows = allWeapons.length + 2; // + 2 blank
+
+  for (let row = 0; row < totalRows; row++) {
+    const isPreFilled = row < allWeapons.length;
+    const prefix = isPreFilled ? `attacks.${row}` : `attacks.extra.${row - allWeapons.length + 1}`;
+
+    colX = MARGIN;
+    for (let c = 0; c < cols.length; c++) {
+      const colDef = cols[c];
+      const fieldName = `${prefix}.${['name', 'skill', 'damage', 'range', 'notes'][c]}`;
+      let value = '';
+      if (isPreFilled) {
+        if (c === 0) value = allWeapons[row];
+        if (c === 1) value = '\u2014'; // em dash default
+      }
+
+      addTextField(form, page, font, {
+        name: fieldName,
+        x: colX, y: y - FIELD_HEIGHT_SMALL,
+        width: colDef.width - 2, height: FIELD_HEIGHT_SMALL,
+        value: value || undefined,
+        fontSize: SIZE_SMALL,
+      });
+      colX += colDef.width;
+    }
+    y -= FIELD_HEIGHT_SMALL + 3;
+  }
+
+  return y - SECTION_SPACING + 8;
+}
+
+function drawArmorShinsSection(
+  page: PDFPage, form: PDFForm, font: PDFFont, fontBold: PDFFont,
+  character: Character, startY: number
+): number {
+  let y = startY;
+  y = drawSectionHeader(page, fontBold, 'ARMOR & CURRENCY', MARGIN, y, CONTENT_WIDTH);
+
+  page.drawText('Armor:', { x: MARGIN, y: y - 12, size: SIZE_BODY, font, color: TEXT_SECONDARY });
+  addTextField(form, page, font, {
+    name: 'armor',
+    x: MARGIN + 45, y: y - FIELD_HEIGHT,
+    width: 250, height: FIELD_HEIGHT,
+    value: character.armor || '',
+  });
+
+  page.drawText('Shins:', { x: MARGIN + 320, y: y - 12, size: SIZE_BODY, font, color: TEXT_SECONDARY });
+  addTextField(form, page, font, {
+    name: 'shins',
+    x: MARGIN + 365, y: y - FIELD_HEIGHT,
+    width: 80, height: FIELD_HEIGHT,
+    value: String(character.shins),
+  });
+
+  return y - FIELD_HEIGHT - SECTION_SPACING;
+}
+
+function drawAbilitiesSection(
+  page: PDFPage, form: PDFForm, font: PDFFont, fontBold: PDFFont,
+  character: Character, startY: number
+): number {
+  let y = startY;
+  y = drawSectionHeader(page, fontBold, 'SPECIAL ABILITIES', MARGIN, y, CONTENT_WIDTH);
+
+  const totalSlots = character.abilities.length + 3;
+  // Calculate description height to fit all abilities
+  const availableH = y - 400; // reserve space for sections below
+  const perSlotH = Math.max(30, Math.min(FIELD_HEIGHT_MULTI + FIELD_HEIGHT + 6, availableH / totalSlots));
+  const descH = Math.max(30, perSlotH - FIELD_HEIGHT - 6);
+
+  // Pre-filled abilities
+  for (let i = 0; i < character.abilities.length; i++) {
+    const a = character.abilities[i];
+    const costStr = a.cost ? ` (${a.cost.amount} ${a.cost.pool})` : ' (Enabler)';
+
+    addTextField(form, page, font, {
+      name: `abilities.${i}.name`,
+      x: MARGIN, y: y - FIELD_HEIGHT,
+      width: CONTENT_WIDTH, height: FIELD_HEIGHT,
+      value: `${a.name}${costStr}`,
+      fontSize: SIZE_BODY,
+    });
+    y -= FIELD_HEIGHT + 2;
+
+    addTextField(form, page, font, {
+      name: `abilities.${i}.desc`,
+      x: MARGIN, y: y - descH,
+      width: CONTENT_WIDTH, height: descH,
+      value: a.description,
+      fontSize: 9,
+      multiline: true,
+    });
+    y -= descH + 4;
+  }
+
+  // 3 blank ability slots
+  for (let j = 1; j <= 3; j++) {
+    addTextField(form, page, font, {
+      name: `abilities.extra.${j}.name`,
+      x: MARGIN, y: y - FIELD_HEIGHT,
+      width: CONTENT_WIDTH, height: FIELD_HEIGHT,
+      fontSize: SIZE_BODY,
+    });
+    y -= FIELD_HEIGHT + 2;
+
+    addTextField(form, page, font, {
+      name: `abilities.extra.${j}.desc`,
+      x: MARGIN, y: y - descH,
+      width: CONTENT_WIDTH, height: descH,
+      fontSize: 9,
+      multiline: true,
+    });
+    y -= descH + 4;
+  }
+
+  return y - SECTION_SPACING + 8;
+}
+
+function drawCyphersSection(
+  page: PDFPage, form: PDFForm, font: PDFFont, fontBold: PDFFont,
+  character: Character, startY: number
+): number {
+  let y = startY;
+  y = drawSectionHeader(page, fontBold, 'CYPHERS', MARGIN, y, CONTENT_WIDTH);
+
+  // Cypher limit
+  page.drawText('Limit:', { x: MARGIN, y: y - 12, size: SIZE_BODY, font, color: TEXT_SECONDARY });
+  addTextField(form, page, font, {
+    name: 'cyphers.limit',
+    x: MARGIN + 40, y: y - FIELD_HEIGHT,
+    width: 40, height: FIELD_HEIGHT,
+    value: String(character.cypherLimit),
+  });
+  y -= FIELD_HEIGHT + 8;
+
+  // 3 cypher slots
+  for (let i = 1; i <= 3; i++) {
+    drawPanel(page, MARGIN, y, CONTENT_WIDTH, FIELD_HEIGHT + FIELD_HEIGHT_CYPHER + 8);
+
+    page.drawText(`${i}.`, { x: MARGIN + 4, y: y - 12, size: SIZE_BODY, font: fontBold, color: TEXT_PRIMARY });
+
+    addTextField(form, page, font, {
+      name: `cyphers.${i}.name`,
+      x: MARGIN + 18, y: y - FIELD_HEIGHT,
+      width: CONTENT_WIDTH - 22, height: FIELD_HEIGHT,
+      fontSize: SIZE_BODY,
+    });
+    y -= FIELD_HEIGHT + 4;
+
+    addTextField(form, page, font, {
+      name: `cyphers.${i}.effect`,
+      x: MARGIN + 18, y: y - FIELD_HEIGHT_CYPHER,
+      width: CONTENT_WIDTH - 22, height: FIELD_HEIGHT_CYPHER,
+      fontSize: 9,
+      multiline: true,
+    });
+    y -= FIELD_HEIGHT_CYPHER + 8;
+  }
+
+  return y - SECTION_SPACING + 8;
+}
+
+function drawEquipmentSection(
+  page: PDFPage, form: PDFForm, font: PDFFont, fontBold: PDFFont,
+  character: Character, startY: number
+): number {
+  let y = startY;
+  y = drawSectionHeader(page, fontBold, 'EQUIPMENT', MARGIN, y, CONTENT_WIDTH);
+
+  const colW = COL_HALF - 5;
+  const allEquip = [...character.equipment];
+  const totalFields = allEquip.length + 4; // + 4 blank
+  const rows = Math.ceil(totalFields / 2);
+
+  let fieldIdx = 0;
+  for (let row = 0; row < rows; row++) {
+    for (let col = 0; col < 2; col++) {
+      const idx = fieldIdx++;
+      if (idx >= totalFields) break;
+
+      const isPreFilled = idx < allEquip.length;
+      const name = isPreFilled
+        ? `equipment.${idx}`
+        : `equipment.extra.${idx - allEquip.length + 1}`;
+      const colX = col === 0 ? MARGIN : MARGIN + COL_HALF + 5;
+
+      addTextField(form, page, font, {
+        name,
+        x: colX, y: y - FIELD_HEIGHT,
+        width: colW, height: FIELD_HEIGHT,
+        value: isPreFilled ? allEquip[idx] : undefined,
+        fontSize: SIZE_SMALL,
+      });
+    }
+    y -= ROW_SPACING;
+  }
+
+  return y - SECTION_SPACING + ROW_SPACING;
+}
+
+function drawNarrativeSection(
+  page: PDFPage, form: PDFForm, font: PDFFont, fontBold: PDFFont,
+  character: Character, startY: number
+): number {
+  let y = startY;
+  y = drawSectionHeader(page, fontBold, 'NARRATIVE & NOTES', MARGIN, y, CONTENT_WIDTH);
+
+  const multiH = 36;
+
+  // Connection
+  page.drawText('Connection:', { x: MARGIN, y: y - 10, size: SIZE_SMALL, font, color: TEXT_SECONDARY });
+  y -= 14;
+  addTextField(form, page, font, {
+    name: 'connection',
+    x: MARGIN, y: y - multiH,
+    width: CONTENT_WIDTH, height: multiH,
+    value: character.connection || '',
+    fontSize: 9,
+    multiline: true,
+  });
+  y -= multiH + 6;
+
+  // Initial Link
+  page.drawText('Initial Link:', { x: MARGIN, y: y - 10, size: SIZE_SMALL, font, color: TEXT_SECONDARY });
+  y -= 14;
+  addTextField(form, page, font, {
+    name: 'initialLink',
+    x: MARGIN, y: y - multiH,
+    width: CONTENT_WIDTH, height: multiH,
+    value: character.initialLink || '',
+    fontSize: 9,
+    multiline: true,
+  });
+  y -= multiH + 6;
+
+  // Notes — fill remaining space above footer
+  page.drawText('Notes:', { x: MARGIN, y: y - 10, size: SIZE_SMALL, font, color: TEXT_SECONDARY });
+  y -= 14;
+  const notesH = Math.max(FIELD_HEIGHT_NOTES, y - 50);
+
+  drawPanel(page, MARGIN, y, CONTENT_WIDTH, notesH);
+  addTextField(form, page, font, {
+    name: 'notes',
+    x: MARGIN, y: y - notesH,
+    width: CONTENT_WIDTH, height: notesH,
+    value: character.notes || '',
+    fontSize: 9,
+    multiline: true,
+    borderColor: ACCENT,
+    borderWidth: 1,
+  });
+
+  return y - notesH;
+}
+
+// --- Main Export ---
 
 export async function generatePDF(character: Character): Promise<Blob> {
-  return await pdf(<CharacterSheetDocument character={character} />).toBlob();
-}
+  const pdfDoc = await PDFDocument.create();
+  const font = await pdfDoc.embedFont(StandardFonts.Helvetica);
+  const fontBold = await pdfDoc.embedFont(StandardFonts.HelveticaBold);
+  const fontItalic = await pdfDoc.embedFont(StandardFonts.HelveticaOblique);
+  const form = pdfDoc.getForm();
 
-export default CharacterSheetDocument;
+  // ---- PAGE 1 ----
+  const page1 = pdfDoc.addPage([PAGE_WIDTH, PAGE_HEIGHT]);
+  page1.drawRectangle({
+    x: 0, y: 0, width: PAGE_WIDTH, height: PAGE_HEIGHT, color: PAGE_BG,
+  });
+
+  let y = PAGE_HEIGHT - MARGIN;
+
+  y = drawIdentitySection(page1, form, font, fontBold, fontItalic, character, y);
+  y = drawStatPoolsSection(page1, form, font, fontBold, character, y);
+  y = drawRecoveryAndDamageSection(page1, form, font, fontBold, character, y);
+  y = drawSkillsSection(page1, form, font, fontBold, character, y);
+  y = drawAttacksSection(page1, form, font, fontBold, character, y);
+  drawArmorShinsSection(page1, form, font, fontBold, character, y);
+  drawFooter(page1, font);
+
+  // ---- PAGE 2 ----
+  const page2 = pdfDoc.addPage([PAGE_WIDTH, PAGE_HEIGHT]);
+  page2.drawRectangle({
+    x: 0, y: 0, width: PAGE_WIDTH, height: PAGE_HEIGHT, color: PAGE_BG,
+  });
+
+  y = PAGE_HEIGHT - MARGIN;
+
+  y = drawAbilitiesSection(page2, form, font, fontBold, character, y);
+  y = drawCyphersSection(page2, form, font, fontBold, character, y);
+  y = drawEquipmentSection(page2, form, font, fontBold, character, y);
+  drawNarrativeSection(page2, form, font, fontBold, character, y);
+  drawFooter(page2, font);
+
+  // Serialize
+  const pdfBytes = await pdfDoc.save();
+  return new Blob([pdfBytes as unknown as ArrayBuffer], { type: 'application/pdf' });
+}
