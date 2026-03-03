@@ -18,6 +18,7 @@ export interface Descriptor {
   specialAbilities: {
     name: string;
     description: string;
+    cost?: { pool: 'might' | 'speed' | 'intellect'; amount: number };
   }[];
   additionalEquipment: string[];
   initialLinks: string[];

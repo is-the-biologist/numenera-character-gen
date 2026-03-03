@@ -69,6 +69,7 @@ export function assembleCharacter(input: AssemblerInput): Character | null {
       id: sa.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''),
       name: sa.name,
       description: sa.description,
+      ...(sa.cost ? { cost: sa.cost } : {}),
       type: isEnabler ? 'enabler' : 'action',
       tier: 0,
       source: descriptor.id,

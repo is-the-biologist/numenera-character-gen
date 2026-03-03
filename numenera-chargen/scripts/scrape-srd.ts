@@ -380,7 +380,7 @@ interface DescriptorRaw {
   edgeModifiers?: { might?: number; speed?: number; intellect?: number };
   trainedSkills: string[];
   inabilities: string[];
-  specialAbilities: { name: string; description: string }[];
+  specialAbilities: { name: string; description: string; cost?: { pool: 'might' | 'speed' | 'intellect'; amount: number } }[];
   additionalEquipment: string[];
   initialLinks: string[];
 }
@@ -452,18 +452,20 @@ function scrapeDescriptorsFromPage($: cheerio.CheerioAPI, source: 'discovery' | 
     }
 
     // Special abilities (non-standard entries)
-    const specialAbilities: { name: string; description: string }[] = [];
+    const specialAbilities: { name: string; description: string; cost?: { pool: 'might' | 'speed' | 'intellect'; amount: number } }[] = [];
     // Look for named abilities like "Disarm With Humor (3 Intellect points):" or "Expert Helper:" etc
-    const abilityMatches = fullText.matchAll(/(?:^|\n)([A-Z][A-Za-z\s]+?)(?:\s*\(\d+\s*(?:Might|Speed|Intellect)\s*points?\))?\s*:\s*(.+?)(?=\n[A-Z]|\nSkill:|\nInability:|\nAdditional Equipment:|\nInitial Link|\n\d+\.)/gis);
+    const abilityMatches = fullText.matchAll(/(?:^|\n)([A-Z][A-Za-z\s]+?)(\s*\(\d+\s*(?:Might|Speed|Intellect)\s*points?\))?\s*:\s*(.+?)(?=\n[A-Z]|\nSkill:|\nInability:|\nAdditional Equipment:|\nInitial Link|\n\d+\.)/gis);
     for (const am of abilityMatches) {
       const abilityName = am[1].trim();
-      const abilityDesc = am[2].trim();
+      const costText = am[2] || '';
+      const abilityDesc = am[3].trim();
       // Skip standard fields
       if (/^(Skill|Inability|Initial Link|Additional Equipment|Personable|Smart|Witty|Hostile|Rash|Furtive|Capable|Butterfingers|Thick-Muscled|Inelegant|Harsh|Dumb Luck)/i.test(abilityName)) continue;
       if (/^\+?\d+ to your/i.test(abilityDesc)) continue; // Pool modifier, not ability
       // Only include actual abilities
       if (abilityDesc.length > 20) {
-        specialAbilities.push({ name: abilityName, description: abilityDesc });
+        const cost = parseAbilityCost(costText);
+        specialAbilities.push({ name: abilityName, description: abilityDesc, ...(cost ? { cost } : {}) });
       }
     }
 
