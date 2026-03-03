@@ -600,7 +600,7 @@ function drawAbilitiesSection(
   // Single multiline field per ability to keep it compact
   const slotH = Math.min(36, Math.max(26, (y - MARGIN - 350) / totalSlots));
 
-  // Pre-filled abilities (fontSize 0 = auto-size to fit visible area)
+  // Pre-filled abilities
   for (let i = 0; i < character.abilities.length; i++) {
     const a = character.abilities[i];
     const costStr = a.cost ? ` (${a.cost.amount} ${a.cost.pool})` : ' (Enabler)';
@@ -610,7 +610,7 @@ function drawAbilitiesSection(
       x: MARGIN, y: y - slotH,
       width: CONTENT_WIDTH, height: slotH,
       value: `${a.name}${costStr}: ${a.description}`,
-      fontSize: 0,
+      fontSize: 8,
       multiline: true,
     });
     y -= slotH + 3;
@@ -622,7 +622,7 @@ function drawAbilitiesSection(
       name: `abilities.extra.${j}`,
       x: MARGIN, y: y - slotH,
       width: CONTENT_WIDTH, height: slotH,
-      fontSize: 0,
+      fontSize: 8,
       multiline: true,
     });
     y -= slotH + 3;
@@ -803,6 +803,9 @@ export async function generatePDF(character: Character): Promise<Blob> {
   y = drawEquipmentSection(page2, form, font, fontBold, character, y);
   drawNarrativeSection(page2, form, font, fontBold, character, y);
 
+
+  // Generate appearance streams so all fields render visually
+  form.updateFieldAppearances(font);
 
   // Serialize
   const pdfBytes = await pdfDoc.save();
