@@ -178,13 +178,7 @@ function drawPanel(page: PDFPage, x: number, y: number, width: number, height: n
 }
 
 function drawFooter(page: PDFPage, font: PDFFont): void {
-  const footerY = 30;
-  page.drawLine({
-    start: { x: MARGIN, y: footerY + 12 },
-    end: { x: PAGE_WIDTH - MARGIN, y: footerY + 12 },
-    thickness: 0.5,
-    color: DIVIDER,
-  });
+  const footerY = 14;
   page.drawText('Numenera is a product of Monte Cook Games, LLC.', {
     x: MARGIN, y: footerY,
     size: SIZE_CAPTION, font, color: TEXT_MUTED,
@@ -304,7 +298,7 @@ function drawStatPoolsSection(
   let y = startY;
   y = drawSectionHeader(page, fontBold, 'STAT POOLS', MARGIN, y, CONTENT_WIDTH);
 
-  const panelH = 90;
+  const panelH = 105;
   drawPanel(page, MARGIN, y, CONTENT_WIDTH, panelH);
 
   const stats = ['might', 'speed', 'intellect'] as const;
@@ -325,12 +319,12 @@ function drawStatPoolsSection(
       });
     }
 
-    // Stat label in accent color
+    // Stat label in accent color — centered above fields
     const labelText = stat.toUpperCase();
     const labelW = fontBold.widthOfTextAtSize(labelText, SIZE_STAT_LABEL);
     page.drawText(labelText, {
       x: colX + (colW - labelW) / 2,
-      y: y - 16,
+      y: y - 14,
       size: SIZE_STAT_LABEL,
       font: fontBold,
       color: ACCENT,
@@ -338,7 +332,7 @@ function drawStatPoolsSection(
 
     const fieldX = colX + 55;
     const fieldW = 55;
-    let rowY = y - 30;
+    let rowY = y - 38;
 
     // Max
     page.drawText('Max:', { x: colX + 12, y: rowY + 4, size: SIZE_SMALL, font, color: TEXT_SECONDARY });
@@ -350,7 +344,7 @@ function drawStatPoolsSection(
     });
     rowY -= ROW_SPACING;
 
-    // Current — emphasized
+    // Current
     page.drawText('Current:', { x: colX + 12, y: rowY + 6, size: SIZE_SMALL, font, color: TEXT_SECONDARY });
     addTextField(form, page, font, {
       name: `${stat}.pool.current`,
@@ -490,9 +484,9 @@ function drawSkillsSection(
   }
 
   // Inabilities
-  rightY -= 6;
+  rightY -= 10;
   page.drawText('INABILITIES', { x: rightX, y: rightY, size: SIZE_SMALL, font: fontBold, color: TEXT_SECONDARY });
-  rightY -= 14;
+  rightY -= 18;
 
   for (let i = 0; i < character.skills.inabilities.length; i++) {
     addTextField(form, page, font, {
@@ -783,7 +777,7 @@ function drawNarrativeSection(
   // Notes — fill remaining space above footer
   page.drawText('Notes:', { x: MARGIN, y: y - 10, size: SIZE_SMALL, font, color: TEXT_SECONDARY });
   y -= 14;
-  const notesH = Math.max(FIELD_HEIGHT_NOTES, y - 50);
+  const notesH = Math.max(FIELD_HEIGHT_NOTES, y - 30);
 
   drawPanel(page, MARGIN, y, CONTENT_WIDTH, notesH);
   addTextField(form, page, font, {
