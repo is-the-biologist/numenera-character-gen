@@ -56,12 +56,25 @@ export default function StepFocus() {
           <h3 className="text-lg font-bold text-emerald-300 mb-2">{selected.name}</h3>
           <p className="text-slate-300 text-sm leading-relaxed mb-4">{selected.description}</p>
 
-          {selected.tier1.grantedAbilities.map(a => (
-            <div key={a.id} className="mb-3">
-              <h4 className="text-sm font-semibold text-emerald-400">{a.name}</h4>
-              <p className="text-sm text-slate-300">{a.description}</p>
+          {/* Tier 1 Details */}
+          {selected.tier1.grantedAbilities.length > 0 && (
+            <div className="mb-4">
+              <h4 className="text-sm font-bold text-cyan-400 mb-2">Tier 1</h4>
+              {selected.tier1.grantedAbilities.map(a => (
+                <div key={a.id} className="mb-3 ml-2">
+                  <h5 className="text-sm font-semibold text-emerald-400">
+                    {a.name}
+                    {a.cost && (
+                      <span className="text-slate-400 font-normal">
+                        {' '}({a.cost.amount} {a.cost.pool.charAt(0).toUpperCase() + a.cost.pool.slice(1)})
+                      </span>
+                    )}
+                  </h5>
+                  <p className="text-sm text-slate-300">{a.description}</p>
+                </div>
+              ))}
             </div>
-          ))}
+          )}
 
           {selected.tier1.trainedSkills.length > 0 && (
             <p className="text-sm text-slate-400 mb-2">
@@ -75,8 +88,31 @@ export default function StepFocus() {
             </p>
           )}
 
+          {/* Higher Tier Summary */}
+          {selected.higherTiers.length > 0 && (
+            <div className="mt-4 border-t border-slate-700 pt-4">
+              <h4 className="text-sm font-bold text-cyan-400 mb-2">Higher Tier Abilities</h4>
+              {selected.higherTiers.map(ht => (
+                <div key={ht.tier} className="mb-2 ml-2">
+                  <span className="text-xs font-semibold text-slate-500">Tier {ht.tier}:</span>{' '}
+                  {ht.abilities.map((a, i) => (
+                    <span key={a.id} className="text-sm text-slate-300">
+                      <span className="text-emerald-400">{a.name}</span>
+                      {a.cost && (
+                        <span className="text-slate-500">
+                          {' '}({a.cost.amount} {a.cost.pool.charAt(0).toUpperCase() + a.cost.pool.slice(1)})
+                        </span>
+                      )}
+                      {i < ht.abilities.length - 1 && ', '}
+                    </span>
+                  ))}
+                </div>
+              ))}
+            </div>
+          )}
+
           {selected.connection && (
-            <p className="text-sm text-slate-400 italic">
+            <p className="text-sm text-slate-400 italic mt-4">
               Connection: {selected.connection}
             </p>
           )}

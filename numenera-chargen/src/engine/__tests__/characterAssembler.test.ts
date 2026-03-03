@@ -66,7 +66,7 @@ describe('characterAssembler', () => {
     expect(abilityNames).toContain('Practiced With All Weapons');
     expect(abilityNames).toContain('Bash');
     expect(abilityNames).toContain('No Need for Weapons');
-    expect(abilityNames).toContain('Trained Explorer');
+    expect(abilityNames).toContain('Superb Explorer');
 
     // Descriptor special abilities (Tough)
     expect(abilityNames).toContain('Resilient');

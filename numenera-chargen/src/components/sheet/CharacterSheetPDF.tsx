@@ -11,6 +11,8 @@ import {
   PDFForm,
   PDFFont,
   PDFTextField,
+  PDFName,
+  PDFBool,
 } from 'pdf-lib';
 import type { Character } from '../../types/Character';
 import { getTypeById } from '../../data';
@@ -756,26 +758,29 @@ function drawNarrativeSection(
   y = drawSectionHeader(page, fontBold, 'NARRATIVE', MARGIN, y, CONTENT_WIDTH);
 
   // Connection
+  const narrativeFieldH = 36;
   page.drawText('Connection:', { x: MARGIN, y: y - 10, size: SIZE_SMALL, font, color: TEXT_SECONDARY });
   addTextField(form, page, font, {
     name: 'connection',
-    x: MARGIN + 65, y: y - FIELD_HEIGHT,
-    width: CONTENT_WIDTH - 65, height: FIELD_HEIGHT,
+    x: MARGIN + 65, y: y - narrativeFieldH,
+    width: CONTENT_WIDTH - 65, height: narrativeFieldH,
     value: character.connection || '',
     fontSize: SIZE_SMALL,
+    multiline: true,
   });
-  y -= FIELD_HEIGHT + 4;
+  y -= narrativeFieldH + 4;
 
   // Initial Link
   page.drawText('Initial Link:', { x: MARGIN, y: y - 10, size: SIZE_SMALL, font, color: TEXT_SECONDARY });
   addTextField(form, page, font, {
     name: 'initialLink',
-    x: MARGIN + 65, y: y - FIELD_HEIGHT,
-    width: CONTENT_WIDTH - 65, height: FIELD_HEIGHT,
+    x: MARGIN + 65, y: y - narrativeFieldH,
+    width: CONTENT_WIDTH - 65, height: narrativeFieldH,
     value: character.initialLink || '',
     fontSize: SIZE_SMALL,
+    multiline: true,
   });
-  y -= FIELD_HEIGHT + SECTION_SPACING;
+  y -= narrativeFieldH + SECTION_SPACING;
 
   return y;
 }
@@ -883,8 +888,9 @@ export async function generatePDF(character: Character): Promise<Blob> {
   drawNotesSection(page3, form, font, fontBold, character, y);
 
 
-  // Generate appearance streams so all fields render visually
-  form.updateFieldAppearances(font);
+  // Tell the PDF viewer to generate its own appearance streams at open time.
+  // This fixes multiline text fields not rendering until clicked (pdf-lib #569).
+  form.acroForm.dict.set(PDFName.of('NeedAppearances'), PDFBool.True);
 
   // Serialize
   const pdfBytes = await pdfDoc.save();
