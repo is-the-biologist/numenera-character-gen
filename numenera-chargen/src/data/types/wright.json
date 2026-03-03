@@ -1,7 +1,7 @@
 {
   "id": "wright",
   "name": "Wright",
-  "description": "Wrights are builders and crafters. When something special is required, a Wright can make it. When strange instructions are found in the ruins of the prior worlds, Wrights can decipher them and, using special components called iotum, craft their own cyphers, artifacts, or installations. In a way, Wrights are especially good at understanding and stealing the fire of creation that burned so brightly in the civilizations that rose to unimaginable heights before the Ninth World. Wrights are the rarest of the already rare numenera scholars; they aren’t afraid of weird or incomprehensible tech—they try to take it apart and learn how to make more. Wrights are especially skilled in the many tasks related to crafting. They need to be at least a little skilled at a lot of things. They want Intellect to help them decipher and develop numenera plans, identify components, and craft amazing items. Wrights are not afraid to explore, especially because the iotum they need to make their wondrous items can usually be found only by salvaging it from places where physical danger is certain. They’re happy to don heavy armor to protect themselves from danger, even though it slows them down a little. Though such armor can be restrictive, Wrights can usually rely on allies or followers to help them search out a particularly difficult-to-reach or tight spot.",
+  "description": "Wrights are builders and crafters. When something special is required, a Wright can make it. When strange instructions are found in the ruins of the prior worlds, Wrights can decipher them and, using special components called iotum, craft their own cyphers, artifacts, or installations. In a way, Wrights are especially good at understanding and stealing the fire of creation that burned so brightly in the civilizations that rose to unimaginable heights before the Ninth World. Wrights are the rarest of the already rare numenera scholars; they aren\u2019t afraid of weird or incomprehensible tech\u2014they try to take it apart and learn how to make more. Wrights are especially skilled in the many tasks related to crafting. They need to be at least a little skilled at a lot of things. They want Intellect to help them decipher and develop numenera plans, identify components, and craft amazing items. Wrights are not afraid to explore, especially because the iotum they need to make their wondrous items can usually be found only by salvaging it from places where physical danger is certain. They\u2019re happy to don heavy armor to protect themselves from danger, even though it slows them down a little. Though such armor can be restrictive, Wrights can usually rely on allies or followers to help them search out a particularly difficult-to-reach or tight spot.",
   "basePools": {
     "might": 9,
     "speed": 7,
@@ -25,15 +25,15 @@
   "backgrounds": [
     {
       "name": "Unusual Upbringing",
-      "description": "From a very early age, you had access to machines and tools, and you were encouraged to learn how to use them. Perhaps you were raised by a Nano or an Aeon Priest who thought building was more important than playing. Maybe your parents were obsessed with the numenera. Or perchance you were incubated and trained by machines who needed human ingenuity and creativity to solve a problem they couldn’t overcome. You stacked gears and circuits instead of wooden blocks, and your earliest drawings were schematics for toys you wanted to build. Your bedtime stories were about automatons, nanites, and electronics, and your dreams were filled with the wondrous things you would create with an endless supply of iotum and parts. When you grew older and prepared to set out on your own, you asked those who raised you what great work you could build for them as thanks for what they taught you—something contributing to their research, a device to overcome an infirmity, or even a new self-willed automaton to join them. Now you search for a suitable plan, the iotum to craft it, or both."
+      "description": "From a very early age, you had access to machines and tools, and you were encouraged to learn how to use them. Perhaps you were raised by a Nano or an Aeon Priest who thought building was more important than playing. Maybe your parents were obsessed with the numenera. Or perchance you were incubated and trained by machines who needed human ingenuity and creativity to solve a problem they couldn\u2019t overcome. You stacked gears and circuits instead of wooden blocks, and your earliest drawings were schematics for toys you wanted to build. Your bedtime stories were about automatons, nanites, and electronics, and your dreams were filled with the wondrous things you would create with an endless supply of iotum and parts. When you grew older and prepared to set out on your own, you asked those who raised you what great work you could build for them as thanks for what they taught you\u2014something contributing to their research, a device to overcome an infirmity, or even a new self-willed automaton to join them. Now you search for a suitable plan, the iotum to craft it, or both."
     },
     {
       "name": "Unexpected Brilliance",
-      "description": "Your mind developed early, way before your peers. Your parents realized it and delighted in challenging you with puzzles and projects. You could fix household items, and eventually you found your true passion: taking apart oddities, scrap, and depleted cyphers. You figured out how to make broken machines work again, and honed your ability to recognize what a jumble of parts could do if you put them together in just the right configuration. Most people respected and appreciated your talent, some tried to exploit you, and a few feared you, but your incredible mind made sure you always came out ahead—or gave you enough of a head start to get away from serious trouble. Whence did your brilliance spring? Just an accident of nurture and nature? Did you have a great-grandparent who was equally skilled? Or is your facility with objects and structures something inherent in you, such as a mutation in your brain that gives you insights that others can’t imagine? It’s a mystery, and one you’d like to solve one day. But only after you finish your current list of crafting projects."
+      "description": "Your mind developed early, way before your peers. Your parents realized it and delighted in challenging you with puzzles and projects. You could fix household items, and eventually you found your true passion: taking apart oddities, scrap, and depleted cyphers. You figured out how to make broken machines work again, and honed your ability to recognize what a jumble of parts could do if you put them together in just the right configuration. Most people respected and appreciated your talent, some tried to exploit you, and a few feared you, but your incredible mind made sure you always came out ahead\u2014or gave you enough of a head start to get away from serious trouble. Whence did your brilliance spring? Just an accident of nurture and nature? Did you have a great-grandparent who was equally skilled? Or is your facility with objects and structures something inherent in you, such as a mutation in your brain that gives you insights that others can\u2019t imagine? It\u2019s a mystery, and one you\u2019d like to solve one day. But only after you finish your current list of crafting projects."
     },
     {
       "name": "Mechanical Indoctrination",
-      "description": "The Prophecy was clear. If the machine that squatted at the center of town could not be awoken by midnight during the next eclipse, the Spear of God would strike like a burning sword from the void and blast everyone and everything to drit. You were one of the ones selected to awaken the Red Cube. You were schooled, drilled, and cypher-fed all manner of information, plans, knowledge, and even some physical know-how dripped into your blood by strange machines the city elders kept in dark basements. Others who were selected weakened and eventually died under the brutal regime of learning. It was rough on you, too, but where so many others failed, you succeeded. You learned. And with that knowledge, you repaired the machine and saved the city. But in the aftermath, you were different, both physically and psychologically. You weren’t taught how to craft things—it was programmed into you, hard-coded into your flesh and mind with drugs and technology, conditioned into your psyche with repetitive drills. You don’t know if the motivations of your captors/doctors/instructors were noble or nefarious, but the end result is that building things is as natural for you as breathing. You can assemble basic components when you’re half asleep just by using muscle memory. You may even have subdermal implants that convert nutrition and bodily wastes into components you need. You might feel like you were robbed of a normal childhood, or you might celebrate your strange education and embrace opportunities to learn and experience childish things with adult senses and intellect. In some ways, you are an organic machine built to create and repair other machines, but your skills are what allow you to survive and thrive in the Ninth World. Your goal may be to destroy those who created you, better understand their motives, or push forward their agenda."
+      "description": "The Prophecy was clear. If the machine that squatted at the center of town could not be awoken by midnight during the next eclipse, the Spear of God would strike like a burning sword from the void and blast everyone and everything to drit. You were one of the ones selected to awaken the Red Cube. You were schooled, drilled, and cypher-fed all manner of information, plans, knowledge, and even some physical know-how dripped into your blood by strange machines the city elders kept in dark basements. Others who were selected weakened and eventually died under the brutal regime of learning. It was rough on you, too, but where so many others failed, you succeeded. You learned. And with that knowledge, you repaired the machine and saved the city. But in the aftermath, you were different, both physically and psychologically. You weren\u2019t taught how to craft things\u2014it was programmed into you, hard-coded into your flesh and mind with drugs and technology, conditioned into your psyche with repetitive drills. You don\u2019t know if the motivations of your captors/doctors/instructors were noble or nefarious, but the end result is that building things is as natural for you as breathing. You can assemble basic components when you\u2019re half asleep just by using muscle memory. You may even have subdermal implants that convert nutrition and bodily wastes into components you need. You might feel like you were robbed of a normal childhood, or you might celebrate your strange education and embrace opportunities to learn and experience childish things with adult senses and intellect. In some ways, you are an organic machine built to create and repair other machines, but your skills are what allow you to survive and thrive in the Ninth World. Your goal may be to destroy those who created you, better understand their motives, or push forward their agenda."
     }
   ],
   "abilityChoices": [
@@ -53,7 +53,10 @@
           "id": "trained-in-armor",
           "name": "Trained in Armor",
           "description": "You can wear armor for long periods of time without tiring and can compensate for slowed reactions from wearing armor. You reduce the Speed Effort cost for wearing armor by 1. Enabler.",
-          "cost": { "pool": "none", "amount": 0 },
+          "cost": {
+            "pool": "none",
+            "amount": 0
+          },
           "type": "enabler",
           "tier": 1,
           "source": "wright"
@@ -62,7 +65,10 @@
           "id": "deconstruct",
           "name": "Deconstruct",
           "description": "You take apart a device to learn about it. Action.",
-          "cost": { "pool": "intellect", "amount": 1 },
+          "cost": {
+            "pool": "intellect",
+            "amount": 1
+          },
           "type": "action",
           "tier": 1,
           "source": "wright"
@@ -71,7 +77,10 @@
           "id": "jury-rig",
           "name": "Jury-Rig",
           "description": "You quickly cobble together a temporary device. Action.",
-          "cost": { "pool": "intellect", "amount": 2 },
+          "cost": {
+            "pool": "intellect",
+            "amount": 2
+          },
           "type": "action",
           "tier": 1,
           "source": "wright"
@@ -80,7 +89,10 @@
           "id": "quick-repair",
           "name": "Quick Repair",
           "description": "You make a repair that lasts 1 minute. Action.",
-          "cost": { "pool": "intellect", "amount": 1 },
+          "cost": {
+            "pool": "intellect",
+            "amount": 1
+          },
           "type": "action",
           "tier": 1,
           "source": "wright"
@@ -111,5 +123,12 @@
       "tier": 1,
       "source": "wright"
     }
-  ]
+  ],
+  "weaponChoices": {
+    "count": 1,
+    "allowedCategories": [
+      "light",
+      "medium"
+    ]
+  }
 }

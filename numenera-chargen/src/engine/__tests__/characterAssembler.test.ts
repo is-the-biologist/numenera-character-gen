@@ -15,6 +15,9 @@ describe('characterAssembler', () => {
       connection: 'Pick one other PC. This character once saved your life underground.',
       characterName: 'Kael',
       notes: '',
+      selectedWeaponIds: ['broadsword', 'dagger'],
+      selectedShield: false,
+      selectedArmorCategory: 'medium',
     });
 
     expect(character).not.toBeNull();
@@ -99,6 +102,9 @@ describe('characterAssembler', () => {
         connection: '',
         characterName: 'Test',
         notes: '',
+        selectedWeaponIds: [],
+        selectedShield: false,
+        selectedArmorCategory: null,
       })
     ).toBeNull();
   });

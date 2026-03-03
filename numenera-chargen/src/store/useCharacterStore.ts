@@ -1,6 +1,7 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import type { Character } from '../types/Character';
+import type { ArmorCategory } from '../types/Armor';
 import { assembleCharacter } from '../engine/characterAssembler';
 import { validateCharacter } from '../engine/validationEngine';
 
@@ -23,6 +24,11 @@ interface CharacterStore {
   characterName: string;
   notes: string;
 
+  // Weapon/Armor selections
+  selectedWeaponIds: string[];
+  selectedShield: boolean;
+  selectedArmorCategory: ArmorCategory | null;
+
   // Actions
   selectType: (id: string) => void;
   selectDescriptor: (id: string) => void;
@@ -36,6 +42,9 @@ interface CharacterStore {
   setConnection: (connection: string) => void;
   setCharacterName: (name: string) => void;
   setNotes: (notes: string) => void;
+  selectWeapon: (slotIndex: number, weaponId: string) => void;
+  toggleShield: (useShield: boolean) => void;
+  selectArmorCategory: (category: ArmorCategory) => void;
 
   // Computed
   getAssembledCharacter: () => Character | null;
@@ -59,6 +68,9 @@ const initialState = {
   connection: '',
   characterName: '',
   notes: '',
+  selectedWeaponIds: [] as string[],
+  selectedShield: false,
+  selectedArmorCategory: null as ArmorCategory | null,
 };
 
 export const useCharacterStore = create<CharacterStore>()(
@@ -77,6 +89,9 @@ export const useCharacterStore = create<CharacterStore>()(
           bonusAllocation: { might: 0, speed: 0, intellect: 0 },
           jackFlexEdge: null,
           backgroundName: '',
+          selectedWeaponIds: [],
+          selectedShield: false,
+          selectedArmorCategory: null,
         }),
 
       selectDescriptor: (id) => set({ descriptorId: id }),
@@ -108,6 +123,25 @@ export const useCharacterStore = create<CharacterStore>()(
 
       setNotes: (notes) => set({ notes: notes }),
 
+      selectWeapon: (slotIndex, weaponId) =>
+        set((state) => {
+          const ids = [...state.selectedWeaponIds];
+          ids[slotIndex] = weaponId;
+          return { selectedWeaponIds: ids };
+        }),
+
+      toggleShield: (useShield) =>
+        set((state) => {
+          if (useShield) {
+            // Remove the last weapon slot
+            const ids = state.selectedWeaponIds.slice(0, -1);
+            return { selectedShield: true, selectedWeaponIds: ids };
+          }
+          return { selectedShield: false };
+        }),
+
+      selectArmorCategory: (category) => set({ selectedArmorCategory: category }),
+
       getAssembledCharacter: () => {
         const state = get();
         if (!state.typeId || !state.descriptorId || !state.focusId) return null;
@@ -138,6 +172,9 @@ export const useCharacterStore = create<CharacterStore>()(
           connection: state.connection,
           characterName: state.characterName,
           notes: state.notes,
+          selectedWeaponIds: state.selectedWeaponIds,
+          selectedShield: state.selectedShield,
+          selectedArmorCategory: state.selectedArmorCategory,
         });
       },
 

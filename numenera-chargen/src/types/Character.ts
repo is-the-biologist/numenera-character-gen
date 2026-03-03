@@ -1,4 +1,6 @@
 import type { Ability } from './Ability';
+import type { Weapon } from './Weapon';
+import type { ArmorData } from './Armor';
 
 export interface CharacterPools {
   might: { pool: number; edge: number };
@@ -29,8 +31,8 @@ export interface Character {
   abilities: Ability[];
 
   equipment: string[];
-  weapons: string[];
-  armor: string;
+  weapons: Weapon[];
+  armor: ArmorData;
   shins: number;
   cyphers: string[];
 

@@ -1,5 +1,6 @@
 import type { Character } from '../types/Character';
 import type { Ability } from '../types/Ability';
+import type { ArmorCategory } from '../types/Armor';
 import { getTypeById, getDescriptorById, getFocusById } from '../data';
 import { calculatePools } from './poolCalculator';
 import { resolveSkills } from './skillResolver';
@@ -18,6 +19,9 @@ export interface AssemblerInput {
   connection: string;
   characterName: string;
   notes: string;
+  selectedWeaponIds: string[];
+  selectedShield: boolean;
+  selectedArmorCategory: ArmorCategory | null;
 }
 
 export function assembleCharacter(input: AssemblerInput): Character | null {
@@ -46,7 +50,12 @@ export function assembleCharacter(input: AssemblerInput): Character | null {
   });
 
   // 3. Resolve equipment
-  const equipment = resolveEquipment(type, descriptor, focus);
+  const equipment = resolveEquipment(
+    type, descriptor, focus,
+    input.selectedWeaponIds,
+    input.selectedArmorCategory,
+    input.selectedShield,
+  );
 
   // 4. Collect abilities
   const abilities: Ability[] = [

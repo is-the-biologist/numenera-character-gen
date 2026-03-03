@@ -1,7 +1,7 @@
 {
   "id": "delve",
   "name": "Delve",
-  "description": "Delves are willing to risk everything just to find something new, something that no one else has seen before. They are driven to expand the boundaries of the known, often rediscovering what was long forgotten. Delves delight in finding never-explored ruins of the prior worlds and cataloguing them from top to bottom. Mysteries presented by weird machines and broken scrap are nearly identical for Delves. They know that what others dismiss as debris might contain hidden treasure called iotum—like apt clay, protomatter, philosophine, data orbs, and more! That’s what most Delves seek. They won’t ignore cyphers and artifacts prized by others, of course, but Delves see deeper and are skilled at extracting the building blocks of the prior worlds.\nAs with other kinds of explorers, Delves are rare. Most people in the Ninth World would rather gnaw off a hand than risk the horrors that often lie within ruins or even just over the next hill. But without Delves, who would bring back the special components that some crafters have come to depend on? Delves aren’t fools; they take precautions, and they’re not immune to fear. But the lure of the unknown and the thrill of discovery outweigh the risks. Longevity isn’t as important to a Delve as discovery. That said, a Delve won’t discover much if they don’t have the stamina to push through when things get tough. Delves need to be at least a little skilled at a lot of things. They need Might and Speed to deal with the challenges they face, but they need Intellect to help them salvage for iotum and other numenera items. To explore inscrutable ruins, Delves have to be able to react quickly, squeeze through small spaces, and often run away without being weighed down by heavy armor. A few might choose light armor, though most prefer clothes that don’t restrict them at all.",
+  "description": "Delves are willing to risk everything just to find something new, something that no one else has seen before. They are driven to expand the boundaries of the known, often rediscovering what was long forgotten. Delves delight in finding never-explored ruins of the prior worlds and cataloguing them from top to bottom. Mysteries presented by weird machines and broken scrap are nearly identical for Delves. They know that what others dismiss as debris might contain hidden treasure called iotum\u2014like apt clay, protomatter, philosophine, data orbs, and more! That\u2019s what most Delves seek. They won\u2019t ignore cyphers and artifacts prized by others, of course, but Delves see deeper and are skilled at extracting the building blocks of the prior worlds.\nAs with other kinds of explorers, Delves are rare. Most people in the Ninth World would rather gnaw off a hand than risk the horrors that often lie within ruins or even just over the next hill. But without Delves, who would bring back the special components that some crafters have come to depend on? Delves aren\u2019t fools; they take precautions, and they\u2019re not immune to fear. But the lure of the unknown and the thrill of discovery outweigh the risks. Longevity isn\u2019t as important to a Delve as discovery. That said, a Delve won\u2019t discover much if they don\u2019t have the stamina to push through when things get tough. Delves need to be at least a little skilled at a lot of things. They need Might and Speed to deal with the challenges they face, but they need Intellect to help them salvage for iotum and other numenera items. To explore inscrutable ruins, Delves have to be able to react quickly, squeeze through small spaces, and often run away without being weighed down by heavy armor. A few might choose light armor, though most prefer clothes that don\u2019t restrict them at all.",
   "basePools": {
     "might": 9,
     "speed": 9,
@@ -23,7 +23,7 @@
     "one weapon",
     "light armor or 1 extra unit of responsive synth (your choice)",
     "a pack of light tools",
-    "an explorer’s pack",
+    "an explorer\u2019s pack",
     "two cyphers (chosen by the GM)",
     "one oddity (chosen by the GM)"
   ],
@@ -31,15 +31,15 @@
   "backgrounds": [
     {
       "name": "What Others Fear to Know",
-      "description": "Your knowledge of what underlies the numenera is a degree beyond what even most Aeon Priests and Nanos know. Some see it as devilry and ill magic, believing it is knowledge that should remain in the ruins of the past. Mimetic gel, tamed iron, kaon dots, and even data orbs are things that you understand because you found them and were taught by them in turn. The tamed iron nearly killed you because, as you know, it’s a cousin to the iron wind. The data orb was almost your death, because when you connected it to the datasphere, an automaton was dispatched to your location as a security measure. But you survived and learned yet more in the process. In fact, you learned to disassemble both the active devices and the long-dead machines of the prior worlds in order to salvage that which gave them form and substance. This iotum, you learned, was a completely new source of wonder and knowledge."
+      "description": "Your knowledge of what underlies the numenera is a degree beyond what even most Aeon Priests and Nanos know. Some see it as devilry and ill magic, believing it is knowledge that should remain in the ruins of the past. Mimetic gel, tamed iron, kaon dots, and even data orbs are things that you understand because you found them and were taught by them in turn. The tamed iron nearly killed you because, as you know, it\u2019s a cousin to the iron wind. The data orb was almost your death, because when you connected it to the datasphere, an automaton was dispatched to your location as a security measure. But you survived and learned yet more in the process. In fact, you learned to disassemble both the active devices and the long-dead machines of the prior worlds in order to salvage that which gave them form and substance. This iotum, you learned, was a completely new source of wonder and knowledge."
     },
     {
       "name": "Part Machine",
-      "description": "Is it any wonder you can take apart other devices and machines when you’re at least half mechanical yourself? Your connection with machines is obvious: modules, ports, and other strange tech protrudes from your skin, hinting at deeper connections beneath. Perhaps your skin is shiny or metallic, or maybe it has a coating that absorbs light. You can find your way deeper into ruins of the prior worlds at least partially because you can open ways that others can’t with just a touch. When you salvage iotum from dead cyphers and scrap, you do so by commanding nanites through your ports. Your abilities are at least partially derived from the hidden devices that lace your nervous system. Sometimes, you wonder if the components and iotum that you salvage from other machines also lie within you. How you came to be part machine is a story all its own. Were you always like this? Did you fall into a ruin and wake up this way? Did you undergo surgeries offered by a strange entity, taking a chance on becoming something more? However it happened, you’re not human, and commoners sometimes look upon you with fear and suspicion. That’s all right, as long as another Delve doesn’t look upon you as a potential source for components. Sometimes, rather than worry about it, you hide your true nature beneath concealing garments or a hood."
+      "description": "Is it any wonder you can take apart other devices and machines when you\u2019re at least half mechanical yourself? Your connection with machines is obvious: modules, ports, and other strange tech protrudes from your skin, hinting at deeper connections beneath. Perhaps your skin is shiny or metallic, or maybe it has a coating that absorbs light. You can find your way deeper into ruins of the prior worlds at least partially because you can open ways that others can\u2019t with just a touch. When you salvage iotum from dead cyphers and scrap, you do so by commanding nanites through your ports. Your abilities are at least partially derived from the hidden devices that lace your nervous system. Sometimes, you wonder if the components and iotum that you salvage from other machines also lie within you. How you came to be part machine is a story all its own. Were you always like this? Did you fall into a ruin and wake up this way? Did you undergo surgeries offered by a strange entity, taking a chance on becoming something more? However it happened, you\u2019re not human, and commoners sometimes look upon you with fear and suspicion. That\u2019s all right, as long as another Delve doesn\u2019t look upon you as a potential source for components. Sometimes, rather than worry about it, you hide your true nature beneath concealing garments or a hood."
     },
     {
       "name": "Mentor",
-      "description": "You grew up in service to another Delve from whom you learned to train your stamina, patience, and love for the weird. You were taught not to fear things that would make most people weak, sick, or outright dead. Instead, you cherish them as part of a life steeped in discovery. Your mentor taught you to love the wilderness, the unknown, and places of ancient power, in particular—exactly the opposite of how most are raised in the Ninth World. After a time, you and your mentor parted ways—perhaps due to a philosophical disagreement, a scarcity of resources, a rare opportunity requiring travel, or some kind of tragedy. Sometimes you wonder, as you gaze at some new amazing, impossible edifice: what would your mentor think of this?"
+      "description": "You grew up in service to another Delve from whom you learned to train your stamina, patience, and love for the weird. You were taught not to fear things that would make most people weak, sick, or outright dead. Instead, you cherish them as part of a life steeped in discovery. Your mentor taught you to love the wilderness, the unknown, and places of ancient power, in particular\u2014exactly the opposite of how most are raised in the Ninth World. After a time, you and your mentor parted ways\u2014perhaps due to a philosophical disagreement, a scarcity of resources, a rare opportunity requiring travel, or some kind of tragedy. Sometimes you wonder, as you gaze at some new amazing, impossible edifice: what would your mentor think of this?"
     }
   ],
   "abilityChoices": [
@@ -58,7 +58,7 @@
         {
           "id": "familiarize",
           "name": "Familiarize",
-          "description": "You can familiarize yourself with a new area if you spend at least one hour studying a region up to a long distance across that you are able to directly access and move about in. Once you’ve familiarized yourself with an area, all your tasks related to perception, navigation, salvaging, defense, and moving about the area gain an asset. Each time you familiarize yourself with a new area, you lose focus on a previous area unless you spend 1 XP to retain the familiarity permanently. Action to initiate, one hour to complete.",
+          "description": "You can familiarize yourself with a new area if you spend at least one hour studying a region up to a long distance across that you are able to directly access and move about in. Once you\u2019ve familiarized yourself with an area, all your tasks related to perception, navigation, salvaging, defense, and moving about the area gain an asset. Each time you familiarize yourself with a new area, you lose focus on a previous area unless you spend 1 XP to retain the familiarity permanently. Action to initiate, one hour to complete.",
           "type": "action",
           "tier": 1,
           "source": "delve"
@@ -66,7 +66,7 @@
         {
           "id": "find-the-way",
           "name": "Find the Way",
-          "description": "When you apply Effort to a navigation task because you don’t know the way, are lost, are attempting to blaze a new route, need to choose between two or more otherwise similar paths to take, or something very similar, you can apply a free level of effort. Enabler.",
+          "description": "When you apply Effort to a navigation task because you don\u2019t know the way, are lost, are attempting to blaze a new route, need to choose between two or more otherwise similar paths to take, or something very similar, you can apply a free level of effort. Enabler.",
           "type": "enabler",
           "tier": 1,
           "source": "delve"
@@ -107,7 +107,9 @@
     }
   ],
   "skillChoices": [],
-  "automaticSkills": ["salvaging numenera"],
+  "automaticSkills": [
+    "salvaging numenera"
+  ],
   "inabilities": [
     "crafting numenera",
     "understanding numenera"
@@ -121,5 +123,18 @@
       "tier": 1,
       "source": "delve"
     }
-  ]
+  ],
+  "weaponChoices": {
+    "count": 1,
+    "allowedCategories": [
+      "light",
+      "medium"
+    ]
+  },
+  "armorChoice": {
+    "allowedCategories": [
+      "none",
+      "light"
+    ]
+  }
 }

@@ -1,4 +1,16 @@
 import type { Ability } from './Ability';
+import type { WeaponCategory } from './Weapon';
+import type { ArmorCategory } from './Armor';
+
+export interface WeaponChoice {
+  count: number;
+  allowedCategories: WeaponCategory[];
+  orShield?: boolean;
+}
+
+export interface ArmorChoice {
+  allowedCategories: ArmorCategory[];
+}
 
 export interface SkillChoice {
   label: string;
@@ -47,4 +59,6 @@ export interface CharacterType {
   automaticSkills: string[];
   inabilities: string[];
   specialAbilities: Ability[];
+  weaponChoices?: WeaponChoice;
+  armorChoice?: ArmorChoice;
 }

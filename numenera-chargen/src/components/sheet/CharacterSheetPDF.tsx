@@ -13,6 +13,8 @@ import {
   PDFTextField,
 } from 'pdf-lib';
 import type { Character } from '../../types/Character';
+import { getTypeById } from '../../data';
+import { getWeaponSkillLevel } from '../../engine/equipmentResolver';
 
 // --- Page Setup ---
 const PAGE_WIDTH = 612;
@@ -58,6 +60,17 @@ const FIELD_BORDER_WIDTH = 0.75;
 
 // --- Helper Functions ---
 
+/** Replace Unicode characters that WinAnsi (pdf-lib standard fonts) cannot encode. */
+function sanitize(text: string): string {
+  return text
+    .replace(/[\u2018\u2019\u201A]/g, "'")   // smart single quotes
+    .replace(/[\u201C\u201D\u201E]/g, '"')    // smart double quotes
+    .replace(/[\u2013\u2014]/g, '-')          // en-dash, em-dash
+    .replace(/\u2026/g, '...')                // ellipsis
+    .replace(/\u2192/g, '>')                  // right arrow
+    .replace(/[^\x00-\xFF]/g, '');            // strip anything else outside Latin-1
+}
+
 function addTextField(
   form: PDFForm,
   page: PDFPage,
@@ -79,7 +92,7 @@ function addTextField(
   }
 ): PDFTextField {
   const field = form.createTextField(opts.name);
-  if (opts.value) field.setText(opts.value);
+  if (opts.value) field.setText(sanitize(opts.value));
   if (opts.multiline) field.enableMultiline();
   if (opts.readOnly) field.enableReadOnly();
 
@@ -235,7 +248,7 @@ function drawIdentitySection(
   y -= nameH + 4;
 
   // Character sentence — static italic text
-  page.drawText(character.sentence, {
+  page.drawText(sanitize(character.sentence), {
     x: MARGIN,
     y: y - 14,
     size: SIZE_SENTENCE,
@@ -248,7 +261,7 @@ function drawIdentitySection(
   const bgLabelW = 75;
   page.drawText('Background:', { x: MARGIN, y: y - 12, size: SIZE_SMALL, font, color: TEXT_SECONDARY });
   addTextField(form, page, font, {
-    name: 'background',
+    name: 'background.name',
     x: MARGIN + bgLabelW,
     y: y - FIELD_HEIGHT,
     width: 310,
@@ -529,12 +542,13 @@ function drawAttacksSection(
   y -= headerRowH + 4;
 
   // Weapon rows from character data
-  const allWeapons = [...character.weapons];
-  const totalRows = allWeapons.length + 1; // + 1 blank
+  const weapons = [...character.weapons];
+  const charType = getTypeById(character.typeId);
+  const totalRows = weapons.length + 1; // + 1 blank
 
   for (let row = 0; row < totalRows; row++) {
-    const isPreFilled = row < allWeapons.length;
-    const prefix = isPreFilled ? `attacks.${row}` : `attacks.extra.${row - allWeapons.length + 1}`;
+    const isPreFilled = row < weapons.length;
+    const prefix = isPreFilled ? `attacks.${row}` : `attacks.extra.${row - weapons.length + 1}`;
 
     colX = MARGIN;
     for (let c = 0; c < cols.length; c++) {
@@ -542,8 +556,22 @@ function drawAttacksSection(
       const fieldName = `${prefix}.${['name', 'skill', 'damage', 'range', 'notes'][c]}`;
       let value = '';
       if (isPreFilled) {
-        if (c === 0) value = allWeapons[row];
-        if (c === 1) value = '-'; // dash default
+        const w = weapons[row];
+        const capitalize = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+        if (c === 0) value = w.name;
+        if (c === 1) {
+          value = charType
+            ? getWeaponSkillLevel(w, charType.weaponProficiency, character.skills.trained, character.skills.specialized)
+            : '-';
+        }
+        if (c === 2) value = String(w.damage);
+        if (c === 3) value = capitalize(w.range);
+        if (c === 4) {
+          const parts: string[] = [];
+          if (w.category === 'light') parts.push('Eases attack');
+          if (w.notes) parts.push(w.notes);
+          value = parts.join('; ');
+        }
       }
 
       addTextField(form, page, font, {
@@ -570,17 +598,34 @@ function drawArmorShinsSection(
 
   page.drawText('Armor:', { x: MARGIN, y: y - 12, size: SIZE_BODY, font, color: TEXT_SECONDARY });
   addTextField(form, page, font, {
-    name: 'armor',
+    name: 'armor.name',
     x: MARGIN + 45, y: y - FIELD_HEIGHT,
-    width: 250, height: FIELD_HEIGHT,
-    value: character.armor || '',
+    width: 120, height: FIELD_HEIGHT,
+    value: character.armor.name || '',
   });
 
-  page.drawText('Shins:', { x: MARGIN + 320, y: y - 12, size: SIZE_BODY, font, color: TEXT_SECONDARY });
+  page.drawText('Pts:', { x: MARGIN + 170, y: y - 12, size: SIZE_BODY, font, color: TEXT_SECONDARY });
+  addTextField(form, page, font, {
+    name: 'armor.points',
+    x: MARGIN + 195, y: y - FIELD_HEIGHT,
+    width: 30, height: FIELD_HEIGHT,
+    value: String(character.armor.armorPoints),
+  });
+
+  const effectivePenalty = Math.max(0, character.armor.speedEffortPenalty - character.armorSpeedCostReduction);
+  page.drawText('Spd Effort:', { x: MARGIN + 230, y: y - 12, size: SIZE_BODY, font, color: TEXT_SECONDARY });
+  addTextField(form, page, font, {
+    name: 'armor.speedEffortCost',
+    x: MARGIN + 295, y: y - FIELD_HEIGHT,
+    width: 50, height: FIELD_HEIGHT,
+    value: `+${effectivePenalty}/lvl`,
+  });
+
+  page.drawText('Shins:', { x: MARGIN + 355, y: y - 12, size: SIZE_BODY, font, color: TEXT_SECONDARY });
   addTextField(form, page, font, {
     name: 'shins',
-    x: MARGIN + 365, y: y - FIELD_HEIGHT,
-    width: 80, height: FIELD_HEIGHT,
+    x: MARGIN + 395, y: y - FIELD_HEIGHT,
+    width: 60, height: FIELD_HEIGHT,
     value: String(character.shins),
   });
 
@@ -706,7 +751,7 @@ function drawNarrativeSection(
   character: Character, startY: number
 ): number {
   let y = startY;
-  y = drawSectionHeader(page, fontBold, 'NARRATIVE & NOTES', MARGIN, y, CONTENT_WIDTH);
+  y = drawSectionHeader(page, fontBold, 'NARRATIVE', MARGIN, y, CONTENT_WIDTH);
 
   // Connection
   page.drawText('Connection:', { x: MARGIN, y: y - 10, size: SIZE_SMALL, font, color: TEXT_SECONDARY });
@@ -728,11 +773,47 @@ function drawNarrativeSection(
     value: character.initialLink || '',
     fontSize: SIZE_SMALL,
   });
-  y -= FIELD_HEIGHT + 4;
+  y -= FIELD_HEIGHT + SECTION_SPACING;
+
+  return y;
+}
+
+function drawBackgroundSection(
+  page: PDFPage, form: PDFForm, font: PDFFont, fontBold: PDFFont,
+  character: Character, startY: number
+): number {
+  let y = startY;
+  y = drawSectionHeader(page, fontBold, 'BACKGROUND', MARGIN, y, CONTENT_WIDTH);
+
+  // Look up background description from the type data
+  const charType = getTypeById(character.typeId);
+  const bg = charType?.backgrounds.find(b => b.name === character.background);
+  const bgText = bg?.description || '';
+
+  const bgH = 100;
+  drawPanel(page, MARGIN, y, CONTENT_WIDTH, bgH);
+  addTextField(form, page, font, {
+    name: 'background.description',
+    x: MARGIN, y: y - bgH,
+    width: CONTENT_WIDTH, height: bgH,
+    value: bgText,
+    fontSize: 8,
+    multiline: true,
+    borderColor: ACCENT,
+    borderWidth: 1,
+  });
+
+  return y - bgH - SECTION_SPACING;
+}
+
+function drawNotesSection(
+  page: PDFPage, form: PDFForm, font: PDFFont, fontBold: PDFFont,
+  character: Character, startY: number
+): number {
+  let y = startY;
+  y = drawSectionHeader(page, fontBold, 'NOTES', MARGIN, y, CONTENT_WIDTH);
 
   // Notes — fill remaining space down to bottom margin
-  page.drawText('Notes:', { x: MARGIN, y: y - 10, size: SIZE_SMALL, font, color: TEXT_SECONDARY });
-  y -= 14;
   const notesH = Math.max(30, y - MARGIN);
 
   drawPanel(page, MARGIN, y, CONTENT_WIDTH, notesH);
@@ -785,8 +866,19 @@ export async function generatePDF(character: Character): Promise<Blob> {
 
   y = drawAbilitiesSection(page2, form, font, fontBold, character, y);
   y = drawCyphersSection(page2, form, font, fontBold, character, y);
-  y = drawEquipmentSection(page2, form, font, fontBold, character, y);
-  drawNarrativeSection(page2, form, font, fontBold, character, y);
+  drawEquipmentSection(page2, form, font, fontBold, character, y);
+
+  // ---- PAGE 3 ----
+  const page3 = pdfDoc.addPage([PAGE_WIDTH, PAGE_HEIGHT]);
+  page3.drawRectangle({
+    x: 0, y: 0, width: PAGE_WIDTH, height: PAGE_HEIGHT, color: PAGE_BG,
+  });
+
+  y = PAGE_HEIGHT - MARGIN;
+
+  y = drawNarrativeSection(page3, form, font, fontBold, character, y);
+  y = drawBackgroundSection(page3, form, font, fontBold, character, y);
+  drawNotesSection(page3, form, font, fontBold, character, y);
 
 
   // Generate appearance streams so all fields render visually

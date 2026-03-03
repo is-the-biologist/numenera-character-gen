@@ -50,7 +50,16 @@ function canProceed(step: number, state: ReturnType<typeof useCharacterStore.get
       if (!type) return false;
       const required = type.skillChoices.reduce((sum, c) => sum + c.pickCount, 0);
       const filled = state.chosenSkills.filter(s => s.trim() !== '').length;
-      return filled >= required;
+      if (filled < required) return false;
+      // Weapon validation
+      if (type.weaponChoices) {
+        const neededWeapons = state.selectedShield ? type.weaponChoices.count - 1 : type.weaponChoices.count;
+        const filledWeapons = state.selectedWeaponIds.filter(id => id !== '').length;
+        if (filledWeapons < neededWeapons) return false;
+      }
+      // Armor validation
+      if (type.armorChoice && state.selectedArmorCategory === null) return false;
+      return true;
     }
     case 6: return true;
     default: return false;

@@ -32,8 +32,13 @@ export default function StepReview() {
       const a = document.createElement('a');
       a.href = url;
       a.download = `${character.name || 'character'}-character-sheet.pdf`;
+      document.body.appendChild(a);
       a.click();
+      document.body.removeChild(a);
       URL.revokeObjectURL(url);
+    } catch (err) {
+      console.error('PDF generation failed:', err);
+      alert('PDF generation failed. Check the browser console for details.');
     } finally {
       setDownloading(false);
     }
@@ -170,7 +175,7 @@ export default function StepReview() {
             </div>
             <div>
               <p className="text-slate-400">Shins: <span className="text-slate-200">{character.shins}</span></p>
-              <p className="text-slate-400">Armor: <span className="text-slate-200">{character.armor}</span></p>
+              <p className="text-slate-400">Armor: <span className="text-slate-200">{character.armor.name} ({character.armor.armorPoints} pts)</span></p>
             </div>
           </div>
 
@@ -205,7 +210,7 @@ export default function StepReview() {
             <h4 className="font-semibold text-slate-300 mb-1 text-sm">Equipment</h4>
             {character.equipment.map((e, i) => <p key={i} className="text-sm text-slate-400">- {e}</p>)}
             {character.weapons.length > 0 && (
-              <p className="text-sm text-slate-400">Weapons: {character.weapons.join(', ')}</p>
+              <p className="text-sm text-slate-400">Weapons: {character.weapons.map(w => w.name).join(', ')}</p>
             )}
           </div>
 
