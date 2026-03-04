@@ -12,6 +12,7 @@ export default function StepSkillsAndEquipment() {
   const {
     typeId, descriptorId, focusId,
     chosenSkills, setChosenSkills,
+    chosenDescriptorSkills, setChosenDescriptorSkills,
     selectedWeaponIds, selectWeapon,
     selectedShield, toggleShield,
     selectedArmorCategory, selectArmorCategory,
@@ -50,11 +51,37 @@ export default function StepSkillsAndEquipment() {
     setChosenSkills(newSkills);
   };
 
+  // Build descriptor skill choice slots
+  const descriptorSkillSlots: { label: string; slotIndex: number; options: string[]; freeform: boolean; pickNum: number; pickTotal: number }[] = [];
+  if (descriptor?.skillChoices) {
+    let descSlotIndex = 0;
+    for (const choice of descriptor.skillChoices) {
+      for (let p = 0; p < choice.pickCount; p++) {
+        descriptorSkillSlots.push({
+          label: choice.label,
+          slotIndex: descSlotIndex,
+          options: choice.options,
+          freeform: choice.freeform,
+          pickNum: p + 1,
+          pickTotal: choice.pickCount,
+        });
+        descSlotIndex++;
+      }
+    }
+  }
+
+  const handleDescriptorSkillSelect = (index: number, value: string) => {
+    const newSkills = [...chosenDescriptorSkills];
+    while (newSkills.length <= index) newSkills.push('');
+    newSkills[index] = value;
+    setChosenDescriptorSkills(newSkills);
+  };
+
   // Compute skill resolution preview
   const skills = resolveSkills({
     typeAutoSkills: type.automaticSkills,
     typeChosenSkills: chosenSkills.filter(Boolean),
-    descriptorSkills: descriptor?.trainedSkills ?? [],
+    descriptorSkills: [...(descriptor?.trainedSkills ?? []), ...chosenDescriptorSkills.filter(Boolean)],
     focusSkills: focus?.tier1.trainedSkills ?? [],
     typeInabilities: type.inabilities,
     descriptorInabilities: descriptor?.inabilities ?? [],
@@ -120,6 +147,43 @@ export default function StepSkillsAndEquipment() {
           </div>
         ))}
       </div>
+
+      {/* Descriptor Skill Choices */}
+      {descriptorSkillSlots.length > 0 && descriptor && (
+        <div className="mb-8">
+          <h3 className="text-lg font-semibold text-slate-200 mb-3">
+            {descriptor.name} Skill Choices
+          </h3>
+          {descriptorSkillSlots.map((slot) => (
+            <div key={`desc-${slot.slotIndex}`} className="mb-4">
+              <label className="block text-sm font-medium text-slate-400 mb-1">
+                {slot.label}
+                {slot.pickTotal > 1 && ` (${slot.pickNum} of ${slot.pickTotal})`}
+              </label>
+              {slot.freeform ? (
+                <input
+                  type="text"
+                  value={chosenDescriptorSkills[slot.slotIndex] ?? ''}
+                  onChange={e => handleDescriptorSkillSelect(slot.slotIndex, e.target.value)}
+                  placeholder="Enter a skill name..."
+                  className="w-full px-3 py-2 rounded bg-slate-800 border border-slate-700 text-slate-200 focus:border-cyan-500 focus:outline-none"
+                />
+              ) : (
+                <select
+                  value={chosenDescriptorSkills[slot.slotIndex] ?? ''}
+                  onChange={e => handleDescriptorSkillSelect(slot.slotIndex, e.target.value)}
+                  className="w-full px-3 py-2 rounded bg-slate-800 border border-slate-700 text-slate-200 focus:border-cyan-500 focus:outline-none"
+                >
+                  <option value="">— Select —</option>
+                  {slot.options.map(opt => (
+                    <option key={opt} value={opt}>{opt}</option>
+                  ))}
+                </select>
+              )}
+            </div>
+          ))}
+        </div>
+      )}
 
       {/* Skill Resolution Summary */}
       <div className="mb-8 bg-slate-800 border border-slate-700 rounded-lg p-4">

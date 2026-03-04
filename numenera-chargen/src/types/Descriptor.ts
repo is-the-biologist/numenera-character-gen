@@ -1,3 +1,5 @@
+import type { SkillChoice } from './CharacterType';
+
 export interface Descriptor {
   id: string;
   name: string;
@@ -14,6 +16,7 @@ export interface Descriptor {
     intellect?: number;
   };
   trainedSkills: string[];
+  skillChoices?: SkillChoice[];
   inabilities: string[];
   specialAbilities: {
     name: string;

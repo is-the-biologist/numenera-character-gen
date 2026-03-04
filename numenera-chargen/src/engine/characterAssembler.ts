@@ -14,6 +14,7 @@ export interface AssemblerInput {
   jackFlexEdge?: 'might' | 'speed' | 'intellect' | null;
   chosenAbilityIds: string[];
   chosenSkills: string[];
+  chosenDescriptorSkills: string[];
   backgroundName: string;
   initialLink: string;
   connection: string;
@@ -43,7 +44,7 @@ export function assembleCharacter(input: AssemblerInput): Character | null {
   const skills = resolveSkills({
     typeAutoSkills: type.automaticSkills,
     typeChosenSkills: input.chosenSkills,
-    descriptorSkills: descriptor.trainedSkills,
+    descriptorSkills: [...descriptor.trainedSkills, ...input.chosenDescriptorSkills.filter(Boolean)],
     focusSkills: focus.tier1.trainedSkills,
     typeInabilities: type.inabilities,
     descriptorInabilities: descriptor.inabilities,

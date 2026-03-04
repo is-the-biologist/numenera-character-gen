@@ -163,7 +163,6 @@
     "description": "You’re self-assured, which helps in almost every situation—at least situations where violence is not involved. Fortunately, because you’re so self-confident and positive, you’re usually able to steer situations away from violent endings. It’s possible that your confidence makes you seem levelheaded and cool in a tough situation, or your confidence could make you eager to prove your skills when the going gets rough—it’s up to you. Either way, others eventually learn that you’re confident for a good reason.",
     "poolModifiers": {},
     "trainedSkills": [
-      "three nonphysical, non-combat skills of your choice",
       "one task for ten minutes, as long as that task is not an attack or a defense"
     ],
     "inabilities": [],
@@ -187,6 +186,14 @@
       "When the other PCs asked for help, you were confident that you could provide whatever was necessary.",
       "How could you not be involved? The mission requires someone with your skills to succeed.",
       "You told another PC that you’ve never failed and probably never would. They took you at your word and brought you along."
+    ],
+    "skillChoices": [
+      {
+        "label": "Nonphysical Skill",
+        "pickCount": 3,
+        "options": [],
+        "freeform": true
+      }
     ]
   },
   {
@@ -252,7 +259,6 @@
     },
     "trainedSkills": [
       "persuasion",
-      "one area of lore or knowledge of your choice",
       "defense rolls to resist disease and poison",
       "all tasks involving providing consolation and emotional support to others"
     ],
@@ -270,6 +276,14 @@
       "Hard times overwhelmed you, and having no funds, you joined the other PCs.",
       "It was either join the other PCs or be kidnapped into a far worse situation.",
       "You suspect that the other PCs won’t succeed without you."
+    ],
+    "skillChoices": [
+      {
+        "label": "Area of Lore or Knowledge",
+        "pickCount": 1,
+        "options": [],
+        "freeform": true
+      }
     ]
   },
   {
@@ -421,9 +435,7 @@
     "poolModifiers": {
       "intellect": 2
     },
-    "trainedSkills": [
-      "one of the following skills: painting, drawing, singing, poetry, writing, sculpting, playing a style of musical instrument, or something similar"
-    ],
+    "trainedSkills": [],
     "inabilities": [],
     "specialAbilities": [
       {
@@ -437,6 +449,22 @@
       "You needed money, and this seemed like a good way to earn some.",
       "Experience is the best ingredient for even better panoramas of imagination.",
       "It sounded like fun."
+    ],
+    "skillChoices": [
+      {
+        "label": "Creative Skill",
+        "pickCount": 1,
+        "options": [
+          "painting",
+          "drawing",
+          "singing",
+          "poetry",
+          "writing",
+          "sculpting",
+          "playing a musical instrument"
+        ],
+        "freeform": false
+      }
     ]
   },
   {

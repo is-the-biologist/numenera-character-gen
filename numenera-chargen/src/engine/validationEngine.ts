@@ -8,6 +8,7 @@ export interface ValidationInput {
   jackFlexEdge: 'might' | 'speed' | 'intellect' | null;
   chosenAbilityIds: string[];
   chosenSkills: string[];
+  chosenDescriptorSkills: string[];
   characterName: string;
 }
 
@@ -95,7 +96,18 @@ export function validateCharacter(input: ValidationInput): ValidationResult {
     }
   }
 
-  // 9. Character name
+  // 9. Descriptor skill choices
+  if (descriptor?.skillChoices) {
+    const requiredDescSkills = descriptor.skillChoices.reduce((sum, c) => sum + c.pickCount, 0);
+    const filledDescSkills = input.chosenDescriptorSkills.filter(s => s.trim() !== '').length;
+    if (filledDescSkills !== requiredDescSkills) {
+      errors.push(
+        `You must choose ${requiredDescSkills} descriptor skill${requiredDescSkills > 1 ? 's' : ''} (currently chosen: ${filledDescSkills})`
+      );
+    }
+  }
+
+  // 10. Character name
   if (!input.characterName.trim()) {
     errors.push('Character name is required');
   }

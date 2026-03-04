@@ -25,7 +25,7 @@ export default function StepDescriptor() {
       <p className="text-slate-400 mb-6">Your Descriptor flavors your character with personality and additional skills.</p>
 
       {GROUPS.map(group => {
-        const descriptors = allDescriptors.filter(d => d.source === group.source);
+        const descriptors = allDescriptors.filter(d => d.source === group.source).sort((a, b) => a.name.localeCompare(b.name));
         if (descriptors.length === 0) return null;
         const isCollapsed = collapsed[group.source];
 
@@ -66,8 +66,17 @@ export default function StepDescriptor() {
                         )
                       ))}
                     </div>
-                    {d.trainedSkills.length > 0 && (
-                      <p className="text-xs text-slate-400">Trained: {d.trainedSkills.join(', ')}</p>
+                    {(d.trainedSkills.length > 0 || d.skillChoices?.length) && (
+                      <p className="text-xs text-slate-400">
+                        Trained: {[
+                          ...d.trainedSkills,
+                          ...(d.skillChoices?.map(c =>
+                            c.freeform
+                              ? `${c.pickCount} ${c.label.toLowerCase()}${c.pickCount > 1 ? 's' : ''} of your choice`
+                              : `${c.pickCount} from: ${c.options.join(', ')}`
+                          ) ?? []),
+                        ].join(', ')}
+                      </p>
                     )}
                     {d.inabilities.length > 0 && (
                       <p className="text-xs text-red-400">Inability: {d.inabilities.join(', ')}</p>
@@ -84,6 +93,34 @@ export default function StepDescriptor() {
         <div className="mt-6 bg-slate-800 border border-slate-700 rounded-lg p-6">
           <h3 className="text-lg font-bold text-amber-300 mb-2">{selected.name}</h3>
           <p className="text-slate-300 text-sm leading-relaxed mb-4">{selected.description}</p>
+
+          {(selected.trainedSkills.length > 0 || selected.skillChoices?.length) && (
+            <div className="mb-3">
+              <h4 className="text-sm font-semibold text-slate-400 mb-1">Trained Skills</h4>
+              {selected.trainedSkills.map((s, i) => (
+                <p key={i} className="text-sm text-slate-300">- {s}</p>
+              ))}
+              {selected.skillChoices?.map((c, i) => (
+                <p key={`choice-${i}`} className="text-sm text-cyan-300">
+                  - Choose {c.pickCount} {c.label.toLowerCase()}{c.pickCount > 1 ? 's' : ''}
+                  {c.options.length > 0
+                    ? ` from: ${c.options.join(', ')}`
+                    : ' of your choice'}
+                  {' '}(selected in Step 6)
+                </p>
+              ))}
+            </div>
+          )}
+
+          {selected.inabilities.length > 0 && (
+            <div className="mb-3">
+              <h4 className="text-sm font-semibold text-slate-400 mb-1">Inabilities</h4>
+              {selected.inabilities.map((s, i) => (
+                <p key={i} className="text-sm text-red-300">- {s}</p>
+              ))}
+            </div>
+          )}
+
           {selected.specialAbilities.length > 0 && (
             <div className="mb-3">
               <h4 className="text-sm font-semibold text-slate-400 mb-1">Special Abilities</h4>

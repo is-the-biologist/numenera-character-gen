@@ -3,30 +3,45 @@
     "id": "abrasive",
     "name": "Abrasive",
     "source": "discovery",
-    "description": "You are tough to be around sometimes\u2014your manner and your words are blunt, and even cruel. The fineries of polite society hold no value for you. Instead, you focus on practical things. Things that matter. What someone could accomplish with honeyed words in an hour, you can accomplish in a few moments with a crowbar. You appreciate straightforward action. You don\u2019t like to waste your time and if some idiot gets in your way, you\u2019ll not only point out their idiocy, you\u2019ll happily push right by. You\u2019re cynical, blunt, and sometimes rude. Who cares what people think?",
+    "description": "You are tough to be around sometimes—your manner and your words are blunt, and even cruel. The fineries of polite society hold no value for you. Instead, you focus on practical things. Things that matter. What someone could accomplish with honeyed words in an hour, you can accomplish in a few moments with a crowbar. You appreciate straightforward action. You don’t like to waste your time and if some idiot gets in your way, you’ll not only point out their idiocy, you’ll happily push right by. You’re cynical, blunt, and sometimes rude. Who cares what people think?",
     "poolModifiers": {
       "might": 2
     },
-    "trainedSkills": [
-      "two of the following skills of your choice: climbing, running, breaking things, jumping, swimming, lockpicking, stealth, or repair"
-    ],
+    "trainedSkills": [],
     "inabilities": [
       "pleasant social interaction"
     ],
     "specialAbilities": [],
     "additionalEquipment": [],
     "initialLinks": [
-      "These idiots don\u2019t have a chance of success without you.",
+      "These idiots don’t have a chance of success without you.",
       "Your goal and that of another player character (PC) coincides, and maybe they can be useful.",
       "You need money.",
       "The other PCs actually seem halfway competent, unlike most people."
+    ],
+    "skillChoices": [
+      {
+        "label": "Abrasive Skill",
+        "pickCount": 2,
+        "options": [
+          "climbing",
+          "running",
+          "breaking things",
+          "jumping",
+          "swimming",
+          "lockpicking",
+          "stealth",
+          "repair"
+        ],
+        "freeform": false
+      }
     ]
   },
   {
     "id": "aggressive",
     "name": "Aggressive",
     "source": "discovery",
-    "description": "Action. Violence. These are your first instincts. Problems are solved through force. Strength is what matters, right? Let the others sit idly by, either through cowardice or indecision, but you\u2019ll get things done. Certainly no one would ever call you a coward, but you\u2019re not foolhardy. You\u2019ve got a preservation instinct. But you know that the best defense is a good offense, and a dead or incapacitated foe is no threat to anyone. You\u2019re bold, you\u2019re quick, and some might say you\u2019re rash. A few might call you dangerous, but again, those are mostly cowards. Sometimes, even your allies and friends need a good shaking to show them what\u2019s what, and who\u2019s boss.",
+    "description": "Action. Violence. These are your first instincts. Problems are solved through force. Strength is what matters, right? Let the others sit idly by, either through cowardice or indecision, but you’ll get things done. Certainly no one would ever call you a coward, but you’re not foolhardy. You’ve got a preservation instinct. But you know that the best defense is a good offense, and a dead or incapacitated foe is no threat to anyone. You’re bold, you’re quick, and some might say you’re rash. A few might call you dangerous, but again, those are mostly cowards. Sometimes, even your allies and friends need a good shaking to show them what’s what, and who’s boss.",
     "poolModifiers": {
       "might": 2,
       "speed": 2
@@ -47,7 +62,7 @@
     "initialLinks": [
       "Things need to get done. You get things done.",
       "You need something that the other PCs have or are going after.",
-      "There\u2019s at least one other PC in the group that understands the need for the use of strength. The others will come around.",
+      "There’s at least one other PC in the group that understands the need for the use of strength. The others will come around.",
       "Knowing your capabilities, one of the other PCs asked you to join them."
     ]
   },
@@ -55,7 +70,7 @@
     "id": "altruistic",
     "name": "Altruistic",
     "source": "discovery",
-    "description": "You try to do what\u2019s right for its own sake. You\u2019re very generous, and sincerely enjoy helping people. Some may attempt to take advantage of you for these traits, but most people find you likable and your actions laudable. You\u2019ve learned that to help others, you need to be capable and skilled yourself. Wishing to help others is an excellent incentive to become as skilled and powerful as you can. Eventually, you\u2019re going to develop a bit of a reputation as a \u201cdo-gooder.\u201d That doesn\u2019t bother you, as long as fools don\u2019t try to take advantage of you. After all, altruistic doesn\u2019t mean stupid.",
+    "description": "You try to do what’s right for its own sake. You’re very generous, and sincerely enjoy helping people. Some may attempt to take advantage of you for these traits, but most people find you likable and your actions laudable. You’ve learned that to help others, you need to be capable and skilled yourself. Wishing to help others is an excellent incentive to become as skilled and powerful as you can. Eventually, you’re going to develop a bit of a reputation as a “do-gooder.” That doesn’t bother you, as long as fools don’t try to take advantage of you. After all, altruistic doesn’t mean stupid.",
     "poolModifiers": {
       "might": 3
     },
@@ -72,8 +87,8 @@
     "additionalEquipment": [],
     "initialLinks": [
       "You just wanted to help.",
-      "One of the other PCs asked for your assistance and you couldn\u2019t refuse.",
-      "You found out about the PCs\u2019 plans and knew they couldn\u2019t succeed without your help.",
+      "One of the other PCs asked for your assistance and you couldn’t refuse.",
+      "You found out about the PCs’ plans and knew they couldn’t succeed without your help.",
       "In helping another (uninvolved) person, you found that your goal is the same as that of the other PCs."
     ]
   },
@@ -81,7 +96,7 @@
     "id": "amusing",
     "name": "Amusing",
     "source": "discovery",
-    "description": "You are funny, charming, and extremely likable. You make your friends laugh, and even defuse dangerous situations with your humor. There\u2019s nothing that puts people at ease like a good joke. Maybe you\u2019re good at pointing out the faults of others without making them feel bad. Maybe your humor is self-deprecating. Maybe it\u2019s all physical, with you doing funny things with your face, balancing things on your head, or wearing funny clothes. Humor comes in many forms. Some people might tend to underestimate you, thinking you a fool because sometimes you pretend to be foolish. That\u2019s their problem.",
+    "description": "You are funny, charming, and extremely likable. You make your friends laugh, and even defuse dangerous situations with your humor. There’s nothing that puts people at ease like a good joke. Maybe you’re good at pointing out the faults of others without making them feel bad. Maybe your humor is self-deprecating. Maybe it’s all physical, with you doing funny things with your face, balancing things on your head, or wearing funny clothes. Humor comes in many forms. Some people might tend to underestimate you, thinking you a fool because sometimes you pretend to be foolish. That’s their problem.",
     "poolModifiers": {
       "intellect": 2
     },
@@ -102,8 +117,8 @@
     "additionalEquipment": [],
     "initialLinks": [
       "Seemed like a lark.",
-      "You just really like the other PCs. They\u2019re fun to be around.",
-      "One of the other PCs specifically asked you to come along, but you don\u2019t know why.",
+      "You just really like the other PCs. They’re fun to be around.",
+      "One of the other PCs specifically asked you to come along, but you don’t know why.",
       "You overheard the other PCs discussing their plans and wanted in on the fun."
     ]
   },
@@ -111,7 +126,7 @@
     "id": "charming",
     "name": "Charming",
     "source": "discovery",
-    "description": "You\u2019re a smooth talker and a charmer. Whether through seemingly supernatural means or\njust a way with words, you can convince others to do as you wish. Most likely, you\u2019re physically attractive or at least highly charismatic, and others enjoy listening to your voice. You probably pay attention to your appearance, keeping yourself well groomed. You make friends easily. You play up the personality facet of your Intellect stat; intelligence is not your strong suit. You\u2019re personable, not necessarily studious or strong-willed.",
+    "description": "You’re a smooth talker and a charmer. Whether through seemingly supernatural means or\njust a way with words, you can convince others to do as you wish. Most likely, you’re physically attractive or at least highly charismatic, and others enjoy listening to your voice. You probably pay attention to your appearance, keeping yourself well groomed. You make friends easily. You play up the personality facet of your Intellect stat; intelligence is not your strong suit. You’re personable, not necessarily studious or strong-willed.",
     "poolModifiers": {
       "intellect": 2
     },
@@ -134,7 +149,7 @@
     "initialLinks": [
       "You convinced one of the other PCs to tell you what they were doing.",
       "You instigated the whole thing and convinced the others to join you.",
-      "One of the other PCs did a favor for you, and now you\u2019re repaying that obligation by helping them with the task at hand.",
+      "One of the other PCs did a favor for you, and now you’re repaying that obligation by helping them with the task at hand.",
       "There is reward involved, and you need the money."
     ]
   },
@@ -142,7 +157,7 @@
     "id": "clever",
     "name": "Clever",
     "source": "discovery",
-    "description": "You\u2019re quick-witted, thinking well on your feet. You understand people, so you can fool them but are rarely fooled. Because you easily see things for what they are, you get the lay of the land swiftly, size up threats and allies, and assess situations with accuracy. Perhaps you\u2019re physically attractive, or maybe you use your wit to overcome any physical or mental imperfections.",
+    "description": "You’re quick-witted, thinking well on your feet. You understand people, so you can fool them but are rarely fooled. Because you easily see things for what they are, you get the lay of the land swiftly, size up threats and allies, and assess situations with accuracy. Perhaps you’re physically attractive, or maybe you use your wit to overcome any physical or mental imperfections.",
     "poolModifiers": {
       "intellect": 2
     },
@@ -162,14 +177,14 @@
       "You convinced one of the other PCs to tell you what they were doing.",
       "From afar, you observed that something interesting was going on.",
       "You talked your way into the situation because you thought it might earn some money.",
-      "You suspect that the other PCs won\u2019t succeed without you."
+      "You suspect that the other PCs won’t succeed without you."
     ]
   },
   {
     "id": "clumsy",
     "name": "Clumsy",
     "source": "discovery",
-    "description": "Graceless and awkward, you were told that you\u2019d grow out of it, but you never did. You often drop things, trip over your own feet, or knock things (or people) over. Some people get frustrated by this quality, but most find it funny and even a little charming.",
+    "description": "Graceless and awkward, you were told that you’d grow out of it, but you never did. You often drop things, trip over your own feet, or knock things (or people) over. Some people get frustrated by this quality, but most find it funny and even a little charming.",
     "poolModifiers": {
       "speed": -2,
       "might": 2
@@ -188,7 +203,7 @@
       },
       {
         "name": "Dumb Luck",
-        "description": "The GM can introduce a GM intrusion on you, based on your clumsiness, without awarding you any XP (as if you had rolled a 1 on a d20 roll). However, if this happens, 50% of the time, your clumsiness works to your advantage. Rather than hurting you (much), it helps, or it hurts your enemies. You slip, but it\u2019s just in time to duck an attack. You fall down, but you trip your enemies as you crash into their legs. You turn around too quickly, but you end up knocking the weapon from your foe\u2019s hand. You and the GM should work together to determine the details. The GM can use GM intrusions based on your clumsiness normally (awarding XP) if she desires."
+        "description": "The GM can introduce a GM intrusion on you, based on your clumsiness, without awarding you any XP (as if you had rolled a 1 on a d20 roll). However, if this happens, 50% of the time, your clumsiness works to your advantage. Rather than hurting you (much), it helps, or it hurts your enemies. You slip, but it’s just in time to duck an attack. You fall down, but you trip your enemies as you crash into their legs. You turn around too quickly, but you end up knocking the weapon from your foe’s hand. You and the GM should work together to determine the details. The GM can use GM intrusions based on your clumsiness normally (awarding XP) if she desires."
       }
     ],
     "additionalEquipment": [],
@@ -218,11 +233,11 @@
     ],
     "specialAbilities": [],
     "additionalEquipment": [
-      "You have a good luck charm or protective device to keep you out of harm\u2019s way",
+      "You have a good luck charm or protective device to keep you out of harm’s way",
       "You begin the game with one extra oddity"
     ],
     "initialLinks": [
-      "You believe that you\u2019re being hunted, and you have hired one of the other PCs as your protector.",
+      "You believe that you’re being hunted, and you have hired one of the other PCs as your protector.",
       "You seek to escape your shame and take up with capable individuals in the hopes of repairing your reputation.",
       "One of the other PCs bullied you into coming along.",
       "The group answered your cries for help when you were in trouble."
@@ -240,12 +255,12 @@
       "tasks related to deception, intimidation, and persuasion when you interact with characters experiencing physical or emotional pain"
     ],
     "inabilities": [
-      "you have a hard time connecting with others, understanding their motives, or sharing their feelings. the difficulty of any task made to ascertain another character\u2019s motives, feelings, or disposition is increased by one step."
+      "you have a hard time connecting with others, understanding their motives, or sharing their feelings. the difficulty of any task made to ascertain another character’s motives, feelings, or disposition is increased by one step."
     ],
     "specialAbilities": [
       {
         "name": "Cruelty",
-        "description": "When you use force, you can choose to maim or deliver painful injuries to draw out your foe\u2019s suffering. Whenever you inflict damage, you can choose to inflict 2 fewer points of damage to decrease the difficulty of the next attack against that foe by one step."
+        "description": "When you use force, you can choose to maim or deliver painful injuries to draw out your foe’s suffering. Whenever you inflict damage, you can choose to inflict 2 fewer points of damage to decrease the difficulty of the next attack against that foe by one step."
       }
     ],
     "additionalEquipment": [
@@ -256,7 +271,7 @@
     "initialLinks": [
       "You suspect that you might gain a longterm advantage from helping the other PCs and may be able to use that advantage against your enemies.",
       "By joining the PCs, you see an opportunity to grow your personal power and status at the expense of others.",
-      "You hope to make another PC\u2019s life more difficult by joining the group.",
+      "You hope to make another PC’s life more difficult by joining the group.",
       "Joining the PCs gives you an opportunity to escape justice for a crime you committed."
     ]
   },
@@ -264,7 +279,7 @@
     "id": "deliberate",
     "name": "Deliberate",
     "source": "discovery",
-    "description": "You don\u2019t let events stir your emotions and tempt you into actions you might later regret. Others might see you as passive, possibly thinking you don\u2019t act in the moment because you don\u2019t care or are afraid. It\u2019s the opposite. You\u2019ve found you can accomplish more and stay happier when you don\u2019t immediately act while you\u2019re angry or afraid, tired or anxious. You prefer to act when it\u2019s fully you making decisions, not a version of you blurred by emotion.",
+    "description": "You don’t let events stir your emotions and tempt you into actions you might later regret. Others might see you as passive, possibly thinking you don’t act in the moment because you don’t care or are afraid. It’s the opposite. You’ve found you can accomplish more and stay happier when you don’t immediately act while you’re angry or afraid, tired or anxious. You prefer to act when it’s fully you making decisions, not a version of you blurred by emotion.",
     "poolModifiers": {
       "intellect": 4
     },
@@ -279,7 +294,7 @@
     "specialAbilities": [],
     "additionalEquipment": [],
     "initialLinks": [
-      "Before you\u2019d made up your mind one way or another, one of the PCs dragged you along on the mission.",
+      "Before you’d made up your mind one way or another, one of the PCs dragged you along on the mission.",
       "You wanted to break out of your shell a little, and going with the PCs seemed like a great way to do so.",
       "You wanted to prove another PC wrong when they accused you of being incapable of ever making a decision.",
       "You deliberated, and realized going on the mission was your best course of action."
@@ -303,7 +318,7 @@
     ],
     "additionalEquipment": [],
     "initialLinks": [
-      "Your understanding of your religion\u2019s dogma suggested that it would be a good idea.",
+      "Your understanding of your religion’s dogma suggested that it would be a good idea.",
       "You had a dream or vision that guided you to this point.",
       "A religious leader asked you to get involved.",
       "You believe getting involved might advance your religion in an indirect manner."
@@ -313,7 +328,7 @@
     "id": "dishonorable",
     "name": "Dishonorable",
     "source": "discovery",
-    "description": "There is no honor among thieves\u2014or betrayers, backstabbers, liars, or cheats. You are all of these things, and either you don\u2019t lose any sleep over it, or you deny the truth to others or to yourself. Regardless, you are willing to do whatever it takes to get your own way. Honor, ethics, and principles are merely words. In your estimation, they have no place in the real world.",
+    "description": "There is no honor among thieves—or betrayers, backstabbers, liars, or cheats. You are all of these things, and either you don’t lose any sleep over it, or you deny the truth to others or to yourself. Regardless, you are willing to do whatever it takes to get your own way. Honor, ethics, and principles are merely words. In your estimation, they have no place in the real world.",
     "poolModifiers": {
       "speed": 4
     },
@@ -323,7 +338,7 @@
       "intimidation"
     ],
     "inabilities": [
-      "people don\u2019t like or trust you. the difficulty of pleasant social interactions is increased by one step."
+      "people don’t like or trust you. the difficulty of pleasant social interactions is increased by one step."
     ],
     "specialAbilities": [
       {
@@ -334,8 +349,8 @@
     "additionalEquipment": [],
     "initialLinks": [
       "You are interested in what the PCs are doing, so you lied to them to get into their group.",
-      "While skulking about, you overheard the PCs\u2019 plans and realized that you wanted in.",
-      "One of the other PCs invited you, having no idea of what you\u2019re truly like.",
+      "While skulking about, you overheard the PCs’ plans and realized that you wanted in.",
+      "One of the other PCs invited you, having no idea of what you’re truly like.",
       "You bullied your way in with intimidation and bluster."
     ]
   },
@@ -362,8 +377,8 @@
     "additionalEquipment": [],
     "initialLinks": [
       "You attempted to avoid it, but events seemed to conspire to draw you to where you are.",
-      "Why not? It doesn\u2019t matter. You\u2019re doomed no matter what you do.",
-      "One of the other PCs saved your life, and now you\u2019re repaying that obligation by helping her with the task at hand.",
+      "Why not? It doesn’t matter. You’re doomed no matter what you do.",
+      "One of the other PCs saved your life, and now you’re repaying that obligation by helping her with the task at hand.",
       "You suspect that the only hope you have of avoiding your fate might lie on this path."
     ]
   },
@@ -371,7 +386,7 @@
     "id": "driven",
     "name": "Driven",
     "source": "discovery",
-    "description": "You have set your sights on a goal, and everything you do is in pursuit of that objective. The thing you seek defines you\u2014it shapes your decisions, colors your outlook, and impels you to take action even when your body and mind scream for you to give up and set the task aside, at least for a while. No matter the hardships you face along the way, you believe in your purpose and will let nothing stop you from achieving it.\nWhen you choose this descriptor, choose a goal that is possible to attain. You might set a goal of finding a lost parent, making a sacrifice at a rumored temple, learning how to perform a particular task, or gaining the funds to pay for a healer to treat a loved one. Once you achieve this goal, you may choose a new one. You probably talk about your mission all the time, bringing it up even when it\u2019s only tangentially connected to the conversation. You usually consider other pursuits in the context of whether or not it advances your own agenda.",
+    "description": "You have set your sights on a goal, and everything you do is in pursuit of that objective. The thing you seek defines you—it shapes your decisions, colors your outlook, and impels you to take action even when your body and mind scream for you to give up and set the task aside, at least for a while. No matter the hardships you face along the way, you believe in your purpose and will let nothing stop you from achieving it.\nWhen you choose this descriptor, choose a goal that is possible to attain. You might set a goal of finding a lost parent, making a sacrifice at a rumored temple, learning how to perform a particular task, or gaining the funds to pay for a healer to treat a loved one. Once you achieve this goal, you may choose a new one. You probably talk about your mission all the time, bringing it up even when it’s only tangentially connected to the conversation. You usually consider other pursuits in the context of whether or not it advances your own agenda.",
     "poolModifiers": {
       "might": 2
     },
@@ -380,7 +395,7 @@
       "tasks related to that skill"
     ],
     "inabilities": [
-      "your commitment to your goals makes it hard to relate to others who don\u2019t share your objectives or to notice things that don\u2019t pertain to your present mission. the difficulty of all perception tasks is increased by one step."
+      "your commitment to your goals makes it hard to relate to others who don’t share your objectives or to notice things that don’t pertain to your present mission. the difficulty of all perception tasks is increased by one step."
     ],
     "specialAbilities": [],
     "additionalEquipment": [],
@@ -395,7 +410,7 @@
     "id": "efficient",
     "name": "Efficient",
     "source": "discovery",
-    "description": "Forced to make do with meager means, you\u2019ve become a marvel of efficiency. You never equivocate, and rarely lie because it\u2019s simply not economical to do so. If you know how to write, it\u2019s probably using a shorthand alphabet that doesn\u2019t linger on unnecessary lines and strokes. Efficiency isn\u2019t necessarily your quest, but being efficient helps you accomplish your goals much sooner.",
+    "description": "Forced to make do with meager means, you’ve become a marvel of efficiency. You never equivocate, and rarely lie because it’s simply not economical to do so. If you know how to write, it’s probably using a shorthand alphabet that doesn’t linger on unnecessary lines and strokes. Efficiency isn’t necessarily your quest, but being efficient helps you accomplish your goals much sooner.",
     "poolModifiers": {
       "speed": 2
     },
@@ -411,8 +426,8 @@
     "additionalEquipment": [],
     "initialLinks": [
       "Seeing the PCs taking the slowest possible way to reach their ends, you showed them a more economical path.",
-      "You\u2019ve solved all the problems where you were, and moved on to new challenges.",
-      "Efficient doesn\u2019t mean boring\u2014the PCs offered you a chance to explore.",
+      "You’ve solved all the problems where you were, and moved on to new challenges.",
+      "Efficient doesn’t mean boring—the PCs offered you a chance to explore.",
       "You had a piece of information that the other PCs needed to make their plans."
     ]
   },
@@ -420,7 +435,7 @@
     "id": "empathic",
     "name": "Empathic",
     "source": "discovery",
-    "description": "Other people are open books to you. You may have a knack for reading a person\u2019s tells, those subtle movements that convey an individual\u2019s mood and disposition. Or you may receive information in a more direct way, feeling a person\u2019s emotions as if they were tangible things, sensations that lightly brush against your mind. Your gift for empathy helps you navigate social situations and control them to avoid misunderstandings and prevent useless conflicts from erupting. The constant bombardment of emotions from those around you likely takes a toll. You might move with the prevailing mood, swinging from giddy happiness to bitter sorrow with little warning. Or you might close yourself off and remain inscrutable to others out of a sense of self-preservation or an unconscious fear that everyone else might learn how you truly feel.",
+    "description": "Other people are open books to you. You may have a knack for reading a person’s tells, those subtle movements that convey an individual’s mood and disposition. Or you may receive information in a more direct way, feeling a person’s emotions as if they were tangible things, sensations that lightly brush against your mind. Your gift for empathy helps you navigate social situations and control them to avoid misunderstandings and prevent useless conflicts from erupting. The constant bombardment of emotions from those around you likely takes a toll. You might move with the prevailing mood, swinging from giddy happiness to bitter sorrow with little warning. Or you might close yourself off and remain inscrutable to others out of a sense of self-preservation or an unconscious fear that everyone else might learn how you truly feel.",
     "poolModifiers": {
       "intellect": 4
     },
@@ -429,13 +444,13 @@
       "all tasks involving social interaction, pleasant or otherwise"
     ],
     "inabilities": [
-      "being so receptive to others\u2019 thoughts and moods makes you vulnerable to anything that attacks your mind. the difficulty of intellect defense rolls is increased by one step."
+      "being so receptive to others’ thoughts and moods makes you vulnerable to anything that attacks your mind. the difficulty of intellect defense rolls is increased by one step."
     ],
     "specialAbilities": [],
     "additionalEquipment": [],
     "initialLinks": [
       "You sensed the commitment to the task the other PCs have and felt moved to help them.",
-      "You established a close bond with another PC and can\u2019t bear to be parted from him or her.",
+      "You established a close bond with another PC and can’t bear to be parted from him or her.",
       "You sensed something strange in one of the PCs and decided to join the group to see if you can sense it again and uncover the truth.",
       "You join the PCs to escape an unpleasant relationship or negative environment."
     ]
@@ -444,7 +459,7 @@
     "id": "exiled",
     "name": "Exiled",
     "source": "discovery",
-    "description": "You have walked a long and lonely road, leaving your home and your life behind. You might have committed a heinous crime, something so awful that your people forced you out, and if you dare return, you face death. You might have been accused of a crime you didn\u2019t commit and now must pay the price for someone else\u2019s wicked deed. Your exile might be the result of a social gaffe\u2014perhaps you shamed your family or a friend, or you embarrassed yourself in front of your peers, an authority, or someone you respect. Whatever the reason, you have left your old life behind and now strive to make a new one. You probably have a memento from your past\u2014an old picture, a locket with a few strands of hair inside, or a lighter given to you by someone important. You keep the object close at hand and pull it out to help you remember better times.",
+    "description": "You have walked a long and lonely road, leaving your home and your life behind. You might have committed a heinous crime, something so awful that your people forced you out, and if you dare return, you face death. You might have been accused of a crime you didn’t commit and now must pay the price for someone else’s wicked deed. Your exile might be the result of a social gaffe—perhaps you shamed your family or a friend, or you embarrassed yourself in front of your peers, an authority, or someone you respect. Whatever the reason, you have left your old life behind and now strive to make a new one. You probably have a memento from your past—an old picture, a locket with a few strands of hair inside, or a lighter given to you by someone important. You keep the object close at hand and pull it out to help you remember better times.",
     "poolModifiers": {
       "might": 2
     },
@@ -473,7 +488,7 @@
     "id": "extraterrestrial",
     "name": "Extraterrestrial",
     "source": "discovery",
-    "description": "You\u2019re not from around here. You\u2019re from another world completely. The residents of the Ninth World are familiar with the weird, but you stand out as being something unique\u2014or at least very rare\u2014on the planet, which sometimes gives natives pause. What you look like, the reason you left your own world, and how you ended up on Earth are questions for you and your GM to work out. But whether you crashed, were exiled, are doing research, or got lost, the Ninth World is where you find yourself now.",
+    "description": "You’re not from around here. You’re from another world completely. The residents of the Ninth World are familiar with the weird, but you stand out as being something unique—or at least very rare—on the planet, which sometimes gives natives pause. What you look like, the reason you left your own world, and how you ended up on Earth are questions for you and your GM to work out. But whether you crashed, were exiled, are doing research, or got lost, the Ninth World is where you find yourself now.",
     "poolModifiers": {
       "might": 2
     },
@@ -497,7 +512,7 @@
     "id": "fabulous",
     "name": "Fabulous",
     "source": "discovery",
-    "description": "Fabulous is more than an attribute; it\u2019s an attitude. Being who you are isn\u2019t something that just happens. It is something you plan for, cultivate, and practice. A grin might turn heads, but a radiant smile backed up with wit and a shockingly well-put-together clothing ensemble could turn heads of state. Sometimes your fashion and antics risk being ridiculed. But that\u2019s all right. Taking risks is part of what it means to be fabulous.",
+    "description": "Fabulous is more than an attribute; it’s an attitude. Being who you are isn’t something that just happens. It is something you plan for, cultivate, and practice. A grin might turn heads, but a radiant smile backed up with wit and a shockingly well-put-together clothing ensemble could turn heads of state. Sometimes your fashion and antics risk being ridiculed. But that’s all right. Taking risks is part of what it means to be fabulous.",
     "poolModifiers": {
       "speed": 2
     },
@@ -509,7 +524,7 @@
     "specialAbilities": [
       {
         "name": "Artistic",
-        "description": "You\u2019re always coming up with some new artistic endeavor. You\u2019re trained in any task related to creating art (such as drawing, painting, or putting together the perfect set of clothing to wear). You can usually sell a piece of art you spend at least ten hours working on for about 1d6 shins if you\u2019re in a city."
+        "description": "You’re always coming up with some new artistic endeavor. You’re trained in any task related to creating art (such as drawing, painting, or putting together the perfect set of clothing to wear). You can usually sell a piece of art you spend at least ten hours working on for about 1d6 shins if you’re in a city."
       }
     ],
     "additionalEquipment": [
@@ -526,7 +541,7 @@
     "id": "foolish",
     "name": "Foolish",
     "source": "discovery",
-    "description": "Not everyone can be brilliant. Oh, you don\u2019t think of yourself as stupid, and you\u2019re not. It\u2019s just that others might have a bit more\u2026wisdom. Insight. You prefer to barrel along headfirst through life and let other people worry about things. Worrying\u2019s never helped you, so why bother? You take things at face value and don\u2019t fret about what tomorrow might bring. People call you \u201cidiot\u201d or \u201cnumbskull,\u201d but it doesn\u2019t faze you much.",
+    "description": "Not everyone can be brilliant. Oh, you don’t think of yourself as stupid, and you’re not. It’s just that others might have a bit more…wisdom. Insight. You prefer to barrel along headfirst through life and let other people worry about things. Worrying’s never helped you, so why bother? You take things at face value and don’t fret about what tomorrow might bring. People call you “idiot” or “numbskull,” but it doesn’t faze you much.",
     "poolModifiers": {
       "intellect": -4
     },
@@ -549,15 +564,15 @@
     "initialLinks": [
       "Who knows? Seemed like a good idea at the time.",
       "Someone asked you to join up with the other PCs. They told you not to ask too many questions, and that seemed fine to you.",
-      "Your parent (or a parental/mentor figure) got you involved to give you something to do and maybe \u201cteach you some sense.\u201d",
-      "The other PCs needed some muscle that wouldn\u2019t overthink things."
+      "Your parent (or a parental/mentor figure) got you involved to give you something to do and maybe “teach you some sense.”",
+      "The other PCs needed some muscle that wouldn’t overthink things."
     ]
   },
   {
     "id": "graceful",
     "name": "Graceful",
     "source": "discovery",
-    "description": "You have a perfect sense of balance, moving and speaking with grace and beauty. You\u2019re quick, lithe, flexible, and dexterous. Your body is perfectly suited to dance, and you use that advantage in combat to dodge blows. You might wear garments that enhance your agile movement and sense of style.",
+    "description": "You have a perfect sense of balance, moving and speaking with grace and beauty. You’re quick, lithe, flexible, and dexterous. Your body is perfectly suited to dance, and you use that advantage in combat to dodge blows. You might wear garments that enhance your agile movement and sense of style.",
     "poolModifiers": {
       "speed": 2
     },
@@ -572,7 +587,7 @@
     "initialLinks": [
       "Against your better judgment, you joined the other PCs because you saw that they were in danger.",
       "One of the other PCs convinced you that joining the group would be in your best interest.",
-      "You\u2019re afraid of what might happen if the other PCs fail.",
+      "You’re afraid of what might happen if the other PCs fail.",
       "There is reward involved, and you need the money."
     ]
   },
@@ -580,7 +595,7 @@
     "id": "gregarious",
     "name": "Gregarious",
     "source": "discovery",
-    "description": "You love people, and they generally love you. You know how to \u201cwork the crowd\u201d and interact with large groups. You\u2019re likely to be a leader, a diplomat, or a very successful businessperson. You just really like to be around people\u2014you\u2019re generally interested in what they have to say, and what they think about things. You ask a lot of questions, and are generous and kind to those that deserve it (and in fact, you\u2019re often willing to give latitude to people that others would give up on).",
+    "description": "You love people, and they generally love you. You know how to “work the crowd” and interact with large groups. You’re likely to be a leader, a diplomat, or a very successful businessperson. You just really like to be around people—you’re generally interested in what they have to say, and what they think about things. You ask a lot of questions, and are generous and kind to those that deserve it (and in fact, you’re often willing to give latitude to people that others would give up on).",
     "poolModifiers": {
       "intellect": 2
     },
@@ -601,14 +616,14 @@
       "You asked around, and learned the other PCs were doing something interesting.",
       "You bought the other PCs a round of drinks and they welcomed you into their ranks.",
       "You gathered the other PCs together for the task at hand.",
-      "It\u2019s better than being alone."
+      "It’s better than being alone."
     ]
   },
   {
     "id": "guarded",
     "name": "Guarded",
     "source": "discovery",
-    "description": "You conceal your true nature behind a mask and are loath to let anyone see who you really are. Protecting yourself, physically and emotionally, is what you care about most, and you prefer to keep everyone else at a safe distance. You may be suspicious of everyone you meet, expecting the worst from people so you won\u2019t be surprised when they prove you right. Or you might just be a bit reserved, careful about letting people through your gruff exterior to the person you really are.\nNo one can be as reserved as you are and make many friends. Most likely, you have an abrasive personality and tend to be pessimistic in your outlook. You probably nurse an old hurt and find that the only way you can cope is to keep it and your personality locked down.",
+    "description": "You conceal your true nature behind a mask and are loath to let anyone see who you really are. Protecting yourself, physically and emotionally, is what you care about most, and you prefer to keep everyone else at a safe distance. You may be suspicious of everyone you meet, expecting the worst from people so you won’t be surprised when they prove you right. Or you might just be a bit reserved, careful about letting people through your gruff exterior to the person you really are.\nNo one can be as reserved as you are and make many friends. Most likely, you have an abrasive personality and tend to be pessimistic in your outlook. You probably nurse an old hurt and find that the only way you can cope is to keep it and your personality locked down.",
     "poolModifiers": {
       "intellect": 2
     },
@@ -632,7 +647,7 @@
     "id": "hardy",
     "name": "Hardy",
     "source": "discovery",
-    "description": "Your body was built to take abuse. Whether you\u2019re pounding down stiff drinks while holding up a bar in your favorite watering hole or trading blows with a thug in a back alley, you keep going, shrugging off hurts and injuries that might slow or incapacitate a lesser person. Neither hunger nor thirst, cut flesh nor broken bone can stop you. You just press on through the pain and continue. As fit and healthy as you are, the signs of wear show in the myriad scars crisscrossing your body, your thrice-broken nose, your cauliflower ears, and any number of other disfigurements you wear with pride.",
+    "description": "Your body was built to take abuse. Whether you’re pounding down stiff drinks while holding up a bar in your favorite watering hole or trading blows with a thug in a back alley, you keep going, shrugging off hurts and injuries that might slow or incapacitate a lesser person. Neither hunger nor thirst, cut flesh nor broken bone can stop you. You just press on through the pain and continue. As fit and healthy as you are, the signs of wear show in the myriad scars crisscrossing your body, your thrice-broken nose, your cauliflower ears, and any number of other disfigurements you wear with pride.",
     "poolModifiers": {
       "might": 4
     },
@@ -649,7 +664,7 @@
       },
       {
         "name": "Unstoppable",
-        "description": "While you are impaired, you function as if you were hale. While you are debilitated, you function as if you were impaired. In other words, you don\u2019t suffer the effects of being impaired until you become debilitated, and you never suffer the effects of being debilitated. You still die if all your stat Pools are 0."
+        "description": "While you are impaired, you function as if you were hale. While you are debilitated, you function as if you were impaired. In other words, you don’t suffer the effects of being impaired until you become debilitated, and you never suffer the effects of being debilitated. You still die if all your stat Pools are 0."
       },
       {
         "name": "Ponderous",
@@ -668,7 +683,7 @@
     "id": "hideous",
     "name": "Hideous",
     "source": "discovery",
-    "description": "You are physically repugnant by almost any human standard. You might have had a serious accident, a harmful mutation, or just poor genetic luck, but you are incontrovertibly ugly. You\u2019ve more than made up for your appearance in other ways, however. Because you had to hide your appearance, you excel at sneaking about unnoticed or disguising yourself. But perhaps most important, being ostracized while others socialized, you took the time growing up to develop yourself as you saw fit\u2014you grew strong or quick, or you honed your mind.",
+    "description": "You are physically repugnant by almost any human standard. You might have had a serious accident, a harmful mutation, or just poor genetic luck, but you are incontrovertibly ugly. You’ve more than made up for your appearance in other ways, however. Because you had to hide your appearance, you excel at sneaking about unnoticed or disguising yourself. But perhaps most important, being ostracized while others socialized, you took the time growing up to develop yourself as you saw fit—you grew strong or quick, or you honed your mind.",
     "poolModifiers": {},
     "trainedSkills": [
       "intimidation and any other fear-based interactions",
@@ -686,7 +701,7 @@
     "additionalEquipment": [],
     "initialLinks": [
       "One of the other PCs approached you while you were in disguise, recruiting you while believing you were someone else.",
-      "While skulking about, you overheard the other PCs\u2019 plans and realized you wanted in.",
+      "While skulking about, you overheard the other PCs’ plans and realized you wanted in.",
       "One of the other PCs invited you, but you wonder if it was out of pity.",
       "You bullied your way in with intimidation and bluster."
     ]
@@ -695,20 +710,20 @@
     "id": "honorable",
     "name": "Honorable",
     "source": "discovery",
-    "description": "You are trustworthy, fair, and forthright. You try to do what is right, to help others, and to treat them well. Lying and cheating are no way to get ahead\u2014these things are for the weak, the lazy, or the despicable. You probably spend a lot of time thinking about your personal honor, how best to maintain it, and how to defend it if challenged. In combat, you are straightforward and offer quarter to any foe. You were likely instilled with this sense of honor by a parent or a mentor. Sometimes the distinction between what is and isn\u2019t honorable varies with different schools of thought, but in broad strokes, honorable people can agree on most aspects of what honor means.",
+    "description": "You are trustworthy, fair, and forthright. You try to do what is right, to help others, and to treat them well. Lying and cheating are no way to get ahead—these things are for the weak, the lazy, or the despicable. You probably spend a lot of time thinking about your personal honor, how best to maintain it, and how to defend it if challenged. In combat, you are straightforward and offer quarter to any foe. You were likely instilled with this sense of honor by a parent or a mentor. Sometimes the distinction between what is and isn’t honorable varies with different schools of thought, but in broad strokes, honorable people can agree on most aspects of what honor means.",
     "poolModifiers": {
       "might": 2
     },
     "trainedSkills": [
       "pleasant social interactions",
-      "discerning people\u2019s true motives or seeing through lies"
+      "discerning people’s true motives or seeing through lies"
     ],
     "inabilities": [],
     "specialAbilities": [],
     "additionalEquipment": [],
     "initialLinks": [
-      "The PCs\u2019 goals appear to be honorable and commendable.",
-      "You see that what the other PCs are about to do is dangerous, and you\u2019d like to help protect them.",
+      "The PCs’ goals appear to be honorable and commendable.",
+      "You see that what the other PCs are about to do is dangerous, and you’d like to help protect them.",
       "One of the other PCs invited you, hearing of your trustworthiness.",
       "You asked politely if you could join the other PCs in their mission."
     ]
@@ -726,7 +741,7 @@
       "speed defense actions"
     ],
     "inabilities": [
-      "you\u2019ll try anything once or twice. the difficulty of any task that involves patience, willpower, or discipline is increased by one step."
+      "you’ll try anything once or twice. the difficulty of any task that involves patience, willpower, or discipline is increased by one step."
     ],
     "specialAbilities": [],
     "additionalEquipment": [],
@@ -734,23 +749,23 @@
       "You heard what the other PCs were up to and suddenly decided to join them.",
       "You pulled everyone together after you heard rumors about something interesting you want to see or do.",
       "You blew all of your money and now find yourself strapped for cash.",
-      "You\u2019re in trouble for acting recklessly. You join the other PCs because they offer a way out of your problem."
+      "You’re in trouble for acting recklessly. You join the other PCs because they offer a way out of your problem."
     ]
   },
   {
     "id": "inquisitive",
     "name": "Inquisitive",
     "source": "discovery",
-    "description": "The world is vast and mysterious, with wonders and secrets to keep you amazed for several lifetimes. You feel the tugging on your heart, the call to explore the wreckage of past civilizations, to discover new peoples, new places, and whatever bizarre wonders you might find along the way. However, as strongly as you feel the pull to roam the world, you know there is danger aplenty, and you take precautions to ensure that you are prepared for any eventuality. Research, preparation, and readiness will help you live long enough to see everything you want to see and do everything you want to do.\nYou probably have a dozen books and travelogues about the world on you at any time. When not hitting the road and looking around, you spend your time with your nose in a book, learning everything you can about the place you\u2019re going so you know what to expect when you get there.",
+    "description": "The world is vast and mysterious, with wonders and secrets to keep you amazed for several lifetimes. You feel the tugging on your heart, the call to explore the wreckage of past civilizations, to discover new peoples, new places, and whatever bizarre wonders you might find along the way. However, as strongly as you feel the pull to roam the world, you know there is danger aplenty, and you take precautions to ensure that you are prepared for any eventuality. Research, preparation, and readiness will help you live long enough to see everything you want to see and do everything you want to do.\nYou probably have a dozen books and travelogues about the world on you at any time. When not hitting the road and looking around, you spend your time with your nose in a book, learning everything you can about the place you’re going so you know what to expect when you get there.",
     "poolModifiers": {
       "intellect": 4
     },
     "trainedSkills": [
-      "any task that involves learning something new, whether you\u2019re talking to a local to get information or digging through old books to find lore",
+      "any task that involves learning something new, whether you’re talking to a local to get information or digging through old books to find lore",
       "any task involving geography or history"
     ],
     "inabilities": [
-      "you tend to fixate on the details, making you somewhat oblivious to what\u2019s going on around you. the difficulty of any task to hear or notice dangers around you is increased by one step.",
+      "you tend to fixate on the details, making you somewhat oblivious to what’s going on around you. the difficulty of any task to hear or notice dangers around you is increased by one step.",
       "when you see something interesting, you hesitate as you take in all the details. the difficulty of initiative actions (to determine who goes first in combat) is increased by one step."
     ],
     "specialAbilities": [],
@@ -768,7 +783,7 @@
     "id": "insolent",
     "name": "Insolent",
     "source": "discovery",
-    "description": "Why should you have to put up with others\u2019 shortcomings? In your opinion, most people are idiots, your friends excluded. If you're being completely honest, compared to your versatility and obvious superiority, most people are misguided, thick-headed, and a waste of space. If someone wants your attention, you usually make them prove themselves first. That doesn\u2019t win you many new friends. But it\u2019s funny to see them fume.",
+    "description": "Why should you have to put up with others’ shortcomings? In your opinion, most people are idiots, your friends excluded. If you're being completely honest, compared to your versatility and obvious superiority, most people are misguided, thick-headed, and a waste of space. If someone wants your attention, you usually make them prove themselves first. That doesn’t win you many new friends. But it’s funny to see them fume.",
     "poolModifiers": {
       "speed": 2
     },
@@ -781,7 +796,7 @@
     "specialAbilities": [
       {
         "name": "Goad",
-        "description": "If a creature within short range has not yet attacked you, you can use your action to goad it so that it does attack you. It\u2019s so angry at your impertinence that the difficulty of its first attack is increased by one step."
+        "description": "If a creature within short range has not yet attacked you, you can use your action to goad it so that it does attack you. It’s so angry at your impertinence that the difficulty of its first attack is increased by one step."
       }
     ],
     "additionalEquipment": [
@@ -802,13 +817,12 @@
     "id": "intelligent",
     "name": "Intelligent",
     "source": "discovery",
-    "description": "You\u2019re quite smart. Your memory is sharp, and you easily grasp concepts that others might struggle with. This aptitude doesn\u2019t necessarily mean that you\u2019ve had years of formal education, but you have learned a great deal in your life, primarily because you pick things up quickly and retain so much.",
+    "description": "You’re quite smart. Your memory is sharp, and you easily grasp concepts that others might struggle with. This aptitude doesn’t necessarily mean that you’ve had years of formal education, but you have learned a great deal in your life, primarily because you pick things up quickly and retain so much.",
     "poolModifiers": {
       "intellect": 2
     },
     "trainedSkills": [
-      "an area of knowledge of your choice",
-      "all actions that involve remembering or memorizing things you experience directly. for example, instead of being good at recalling details of geography that you read about in a book, you can remember a path through a set of tunnels that you\u2019ve explored before"
+      "all actions that involve remembering or memorizing things you experience directly. for example, instead of being good at recalling details of geography that you read about in a book, you can remember a path through a set of tunnels that you’ve explored before"
     ],
     "inabilities": [],
     "specialAbilities": [],
@@ -818,6 +832,14 @@
       "You saw value in what the other PCs were doing.",
       "You believed that the task might lead to important and interesting discoveries.",
       "A colleague requested that you take part in the mission as a favor."
+    ],
+    "skillChoices": [
+      {
+        "label": "Area of Knowledge",
+        "pickCount": 1,
+        "options": [],
+        "freeform": true
+      }
     ]
   },
   {
@@ -828,9 +850,7 @@
     "poolModifiers": {
       "intellect": 2
     },
-    "trainedSkills": [
-      "three areas of knowledge of your choice"
-    ],
+    "trainedSkills": [],
     "inabilities": [
       "charm, persuasion, or etiquette"
     ],
@@ -843,13 +863,21 @@
       "You need money to fund your studies.",
       "You believed that the task might lead to important and interesting discoveries.",
       "A colleague requested that you take part in the mission as a favor."
+    ],
+    "skillChoices": [
+      {
+        "label": "Area of Knowledge",
+        "pickCount": 3,
+        "options": [],
+        "freeform": true
+      }
     ]
   },
   {
     "id": "intimidating",
     "name": "Intimidating",
     "source": "discovery",
-    "description": "You are imposing, either in manner or stature or both. People\u2019s eyes often grow wide as you enter a room. There\u2019s just a touch of danger around you, and most people can sense that. It\u2019s off-putting and unnerving, but you can certainly use it to your advantage. Perhaps your voice is gravelly and low. Perhaps it\u2019s the hardened stare you give people. Or the scars that cover your face. Or maybe you\u2019re just a looming presence with a big weapon. Whatever it is, you scare people.",
+    "description": "You are imposing, either in manner or stature or both. People’s eyes often grow wide as you enter a room. There’s just a touch of danger around you, and most people can sense that. It’s off-putting and unnerving, but you can certainly use it to your advantage. Perhaps your voice is gravelly and low. Perhaps it’s the hardened stare you give people. Or the scars that cover your face. Or maybe you’re just a looming presence with a big weapon. Whatever it is, you scare people.",
     "poolModifiers": {},
     "trainedSkills": [
       "all intimidation tasks"
@@ -885,21 +913,19 @@
     "id": "lonely",
     "name": "Lonely",
     "source": "discovery",
-    "description": "There are many possible reasons why you\u2019re lonely. Maybe you\u2019re on the run from justice (or injustice), and it\u2019s not safe to show your face. Maybe your friends are missing, or dead. Or maybe you\u2019re just really bad with people, and whenever you try to make friends, you inadvertently rebuff them. But for good or for ill, you\u2019re getting used to being alone.",
+    "description": "There are many possible reasons why you’re lonely. Maybe you’re on the run from justice (or injustice), and it’s not safe to show your face. Maybe your friends are missing, or dead. Or maybe you’re just really bad with people, and whenever you try to make friends, you inadvertently rebuff them. But for good or for ill, you’re getting used to being alone.",
     "poolModifiers": {
       "might": 2
     },
-    "trainedSkills": [
-      "four noncombat skills of your choice"
-    ],
+    "trainedSkills": [],
     "inabilities": [
       "willpower is not one of your strong points. whenever you try to resist a mental attack, the difficulty is increased by one step.",
-      "you\u2019re not the outdoorsy type. the difficulty of all climbing, running, jumping, and swimming tasks is increased by one step."
+      "you’re not the outdoorsy type. the difficulty of all climbing, running, jumping, and swimming tasks is increased by one step."
     ],
     "specialAbilities": [
       {
         "name": "Side Track",
-        "description": "While talking, you annoy and distract another creature, even if the creature can\u2019t understand you. For as long as you do nothing but speak (you can\u2019t even move), the other creature takes no actions other than to defend itself, even over multiple rounds. If the creature is attacked, the effect ends. You can do this one time, although the ability is renewed each time you make a recovery roll.",
+        "description": "While talking, you annoy and distract another creature, even if the creature can’t understand you. For as long as you do nothing but speak (you can’t even move), the other creature takes no actions other than to defend itself, even over multiple rounds. If the creature is attacked, the effect ends. You can do this one time, although the ability is renewed each time you make a recovery roll.",
         "cost": {
           "amount": 2,
           "pool": "intellect"
@@ -911,7 +937,15 @@
       "You were so lonely, you jumped at the first offer a PC made you.",
       "Coming along was better than staying by yourself.",
       "Joining the PCs gives you an opportunity to escape justice for a crime you committed.",
-      "You didn\u2019t want to come, but you needed the money."
+      "You didn’t want to come, but you needed the money."
+    ],
+    "skillChoices": [
+      {
+        "label": "Noncombat Skill",
+        "pickCount": 4,
+        "options": [],
+        "freeform": true
+      }
     ]
   },
   {
@@ -931,18 +965,18 @@
     "specialAbilities": [
       {
         "name": "Fits of Insight",
-        "description": "Whenever such knowledge is appropriate, the GM feeds you information although there is no clear explanation as to how you could know such a thing. This is up to the GM\u2019s discretion, but it should happen as often as once each session."
+        "description": "Whenever such knowledge is appropriate, the GM feeds you information although there is no clear explanation as to how you could know such a thing. This is up to the GM’s discretion, but it should happen as often as once each session."
       },
       {
         "name": "Erratic Behavior",
-        "description": "You are prone to acting erratically or irrationally. When you are in the presence of a major numenera discovery or subjected to great stress (such as a serious physical threat), the GM can use GM intrusion that directs your next action without awarding XP. You can still pay 1 XP to refuse the intrusion. The GM\u2019s influence is the manifestation of your madness and thus is always something you would not likely do otherwise, but it is not directly, obviously harmful to you unless there are extenuating circumstances. (For example, if a foe suddenly leaps out of the darkness, you might spend the first round babbling incoherently or screaming the name of your first true love.)"
+        "description": "You are prone to acting erratically or irrationally. When you are in the presence of a major numenera discovery or subjected to great stress (such as a serious physical threat), the GM can use GM intrusion that directs your next action without awarding XP. You can still pay 1 XP to refuse the intrusion. The GM’s influence is the manifestation of your madness and thus is always something you would not likely do otherwise, but it is not directly, obviously harmful to you unless there are extenuating circumstances. (For example, if a foe suddenly leaps out of the darkness, you might spend the first round babbling incoherently or screaming the name of your first true love.)"
       }
     ],
     "additionalEquipment": [],
     "initialLinks": [
       "Voices in your head told you to go.",
       "You instigated the whole thing and convinced the others to join you.",
-      "One of the other PCs obtained a book of numenera knowledge for you, and now you\u2019re repaying that favor by helping her with the task at hand.",
+      "One of the other PCs obtained a book of numenera knowledge for you, and now you’re repaying that favor by helping her with the task at hand.",
       "You feel compelled by inexplicable intuition."
     ]
   },
@@ -950,7 +984,7 @@
     "id": "manipulative",
     "name": "Manipulative",
     "source": "discovery",
-    "description": "People are easy. If you spend enough time with someone, you soon learn what is most important to them. Once you know that, you can use that knowledge to your own advantage, and get what you want from them. It\u2019s not that you\u2019re interested in hurting people for the sake of seeing them suffer. Not at all. You just want what you want, and manipulating others is by far the easiest way to that end.",
+    "description": "People are easy. If you spend enough time with someone, you soon learn what is most important to them. Once you know that, you can use that knowledge to your own advantage, and get what you want from them. It’s not that you’re interested in hurting people for the sake of seeing them suffer. Not at all. You just want what you want, and manipulating others is by far the easiest way to that end.",
     "poolModifiers": {
       "intellect": 2
     },
@@ -970,7 +1004,7 @@
     "initialLinks": [
       "You convinced the PCs to take you along.",
       "You created a situation where you were indispensable to the mission.",
-      "In a rare turnaround, you were manipulated into accepting a mission you would\u2019ve normally avoided.",
+      "In a rare turnaround, you were manipulated into accepting a mission you would’ve normally avoided.",
       "This mission ties in with a personal, and secret, goal of your own."
     ]
   },
@@ -978,7 +1012,7 @@
     "id": "marine",
     "name": "Marine",
     "source": "discovery",
-    "description": "You are literally an aquatic creature. Either by mutation, experimentation, or heritage, you have some qualities of a marine creature. You very likely live either in the water or near it. While you\u2019re not helpless out of water, you\u2019re much better off when you\u2019re swimming or otherwise underwater. Your appearance is likely quite striking\u2014scales, fins, or gills might be a part of your natural physique.",
+    "description": "You are literally an aquatic creature. Either by mutation, experimentation, or heritage, you have some qualities of a marine creature. You very likely live either in the water or near it. While you’re not helpless out of water, you’re much better off when you’re swimming or otherwise underwater. Your appearance is likely quite striking—scales, fins, or gills might be a part of your natural physique.",
     "poolModifiers": {},
     "trainedSkills": [
       "swimming"
@@ -1009,13 +1043,12 @@
     "id": "meek",
     "name": "Meek",
     "source": "discovery",
-    "description": "You are quiet, unassuming, and not entirely confident. You might not see yourself as cowardly\u2014just careful. You\u2019re not great at facing challenges, and easily back down when threatened. On the other hand, you\u2019re quick, and good at hiding and keeping abreast of what\u2019s going on around you. Because you haven\u2019t ventured forth into dangerous situations often, you spent that time instead focused on a variety of areas of study. You probably maintain a relatively nondescript appearance and generally don\u2019t attempt to call attention to yourself.",
+    "description": "You are quiet, unassuming, and not entirely confident. You might not see yourself as cowardly—just careful. You’re not great at facing challenges, and easily back down when threatened. On the other hand, you’re quick, and good at hiding and keeping abreast of what’s going on around you. Because you haven’t ventured forth into dangerous situations often, you spent that time instead focused on a variety of areas of study. You probably maintain a relatively nondescript appearance and generally don’t attempt to call attention to yourself.",
     "poolModifiers": {
       "speed": 2
     },
     "trainedSkills": [
       "sneaking and hiding",
-      "two areas of knowledge of your choice",
       "perception",
       "speed defense"
     ],
@@ -1030,17 +1063,25 @@
     ],
     "additionalEquipment": [],
     "initialLinks": [
-      "One of the other PCs saved your life previously, so you\u2019ve (somewhat reluctantly) agreed to help.",
+      "One of the other PCs saved your life previously, so you’ve (somewhat reluctantly) agreed to help.",
       "One of the other PCs intimidated you into coming along.",
       "The alternative to joining the PCs was even more frightening.",
-      "You didn\u2019t want to, but you\u2019re desperate for money."
+      "You didn’t want to, but you’re desperate for money."
+    ],
+    "skillChoices": [
+      {
+        "label": "Area of Knowledge",
+        "pickCount": 2,
+        "options": [],
+        "freeform": true
+      }
     ]
   },
   {
     "id": "mercurial",
     "name": "Mercurial",
     "source": "discovery",
-    "description": "You\u2019re not moody\u2014you\u2019re adaptable. People who never change their mind are people who never learn, or who never want to. If new information comes your way (or you reimagine how you\u2019ve been thinking about a topic), you don\u2019t let how you used to regard something sway your newest opinion. Life is too short to do the same thing the same way for all your remaining days. The same is true for your emotions\u2014you enjoy experiencing the full range.",
+    "description": "You’re not moody—you’re adaptable. People who never change their mind are people who never learn, or who never want to. If new information comes your way (or you reimagine how you’ve been thinking about a topic), you don’t let how you used to regard something sway your newest opinion. Life is too short to do the same thing the same way for all your remaining days. The same is true for your emotions—you enjoy experiencing the full range.",
     "poolModifiers": {
       "speed": 2
     },
@@ -1061,14 +1102,14 @@
       "The mood to help struck you, so you helped the other PCs out with a problem.",
       "You jumped in to save one of the PCs from danger.",
       "It seemed like a good idea at the time.",
-      "You know you\u2019re impulsive in a way that can sometimes lead you to do things that aren\u2019t in your best interest. Helping with the PCs\u2019 mission seemed like a way to moderate yourself."
+      "You know you’re impulsive in a way that can sometimes lead you to do things that aren’t in your best interest. Helping with the PCs’ mission seemed like a way to moderate yourself."
     ]
   },
   {
     "id": "mysticalmechanical",
     "name": "Mystical/mechanical",
     "source": "discovery",
-    "description": "You have a special talent that can be viewed in one of two ways. You might think of yourself as \u201cmystical,\u201d and thus attuned with the mysterious and the paranormal, or you might think of yourself as \u201cmechanical,\u201d and thus adept with devices and machines. In either case, your true talents lie with the numenera. You likely have experience with ancient lore, and you can sense and wield the numenera\u2014though whether that means \u201cmagic\u201d or \u201ctechnology\u201d is up to you (and probably up to those around you as well).\nMystical characters often wear jewelry, such as a ring or an amulet, or have tattoos or other marks that show their interests. Mechanical characters tend to carry a lot of tools and treat them almost like talismans.",
+    "description": "You have a special talent that can be viewed in one of two ways. You might think of yourself as “mystical,” and thus attuned with the mysterious and the paranormal, or you might think of yourself as “mechanical,” and thus adept with devices and machines. In either case, your true talents lie with the numenera. You likely have experience with ancient lore, and you can sense and wield the numenera—though whether that means “magic” or “technology” is up to you (and probably up to those around you as well).\nMystical characters often wear jewelry, such as a ring or an amulet, or have tattoos or other marks that show their interests. Mechanical characters tend to carry a lot of tools and treat them almost like talismans.",
     "poolModifiers": {
       "intellect": 2
     },
@@ -1085,7 +1126,7 @@
       },
       {
         "name": "Hedge Magic",
-        "description": "You can perform small tricks: temporarily change the color or basic appearance of a small object, cause small objects to float through the air, clean a small area, mend a broken object, prepare (but not create) food, and so on. You can\u2019t use Hedge Magic to harm another creature or object. Action.",
+        "description": "You can perform small tricks: temporarily change the color or basic appearance of a small object, cause small objects to float through the air, clean a small area, mend a broken object, prepare (but not create) food, and so on. You can’t use Hedge Magic to harm another creature or object. Action.",
         "cost": {
           "amount": 1,
           "pool": "intellect"
@@ -1107,14 +1148,14 @@
     "id": "naive",
     "name": "Naive",
     "source": "discovery",
-    "description": "You\u2019ve lived a sheltered life. Your childhood was safe and secure, so you didn\u2019t get a chance to learn much about the world\u2014and even less chance to experience it. Whether you were training for something, had your nose in a book, or just were sequestered in a secluded place, you haven\u2019t done much, met many people, or seen many interesting things so far. That\u2019s probably going to change soon, but as you go forward into a larger world, you do so without some of the understanding that others possess about how it all works.",
+    "description": "You’ve lived a sheltered life. Your childhood was safe and secure, so you didn’t get a chance to learn much about the world—and even less chance to experience it. Whether you were training for something, had your nose in a book, or just were sequestered in a secluded place, you haven’t done much, met many people, or seen many interesting things so far. That’s probably going to change soon, but as you go forward into a larger world, you do so without some of the understanding that others possess about how it all works.",
     "poolModifiers": {},
     "trainedSkills": [
       "intellect defense tasks and all tasks that involve resisting temptation",
       "perception tasks"
     ],
     "inabilities": [
-      "the difficulty of any task that involves seeing through deceptions or determining someone\u2019s secret motive is increased by one step."
+      "the difficulty of any task that involves seeing through deceptions or determining someone’s secret motive is increased by one step."
     ],
     "specialAbilities": [
       {
@@ -1138,7 +1179,7 @@
     "id": "noble",
     "name": "Noble",
     "source": "discovery",
-    "description": "You are of noble birth. You are not of the common people. Your family has a title and the prestige and (probably) the wealth that goes along with it. The Ninth World is, generally speaking, a classist place, and in that structure you are in the top echelon. Often, laws don\u2019t apply to you, you gain special treatment, and sometimes people do as you command. You probably dress in finery and walk with a noble bearing, but sometimes the nobility must conceal their station to keep themselves safe\u2014from brigands, thieves, or aristocratic enemies and their servants.",
+    "description": "You are of noble birth. You are not of the common people. Your family has a title and the prestige and (probably) the wealth that goes along with it. The Ninth World is, generally speaking, a classist place, and in that structure you are in the top echelon. Often, laws don’t apply to you, you gain special treatment, and sometimes people do as you command. You probably dress in finery and walk with a noble bearing, but sometimes the nobility must conceal their station to keep themselves safe—from brigands, thieves, or aristocratic enemies and their servants.",
     "poolModifiers": {},
     "trainedSkills": [
       "etiquette and interacting with the nobility"
@@ -1164,7 +1205,7 @@
     ],
     "initialLinks": [
       "It seemed like a lark.",
-      "You\u2019re on the run from an enemy, and joining the PCs seemed like a good way to hide among the common folk.",
+      "You’re on the run from an enemy, and joining the PCs seemed like a good way to hide among the common folk.",
       "The mission involves somehow redeeming or helping your family.",
       "Your parent(s) forced you into it, hoping the experience would be good for you."
     ]
@@ -1173,14 +1214,14 @@
     "id": "obsessive",
     "name": "Obsessive",
     "source": "discovery",
-    "description": "Few things are as wonderful as getting lost in doing what you love to do. Time slips past, hour after hour, while you\u2019re in the flow. Whether you are obsessed with studying a particular aspect of the numenera, insects, mutants, or killing bandits, your particular ability to sink into what most interests you, at least for the time being, is what allows you to succeed. Everything else seems less important, which allows you to focus.",
+    "description": "Few things are as wonderful as getting lost in doing what you love to do. Time slips past, hour after hour, while you’re in the flow. Whether you are obsessed with studying a particular aspect of the numenera, insects, mutants, or killing bandits, your particular ability to sink into what most interests you, at least for the time being, is what allows you to succeed. Everything else seems less important, which allows you to focus.",
     "poolModifiers": {},
     "trainedSkills": [],
     "inabilities": [],
     "specialAbilities": [
       {
         "name": "Your Obsession",
-        "description": "At the beginning of each day, choose one topic or ideal on which you will concentrate. For the rest of that day, you\u2019re obsessed with that choice. This doesn\u2019t mean you ignore anything not related to your obsession\u2014it just means you are at your best when performing tasks related to it, and slightly inattentive when performing tasks that are not."
+        "description": "At the beginning of each day, choose one topic or ideal on which you will concentrate. For the rest of that day, you’re obsessed with that choice. This doesn’t mean you ignore anything not related to your obsession—it just means you are at your best when performing tasks related to it, and slightly inattentive when performing tasks that are not."
       },
       {
         "name": "Enthralled",
@@ -1193,8 +1234,8 @@
     ],
     "additionalEquipment": [],
     "initialLinks": [
-      "You wouldn\u2019t take no for an answer when you asked the PCs if you could join their mission.",
-      "You were preoccupied with something else, and didn\u2019t realize what you\u2019d agreed to until it was too late.",
+      "You wouldn’t take no for an answer when you asked the PCs if you could join their mission.",
+      "You were preoccupied with something else, and didn’t realize what you’d agreed to until it was too late.",
       "You believed that you could learn a lot by joining the other PCs.",
       "One of the PCs asked you to come along, believing that your dogged nature would be invaluable to the mission."
     ]
@@ -1203,7 +1244,7 @@
     "id": "passionate",
     "name": "Passionate",
     "source": "discovery",
-    "description": "A fire burns in you. Whether that fire is for a person, a place, a people, a concept, or something else, you are driven by this fire. Passionate characters are sometimes champions for a cause, or defenders of a faith. Or they might just be driven individuals. You might just be seen as a \u201chot-head\u201d by some\u2014temperamental and dangerous. But even if that\u2019s true, you keep your word and take your commitments seriously, and it\u2019s hard to find fault with that. You won\u2019t let any challenge stand in your way. You charge right in.",
+    "description": "A fire burns in you. Whether that fire is for a person, a place, a people, a concept, or something else, you are driven by this fire. Passionate characters are sometimes champions for a cause, or defenders of a faith. Or they might just be driven individuals. You might just be seen as a “hot-head” by some—temperamental and dangerous. But even if that’s true, you keep your word and take your commitments seriously, and it’s hard to find fault with that. You won’t let any challenge stand in your way. You charge right in.",
     "poolModifiers": {},
     "trainedSkills": [
       "running, climbing, and swimming"
@@ -1226,7 +1267,7 @@
       "You are madly in love with one of the other PCs and will do anything for them.",
       "The mission the other PCs were planning seemed vital to you, for your own reasons. They had no choice but to let you get involved.",
       "You were guided to the other PCs and their task by someone you deeply respect.",
-      "You\u2019re looking for a cause worthy of you and your skills."
+      "You’re looking for a cause worthy of you and your skills."
     ]
   },
   {
@@ -1252,7 +1293,7 @@
     "initialLinks": [
       "You overheard the other PCs discussing their mission and volunteered your services.",
       "One of the PCs asked you to come along, believing that your talents would be invaluable to the mission.",
-      "You believe that the PCs\u2019 mission is somehow related to one of your investigations.",
+      "You believe that the PCs’ mission is somehow related to one of your investigations.",
       "A third party recruited you to follow the PCs and see what they were up to."
     ]
   },
@@ -1260,7 +1301,7 @@
     "id": "polyglot",
     "name": "Polyglot",
     "source": "discovery",
-    "description": "Languages come easily to you. Picking up the basics of a new language is a task you can do in just a few days. In a few weeks, you\u2019re using idiom like a native speaker. People like you. You always seem to know the right thing to say, and you genuinely listen to what they have to say\u2014if for no other reason than to continue to understand language as a general concept. More than most, you are a traveler, eager to seek out new places, people, and of course, languages. Your physical appearance isn\u2019t likely your main concern. You\u2019re more cerebral than that.",
+    "description": "Languages come easily to you. Picking up the basics of a new language is a task you can do in just a few days. In a few weeks, you’re using idiom like a native speaker. People like you. You always seem to know the right thing to say, and you genuinely listen to what they have to say—if for no other reason than to continue to understand language as a general concept. More than most, you are a traveler, eager to seek out new places, people, and of course, languages. Your physical appearance isn’t likely your main concern. You’re more cerebral than that.",
     "poolModifiers": {
       "intellect": 2
     },
@@ -1281,14 +1322,14 @@
       "You overheard the other PCs talking about their plans and wanted to join in.",
       "In order for the group to get the information needed to start, they need a translation of some old text, and bring you in to help.",
       "Seeking new people and the new languages they might speak entices you to join the mission.",
-      "One of the other PCs speaks a language you don\u2019t know, and you want to learn it."
+      "One of the other PCs speaks a language you don’t know, and you want to learn it."
     ]
   },
   {
     "id": "rebellious",
     "name": "Rebellious",
     "source": "discovery",
-    "description": "You don\u2019t trust authority. That goes double for authority that has proven itself to be cruel, conniving, and working against the interests of those held in its sway. But you find examples of corrupt authority all around you, not just at the highest levels of governance. It seems like a truism that in any collection of people, some subset seeks power not for everyone else\u2019s benefit, but merely for themselves. You\u2019re the cure to their control.",
+    "description": "You don’t trust authority. That goes double for authority that has proven itself to be cruel, conniving, and working against the interests of those held in its sway. But you find examples of corrupt authority all around you, not just at the highest levels of governance. It seems like a truism that in any collection of people, some subset seeks power not for everyone else’s benefit, but merely for themselves. You’re the cure to their control.",
     "poolModifiers": {
       "might": 2
     },
@@ -1299,22 +1340,22 @@
     "specialAbilities": [
       {
         "name": "Headstrong",
-        "description": "The GM can introduce a GM intrusion on you (as if you had rolled a 1 on a d20), without awarding you any XP, based on your always-charging-ahead nature. However, if this happens, 50% of the time, your headstrong nature works to your advantage. Rather than hurting you, it helps, or it hurts your enemies. For example, you might discover you\u2019re charging many more enemies than you realized, but they are intimidated by your \u201cconviction\u201d and run. You and the GM should work together to determine the details. The GM can also use GM intrusions based on your headstrong nature normally (awarding XP) if she desires."
+        "description": "The GM can introduce a GM intrusion on you (as if you had rolled a 1 on a d20), without awarding you any XP, based on your always-charging-ahead nature. However, if this happens, 50% of the time, your headstrong nature works to your advantage. Rather than hurting you, it helps, or it hurts your enemies. For example, you might discover you’re charging many more enemies than you realized, but they are intimidated by your “conviction” and run. You and the GM should work together to determine the details. The GM can also use GM intrusions based on your headstrong nature normally (awarding XP) if she desires."
       }
     ],
     "additionalEquipment": [],
     "initialLinks": [
-      "The PCs\u2019 mission was the kind of rebellious action you believe in, so you joined them.",
-      "You recruited the team to help deal with something you couldn\u2019t manage on your own.",
+      "The PCs’ mission was the kind of rebellious action you believe in, so you joined them.",
+      "You recruited the team to help deal with something you couldn’t manage on your own.",
       "You think you can convince the PCs to join your cause if you help them with their goals for a while.",
-      "You\u2019re an escaped rebel fleeing an authority you undermined. The PCs can help keep you safe."
+      "You’re an escaped rebel fleeing an authority you undermined. The PCs can help keep you safe."
     ]
   },
   {
     "id": "resilient",
     "name": "Resilient",
     "source": "discovery",
-    "description": "You can take a lot of punishment, both physically and mentally, and still come back for more. It takes a lot to put you down. Neither physical nor mental shocks or damage have a lasting effect. You\u2019re tough to faze. Unflappable. Unstoppable.",
+    "description": "You can take a lot of punishment, both physically and mentally, and still come back for more. It takes a lot to put you down. Neither physical nor mental shocks or damage have a lasting effect. You’re tough to faze. Unflappable. Unstoppable.",
     "poolModifiers": {
       "might": 2,
       "intellect": 2
@@ -1338,27 +1379,27 @@
       "You saw that the PCs clearly need someone like you to help them out.",
       "Someone asked you to watch over one of the PCs in particular, and you agreed.",
       "You are bored and desperately in need of a challenge.",
-      "You lost a bet\u2014unfairly, you think\u2014and had to take someone\u2019s place on this mission."
+      "You lost a bet—unfairly, you think—and had to take someone’s place on this mission."
     ]
   },
   {
     "id": "resourceful",
     "name": "Resourceful",
     "source": "discovery",
-    "description": "When things look tight, you\u2019re the one your friends expect to find the way out or figure out what to do next. You don\u2019t find it a burden. Figuring out what\u2019s next or finding a clue that points the way forward is the kind of challenge you enjoy. If nothing else, you come prepared to most situations carrying a variety of small tools that just might serve in a pinch.",
+    "description": "When things look tight, you’re the one your friends expect to find the way out or figure out what to do next. You don’t find it a burden. Figuring out what’s next or finding a clue that points the way forward is the kind of challenge you enjoy. If nothing else, you come prepared to most situations carrying a variety of small tools that just might serve in a pinch.",
     "poolModifiers": {
       "intellect": 2
     },
     "trainedSkills": [
-      "any task that involves learning something new, whether you\u2019re talking to a local to get information or digging through old books to find lore"
+      "any task that involves learning something new, whether you’re talking to a local to get information or digging through old books to find lore"
     ],
     "inabilities": [
-      "you tend to fixate on the details, making you somewhat oblivious to what\u2019s going on around you. the difficulty of any task to notice danger around you is increased by one step."
+      "you tend to fixate on the details, making you somewhat oblivious to what’s going on around you. the difficulty of any task to notice danger around you is increased by one step."
     ],
     "specialAbilities": [
       {
         "name": "Planner",
-        "description": "You\u2019re the one with a plan. When you observe or study a location for at least one round as your action, the next time you interact with it (possibly in the following round), the difficulty of a related task (such as finding a clue, a tool, or a secret compartment) is reduced by one step."
+        "description": "You’re the one with a plan. When you observe or study a location for at least one round as your action, the next time you interact with it (possibly in the following round), the difficulty of a related task (such as finding a clue, a tool, or a secret compartment) is reduced by one step."
       }
     ],
     "additionalEquipment": [
@@ -1375,7 +1416,7 @@
     "id": "rugged",
     "name": "Rugged",
     "source": "discovery",
-    "description": "You\u2019re a nature lover accustomed to living rough, pitting your wits against the elements. Most likely, you\u2019re a skilled hunter, gatherer, or naturalist. Years of living in the wild have left their mark with a worn countenance, wild hair, or scars. Your clothing is probably much less refined than the garments worn by city dwellers.",
+    "description": "You’re a nature lover accustomed to living rough, pitting your wits against the elements. Most likely, you’re a skilled hunter, gatherer, or naturalist. Years of living in the wild have left their mark with a worn countenance, wild hair, or scars. Your clothing is probably much less refined than the garments worn by city dwellers.",
     "poolModifiers": {},
     "trainedSkills": [
       "all tasks involving climbing, jumping, running, and swimming",
@@ -1387,16 +1428,16 @@
     ],
     "specialAbilities": [],
     "additionalEquipment": [
-      "You carry an explorer\u2019s pack",
+      "You carry an explorer’s pack",
       "If you already have one",
-      "you can instead take 50 extra feet (15\u00a0m) of rope",
-      "two more days\u2019 worth of rations",
+      "you can instead take 50 extra feet (15 m) of rope",
+      "two more days’ worth of rations",
       "and an extra ranged weapon"
     ],
     "initialLinks": [
       "Against your better judgment, you joined the other PCs because you saw that they were in danger.",
       "One of the other PCs convinced you that joining the group would be in your best interest.",
-      "You\u2019re afraid of what might happen if the other PCs fail.",
+      "You’re afraid of what might happen if the other PCs fail.",
       "There is reward involved, and you need the money."
     ]
   },
@@ -1404,7 +1445,7 @@
     "id": "stealthy",
     "name": "Stealthy",
     "source": "discovery",
-    "description": "You\u2019re sneaky, slippery, and fast. These talents help you hide, move quietly, and pull off tricks that require sleight of hand. Most likely, you\u2019re wiry and small. However, you\u2019re not much of a sprinter\u2014you\u2019re more dexterous than fleet of foot.",
+    "description": "You’re sneaky, slippery, and fast. These talents help you hide, move quietly, and pull off tricks that require sleight of hand. Most likely, you’re wiry and small. However, you’re not much of a sprinter—you’re more dexterous than fleet of foot.",
     "poolModifiers": {
       "speed": 2
     },
@@ -1414,7 +1455,7 @@
       "all esoteries or special abilities involving illusions or trickery"
     ],
     "inabilities": [
-      "you\u2019re sneaky but not fast. all movement-related tasks are hindered."
+      "you’re sneaky but not fast. all movement-related tasks are hindered."
     ],
     "specialAbilities": [],
     "additionalEquipment": [],
@@ -1429,7 +1470,7 @@
     "id": "strong",
     "name": "Strong",
     "source": "discovery",
-    "description": "You\u2019re extremely strong and physically powerful, and you use these qualities well, whether through violence or feats of prowess. You likely have a brawny build and impressive muscles.",
+    "description": "You’re extremely strong and physically powerful, and you use these qualities well, whether through violence or feats of prowess. You likely have a brawny build and impressive muscles.",
     "poolModifiers": {
       "might": 4
     },
@@ -1445,7 +1486,7 @@
     "initialLinks": [
       "Against your better judgment, you joined the other PCs because you saw that they were in danger.",
       "One of the other PCs convinced you that joining the group would be in your best interest.",
-      "You\u2019re afraid of what might happen if the other PCs fail.",
+      "You’re afraid of what might happen if the other PCs fail.",
       "There is reward involved, and you need the money."
     ]
   },
@@ -1453,13 +1494,13 @@
     "id": "strong-willed",
     "name": "Strong-willed",
     "source": "discovery",
-    "description": "You\u2019re tough-minded, willful, and independent. No one can talk you into anything or change your mind when you don\u2019t want it changed. This quality doesn\u2019t necessarily make you smart, but it does make you a bastion of willpower and resolve. You likely dress and act with unique style and flair, not caring what others think.",
+    "description": "You’re tough-minded, willful, and independent. No one can talk you into anything or change your mind when you don’t want it changed. This quality doesn’t necessarily make you smart, but it does make you a bastion of willpower and resolve. You likely dress and act with unique style and flair, not caring what others think.",
     "poolModifiers": {
       "intellect": 4
     },
     "trainedSkills": [],
     "inabilities": [
-      "willful doesn\u2019t mean brilliant. any task that involves figuring out puzzles or problems, memorizing things, or using lore is hindered."
+      "willful doesn’t mean brilliant. any task that involves figuring out puzzles or problems, memorizing things, or using lore is hindered."
     ],
     "specialAbilities": [
       {
@@ -1470,7 +1511,7 @@
     "additionalEquipment": [],
     "initialLinks": [
       "Against your better judgment, you joined the other PCs because you saw that they were in danger.",
-      "One of the other PCs convinced you that joining the group would be in your best interest. 3. You\u2019re afraid of what might happen if the other PCs fail.",
+      "One of the other PCs convinced you that joining the group would be in your best interest. 3. You’re afraid of what might happen if the other PCs fail.",
       "There is reward involved, and you need the money."
     ]
   },
@@ -1478,7 +1519,7 @@
     "id": "subterranean",
     "name": "Subterranean",
     "source": "discovery",
-    "description": "You prefer the close dark of tunnels, caves, buried corridors, and ancient underground passages to the open air. You\u2019ll put up with overland travel, but you really come into your own once you head into a ruin or buried vault. You never feel more alive than when you are squeezing through apertures that wake instant claustrophobia in others.",
+    "description": "You prefer the close dark of tunnels, caves, buried corridors, and ancient underground passages to the open air. You’ll put up with overland travel, but you really come into your own once you head into a ruin or buried vault. You never feel more alive than when you are squeezing through apertures that wake instant claustrophobia in others.",
     "poolModifiers": {
       "might": 2
     },
@@ -1488,7 +1529,7 @@
       "tasks related to squeezing into and out of tight places"
     ],
     "inabilities": [
-      "you\u2019re slightly unsettled in open spaces. you regain 1 less point than normal when you make recovery rolls out in the open (minimum 1 point)."
+      "you’re slightly unsettled in open spaces. you regain 1 less point than normal when you make recovery rolls out in the open (minimum 1 point)."
     ],
     "specialAbilities": [],
     "additionalEquipment": [
@@ -1507,7 +1548,7 @@
     "id": "swift",
     "name": "Swift",
     "source": "discovery",
-    "description": "You move quickly, able to sprint in short bursts and work with your hands with dexterity. You\u2019re great at crossing distances quickly but not always smoothly. You are likely slim and muscular.",
+    "description": "You move quickly, able to sprint in short bursts and work with your hands with dexterity. You’re great at crossing distances quickly but not always smoothly. You are likely slim and muscular.",
     "poolModifiers": {
       "speed": 4
     },
@@ -1523,7 +1564,7 @@
     "initialLinks": [
       "Against your better judgment, you joined the other PCs because you saw that they were in danger.",
       "One of the other PCs convinced you that joining the group would be in your best interest.",
-      "You\u2019re afraid of what might happen if the other PCs fail.",
+      "You’re afraid of what might happen if the other PCs fail.",
       "There is reward involved, and you need the money."
     ]
   },
@@ -1531,7 +1572,7 @@
     "id": "tongue-tied",
     "name": "Tongue-tied",
     "source": "discovery",
-    "description": "You\u2019ve never been much of a talker. When forced to interact with others, you never think of the right thing to say\u2014words fail you entirely, or they come out all wrong. You often end up saying precisely the wrong thing and insult someone unintentionally. Most of the time, you just keep mum. This makes you a listener instead\u2014a careful observer. It also means that you\u2019re better at doing things than talking about them. You\u2019re quick to take action.",
+    "description": "You’ve never been much of a talker. When forced to interact with others, you never think of the right thing to say—words fail you entirely, or they come out all wrong. You often end up saying precisely the wrong thing and insult someone unintentionally. Most of the time, you just keep mum. This makes you a listener instead—a careful observer. It also means that you’re better at doing things than talking about them. You’re quick to take action.",
     "poolModifiers": {
       "might": 2,
       "speed": 2
@@ -1561,7 +1602,7 @@
     "id": "tough",
     "name": "Tough",
     "source": "discovery",
-    "description": "You\u2019re strong and can take a lot of physical punishment. You might have a large frame and a square jaw. Tough characters frequently have visible scars.",
+    "description": "You’re strong and can take a lot of physical punishment. You might have a large frame and a square jaw. Tough characters frequently have visible scars.",
     "poolModifiers": {
       "might": 1
     },
@@ -1586,17 +1627,17 @@
       "an extra weapon"
     ],
     "initialLinks": [
-      "You\u2019re acting as a bodyguard for one of the other PCs.",
+      "You’re acting as a bodyguard for one of the other PCs.",
       "One of the PCs is your sibling, and you came along to watch out for them.",
       "You need money because your family is in debt.",
-      "You stepped in to defend one of the PCs when they were threatened. While talking to them afterward, you heard about the group\u2019s task."
+      "You stepped in to defend one of the PCs when they were threatened. While talking to them afterward, you heard about the group’s task."
     ]
   },
   {
     "id": "ultraterrestrial",
     "name": "Ultraterrestrial",
     "source": "discovery",
-    "description": "You\u2019re from another dimension, one radically different than the one where you find yourself now. Three dimensions of space and one of time took you a while to adapt to, but you\u2019ve almost figured out what it means to be a \u201csolid, living creature\u201d in a place where time moves only in one direction. In fact, you\u2019ve taken a shape that conforms with those who call themselves \u201chumans\u201d on this plane. You see the benefits of causality, but you miss your own dimension, where cosmic rules and reality were more flexible.",
+    "description": "You’re from another dimension, one radically different than the one where you find yourself now. Three dimensions of space and one of time took you a while to adapt to, but you’ve almost figured out what it means to be a “solid, living creature” in a place where time moves only in one direction. In fact, you’ve taken a shape that conforms with those who call themselves “humans” on this plane. You see the benefits of causality, but you miss your own dimension, where cosmic rules and reality were more flexible.",
     "poolModifiers": {},
     "trainedSkills": [
       "tasks related to knowing about alternate dimensions"
@@ -1611,7 +1652,7 @@
       },
       {
         "name": "Noncausal",
-        "description": "When you roll a die on a task and get a result you don\u2019t like, you can insert yourself a few seconds back in your own timeline and reroll and choose the result you like best. However, when you take advantage of this ability, reality rebounds and you are dazed, increasing the difficulty of all your tasks by one step on your next turn.",
+        "description": "When you roll a die on a task and get a result you don’t like, you can insert yourself a few seconds back in your own timeline and reroll and choose the result you like best. However, when you take advantage of this ability, reality rebounds and you are dazed, increasing the difficulty of all your tasks by one step on your next turn.",
         "cost": {
           "amount": 4,
           "pool": "intellect"
@@ -1630,7 +1671,7 @@
     "id": "vengeful",
     "name": "Vengeful",
     "source": "discovery",
-    "description": "One moment changed everything for you. One dreadful encounter, one betrayal, or one horrific tragedy altered your course and made you who you are today. Looking back at that time, you often wonder how your life would have unfolded if not for the event that ruined everything. The life you imagine you should have had haunts you and feeds your appetite for revenge until vengeance is the only thing you have left.\nTo be vengeful, you must have someone or something you want revenge against and someone or something to avenge. Work with your GM to determine what happened that affected you so strongly. Maybe a group of bandits wiped out your family. A corrupt official stole your family\u2019s savings or otherwise brought ruin to you and your loved ones. Perhaps a rival destroyed your romance by sullying your name. Death, finances, love: any of these can support your motivation.\nIn addition, consider to what extent your character will go to gain vengeance. Will you compromise your values to destroy the ones who wronged you? Will you sacrifice your companions to get what you want? Can you imagine a life after you get revenge, or will you throw yours away to punish the people who wronged you?",
+    "description": "One moment changed everything for you. One dreadful encounter, one betrayal, or one horrific tragedy altered your course and made you who you are today. Looking back at that time, you often wonder how your life would have unfolded if not for the event that ruined everything. The life you imagine you should have had haunts you and feeds your appetite for revenge until vengeance is the only thing you have left.\nTo be vengeful, you must have someone or something you want revenge against and someone or something to avenge. Work with your GM to determine what happened that affected you so strongly. Maybe a group of bandits wiped out your family. A corrupt official stole your family’s savings or otherwise brought ruin to you and your loved ones. Perhaps a rival destroyed your romance by sullying your name. Death, finances, love: any of these can support your motivation.\nIn addition, consider to what extent your character will go to gain vengeance. Will you compromise your values to destroy the ones who wronged you? Will you sacrifice your companions to get what you want? Can you imagine a life after you get revenge, or will you throw yours away to punish the people who wronged you?",
     "poolModifiers": {},
     "trainedSkills": [
       "any task that involves intimidation, threats, or inflicting pain through torture",
@@ -1670,14 +1711,14 @@
       "You feared for the safety of one of the other PCs, and wanted to protect them from danger.",
       "You believe that you can do more for your cause if you join the PCs.",
       "You saw that it was in your own best interest to join the other PCs.",
-      "One of the other PCs did a favor for you, and now you\u2019re repaying that obligation by helping them with the task at hand."
+      "One of the other PCs did a favor for you, and now you’re repaying that obligation by helping them with the task at hand."
     ]
   },
   {
     "id": "wealthy",
     "name": "Wealthy",
     "source": "discovery",
-    "description": "You can\u2019t remember a time when you wanted for anything. You have always had money and have largely lived a life of comfort and plenty. You might be stingy with your wealth, hiding your abundance lest others try to steal it from you. Or you might be magnanimous, spreading it around to any and all who need it. The source of your funds is up to you. Maybe you inherited your vast fortune from a relative. A sudden windfall could have made you flush with funds and given you a life you never dreamed of. You might be a successful merchant or entrepreneur, making your fortune through hard work and determination.",
+    "description": "You can’t remember a time when you wanted for anything. You have always had money and have largely lived a life of comfort and plenty. You might be stingy with your wealth, hiding your abundance lest others try to steal it from you. Or you might be magnanimous, spreading it around to any and all who need it. The source of your funds is up to you. Maybe you inherited your vast fortune from a relative. A sudden windfall could have made you flush with funds and given you a life you never dreamed of. You might be a successful merchant or entrepreneur, making your fortune through hard work and determination.",
     "poolModifiers": {},
     "trainedSkills": [
       "any task where having money would be an advantage"
@@ -1695,15 +1736,15 @@
     "initialLinks": [
       "You crave a life of adventure. You hired all the other PCs for your expedition.",
       "Having wealth only creates an appetite for more. You join the other PCs to grow your fortunes.",
-      "You want to do good works with your wealth, and you see the PCs\u2019 mission as an opportunity to help people.",
-      "The source of your wealth\u2014a relative, a business, or your position in the community\u2014controls your life, and you have begun to feel stifled. You disguise your true identity and accompany the PCs for a chance at the freedom your fortune denies you."
+      "You want to do good works with your wealth, and you see the PCs’ mission as an opportunity to help people.",
+      "The source of your wealth—a relative, a business, or your position in the community—controls your life, and you have begun to feel stifled. You disguise your true identity and accompany the PCs for a chance at the freedom your fortune denies you."
     ]
   },
   {
     "id": "weird",
     "name": "Weird",
     "source": "discovery",
-    "description": "You aren\u2019t like anyone else, and that\u2019s fine with you. People don\u2019t seem to understand you\u2014they even seem put off by you\u2014but who cares? You understand the Ninth World better than they do because you\u2019re weird, and so is the world you live in. The concept of \u201cthe weird\u201d is well known to you. Strange devices, ancient locales, bizarre creatures, storms that can transform you, living energy fields, and things most people can\u2019t even name populate the world, and you thrive on it. You have a special attachment to it all, and the more you discover about the weirdness in the world, the more you might discover about yourself. Weird characters might be mutants or born with strange qualities, but sometimes they started out \u201cnormal\u201d and adopted the weird by choice.",
+    "description": "You aren’t like anyone else, and that’s fine with you. People don’t seem to understand you—they even seem put off by you—but who cares? You understand the Ninth World better than they do because you’re weird, and so is the world you live in. The concept of “the weird” is well known to you. Strange devices, ancient locales, bizarre creatures, storms that can transform you, living energy fields, and things most people can’t even name populate the world, and you thrive on it. You have a special attachment to it all, and the more you discover about the weirdness in the world, the more you might discover about yourself. Weird characters might be mutants or born with strange qualities, but sometimes they started out “normal” and adopted the weird by choice.",
     "poolModifiers": {
       "intellect": 2
     },
@@ -1716,11 +1757,11 @@
     "specialAbilities": [
       {
         "name": "Distinctive Physical Quirk",
-        "description": "You have a unique physical aspect that is, well, bizarre. For example, perhaps instead of hair, you have metal spikes on your head. Perhaps your hands don\u2019t connect to your arms, although they move as if they do. Maybe a third eye stares out from the side of your head, superfluous tendrils grow from your back, or you have no nose. Whatever it is, your quirk might be a mutation, a biomechanical transformation, or a feature with no explanation."
+        "description": "You have a unique physical aspect that is, well, bizarre. For example, perhaps instead of hair, you have metal spikes on your head. Perhaps your hands don’t connect to your arms, although they move as if they do. Maybe a third eye stares out from the side of your head, superfluous tendrils grow from your back, or you have no nose. Whatever it is, your quirk might be a mutation, a biomechanical transformation, or a feature with no explanation."
       },
       {
         "name": "A Sense for the Weird",
-        "description": "Sometimes\u2014at the GM\u2019s discretion\u2014weird things relating to the numenera or its effects on the world seem to call out to you. You can sense them from afar, and if you get within long range of such a thing, you can sense whether it is overtly dangerous or not."
+        "description": "Sometimes—at the GM’s discretion—weird things relating to the numenera or its effects on the world seem to call out to you. You can sense them from afar, and if you get within long range of such a thing, you can sense whether it is overtly dangerous or not."
       }
     ],
     "additionalEquipment": [],
@@ -1728,7 +1769,7 @@
       "It seemed weird, so why not?",
       "Whether the other PCs realize it or not, their mission has to do with something weird that you know about, so you got involved.",
       "As an expert in the weird, you were specifically recruited by the other PCs.",
-      "You felt drawn to join the other PCs, but you don\u2019t know why."
+      "You felt drawn to join the other PCs, but you don’t know why."
     ]
   }
 ]

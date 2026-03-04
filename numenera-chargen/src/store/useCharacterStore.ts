@@ -18,6 +18,7 @@ interface CharacterStore {
   jackFlexEdge: 'might' | 'speed' | 'intellect' | null;
   chosenAbilityIds: string[];
   chosenSkills: string[];
+  chosenDescriptorSkills: string[];
   backgroundName: string;
   initialLink: string;
   connection: string;
@@ -37,6 +38,7 @@ interface CharacterStore {
   setJackFlexEdge: (stat: 'might' | 'speed' | 'intellect') => void;
   toggleAbility: (id: string) => void;
   setChosenSkills: (skills: string[]) => void;
+  setChosenDescriptorSkills: (skills: string[]) => void;
   setBackground: (name: string) => void;
   setInitialLink: (link: string) => void;
   setConnection: (connection: string) => void;
@@ -63,6 +65,7 @@ const initialState = {
   jackFlexEdge: null as 'might' | 'speed' | 'intellect' | null,
   chosenAbilityIds: [] as string[],
   chosenSkills: [] as string[],
+  chosenDescriptorSkills: [] as string[],
   backgroundName: '',
   initialLink: '',
   connection: '',
@@ -94,7 +97,7 @@ export const useCharacterStore = create<CharacterStore>()(
           selectedArmorCategory: null,
         }),
 
-      selectDescriptor: (id) => set({ descriptorId: id }),
+      selectDescriptor: (id) => set({ descriptorId: id, chosenDescriptorSkills: [] }),
 
       selectFocus: (id) => set({ focusId: id, connection: '' }),
 
@@ -112,6 +115,8 @@ export const useCharacterStore = create<CharacterStore>()(
         }),
 
       setChosenSkills: (skills) => set({ chosenSkills: skills }),
+
+      setChosenDescriptorSkills: (skills) => set({ chosenDescriptorSkills: skills }),
 
       setBackground: (name) => set({ backgroundName: name }),
 
@@ -154,6 +159,7 @@ export const useCharacterStore = create<CharacterStore>()(
           jackFlexEdge: state.jackFlexEdge,
           chosenAbilityIds: state.chosenAbilityIds,
           chosenSkills: state.chosenSkills,
+          chosenDescriptorSkills: state.chosenDescriptorSkills,
           characterName: state.characterName,
         });
 
@@ -167,6 +173,7 @@ export const useCharacterStore = create<CharacterStore>()(
           jackFlexEdge: state.jackFlexEdge,
           chosenAbilityIds: state.chosenAbilityIds,
           chosenSkills: state.chosenSkills,
+          chosenDescriptorSkills: state.chosenDescriptorSkills,
           backgroundName: state.backgroundName,
           initialLink: state.initialLink,
           connection: state.connection,
@@ -188,6 +195,7 @@ export const useCharacterStore = create<CharacterStore>()(
           jackFlexEdge: state.jackFlexEdge,
           chosenAbilityIds: state.chosenAbilityIds,
           chosenSkills: state.chosenSkills,
+          chosenDescriptorSkills: state.chosenDescriptorSkills,
           characterName: state.characterName,
         });
         return result.errors;
