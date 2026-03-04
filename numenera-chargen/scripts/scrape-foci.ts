@@ -72,7 +72,7 @@ function parseTierAbilities(text: string, tierNum: number, focusId: string): Abi
   // Match patterns like:
   // "Ability Name (X Pool points)." or "Ability Name (X+ Pool points)." followed by description
   // Also match abilities without cost like "Ability Name." followed by description
-  const abilityPattern = /([A-Z][A-Za-z\s''-]+?)\s*(?:\(([^)]+)\))?\s*\.\s*(.+?)(?=\n[A-Z][A-Za-z\s''-]+?\s*(?:\([^)]+\))?\s*\.|$)/gs;
+  const abilityPattern = /([A-Z][A-Za-z\s''\u2019-]+?)\s*(?:\(([^)]+)\))?\s*\.\s*(.+?)(?=\n[A-Z][A-Za-z\s''\u2019-]+?\s*(?:\([^)]+\))?\s*\.|$)/gs;
 
   for (const m of text.matchAll(abilityPattern)) {
     const name = m[1].trim();
@@ -186,10 +186,10 @@ async function scrapeFoci(): Promise<FocusRaw[]> {
 
       // Split on ability boundaries
       // First ability starts right after "Tier 1: "
-      const abilityChunks = t1Text.split(/(?=\n[A-Z][A-Za-z\s''-]+?\s*(?:\([^)]+\))?\s*\.)/);
+      const abilityChunks = t1Text.split(/(?=\n[A-Z][A-Za-z\s''\u2019-]+?\s*(?:\([^)]+\))?\s*\.)/);
 
       for (const chunk of abilityChunks) {
-        const am = chunk.match(/^([A-Z][A-Za-z\s''-]+?)\s*(?:\(([^)]+)\))?\.\s*(.+)/s);
+        const am = chunk.trim().match(/^([A-Z][A-Za-z\s''\u2019-]+?)\s*(?:\(([^)]+)\))?\.\s*(.+)/s);
         if (!am) continue;
         const aName = am[1].trim();
         const costStr = am[2] || '';
@@ -242,12 +242,10 @@ async function scrapeFoci(): Promise<FocusRaw[]> {
       const isChoice = /^Ability Choice/i.test(t);
 
       // Split abilities in this tier
-      const chunks = t.split(/(?=\n[A-Z][A-Za-z\s''-]+?\s*(?:\([^)]+\))?\s*\.)/);
-      // Also handle the first chunk which starts immediately
-      const allChunks = [t, ...chunks.slice(1)];
+      const chunks = t.split(/(?=\n[A-Z][A-Za-z\s''\u2019-]+?\s*(?:\([^)]+\))?\s*\.)/);
 
-      for (const chunk of allChunks) {
-        const am = chunk.match(/^(?:Ability Choice\.\s*Choose (?:either|one of) .+?\.\s*)?([A-Z][A-Za-z\s''-]+?)\s*(?:\(([^)]+)\))?\.\s*(.+)/s);
+      for (const chunk of chunks) {
+        const am = chunk.trim().match(/^(?:Ability Choice\.\s*Choose (?:either|one of) .+?\.\s*)?([A-Z][A-Za-z\s''\u2019-]+?)\s*(?:\(([^)]+)\))?\.\s*(.+)/s);
         if (!am) continue;
         const aName = am[1].trim();
         const costStr = am[2] || '';
@@ -257,7 +255,7 @@ async function scrapeFoci(): Promise<FocusRaw[]> {
         if (desc.length < 15) continue;
 
         // Clean up desc - remove trailing ability that leaked in
-        const nextAbilityIdx = desc.search(/\n[A-Z][A-Za-z\s''-]+?\s*(?:\([^)]+\))?\./);
+        const nextAbilityIdx = desc.search(/\n[A-Z][A-Za-z\s''\u2019-]+?\s*(?:\([^)]+\))?\./);
         if (nextAbilityIdx > 0) {
           desc = desc.substring(0, nextAbilityIdx).trim();
         }

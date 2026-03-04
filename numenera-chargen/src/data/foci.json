@@ -49,6 +49,14 @@
             "type": "action",
             "tier": 2,
             "source": "bears-a-halo-of-fire"
+          },
+          {
+            "id": "fiery-power",
+            "name": "Fiery Power",
+            "description": "When you use the Onslaught force blast esotery or the Flash esotery, increase the damage by 1 point. If you don’t have either of those abilities, this ability has no effect. Fiery Power does not affect damage from the Onslaught mindslice. Enabler.",
+            "type": "enabler",
+            "tier": 2,
+            "source": "bears-a-halo-of-fire"
           }
         ]
       },
@@ -61,6 +69,18 @@
             "description": "While your Shroud of Flame is active, you can reach into your halo and produce a hand made of animate flame that is twice the size of a human’s hand. The hand acts as you direct, floating in the air. Directing the hand is an action. Without a command, the hand does nothing. It can move a long distance in a round, but it never moves farther away from you than long range. The hand can grab, move, and carry things, but anything it touches takes 1 point of damage per round from the heat. The hand can also attack. It’s a level 3 creature and deals 1 extra point of damage from fire when it attacks. Once created, the hand lasts for ten minutes. Action to create; action to direct.",
             "cost": {
               "amount": 3,
+              "pool": "intellect"
+            },
+            "type": "action",
+            "tier": 3,
+            "source": "bears-a-halo-of-fire"
+          },
+          {
+            "id": "wings-of-fire",
+            "name": "Wings of Fire",
+            "description": "While your Shroud of Flame is active, you can spread wings of fire and can levitate, moving at a rate of up to 20 feet (6 m) per round in any direction for one minute. You can also take one other nonmovement action on your turn. Action.",
+            "cost": {
+              "amount": 4,
               "pool": "intellect"
             },
             "type": "action",
@@ -110,6 +130,18 @@
             "id": "fire-servant",
             "name": "Fire Servant",
             "description": "You reach into your halo and produce an automaton of fire that is your general shape and size. It acts as you direct each round. Directing the servant is an action, and you can command it only when you are within long range of it. Without a command, the servant continues to follow your previous command. You can also give it a simple programmed action, such as “Wait here, and attack anyone who comes within short range until they’re dead.” The servant lasts for ten minutes, is a level 5 creature, and deals 1 extra point of damage from fire when it attacks. Action to create; action to direct.",
+            "cost": {
+              "amount": 6,
+              "pool": "intellect"
+            },
+            "type": "action",
+            "tier": 6,
+            "source": "bears-a-halo-of-fire"
+          },
+          {
+            "id": "inferno-trail",
+            "name": "Inferno Trail",
+            "description": "For the next minute, you leave a trail of flame in your wake. The trail matches your path and lasts for up to a minute, creating a wall of flame about 6 feet (2 m) high that inflicts 5 points of damage to any creature that passes through it, potentially catching them on fire for an additional 1 point of damage each round (if they are flammable) until they spend a round putting out the fire. Action.",
             "cost": {
               "amount": 6,
               "pool": "intellect"
@@ -189,6 +221,18 @@
             "type": "action",
             "tier": 3,
             "source": "commands-mental-powers"
+          },
+          {
+            "id": "psychic-suggestion",
+            "name": "Psychic Suggestion",
+            "description": "You attempt to make the target take the action you indicate on its next turn. If the action you wish the target to take would cause direct harm to the target or its allies, your mental attack is hindered. Action.",
+            "cost": {
+              "amount": 4,
+              "pool": "intellect"
+            },
+            "type": "action",
+            "tier": 3,
+            "source": "commands-mental-powers"
           }
         ]
       },
@@ -240,6 +284,18 @@
             "type": "action",
             "tier": 6,
             "source": "commands-mental-powers"
+          },
+          {
+            "id": "telepathic-network",
+            "name": "Telepathic Network",
+            "description": "When you wish it, you can contact up to ten creatures known to you, no matter where they are. All targets must be willing and able to communicate. You automatically succeed at establishing a telepathic network; no roll is required. All creatures in the network are linked and can communicate telepathically with one another. They can also “overhear” anything said in the network, if they wish. Activating this ability doesn’t require an action and doesn’t cost Intellect points; to you, it’s as easy as speaking out loud. The network lasts until you choose to end it. If you spend 5 Intellect points, you can contact twenty creatures at once, and for every 1 Intellect point you spend above that, you can add ten more creatures to the network. These larger networks last for ten minutes. Creating a network of twenty or more creatures does require an action to establish contact. Enabler.",
+            "cost": {
+              "amount": 0,
+              "pool": "intellect"
+            },
+            "type": "enabler",
+            "tier": 6,
+            "source": "commands-mental-powers"
           }
         ]
       }
@@ -287,6 +343,18 @@
             "type": "action",
             "tier": 2,
             "source": "controls-beasts"
+          },
+          {
+            "id": "communication",
+            "name": "Communication",
+            "description": "You can convey a basic concept to a creature that normally can’t speak or understand speech. The creature can also give you a very basic answer to a simple question. Action.",
+            "cost": {
+              "amount": 2,
+              "pool": "intellect"
+            },
+            "type": "action",
+            "tier": 2,
+            "source": "controls-beasts"
           }
         ]
       },
@@ -297,6 +365,14 @@
             "id": "mount",
             "name": "Mount",
             "description": "A level 3 creature serves you as a mount and follows your instructions. While you’re mounted on it, the creature can move and you can attack on your turn, which provides an asset to your attack. You and the GM must work out the details of the creature, and you’ll probably make rolls for it when it takes noncombat actions. The mount acts on your turn. If your mount dies, you can hunt in the wild for 3d6 days to find a new one. Enabler.",
+            "type": "enabler",
+            "tier": 3,
+            "source": "controls-beasts"
+          },
+          {
+            "id": "stronger-together",
+            "name": "Stronger Together",
+            "description": "When you and your beast are within immediate distance of each other, you inflict 2 additional points of damage when you attack and both of you gain an asset to defense actions. Enabler.",
             "type": "enabler",
             "tier": 3,
             "source": "controls-beasts"
@@ -315,6 +391,14 @@
               "pool": "intellect"
             },
             "type": "action",
+            "tier": 4,
+            "source": "controls-beasts"
+          },
+          {
+            "id": "improved-companion",
+            "name": "Improved Companion",
+            "description": "Your beast companion increases to level 4. As a level 4 creature, it has a target number of 12 and 12 health, and it inflicts 4 points of damage (though in most cases, instead of attacking, it provides an asset to your attacks). Enabler.",
+            "type": "enabler",
             "tier": 4,
             "source": "controls-beasts"
           }
@@ -344,6 +428,26 @@
             "id": "as-if-one-creature",
             "name": "As If One Creature",
             "description": "When you and your beast are within immediate distance of each other, you can share damage inflicted on either of you. For instance, if one of you is struck by a weapon for 4 points of damage, divide the damage between the two of you as you see fit. Only the Armor and resistances of the target initially damaged come into play. So if you have 2 Armor and are struck by a force blast for 4 points of damage, your beast can take the 2 points of damage you would suffer, but their Armor does not come into play, nor does their immunity to force blasts, if any. Enabler.",
+            "type": "enabler",
+            "tier": 6,
+            "source": "controls-beasts"
+          },
+          {
+            "id": "control-the-savage",
+            "name": "Control the Savage",
+            "description": "You can control a calm nonhuman beast within 30 feet (9 m). You control it for as long as you focus all your attention on it, using your turn each round. The GM has final say over what counts as a nonhuman beast, but unless some kind of deception is at work, you should know whether you can affect a creature before you attempt to use this ability on it. Aliens, extradimensional entities, very intelligent creatures, and automatons never count. Action.",
+            "cost": {
+              "amount": 6,
+              "pool": "intellect"
+            },
+            "type": "action",
+            "tier": 6,
+            "source": "controls-beasts"
+          },
+          {
+            "id": "improved-companion",
+            "name": "Improved Companion",
+            "description": "Your beast companion increases to level 5. As a level 5 creature, it has a target number of 15 and 15 health, and it inflicts 5 points of damage. Enabler.",
             "type": "enabler",
             "tier": 6,
             "source": "controls-beasts"
@@ -384,6 +488,19 @@
     },
     "higherTiers": [
       {
+        "tier": 2,
+        "abilities": [
+          {
+            "id": "lessening-gravitys-pull",
+            "name": "Lessening Gravity’s Pull",
+            "description": "By manipulating gravity’s pull on yourself, you gain +1 to your Speed Edge. Enabler.",
+            "type": "enabler",
+            "tier": 2,
+            "source": "controls-gravity"
+          }
+        ]
+      },
+      {
         "tier": 3,
         "abilities": [
           {
@@ -392,6 +509,18 @@
             "description": "The natural gravity within an area a short distance across that you are within immediate range of changes directions so that it flows in the direction you determine (up, up and to the south, west, and so on) for a few seconds, then snaps back. Affected targets could be tossed up to 20 feet (6 m) and take a few points of damage. Action.",
             "cost": {
               "amount": 4,
+              "pool": "intellect"
+            },
+            "type": "action",
+            "tier": 3,
+            "source": "controls-gravity"
+          },
+          {
+            "id": "gravity-cleave",
+            "name": "Gravity Cleave",
+            "description": "You can harm a target within short range by rapidly increasing gravity’s pull on one portion of the target and decreasing it on another, inflicting 6 points of damage. Action.",
+            "cost": {
+              "amount": 3,
               "pool": "intellect"
             },
             "type": "action",
@@ -443,6 +572,18 @@
             "description": "You can harm a group of targets within long range by rapidly increasing gravity’s pull on one portion of each target and decreasing it on another, inflicting 6 points of damage. The targets must be within immediate range of each other. Action.",
             "cost": {
               "amount": 9,
+              "pool": "intellect"
+            },
+            "type": "action",
+            "tier": 6,
+            "source": "controls-gravity"
+          },
+          {
+            "id": "weight-of-the-world",
+            "name": "Weight of the World",
+            "description": "You can increase a target’s weight dramatically. The target is pulled to the ground and can’t move physically under its own power for one minute. The target must be within short range. For each level of Effort applied, you can affect one additional creature. Action.",
+            "cost": {
+              "amount": 6,
               "pool": "intellect"
             },
             "type": "action",
@@ -511,6 +652,18 @@
             "type": "enabler",
             "tier": 3,
             "source": "crafts-illusions"
+          },
+          {
+            "id": "major-illusion",
+            "name": "Major Illusion",
+            "description": "You create a complex scene of images within immediate range. The entire scene must fit within a 100-foot (30 m) cube. The images can move, but they can’t leave the area defined by the cube. The illusion includes sound and smell. It lasts for ten minutes and changes as you direct (no concentration is needed). If you move beyond immediate range of the cube, the illusion vanishes. Action to create.",
+            "cost": {
+              "amount": 3,
+              "pool": "intellect"
+            },
+            "type": "action",
+            "tier": 3,
+            "source": "crafts-illusions"
           }
         ]
       },
@@ -560,6 +713,18 @@
               "pool": "intellect"
             },
             "type": "action",
+            "tier": 6,
+            "source": "crafts-illusions"
+          },
+          {
+            "id": "permanent-illusion",
+            "name": "Permanent Illusion",
+            "description": "An illusion (or portion of an illusion) that you create that fits within a 10-foot (3 m) cube becomes permanent. You can permanently end the illusion as an action, but others must expend exceptional ingenuity to prevent the illusion from regenerating even if it has apparently been dispersed. Enabler.",
+            "cost": {
+              "amount": 9,
+              "pool": "intellect"
+            },
+            "type": "enabler",
             "tier": 6,
             "source": "crafts-illusions"
           }
@@ -622,6 +787,18 @@
             "type": "action",
             "tier": 3,
             "source": "employs-magnetism"
+          },
+          {
+            "id": "guide-bolt",
+            "name": "Guide Bolt",
+            "description": "When you make an attack with a metallic bolt or metaltipped arrow on a target within short range, you can improve the attack’s aim and velocity, which grants an asset to the attack and inflicts an additional 2 points of damage. If you apply a level of Effort, you grant the same benefits to a ranged attack made by an ally within immediate range. In any case, you can use this ability only once per round. Enabler.",
+            "cost": {
+              "amount": 4,
+              "pool": "intellect"
+            },
+            "type": "enabler",
+            "tier": 3,
+            "source": "employs-magnetism"
           }
         ]
       },
@@ -667,6 +844,18 @@
             "name": "Diamagnetism",
             "description": "You magnetize any nonmetallic object within short range so that it can be affected by your other powers. Thus, with Move Metal, you can move any object. With Repel Metal, you are trained in all Speed defense tasks, regardless of whether the incoming attack uses metal. And so on. Enabler.",
             "type": "enabler",
+            "tier": 6,
+            "source": "employs-magnetism"
+          },
+          {
+            "id": "iron-punch",
+            "name": "Iron Punch",
+            "description": "You pick up a heavy object within short range and hurl it at someone within short range, an Intellect action that deals 6 points of damage to the target and to the hurled object. For each additional level of Effort applied, you can pick up a slightly larger object, allowing you to affect one additional target within short range as long as it is next to the prior target. Action.",
+            "cost": {
+              "amount": 5,
+              "pool": "intellect"
+            },
+            "type": "action",
             "tier": 6,
             "source": "employs-magnetism"
           }
@@ -727,6 +916,14 @@
             "type": "enabler",
             "tier": 3,
             "source": "entertains"
+          },
+          {
+            "id": "multitalented",
+            "name": "Multitalented",
+            "description": "Being well versed in how to entertain others is reflected in your growing capabilities. You gain 6 new points to divide among your stat Pools however you wish. Enabler.",
+            "type": "enabler",
+            "tier": 3,
+            "source": "entertains"
           }
         ]
       },
@@ -768,6 +965,18 @@
             "name": "Master Entertainer",
             "description": "Your Inspiration ability works more effectively, easing your friends’ tasks by two steps rather than one step. Enabler.",
             "type": "enabler",
+            "tier": 6,
+            "source": "entertains"
+          },
+          {
+            "id": "vindictive-performance",
+            "name": "Vindictive Performance",
+            "description": "When you tell a joke, perform a song or poem, draw a picture, relate an anecdote, or otherwise provide entertainment, you can select one individual from the audience who is able to understand you. During your performance, you heap indirect but biting derision on this target. If you succeed, the target doesn’t realize that they’ve become the victim of your performance until you wrap up the entertainment at a moment you choose in a way that strikes home. The target suffers 6 points of Intellect damage (ignores Armor) and loses their next turn. One or more actions to initiate.",
+            "cost": {
+              "amount": 5,
+              "pool": "intellect"
+            },
+            "type": "action",
             "tier": 6,
             "source": "entertains"
           }
@@ -835,6 +1044,18 @@
             "type": "enabler",
             "tier": 3,
             "source": "exists-partially-out-of-phase"
+          },
+          {
+            "id": "phase-door",
+            "name": "Phase Door",
+            "description": "You can phase into a solid object’s surface and then phase out of any other solid object within long range of the first, even if the two objects are not connected. There must not be any intervening barriers between the two objects, and you must be aware of or able to see the destination object. Action.",
+            "cost": {
+              "amount": 4,
+              "pool": "intellect"
+            },
+            "type": "action",
+            "tier": 3,
+            "source": "exists-partially-out-of-phase"
           }
         ]
       },
@@ -886,6 +1107,18 @@
             "type": "enabler",
             "tier": 6,
             "source": "exists-partially-out-of-phase"
+          },
+          {
+            "id": "phase-foe",
+            "name": "Phase Foe",
+            "description": "You gather disrupting energy in your fingertip and touch a creature. If the target is an NPC or a creature of level 3 or lower, it becomes phased as if it had used your Ghost ability. However, unless it can figure out how to control its movement while being phased, which most creatures have no experience with, it begins to sink through solid matter. If it can’t control itself or end the effect, it might be gone for good because when it becomes solid again after ten minutes, it’s probably deep in the earth. For each additional level of Effort you apply, you can attempt to affect a target of one level higher. Action.",
+            "cost": {
+              "amount": 6,
+              "pool": "intellect"
+            },
+            "type": "action",
+            "tier": 6,
+            "source": "exists-partially-out-of-phase"
           }
         ]
       }
@@ -934,6 +1167,14 @@
             "type": "enabler",
             "tier": 2,
             "source": "explores-dark-places"
+          },
+          {
+            "id": "eyes-adjusted",
+            "name": "Eyes Adjusted",
+            "description": "You can see in extremely dim light as though it were bright light. You can see in total darkness as if it were extremely dim. Enabler.",
+            "type": "enabler",
+            "tier": 2,
+            "source": "explores-dark-places"
           }
         ]
       },
@@ -944,6 +1185,14 @@
             "id": "nightstrike",
             "name": "Nightstrike",
             "description": "When you attack a foe in dim light or darkness, you get a free level of Effort on the attack. Enabler.",
+            "type": "enabler",
+            "tier": 3,
+            "source": "explores-dark-places"
+          },
+          {
+            "id": "slippery-customer",
+            "name": "Slippery Customer",
+            "description": "When you apply Effort to tasks involving escaping from bonds, fitting in tight spaces, and other contortionist tasks, you get a free level of Effort on the task. Thanks to your experience, you are also trained in Speed defense tasks while wearing light armor or no armor. Enabler.",
             "type": "enabler",
             "tier": 3,
             "source": "explores-dark-places"
@@ -986,6 +1235,18 @@
             "cost": {
               "amount": 3,
               "pool": "speed"
+            },
+            "type": "action",
+            "tier": 6,
+            "source": "explores-dark-places"
+          },
+          {
+            "id": "embraced-by-darkness",
+            "name": "Embraced by Darkness",
+            "description": "For the next hour, you take on some characteristics of a shadow thanks to a fundamental adaptation of your flesh or a device you’ve kept secret. Your appearance is a dark silhouette. When you apply a level of Effort to sneaking tasks, you get a free level of Effort on the task. During this time, you can move through the air at a rate of a short distance per round, and you can move through solid barriers (even those that are sealed to prevent the passage of light or shadow), but not energy barriers, at a rate of 1 foot (30 cm) per round. You can perceive while passing through a barrier or object, which allows you to peek through walls. As a shadow, you can’t affect or be affected by normal matter. Likewise, you can’t attack, touch, or otherwise affect anything. However, attacks and effects that rely on light can affect you, and sudden bursts of light can potentially make you lose your next turn. Action to initiate.",
+            "cost": {
+              "amount": 6,
+              "pool": "intellect"
             },
             "type": "action",
             "tier": 6,
@@ -1050,6 +1311,18 @@
             "type": "enabler",
             "tier": 3,
             "source": "fights-with-panache"
+          },
+          {
+            "id": "flamboyant-boast",
+            "name": "Flamboyant Boast",
+            "description": "You boastfully describe an act that you will accomplish, and then as part of the same action, you attempt it. If an average person would find the action difficult (or impossible) and you succeed on it, creatures who witnessed it who are not your allies are potentially dazed on their next turn, and all tasks they attempt are hindered. The GM will help you determine whether your boast is something that would impress onlookers so significantly. If you attempt the task you boast about but fail to accomplish it, all your attempts to affect or attack onlookers who saw you are hindered for about ten minutes. Enabler.",
+            "cost": {
+              "amount": 1,
+              "pool": "intellect"
+            },
+            "type": "enabler",
+            "tier": 3,
+            "source": "fights-with-panache"
           }
         ]
       },
@@ -1090,6 +1363,18 @@
             "id": "agile-wit",
             "name": "Agile Wit",
             "description": "When attempting a Speed task, you instead can roll (and spend points) as if it were an Intellect action. If you apply Effort to this task, you can spend points from your Intellect Pool instead of your Speed Pool (in which case you also use your Intellect Edge instead of your Speed Edge). Enabler.",
+            "type": "enabler",
+            "tier": 6,
+            "source": "fights-with-panache"
+          },
+          {
+            "id": "return-to-sender",
+            "name": "Return to Sender",
+            "description": "If you succeed at a Speed defense task against a melee attack, you can make an immediate melee attack against your foe. You can use this ability only once per round. Enabler.",
+            "cost": {
+              "amount": 3,
+              "pool": "speed"
+            },
             "type": "enabler",
             "tier": 6,
             "source": "fights-with-panache"
@@ -1161,6 +1446,18 @@
             "type": "action",
             "tier": 3,
             "source": "focuses-mind-over-matter"
+          },
+          {
+            "id": "enhance-strength",
+            "name": "Enhance Strength",
+            "description": "For the next ten minutes, you gain an asset on tasks that depend on brute force, such as moving a heavy object, smashing down a door, or hitting someone with a melee weapon. Action to initiate.",
+            "cost": {
+              "amount": 3,
+              "pool": "intellect"
+            },
+            "type": "action",
+            "tier": 3,
+            "source": "focuses-mind-over-matter"
           }
         ]
       },
@@ -1212,6 +1509,18 @@
             "type": "action",
             "tier": 6,
             "source": "focuses-mind-over-matter"
+          },
+          {
+            "id": "reshape-matter",
+            "name": "Reshape Matter",
+            "description": "Your mastery of telekinesis is so great that you can reshape objects on a molecular level. You can affect a single object no larger than you, and the object must be visible and close enough for you to touch. You can use this ability to damage the object (as if using Psychokinetic Attack, except the task is eased by four steps instead of three), or you can attempt a crafting task to reshape the object into another form. Reshaping an object usually has a difficulty equal to 1 plus the level of the finished object.",
+            "cost": {
+              "amount": 6,
+              "pool": "intellect"
+            },
+            "type": "action",
+            "tier": 6,
+            "source": "focuses-mind-over-matter"
           }
         ]
       }
@@ -1234,6 +1543,14 @@
           "name": "Enhanced Body",
           "description": "You gain +1 to Armor, +3 to your Might Pool, and +3 to your Speed Pool. Enabler.",
           "type": "enabler",
+          "tier": 1,
+          "source": "fuses-flesh-and-steel"
+        },
+        {
+          "id": "special-healing",
+          "name": "Special Healing",
+          "description": "Traditional healing skills, medicines, and techniques work only half as well for you. Each time you start at full health, the first 5 points of damage you take can never be healed in these ways or recovered normally. Instead, you must use repairing skills and abilities to restore those points. For example, if you start with a full Might Pool of 10 and take 8 points of damage, you can use recovery rolls to restore 3 points, but the remaining 5 points must be restored with repair tasks.",
+          "type": "action",
           "tier": 1,
           "source": "fuses-flesh-and-steel"
         }
@@ -1264,6 +1581,14 @@
             "id": "sensing-package",
             "name": "Sensing Package",
             "description": "You can see in dim light and darkness as if it were bright light, and you can see up to a short distance through fog, smoke, and other obscuring phenomena. In addition, if you apply a level of Effort to perception or searching tasks, you get a free level of Effort on that task. Enabler.",
+            "type": "enabler",
+            "tier": 3,
+            "source": "fuses-flesh-and-steel"
+          },
+          {
+            "id": "weaponization",
+            "name": "Weaponization",
+            "description": "One light or medium melee weapon of your choice is built into your body, and you are trained in using it. The weapon is concealed until you wish to use it. Enabler.",
             "type": "enabler",
             "tier": 3,
             "source": "fuses-flesh-and-steel"
@@ -1304,6 +1629,14 @@
             "name": "Power Surge",
             "description": "In addition to your normal recovery rolls each day, you can—at any time between ten-hour rests—recover 1d6 + 6 points to your Intellect Pool. Action.",
             "type": "action",
+            "tier": 6,
+            "source": "fuses-flesh-and-steel"
+          },
+          {
+            "id": "ultra-enhancement",
+            "name": "Ultra Enhancement",
+            "description": "You gain +1 to Armor and +5 to each of your three stat Pools. Enabler.",
+            "type": "enabler",
             "tier": 6,
             "source": "fuses-flesh-and-steel"
           }
@@ -1361,6 +1694,14 @@
             "type": "enabler",
             "tier": 3,
             "source": "howls-at-the-moon"
+          },
+          {
+            "id": "greater-beast-form",
+            "name": "Greater Beast Form",
+            "description": "Your beast form gains the following additional bonuses: +1 to your Might Edge, +2 to your Speed Pool, and +1 to your Speed Edge. Enabler.",
+            "type": "enabler",
+            "tier": 3,
+            "source": "howls-at-the-moon"
           }
         ]
       },
@@ -1400,6 +1741,14 @@
             "type": "enabler",
             "tier": 6,
             "source": "howls-at-the-moon"
+          },
+          {
+            "id": "perfect-control",
+            "name": "Perfect Control",
+            "description": "You no longer need to make a roll to change into your beast form or your normal form. You can change back and forth as your action. When you return to your normal form, you no longer take a penalty to your rolls. Enabler.",
+            "type": "enabler",
+            "tier": 6,
+            "source": "howls-at-the-moon"
           }
         ]
       }
@@ -1425,6 +1774,14 @@
           "type": "enabler",
           "tier": 1,
           "source": "hunts"
+        },
+        {
+          "id": "stalker",
+          "name": "Stalker",
+          "description": "You gain an asset to all types of movement tasks (including climbing, swimming, jumping, and balancing). Enabler.",
+          "type": "enabler",
+          "tier": 1,
+          "source": "hunts"
         }
       ],
       "trainedSkills": [
@@ -1446,6 +1803,18 @@
             "type": "enabler",
             "tier": 2,
             "source": "hunts"
+          },
+          {
+            "id": "quarry",
+            "name": "Quarry",
+            "description": "Choose a quarry (a single individual creature that you can see). You are trained in all tasks involving following, understanding, interacting with, or fighting that creature. You can have only one quarry at a time. Action to initiate.",
+            "cost": {
+              "amount": 2,
+              "pool": "intellect"
+            },
+            "type": "action",
+            "tier": 2,
+            "source": "hunts"
           }
         ]
       },
@@ -1457,6 +1826,18 @@
             "name": "Horde Fighting",
             "description": "When two or more foes attack you at once in melee, you can use them against each other. You are trained in either Speed defense rolls or attack rolls (your choice) against them. Enabler.",
             "type": "enabler",
+            "tier": 3,
+            "source": "hunts"
+          },
+          {
+            "id": "sprint-and-grab",
+            "name": "Sprint and Grab",
+            "description": "You can run a short distance and make a melee attack to grab a foe of your size or smaller. A successful attack means you grab the foe and bring it to a halt if it was moving (this can be treated as a tackle, if appropriate). Action.",
+            "cost": {
+              "amount": 2,
+              "pool": "speed"
+            },
+            "type": "action",
             "tier": 3,
             "source": "hunts"
           }
@@ -1476,6 +1857,23 @@
         ]
       },
       {
+        "tier": 5,
+        "abilities": [
+          {
+            "id": "hunters-drive",
+            "name": "Hunter’s Drive",
+            "description": "Through force of will, when you wish it, you grant yourself greater prowess in the hunt for ten minutes. During this time, you gain an asset to all tasks involving your quarry, including attacks. Your quarry is the creature you selected with your second-tier ability. Enabler.",
+            "cost": {
+              "amount": 5,
+              "pool": "intellect"
+            },
+            "type": "enabler",
+            "tier": 5,
+            "source": "hunts"
+          }
+        ]
+      },
+      {
         "tier": 6,
         "abilities": [
           {
@@ -1483,6 +1881,18 @@
             "name": "Master Combatant",
             "description": "Choose one type of attack in which you are already trained: light bashing, light bladed, light ranged, medium bashing, medium bladed, medium ranged, heavy bashing, heavy bladed, or heavy ranged. You are specialized in attacks using that type of weapon. Enabler.",
             "type": "enabler",
+            "tier": 6,
+            "source": "hunts"
+          },
+          {
+            "id": "multiple-quarry",
+            "name": "Multiple Quarry",
+            "description": "This ability functions like the second-tier Quarry ability except that you can select up to three creatures as quarry. You must be able to see all three creatures when you initiate this ability. Your Hunter’s Drive ability applies to all three creatures. Action to initiate.",
+            "cost": {
+              "amount": 6,
+              "pool": "intellect"
+            },
+            "type": "action",
             "tier": 6,
             "source": "hunts"
           }
@@ -1506,6 +1916,14 @@
           "id": "wilderness-life",
           "name": "Wilderness Life",
           "description": "You are trained in two of the following: climbing, swimming, navigation, or identifying plants and creatures. Enabler.",
+          "type": "enabler",
+          "tier": 1,
+          "source": "lives-in-the-wilderness"
+        },
+        {
+          "id": "wild-hardiness",
+          "name": "Wild Hardiness",
+          "description": "You gain 3 points to your Might Pool. Enabler.",
           "type": "enabler",
           "tier": 1,
           "source": "lives-in-the-wilderness"
@@ -1533,6 +1951,14 @@
             "type": "enabler",
             "tier": 2,
             "source": "lives-in-the-wilderness"
+          },
+          {
+            "id": "wilderness-explorer",
+            "name": "Wilderness Explorer",
+            "description": "While taking any action (including fighting) in the wild, you ignore any penalties due to natural causes such as tall grass, thick brush, rugged terrain, weather, and so on. Enabler.",
+            "type": "enabler",
+            "tier": 2,
+            "source": "lives-in-the-wilderness"
           }
         ]
       },
@@ -1544,6 +1970,18 @@
             "name": "Animal Senses and Sensibilities",
             "description": "You are trained in listening and spotting things. In addition, most of the time, the GM should alert you if you’re about to walk into an ambush or a trap that is lower than level 5. Enabler.",
             "type": "enabler",
+            "tier": 3,
+            "source": "lives-in-the-wilderness"
+          },
+          {
+            "id": "wilderness-encouragement",
+            "name": "Wilderness Encouragement",
+            "description": "While in the wilderness, or when talking about your time in the wilderness, your stirring words of encouragement grant a target within short range that can understand you 1d6 points to one Pool. You can’t use this ability on the same creature again until they’ve made a recovery roll. Action.",
+            "cost": {
+              "amount": 3,
+              "pool": "intellect"
+            },
+            "type": "action",
             "tier": 3,
             "source": "lives-in-the-wilderness"
           }
@@ -1597,6 +2035,18 @@
             "type": "action",
             "tier": 6,
             "source": "lives-in-the-wilderness"
+          },
+          {
+            "id": "wild-camouflage",
+            "name": "Wild Camouflage",
+            "description": "By drawing your clothing about you just so and using various tricks and your deep knowledge of your surroundings, you become invisible in the wilderness for ten minutes. While you are invisible, this asset eases your stealth and Speed defense tasks by two steps. This effect ends if you do something to reveal your presence or position—attacking, using an ability, moving a large object, and so on. If this occurs, you can regain the remaining invisibility effect by taking an action to focus on hiding your position. Action to initiate or reinitiate.",
+            "cost": {
+              "amount": 4,
+              "pool": "intellect"
+            },
+            "type": "action",
+            "tier": 6,
+            "source": "lives-in-the-wilderness"
           }
         ]
       }
@@ -1642,6 +2092,14 @@
             "type": "enabler",
             "tier": 2,
             "source": "masters-defense"
+          },
+          {
+            "id": "armor-expert",
+            "name": "Armor Expert",
+            "description": "When you wear any armor, the Speed cost for wearing it is reduced by 1. Enabler.",
+            "type": "enabler",
+            "tier": 2,
+            "source": "masters-defense"
           }
         ]
       },
@@ -1659,6 +2117,18 @@
             "type": "enabler",
             "tier": 3,
             "source": "masters-defense"
+          },
+          {
+            "id": "dodge-and-respond",
+            "name": "Dodge and Respond",
+            "description": "If a melee attack misses you, you can immediately make a melee attack in return, but no more than once per turn. Enabler.",
+            "cost": {
+              "amount": 3,
+              "pool": "might"
+            },
+            "type": "enabler",
+            "tier": 3,
+            "source": "masters-defense"
           }
         ]
       },
@@ -1669,6 +2139,14 @@
             "id": "tower-of-will",
             "name": "Tower of Will",
             "description": "You are trained in Intellect defense tasks and gain +3 points to your Intellect Pool. Enabler.",
+            "type": "enabler",
+            "tier": 4,
+            "source": "masters-defense"
+          },
+          {
+            "id": "armor-master",
+            "name": "Armor Master",
+            "description": "You reduce the Speed cost of any armor you wear to 0 (if it isn’t already 0). Enabler.",
             "type": "enabler",
             "tier": 4,
             "source": "masters-defense"
@@ -1698,6 +2176,14 @@
             "type": "enabler",
             "tier": 6,
             "source": "masters-defense"
+          },
+          {
+            "id": "wear-it-well",
+            "name": "Wear It Well",
+            "description": "When you wear armor of any kind, you gain an additional +1 to Armor. Enabler.",
+            "type": "enabler",
+            "tier": 6,
+            "source": "masters-defense"
           }
         ]
       }
@@ -1724,6 +2210,14 @@
           "id": "weapon-master",
           "name": "Weapon Master",
           "description": "You gain a +1 bonus to damage with your chosen weapon. Enabler.",
+          "type": "enabler",
+          "tier": 1,
+          "source": "masters-weaponry"
+        },
+        {
+          "id": "weapon-crafter",
+          "name": "Weapon Crafter",
+          "description": "You are trained in crafting tasks associated with your chosen weapon. For instance, if your weapon is a bow, you are trained in tasks related to crafting bows and fletching arrows; if your weapon is a sword, you are trained in tasks for forging swords and sharpening blades; and so on. Enabler.",
           "type": "enabler",
           "tier": 1,
           "source": "masters-weaponry"
@@ -1769,6 +2263,18 @@
             "type": "action",
             "tier": 3,
             "source": "masters-weaponry"
+          },
+          {
+            "id": "rapid-attack",
+            "name": "Rapid Attack",
+            "description": "Once per round, you can make an additional attack with your chosen weapon. Enabler.",
+            "cost": {
+              "amount": 3,
+              "pool": "speed"
+            },
+            "type": "enabler",
+            "tier": 3,
+            "source": "masters-weaponry"
           }
         ]
       },
@@ -1801,6 +2307,39 @@
             "source": "masters-weaponry"
           }
         ]
+      },
+      {
+        "tier": 6,
+        "abilities": [
+          {
+            "id": "damage-dealer",
+            "name": "Damage Dealer",
+            "description": "You gain a +3 bonus to damage with your chosen weapon. This bonus adds to the one from the Weapon Master ability, giving you a total bonus of +4. Enabler.",
+            "type": "enabler",
+            "tier": 6,
+            "source": "masters-weaponry"
+          },
+          {
+            "id": "death-dealer",
+            "name": "Death Dealer",
+            "description": "If you strike a foe of level 3 or less with your chosen weapon, you kill the target instantly. Action.",
+            "cost": {
+              "amount": 5,
+              "pool": "might"
+            },
+            "type": "action",
+            "tier": 6,
+            "source": "masters-weaponry"
+          },
+          {
+            "id": "master-combatant",
+            "name": "Master Combatant",
+            "description": "Choose one type of attack in which you are already trained: light bashing, light bladed, light ranged, medium bashing, medium bladed, medium ranged, heavy bashing, heavy bladed, or heavy ranged. You are specialized in attacks using that type of weapon. Enabler.",
+            "type": "enabler",
+            "tier": 6,
+            "source": "masters-weaponry"
+          }
+        ]
       }
     ]
   },
@@ -1820,6 +2359,14 @@
           "id": "surprise-attack",
           "name": "Surprise Attack",
           "description": "If attacking from a hidden vantage, with surprise, or before an opponent has acted, you gain an asset to your attack. On a successful hit with this surprise attack, you inflict 2 additional points of damage. Enabler.",
+          "type": "enabler",
+          "tier": 1,
+          "source": "murders"
+        },
+        {
+          "id": "natural-assassin",
+          "name": "Natural Assassin",
+          "description": "You are trained in stealth and disguise tasks. Enabler.",
           "type": "enabler",
           "tier": 1,
           "source": "murders"
@@ -1848,6 +2395,14 @@
             "type": "action",
             "tier": 2,
             "source": "murders"
+          },
+          {
+            "id": "infiltrator",
+            "name": "Infiltrator",
+            "description": "You are trained in interactions involving lies or trickery. Enabler.",
+            "type": "enabler",
+            "tier": 2,
+            "source": "murders"
           }
         ]
       },
@@ -1863,6 +2418,14 @@
               "pool": "intellect"
             },
             "type": "action",
+            "tier": 3,
+            "source": "murders"
+          },
+          {
+            "id": "poison-crafter",
+            "name": "Poison Crafter",
+            "description": "You are trained in crafting, sensing, identifying, and resisting poisons. Your poison crafting has given you some immunity to poisons; you have +5 Armor that applies specifically to poison damage. Enabler.",
+            "type": "enabler",
             "tier": 3,
             "source": "murders"
           }
@@ -1908,6 +2471,18 @@
             "type": "enabler",
             "tier": 6,
             "source": "murders"
+          },
+          {
+            "id": "murderer",
+            "name": "Murderer",
+            "description": "With a swift and sudden attack, you strike a foe in a vital spot. If the target is level 4 or lower, it is killed outright. For each additional level of Effort you apply, you can increase the level of the target by 1. Action.",
+            "cost": {
+              "amount": 8,
+              "pool": "speed"
+            },
+            "type": "action",
+            "tier": 6,
+            "source": "murders"
           }
         ]
       }
@@ -1951,6 +2526,14 @@
             "type": "enabler",
             "tier": 2,
             "source": "rages"
+          },
+          {
+            "id": "mobile-fighter",
+            "name": "Mobile Fighter",
+            "description": "You are trained in climbing and jumping tasks. Enabler.",
+            "type": "enabler",
+            "tier": 2,
+            "source": "rages"
           }
         ]
       },
@@ -1961,6 +2544,26 @@
             "id": "ignore-the-pain",
             "name": "Ignore the Pain",
             "description": "Your rage makes minor wounds seem insignificant. While you are in a state of frenzy, gain +1 to your Armor. Enabler.",
+            "type": "enabler",
+            "tier": 3,
+            "source": "rages"
+          },
+          {
+            "id": "power-strike",
+            "name": "Power Strike",
+            "description": "If you successfully attack a target, you knock it prone in addition to inflicting damage. The target must be your size or smaller. You can knock down a target larger than you if you apply a level of Effort to do so (rather than to ease the attack). Enabler.",
+            "cost": {
+              "amount": 3,
+              "pool": "might"
+            },
+            "type": "enabler",
+            "tier": 3,
+            "source": "rages"
+          },
+          {
+            "id": "unarmored-fighter",
+            "name": "Unarmored Fighter",
+            "description": "While unarmored, you are trained in Speed defense tasks. Enabler.",
             "type": "enabler",
             "tier": 3,
             "source": "rages"
@@ -2007,6 +2610,14 @@
             "type": "enabler",
             "tier": 6,
             "source": "rages"
+          },
+          {
+            "id": "tough-and-fast",
+            "name": "Tough and Fast",
+            "description": "You gain +6 to your Might Pool and your Speed Pool. Enabler.",
+            "type": "enabler",
+            "tier": 6,
+            "source": "rages"
           }
         ]
       }
@@ -2033,6 +2644,18 @@
             "pool": "intellect"
           },
           "type": "enabler",
+          "tier": 1,
+          "source": "rides-the-lightning"
+        },
+        {
+          "id": "charge",
+          "name": "Charge",
+          "description": "You can charge an artifact or other device (except a cypher) so that it can be used once. The cost is 1 Intellect point plus 1 point per level of the device. Action.",
+          "cost": {
+            "amount": 1,
+            "pool": "intellect"
+          },
+          "type": "action",
           "tier": 1,
           "source": "rides-the-lightning"
         }
@@ -2068,6 +2691,26 @@
             "name": "Drain Charge",
             "description": "You can drain the power from an artifact or device, allowing you to regain 1 Intellect point per level drained. You regain points at the rate of 1 point per round and must give your full concentration to the process each round. The GM determines whether the device is fully drained (likely true of most handheld or smaller devices) or retains some power (likely true of large machines). Action to initiate; action each round to drain.",
             "type": "action",
+            "tier": 3,
+            "source": "rides-the-lightning"
+          },
+          {
+            "id": "electric-armor",
+            "name": "Electric Armor",
+            "description": "When you wish it, electricity crackles across your body for ten minutes, granting you +1 to Armor. While electrified, you have an additional +2 to Armor versus electrical damage specifically, and you inflict 2 points of damage on any creature that touches you or attacks you with a melee weapon that conducts electricity. Enabler.",
+            "cost": {
+              "amount": 4,
+              "pool": "intellect"
+            },
+            "type": "enabler",
+            "tier": 3,
+            "source": "rides-the-lightning"
+          },
+          {
+            "id": "lightning-swift",
+            "name": "Lightning Swift",
+            "description": "You gain +1 to your Speed Edge. Enabler.",
+            "type": "enabler",
             "tier": 3,
             "source": "rides-the-lightning"
           }
@@ -2114,6 +2757,18 @@
             "id": "flash-across-the-miles",
             "name": "Flash Across the Miles",
             "description": "You can move to an open location on the earth that you’re familiar with almost instantaneously, transformed into a bolt of lightning. If you apply a level of Effort, you can attempt to penetrate covered locations that you’re aware of as long as a route exists from the open air to the area you want to reach that electricity can easily follow. Action.",
+            "cost": {
+              "amount": 6,
+              "pool": "intellect"
+            },
+            "type": "action",
+            "tier": 6,
+            "source": "rides-the-lightning"
+          },
+          {
+            "id": "wall-of-lightning",
+            "name": "Wall of Lightning",
+            "description": "You create a barrier of crackling electricity up to 2,500 square feet (230 sq. m) in size, shaped as you wish. The wall is a level 7 barrier. Anyone within immediate distance of the wall automatically takes 10 points of damage. The wall lasts for one hour. Action to create.",
             "cost": {
               "amount": 6,
               "pool": "intellect"
@@ -2186,6 +2841,18 @@
             "type": "enabler",
             "tier": 3,
             "source": "speaks-with-a-silver-tongue"
+          },
+          {
+            "id": "play-to-the-crowd",
+            "name": "Play to the Crowd",
+            "description": "You give a speech that is both rousing and terrifying. Those within short range who can hear and understand you have their next action either eased (an asset) or hindered—you choose, and it can be different for each individual.",
+            "cost": {
+              "amount": 3,
+              "pool": "intellect"
+            },
+            "type": "action",
+            "tier": 3,
+            "source": "speaks-with-a-silver-tongue"
           }
         ]
       },
@@ -2237,6 +2904,18 @@
             "type": "action",
             "tier": 6,
             "source": "speaks-with-a-silver-tongue"
+          },
+          {
+            "id": "command",
+            "name": "Command",
+            "description": "A target within short range obeys any command you give as long as they can hear and understand you. Further, as long as you continue to do nothing but issue commands (taking no other action), you can give that same target a new command. This effect ends when you stop issuing commands or they are out of short range. Action to initiate.",
+            "cost": {
+              "amount": 7,
+              "pool": "intellect"
+            },
+            "type": "action",
+            "tier": 6,
+            "source": "speaks-with-a-silver-tongue"
           }
         ]
       }
@@ -2260,6 +2939,18 @@
           "name": "Machine Affinity",
           "description": "You are trained in tasks involving electrical machines. Enabler.",
           "type": "enabler",
+          "tier": 1,
+          "source": "talks-to-machines"
+        },
+        {
+          "id": "distant-activation",
+          "name": "Distant Activation",
+          "description": "You can activate or deactivate any machine you can see within short range, even if normally you would have to touch or manually operate the device. To use this ability, you must understand the function of the machine, it must be your size or smaller, and it can’t be connected to another intelligence (or be intelligent itself). Action.",
+          "cost": {
+            "amount": 1,
+            "pool": "intellect"
+          },
+          "type": "action",
           "tier": 1,
           "source": "talks-to-machines"
         }
@@ -2286,6 +2977,18 @@
             "type": "action",
             "tier": 2,
             "source": "talks-to-machines"
+          },
+          {
+            "id": "charm-machine",
+            "name": "Charm Machine",
+            "description": "You convince an unintelligent machine to “like” you. A machine that likes you is 50 percent less likely to function if said function would cause you harm. Thus, if a foe attempts to detonate a bomb near you controlled by a detonator that likes you, there is a 50 percent chance that it won’t explode. Action to initiate.",
+            "cost": {
+              "amount": 2,
+              "pool": "intellect"
+            },
+            "type": "action",
+            "tier": 2,
+            "source": "talks-to-machines"
           }
         ]
       },
@@ -2303,6 +3006,18 @@
             "type": "action",
             "tier": 3,
             "source": "talks-to-machines"
+          },
+          {
+            "id": "intelligent-interface",
+            "name": "Intelligent Interface",
+            "description": "You can speak telepathically with any intelligent machine within long range. Further, you are trained in all interactions with intelligent machines. Such machines and automatons that normally would never communicate with a human might talk to you. Enabler.",
+            "cost": {
+              "amount": 3,
+              "pool": "intellect"
+            },
+            "type": "enabler",
+            "tier": 3,
+            "source": "talks-to-machines"
           }
         ]
       },
@@ -2313,6 +3028,14 @@
             "id": "machine-companion",
             "name": "Machine Companion",
             "description": "You create a level 3 animate, intelligent machine that accompanies you and acts as you direct. As a level 3 machine companion, it has a target number of 9 and 9 health, and it inflicts 3 points of damage. If it’s destroyed, it takes you one month to create a new one. Enabler.",
+            "type": "enabler",
+            "tier": 4,
+            "source": "talks-to-machines"
+          },
+          {
+            "id": "automaton-fighter",
+            "name": "Automaton Fighter",
+            "description": "When fighting an automaton or intelligent machine, you are trained in attacks and defense. Enabler.",
             "type": "enabler",
             "tier": 4,
             "source": "talks-to-machines"
@@ -2344,6 +3067,18 @@
             "name": "Improved Machine Companion",
             "description": "Your machine companion improves, becoming a level 5 creature with the ability either to fly a long distance each round (and carry you) for up to ten minutes at a time, or to carry an extra cypher for you that doesn’t count against your cypher limit. Enabler.",
             "type": "enabler",
+            "tier": 6,
+            "source": "talks-to-machines"
+          },
+          {
+            "id": "control-machine",
+            "name": "Control Machine",
+            "description": "You can attempt to control the functions of any machine, intelligent or otherwise, within short range for ten minutes. Action.",
+            "cost": {
+              "amount": 6,
+              "pool": "intellect"
+            },
+            "type": "action",
             "tier": 6,
             "source": "talks-to-machines"
           }
@@ -2414,6 +3149,18 @@
             "type": "action",
             "tier": 3,
             "source": "wears-a-sheen-of-ice"
+          },
+          {
+            "id": "ice-creation",
+            "name": "Ice Creation",
+            "description": "You create a solid object of ice that is your size or smaller. The object is crude and can have no moving parts, so you can make a sword, a shield, a short ladder, and so on. Your ice objects are as strong as iron, but if you’re not in constant contact with them, they function for only 1d6 + 6 rounds before breaking or melting. For example, you can make and wield an ice sword, but if you give it to another PC, the sword won’t last as long for that character. In addition to the normal options for using Effort, you can choose to use Effort to create objects larger than you. For each level of Effort used in this way, you can create an object up to twice again as large as you. Action.",
+            "cost": {
+              "amount": 4,
+              "pool": "intellect"
+            },
+            "type": "action",
+            "tier": 3,
+            "source": "wears-a-sheen-of-ice"
           }
         ]
       },
@@ -2454,6 +3201,14 @@
             "id": "ice-storm",
             "name": "Ice Storm",
             "description": "You attempt an additional Intellect task as part of your Cold Burst attack, and if successful, you blind foes for up to one minute with a layer of freezing ice. All tasks of blinded creatures are hindered by two steps. Enabler.",
+            "type": "enabler",
+            "tier": 6,
+            "source": "wears-a-sheen-of-ice"
+          },
+          {
+            "id": "winter-gauntlets",
+            "name": "Winter Gauntlets",
+            "description": "When you use Frost Touch, you inflict a total of 5 points of damage if you touch a creature, or +2 points of damage if you infuse a weapon. In addition, damaged targets are frozen in place (if standing on a solid surface) and can’t move from their location until they use an action to break free. The target can still attack and defend. Action for touch; enabler for weapon.",
             "type": "enabler",
             "tier": 6,
             "source": "wears-a-sheen-of-ice"
@@ -2513,6 +3268,14 @@
             "type": "enabler",
             "tier": 3,
             "source": "wields-power-with-precision"
+          },
+          {
+            "id": "versatile-mind",
+            "name": "Versatile Mind",
+            "description": "When you make a Speed defense roll, you can use your Intellect in place of your Speed. Enabler.",
+            "type": "enabler",
+            "tier": 3,
+            "source": "wields-power-with-precision"
           }
         ]
       },
@@ -2549,6 +3312,14 @@
             "id": "enhanced-esoteries",
             "name": "Enhanced Esoteries",
             "description": "If you chose Enhanced Esoteries as your tier 3 option, your esoteries that have durations last three times as long. Your esoteries that have short ranges reach to very long range instead. Your esoteries that inflict damage deal 2 additional points of damage. If you didn’t take Enhanced Esoteries at tier 3, you gain the advantages noted there now. Enabler.",
+            "type": "enabler",
+            "tier": 6,
+            "source": "wields-power-with-precision"
+          },
+          {
+            "id": "supra-genius",
+            "name": "Supra-Genius",
+            "description": "Your Intellect Pool increases by 5, and your Intellect Edge increases by 1. Enabler.",
             "type": "enabler",
             "tier": 6,
             "source": "wields-power-with-precision"
@@ -2612,6 +3383,14 @@
             "type": "enabler",
             "tier": 3,
             "source": "wields-two-weapons-at-once"
+          },
+          {
+            "id": "precise-cut",
+            "name": "Precise Cut",
+            "description": "You inflict +1 damage with light weapons. Enabler.",
+            "type": "enabler",
+            "tier": 3,
+            "source": "wields-two-weapons-at-once"
           }
         ]
       },
@@ -2657,6 +3436,14 @@
               "pool": "speed"
             },
             "type": "action",
+            "tier": 6,
+            "source": "wields-two-weapons-at-once"
+          },
+          {
+            "id": "whirling-dervish",
+            "name": "Whirling Dervish",
+            "description": "When you wield two weapons, you can attack up to six times in one round as a single action, but you must make each attack against a different foe. Make a separate attack roll for each attack. You remain limited by the amount of Effort you can apply on one action, but because you make separate attacks, Armor applies to each of them. Anything that modifies your attack or damage applies to all attacks (positively or negatively), unless it’s specifically tied to one of the weapons, in which case it applies to only half of the attacks. Enabler.",
+            "type": "enabler",
             "tier": 6,
             "source": "wields-two-weapons-at-once"
           }
@@ -2723,6 +3510,14 @@
             "type": "enabler",
             "tier": 3,
             "source": "works-the-back-alleys"
+          },
+          {
+            "id": "guild-training",
+            "name": "Guild Training",
+            "description": "Your type abilities that have durations last twice as long. Your type abilities that have short ranges reach to long range instead. Your type abilities that inflict damage deal 1 additional point of damage. Enabler.",
+            "type": "enabler",
+            "tier": 3,
+            "source": "works-the-back-alleys"
           }
         ]
       },
@@ -2765,6 +3560,18 @@
             "description": "While in a city, you find or create a significant shortcut, secret entrance, or emergency escape route where it looked like none existed. Doing so requires that you succeed on an Intellect action whose difficulty is set by the GM based on the situation. You and the GM should work out the details. Action.",
             "cost": {
               "amount": 6,
+              "pool": "intellect"
+            },
+            "type": "action",
+            "tier": 6,
+            "source": "works-the-back-alleys"
+          },
+          {
+            "id": "all-out-con",
+            "name": "All-Out Con",
+            "description": "You put everything into it. You add three free levels of Effort to the next task you attempt. You can’t use this ability again until after you’ve taken a ten-hour recovery action. Action.",
+            "cost": {
+              "amount": 7,
               "pool": "intellect"
             },
             "type": "action",
@@ -2832,6 +3639,14 @@
             "type": "enabler",
             "tier": 3,
             "source": "works-miracles"
+          },
+          {
+            "id": "miraculous-health",
+            "name": "Miraculous Health",
+            "description": "When you would descend a step on the damage track, you can attempt a Might task to resist, with a difficulty equal to the level of the foe or effect that harmed you. If successful, you don’t descend the step and you regain 1 point in any Pool that is bereft of points. You can’t use this ability again until after your next ten-hour rest. Enabler.",
+            "type": "enabler",
+            "tier": 3,
+            "source": "works-miracles"
           }
         ]
       },
@@ -2878,6 +3693,18 @@
             "description": "You touch a creature and restore its Might Pool, Speed Pool, and Intellect Pool to their maximum values, as if it were fully rested. A single creature can benefit from this ability only once each day. Action.",
             "cost": {
               "amount": 4,
+              "pool": "intellect"
+            },
+            "type": "action",
+            "tier": 6,
+            "source": "works-miracles"
+          },
+          {
+            "id": "restore-life",
+            "name": "Restore Life",
+            "description": "You can attempt to restore life to a dead creature of up to level 3, as long as the corpse is no more than a day old and is mostly intact. You can also attempt to restore life to a corpse that is much older but is especially well preserved. The difficulty of the Intellect task is equal to the level of the creature you’re attempting to restore to life. For each additional level of Effort applied, you can attempt to restore the life of a creature whose level is 1 higher. When first restored to life, a creature is dazed for at least a day, and all tasks they attempt are hindered. Action; one minute to initiate.",
+            "cost": {
+              "amount": 9,
               "pool": "intellect"
             },
             "type": "action",
