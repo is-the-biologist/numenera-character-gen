@@ -154,7 +154,13 @@
   "skillChoices": [
     {
       "label": "Trained Skill",
-      "pickCount": 2,
+      "pickCount": 1,
+      "options": [],
+      "freeform": true
+    },
+    {
+      "label": "Flex Skill",
+      "pickCount": 1,
       "options": [],
       "freeform": true
     }
@@ -166,6 +172,14 @@
       "id": "practiced-with-light-and-medium-weapons-jack",
       "name": "Practiced With Light and Medium Weapons",
       "description": "You can use light and medium weapons without penalty. Enabler.",
+      "type": "enabler",
+      "tier": 1,
+      "source": "jack"
+    },
+    {
+      "id": "flex-skill",
+      "name": "Flex Skill",
+      "description": "At the beginning of each day, choose one task (other than attacks or defense) on which you will concentrate. For the rest of that day, you are trained in that task. You can't choose a task to become trained in that you are already trained in from another source. Enabler.",
       "type": "enabler",
       "tier": 1,
       "source": "jack"
