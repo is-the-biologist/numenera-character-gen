@@ -156,11 +156,33 @@ async function scrapeFoci(): Promise<FocusRaw[]> {
 
     // Additional equipment
     const additionalEquipment: string[] = [];
-    const equipMatch = fullText.match(/Additional Equipment:\s*(.+?)(?=\n(?:Tier|Minor|Major|\*\*|Connection|$))/is);
+    // Stop at tier markers, effect markers, OR flavor section headers like "Darkness Powers:", "Fire Powers:", etc.
+    const equipMatch = fullText.match(/Additional Equipment:\s*(.+?)(?=\n(?:Tier \d|Minor Effect|Major Effect|\*\*|Connection|[A-Z][A-Za-z\s]+(?:Powers|Abilities|Ability|Esoteries):))/is);
     if (equipMatch) {
       const equipText = equipMatch[1].trim();
       if (equipText.length > 2) {
         additionalEquipment.push(equipText);
+      }
+    }
+
+    // Extract "Powers/Abilities/Esoteries" flavor section as a tier-0 ability
+    // These sections describe how the focus modifies your esoteries/abilities
+    const powersMatch = fullText.match(/([A-Z][A-Za-z\s]+(?:Powers|Abilities|Ability|Esoteries)):\s*(.+?)(?=\nAdditional Equipment:|\nTier \d|\nMinor Effect|\nMajor Effect|$)/is);
+    let powersAbility: AbilityRaw | undefined;
+    if (powersMatch) {
+      const powersName = powersMatch[1].trim();
+      let powersDesc = powersMatch[2].trim();
+      // Remove Minor/Major effect suggestions if they leaked in
+      powersDesc = powersDesc.replace(/\n?Minor Effect Suggestions?:.*/is, '').trim();
+      if (powersDesc.length > 20) {
+        powersAbility = {
+          id: toKebab(powersName),
+          name: powersName,
+          description: powersDesc,
+          type: 'enabler',
+          tier: 0,
+          source: id,
+        };
       }
     }
 
@@ -287,7 +309,7 @@ async function scrapeFoci(): Promise<FocusRaw[]> {
       connection,
       connections,
       tier1: {
-        grantedAbilities: tier1Abilities,
+        grantedAbilities: [...(powersAbility ? [powersAbility] : []), ...tier1Abilities],
         ...(abilityChoice ? { abilityChoice } : {}),
         trainedSkills,
         additionalEquipment,

@@ -17,6 +17,14 @@
     "tier1": {
       "grantedAbilities": [
         {
+          "id": "fire-powers",
+          "name": "Fire Powers",
+          "description": "Your special abilities that would normally use force or other energy (such as electricity) instead use fire. For example, force blasts from Onslaught are blasts of flame, and Flash is a burst of fire. These alterations change nothing except the type of damage and the fact that it might start fires. As another example, Barrier produces a wall of roaring flames. In this case, the alteration changes the esotery so that the barrier is not solid but instead inflicts 1 point of damage to anything that touches it and 4 points of damage to anyone who passes through it. Even fighting moves such as No Need for Weapons might mean your hands and fists are surrounded by flames.",
+          "type": "enabler",
+          "tier": 0,
+          "source": "bears-a-halo-of-fire"
+        },
+        {
           "id": "shroud-of-flame",
           "name": "Shroud of Flame",
           "description": "At your command, your entire body becomes shrouded in flames that last up to ten minutes. The fire doesn’t burn you, but it automatically inflicts 2 points of damage to anyone who tries to touch you or strike you with a melee attack. Flames from another source can still hurt you. While the shroud is active, you gain +2 points of Armor that protect only against damage from fire from another source. Enabler.",
@@ -31,7 +39,7 @@
       ],
       "trainedSkills": [],
       "additionalEquipment": [
-        "You have an artifact—a device that sprays inanimate objects to make them fire-resistant. All your starting gear has already been treated unless you don’t want it to be.\nFire Powers: Your special abilities that would normally use force or other energy (such as electricity) instead use fire. For example, force blasts from Onslaught are blasts of flame, and Flash is a burst of fire. These alterations change nothing except the type of damage and the fact that it might start fires. As another example, Barrier produces a wall of roaring flames. In this case, the alteration changes the esotery so that the barrier is not solid but instead inflicts 1 point of damage to anything that touches it and 4 points of damage to anyone who passes through it. Even fighting moves such as No Need for Weapons might mean your hands and fists are surrounded by flames."
+        "You have an artifact—a device that sprays inanimate objects to make them fire-resistant. All your starting gear has already been treated unless you don’t want it to be."
       ]
     },
     "higherTiers": [
@@ -172,6 +180,14 @@
     "tier1": {
       "grantedAbilities": [
         {
+          "id": "mental-esoteries",
+          "name": "Mental Esoteries",
+          "description": "When you apply Effort to the special abilities that control minds, like the Mind Control esotery, the Mind Reading esotery, or the Crowd Control trick of the trade, you get a free level of Effort on that task. Enabler.",
+          "type": "enabler",
+          "tier": 0,
+          "source": "commands-mental-powers"
+        },
+        {
           "id": "telepathic",
           "name": "Telepathic",
           "description": "You can speak telepathically with others who are within short range. Communication is two-way, but the other party must be willing and able to communicate. You don’t have to see the target, but you must know that it’s within range. You can have more than one active contact at once, but you must establish contact with each target individually. Each contact lasts up to ten minutes. If you apply a level of Effort to increase the duration rather than affect the difficulty, the contact lasts for 28 hours. Action to establish contact.",
@@ -186,7 +202,7 @@
       ],
       "trainedSkills": [],
       "additionalEquipment": [
-        "You have a crystal or jewel artifact that, when worn against your forehead or temple, adds 1 point to your Intellect Pool. If you’re ever without the artifact, subtract 5 points from your Intellect Pool; the points are restored if you regain the item.\nMental Esoteries: When you apply Effort to the special abilities that control minds, like the Mind Control esotery, the Mind Reading esotery, or the Crowd Control trick of the trade, you get a free level of Effort on that task. Enabler."
+        "You have a crystal or jewel artifact that, when worn against your forehead or temple, adds 1 point to your Intellect Pool. If you’re ever without the artifact, subtract 5 points from your Intellect Pool; the points are restored if you regain the item."
       ]
     },
     "higherTiers": [
@@ -469,6 +485,14 @@
     "tier1": {
       "grantedAbilities": [
         {
+          "id": "gravity-ability",
+          "name": "Gravity Ability",
+          "description": "You can choose to learn Weighty instead of one of the abilities granted by your type:\nWeighty (1 Intellect point): You briefly increase the weight of a target within short range enough to stop them in their tracks, preventing the target from moving and hindering any attempted tasks on their next turn. Action.",
+          "type": "enabler",
+          "tier": 0,
+          "source": "controls-gravity"
+        },
+        {
           "id": "hover",
           "name": "Hover",
           "description": "You float slowly into the air. As your action, you can concentrate to remain motionless in the air, or float up to a short distance, but no more; otherwise, you drift with the wind or with any momentum you have gained. This effect lasts for up to ten minutes. If you also have the Hover ability granted by your type, you can hover for twenty minutes and move your normal speed. Action to initiate.",
@@ -483,7 +507,7 @@
       ],
       "trainedSkills": [],
       "additionalEquipment": [
-        "You have a pen-sized oddity that tells the weight of whatever you point it at (within short range). The weight is displayed on a small glass plate in runes that only you can decipher.\nGravity Ability: You can choose to learn Weighty instead of one of the abilities granted by your type:\nWeighty (1 Intellect point): You briefly increase the weight of a target within short range enough to stop them in their tracks, preventing the target from moving and hindering any attempted tasks on their next turn. Action."
+        "You have a pen-sized oddity that tells the weight of whatever you point it at (within short range). The weight is displayed on a small glass plate in runes that only you can decipher."
       ]
     },
     "higherTiers": [
@@ -607,6 +631,14 @@
     "tier1": {
       "grantedAbilities": [
         {
+          "id": "psychedelic-abilities",
+          "name": "Psychedelic Abilities",
+          "description": "Your special abilities take on flamboyant visual and auditory qualities of your choosing. This alteration changes nothing other than the appearance of the effects. For example, your attack esoteries might look like monsters made of energy that assail your foes. Your Stasis esotery might look like a tentacled beast that holds the victim in place. Your Teleportation esotery might seem like a hole in space opens up and swallows you. Your Skill With Defense fighting move might look like ghostly echoes mimicking your actions or ephemeral arms blocking attacks against you.",
+          "type": "enabler",
+          "tier": 0,
+          "source": "crafts-illusions"
+        },
+        {
           "id": "minor-illusion",
           "name": "Minor Illusion",
           "description": "You create a single image of a creature or object within immediate range. The image must fit within a 10-foot (3 m) cube. The image can move (for example, you could make the illusion of a person walk or attack), but it can’t leave the area defined by the cube. The illusion includes sound but not smell. It lasts for ten minutes, but if you want to change the original illusion significantly—such as making a creature appear to be wounded—you must concentrate on it again (though doing so doesn’t cost additional Intellect points). If you move beyond immediate range of the cube, the illusion vanishes. Action to create; action to modify.",
@@ -621,7 +653,7 @@
       ],
       "trainedSkills": [],
       "additionalEquipment": [
-        "You have an oddity that appears to be a piece of clear glass in a synth frame. By manipulating hidden switches on the frame, you can make random moving images appear on the glass. The images are usually strange and sometimes incomprehensible.\nPsychedelic Abilities: Your special abilities take on flamboyant visual and auditory qualities of your choosing. This alteration changes nothing other than the appearance of the effects. For example, your attack esoteries might look like monsters made of energy that assail your foes. Your Stasis esotery might look like a tentacled beast that holds the victim in place. Your Teleportation esotery might seem like a hole in space opens up and swallows you. Your Skill With Defense fighting move might look like ghostly echoes mimicking your actions or ephemeral arms blocking attacks against you."
+        "You have an oddity that appears to be a piece of clear glass in a synth frame. By manipulating hidden switches on the frame, you can make random moving images appear on the glass. The images are usually strange and sometimes incomprehensible."
       ]
     },
     "higherTiers": [
@@ -1137,6 +1169,14 @@
     "tier1": {
       "grantedAbilities": [
         {
+          "id": "darkness-powers",
+          "name": "Darkness Powers",
+          "description": "Your special abilities (such as Nano esoteries) make almost no sound, and whatever visual displays they produce are dark and shadowy. These alterations change nothing other than the appearance of the effects. A Flash esotery is a silent burst of shadows, a Barrier esotery is a mass of shadowy wisps, and so on.",
+          "type": "enabler",
+          "tier": 0,
+          "source": "explores-dark-places"
+        },
+        {
           "id": "superb-explorer",
           "name": "Superb Explorer",
           "description": "You are trained in searching, listening, climbing, balancing, and jumping tasks. Enabler.",
@@ -1153,7 +1193,7 @@
         "jumping"
       ],
       "additionalEquipment": [
-        "You start with an explorer’s pack. If you already have one, you can instead take 50 extra feet (15 m) of rope, rations for two more days, and two minor glowglobes.\nDarkness Powers: Your special abilities (such as Nano esoteries) make almost no sound, and whatever visual displays they produce are dark and shadowy. These alterations change nothing other than the appearance of the effects. A Flash esotery is a silent burst of shadows, a Barrier esotery is a mass of shadowy wisps, and so on."
+        "You start with an explorer’s pack. If you already have one, you can instead take 50 extra feet (15 m) of rope, rations for two more days, and two minor glowglobes."
       ]
     },
     "higherTiers": [
@@ -1396,6 +1436,14 @@
     ],
     "tier1": {
       "grantedAbilities": [
+        {
+          "id": "mental-powers",
+          "name": "Mental Powers",
+          "description": "Your special abilities that would normally use force or other energy instead use psychokinetic force. For example, a Flash or an Onslaught force blast is a psychokinetic blast from your mind. This alteration changes nothing except that you don’t need a free hand to perform those abilities. In addition, you can choose to learn Impetus instead of one of the abilities granted by your type. Enabler.\nImpetus (2 Intellect points): A loose object within short range that you could carry in one hand is drawn to your free hand. If the object is stuck or held by another creature, you must succeed on a Might roll to rip it free, or the object remains where it was. Action.",
+          "type": "enabler",
+          "tier": 0,
+          "source": "focuses-mind-over-matter"
+        },
         {
           "id": "deflect-attacks",
           "name": "Deflect Attacks",
@@ -2207,6 +2255,14 @@
     "tier1": {
       "grantedAbilities": [
         {
+          "id": "weaponry-powers",
+          "name": "Weaponry Powers",
+          "description": "If you have “supernatural” special abilities (such as some esoteries), these look like your chosen weapon. So the force blast of the Onslaught esotery appears to be a large weapon made of force, and the Flash esotery produces a flurry of weaponry. These alterations change nothing other than the appearance of the effects. As another example, Barrier becomes a wall of swirling blades of energy. This alteration changes the esotery such that it is not a solid barrier but rather inflicts 1 point of damage to anyone who touches it and 4 points of damage to anyone who passes through it.",
+          "type": "enabler",
+          "tier": 0,
+          "source": "masters-weaponry"
+        },
+        {
           "id": "weapon-master",
           "name": "Weapon Master",
           "description": "You gain a +1 bonus to damage with your chosen weapon. Enabler.",
@@ -2232,7 +2288,7 @@
         "so on"
       ],
       "additionalEquipment": [
-        "You have a high quality weapon of your choosing.\nWeaponry Powers: If you have “supernatural” special abilities (such as some esoteries), these look like your chosen weapon. So the force blast of the Onslaught esotery appears to be a large weapon made of force, and the Flash esotery produces a flurry of weaponry. These alterations change nothing other than the appearance of the effects. As another example, Barrier becomes a wall of swirling blades of energy. This alteration changes the esotery such that it is not a solid barrier but rather inflicts 1 point of damage to anyone who touches it and 4 points of damage to anyone who passes through it."
+        "You have a high quality weapon of your choosing."
       ]
     },
     "higherTiers": [
@@ -2636,6 +2692,14 @@
     "tier1": {
       "grantedAbilities": [
         {
+          "id": "electrical-abilities",
+          "name": "Electrical Abilities",
+          "description": "If you have abilities that would normally use force or other energy, they instead use electricity. For example, a Flash or an Onslaught force blast is a blast of lightning. This alteration changes nothing other than the type of damage and the fact that it might start fires.",
+          "type": "enabler",
+          "tier": 0,
+          "source": "rides-the-lightning"
+        },
+        {
           "id": "shock",
           "name": "Shock",
           "description": "Your hands crackle with electricity, and the next time you touch a creature, you inflict 3 points of damage. Alternatively, if you wield a weapon, for ten minutes it crackles with electricity and inflicts 1 additional point of damage per attack. Action for touch; enabler for weapon.",
@@ -2662,7 +2726,7 @@
       ],
       "trainedSkills": [],
       "additionalEquipment": [
-        "You have a bag of miscellaneous batteries and power cells. Whenever you find a new device that operates on batteries or cells (GM’s discretion), there is a 75 percent chance that the bag contains one that will power the device if it depletes.\nElectrical Abilities: If you have abilities that would normally use force or other energy, they instead use electricity. For example, a Flash or an Onslaught force blast is a blast of lightning. This alteration changes nothing other than the type of damage and the fact that it might start fires."
+        "You have a bag of miscellaneous batteries and power cells. Whenever you find a new device that operates on batteries or cells (GM’s discretion), there is a 75 percent chance that the bag contains one that will power the device if it depletes."
       ]
     },
     "higherTiers": [
@@ -3100,6 +3164,14 @@
     "tier1": {
       "grantedAbilities": [
         {
+          "id": "ice-abilities",
+          "name": "Ice Abilities",
+          "description": "If you possess abilities that would normally use force or other energy, they instead use cold and ice. For example, a force blast is a ray of frost. This alteration changes nothing other than the type of damage. As another example, Barrier creates a wall of ice. This alteration changes nothing except the wall’s appearance and the fact that it takes 2 additional points of damage from fire.",
+          "type": "enabler",
+          "tier": 0,
+          "source": "wears-a-sheen-of-ice"
+        },
+        {
           "id": "ice-armor",
           "name": "Ice Armor",
           "description": "When you wish it, your body is covered in a sheen of ice for ten minutes that gives you +1 to Armor. While the sheen is active, you feel no discomfort from normal cold temperatures and have an additional +2 to Armor versus cold damage specifically. Enabler.",
@@ -3114,7 +3186,7 @@
       ],
       "trainedSkills": [],
       "additionalEquipment": [
-        "You have a bladed weapon made of stronglass that looks like ice.\nIce Abilities: If you possess abilities that would normally use force or other energy, they instead use cold and ice. For example, a force blast is a ray of frost. This alteration changes nothing other than the type of damage. As another example, Barrier creates a wall of ice. This alteration changes nothing except the wall’s appearance and the fact that it takes 2 additional points of damage from fire."
+        "You have a bladed weapon made of stronglass that looks like ice."
       ]
     },
     "higherTiers": [
